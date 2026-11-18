@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Início</string>
+    <string name="nav_diet_plan">Plano alimentar</string>
+    <string name="nav_progress">Progresso</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="exit_title">Já vai sair?</string>
+    <string name="exit_body">Seu progresso de hoje foi salvo. Tem certeza de que deseja sair?</string>
+    <string name="exit_stay">Continuar firme</string>
+    <string name="exit_leave">Sair do app</string>
+    <string name="offline_title">Sem conexão com a internet</string>
+    <string name="offline_body">Verifique sua conexão e tente novamente para continuar acompanhando seu progresso.</string>
+    <string name="offline_retry">Tentar novamente</string>
+    <string name="offline_continue">Continuar offline</string>
+</resources>

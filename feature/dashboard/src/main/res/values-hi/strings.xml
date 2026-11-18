@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">फिर से स्वागत है, %1$s</string>
+    <string name="dash_subtitle">आज भी लक्ष्य पर बने रहें।</string>
+    <string name="dash_daily_tracking">दैनिक कैलोरी ट्रैकिंग</string>
+    <string name="dash_kcal_today">आज की कैलोरी</string>
+    <string name="dash_of_target">%1$s किलो कैलोरी में से</string>
+    <string name="dash_steps">कदम</string>
+    <string name="dash_eating">भोजन</string>
+    <string name="dash_streak">लगातार दिन</string>
+    <string name="dash_kcal_value">%1$s किलो कैलोरी</string>
+    <string name="dash_streak_value">दिन %1$d</string>
+    <string name="dash_todays_meal">आज का भोजन</string>
+    <string name="dash_view_all">सभी देखें</string>
+    <string name="dash_up_next">%1$s · अगला</string>
+    <string name="dash_all_done">आज के सभी भोजन पूरे हो गए 🎉</string>
+    <string name="dash_all_done_sub">अपने प्लान पर टिके रहने के लिए शाबाश।</string>
+    <string name="dash_water">पानी</string>
+    <string name="dash_weight">वज़न चेक-इन</string>
+    <string name="dash_health">स्वास्थ्य लॉग</string>
+    <string name="dash_trial_title">kCal Premium को विज्ञापन-मुक्त आज़माएँ</string>
+    <string name="dash_trial_body">सभी Premium सुविधाओं तक पूरी पहुँच पाएँ और kCal का बिना विज्ञापन आनंद लें।</string>
+    <string name="dash_trial_1">Premium सुविधाओं तक पूरी पहुँच</string>
+    <string name="dash_trial_2">व्यक्तिगत पोषण जानकारी</string>
+    <string name="dash_trial_3">उन्नत प्रगति ट्रैकिंग</string>
+    <string name="dash_trial_4">विज्ञापन-मुक्त अनुभव</string>
+    <string name="dash_get_premium">Premium लें</string>
+    <string name="dash_maybe_later">बाद में</string>
+</resources>

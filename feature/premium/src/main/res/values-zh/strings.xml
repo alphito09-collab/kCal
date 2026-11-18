@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">关闭</string>
+    <string name="premium_unlock_title">解锁 kCal Premium</string>
+    <string name="premium_intro_body">更个性化的营养体验：量身定制的计划、更智能的洞察，全面掌控你的目标。</string>
+    <string name="premium_b1">无限饮食计划</string>
+    <string name="premium_b1_sub">每周随你调整的个性化计划</string>
+    <string name="premium_b2">无限食材替换</string>
+    <string name="premium_b2_sub">随心替换任何一餐</string>
+    <string name="premium_b3">更智能的预算优化</string>
+    <string name="premium_b3_sub">基于你真实采购预算的计划</string>
+    <string name="premium_b4">高级进度洞察</string>
+    <string name="premium_b4_sub">更深入的热量、体重与活动分析</string>
+    <string name="premium_b5">智能提醒</string>
+    <string name="premium_b5_sub">温和提醒，每天保持节奏</string>
+    <string name="premium_unlock">解锁 Premium</string>
+    <string name="premium_terms">条款与条件</string>
+    <string name="premium_privacy">隐私政策</string>
+    <string name="premium_title">Premium</string>
+    <string name="premium_plans_body">获得更个性化的计划、更智能的追踪，更好地掌控你的营养之旅。</string>
+    <string name="premium_weekly">按周</string>
+    <string name="premium_monthly">按月</string>
+    <string name="premium_best_value">最划算</string>
+    <string name="premium_weekly_name">Premium 周卡</string>
+    <string name="premium_monthly_name">Premium 月卡</string>
+    <string name="premium_weekly_price">每周 299 卢比</string>
+    <string name="premium_monthly_price">每月 899 卢比</string>
+    <string name="premium_w1">无限个性化饮食计划</string>
+    <string name="premium_w2">无限餐食与食材替换</string>
+    <string name="premium_w3">高级预算优化</string>
+    <string name="premium_w4">个性化饮食偏好</string>
+    <string name="premium_w5">高级热量与活动洞察</string>
+    <string name="premium_w6">智能提醒</string>
+    <string name="premium_w7">每周进度报告</string>
+    <string name="premium_w8">高级进度分析</string>
+    <string name="premium_m1">包含周卡全部权益</string>
+    <string name="premium_m2">无限重新生成饮食计划</string>
+    <string name="premium_m3">每月进度分析</string>
+    <string name="premium_m4">高级步行与热量分配</string>
+    <string name="premium_m5">更个性化的餐食推荐</string>
+    <string name="premium_m6">扩展饮食偏好</string>
+    <string name="premium_start_weekly">开通周卡</string>
+    <string name="premium_start_monthly">开通月卡</string>
+    <string name="premium_active">已开通 ✓</string>
+    <string name="premium_cancel_note">你可以随时管理或取消订阅。</string>
+</resources>

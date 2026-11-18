@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">Tekrar hoş geldin, %1$s</string>
+    <string name="dash_subtitle">Bugün de hedefte kalalım.</string>
+    <string name="dash_daily_tracking">Günlük kalori takibi</string>
+    <string name="dash_kcal_today">bugün kcal</string>
+    <string name="dash_of_target">%1$s kcal hedefin</string>
+    <string name="dash_steps">Adımlar</string>
+    <string name="dash_eating">Beslenme</string>
+    <string name="dash_streak">Seri</string>
+    <string name="dash_kcal_value">%1$s kcal</string>
+    <string name="dash_streak_value">%1$d. gün</string>
+    <string name="dash_todays_meal">Bugünün öğünü</string>
+    <string name="dash_view_all">Tümünü gör</string>
+    <string name="dash_up_next">%1$s · Sıradaki</string>
+    <string name="dash_all_done">Bugünkü tüm öğünler tamamlandı 🎉</string>
+    <string name="dash_all_done_sub">Planına sadık kaldığın için harika iş.</string>
+    <string name="dash_water">Su</string>
+    <string name="dash_weight">Kilo takibi</string>
+    <string name="dash_health">Sağlık günlüğü</string>
+    <string name="dash_trial_title">kCal Premium\'u reklamsız dene</string>
+    <string name="dash_trial_body">Tüm Premium özelliklere tam erişim kazan ve kCal\'ı reklamsız kullan.</string>
+    <string name="dash_trial_1">Premium özelliklere tam erişim</string>
+    <string name="dash_trial_2">Kişisel beslenme önerileri</string>
+    <string name="dash_trial_3">Gelişmiş ilerleme takibi</string>
+    <string name="dash_trial_4">Reklamsız deneyim</string>
+    <string name="dash_get_premium">Premium\'a geç</string>
+    <string name="dash_maybe_later">Belki sonra</string>
+</resources>

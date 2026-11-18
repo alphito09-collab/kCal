@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">ہوم</string>
+    <string name="nav_diet_plan">ڈائٹ پلان</string>
+    <string name="nav_progress">پیش رفت</string>
+    <string name="nav_settings">ترتیبات</string>
+    <string name="exit_title">ابھی جا رہے ہیں؟</string>
+    <string name="exit_body">آج کی آپ کی پیش رفت محفوظ ہو گئی ہے۔ کیا آپ واقعی باہر جانا چاہتے ہیں؟</string>
+    <string name="exit_stay">جاری رکھیں</string>
+    <string name="exit_leave">ایپ سے باہر نکلیں</string>
+    <string name="offline_title">انٹرنیٹ کنکشن نہیں ہے</string>
+    <string name="offline_body">اپنا کنکشن چیک کریں اور اپنی پیش رفت ٹریک کرتے رہنے کے لیے دوبارہ کوشش کریں۔</string>
+    <string name="offline_retry">دوبارہ کوشش کریں</string>
+    <string name="offline_continue">آف لائن جاری رکھیں</string>
+</resources>

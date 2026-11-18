@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">步数</string>
+    <string name="steps_today">今日步数</string>
+    <string name="steps_kcal">/ %1$s 千卡</string>
+    <string name="steps_goal">目标：%1$s 步</string>
+    <string name="steps_start">开始</string>
+    <string name="steps_stop">停止</string>
+    <string name="steps_hint_idle">点击“开始”记录步数。</string>
+    <string name="steps_hint_active">正在后台记录，你可以离开应用。</string>
+    <string name="steps_hint_denied">请允许访问身体活动数据以记录步数。</string>
+    <string name="steps_hint_no_sensor">此设备没有计步传感器。</string>
+    <string name="steps_history">历史</string>
+    <string name="steps_months">月</string>
+    <string name="steps_weeks">周</string>
+    <string name="steps_days">日</string>
+    <string name="steps_month_summary">%1$s · 本月约 %2$s 步</string>
+    <string name="steps_week_summary">第 %1$d 周 · 本周 %2$s 步</string>
+    <string name="steps_day_summary">%1$s — %2$s 步 · %3$s 千卡</string>
+    <string name="steps_week_label">第%1$d周</string>
+    <string name="steps_notification_channel">步数记录</string>
+    <string name="steps_notification_title">kCal 正在记录你的步数</string>
+    <string name="steps_notification_text">今天 %1$s 步</string>
+    <string name="steps_notification_stop">停止</string>
+</resources>

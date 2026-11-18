@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">饮食计划</string>
+    <string name="diet_this_week">本周</string>
+    <string name="diet_target">%1$s · 目标约 %2$s 千卡</string>
+    <string name="diet_swap">替换</string>
+    <string name="diet_empty">正在准备当天的计划…</string>
+    <string name="checklist_title">餐食清单</string>
+    <string name="checklist_subtitle">今天每吃完一餐就勾选一下。</string>
+    <string name="swap_title">替换食材</string>
+    <string name="swap_subtitle">为你的%1$s选择替代品。</string>
+    <string name="swap_currently">当前</string>
+    <string name="swap_suggested">推荐替代品</string>
+    <string name="swap_best_match">最佳匹配</string>
+    <string name="swap_confirm">确认替换</string>
+    <string name="swap_none">没有符合你健康需求和预算的替代品。</string>
+</resources>

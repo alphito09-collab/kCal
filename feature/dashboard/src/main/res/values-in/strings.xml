@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">Selamat datang kembali, %1$s</string>
+    <string name="dash_subtitle">Ayo tetap di jalur hari ini.</string>
+    <string name="dash_daily_tracking">Pelacakan kalori harian</string>
+    <string name="dash_kcal_today">kkal hari ini</string>
+    <string name="dash_of_target">dari %1$s kkal</string>
+    <string name="dash_steps">Langkah</string>
+    <string name="dash_eating">Makan</string>
+    <string name="dash_streak">Beruntun</string>
+    <string name="dash_kcal_value">%1$s kkal</string>
+    <string name="dash_streak_value">Hari ke-%1$d</string>
+    <string name="dash_todays_meal">Menu hari ini</string>
+    <string name="dash_view_all">Lihat semua</string>
+    <string name="dash_up_next">%1$s · Berikutnya</string>
+    <string name="dash_all_done">Semua makanan hari ini sudah dicentang 🎉</string>
+    <string name="dash_all_done_sub">Kerja bagus tetap mengikuti rencanamu.</string>
+    <string name="dash_water">Air</string>
+    <string name="dash_weight">Cek berat badan</string>
+    <string name="dash_health">Catatan kesehatan</string>
+    <string name="dash_trial_title">Coba kCal Premium bebas iklan</string>
+    <string name="dash_trial_body">Dapatkan akses penuh ke semua fitur Premium dan nikmati kCal tanpa iklan.</string>
+    <string name="dash_trial_1">Akses penuh ke fitur Premium</string>
+    <string name="dash_trial_2">Wawasan nutrisi personal</string>
+    <string name="dash_trial_3">Pelacakan kemajuan lanjutan</string>
+    <string name="dash_trial_4">Pengalaman bebas iklan</string>
+    <string name="dash_get_premium">Dapatkan Premium</string>
+    <string name="dash_maybe_later">Nanti saja</string>
+</resources>

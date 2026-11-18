@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Adımlar</string>
+    <string name="steps_today">Bugünkü adımlar</string>
+    <string name="steps_kcal">/ %1$s kcal</string>
+    <string name="steps_goal">Hedef: %1$s adım</string>
+    <string name="steps_start">Başlat</string>
+    <string name="steps_stop">Durdur</string>
+    <string name="steps_hint_idle">Adımlarını saymak için Başlat\'a dokun.</string>
+    <string name="steps_hint_active">Arka planda sayılıyor. Uygulamadan çıkabilirsin.</string>
+    <string name="steps_hint_denied">Adımlarını saymak için fiziksel aktivite erişimine izin ver.</string>
+    <string name="steps_hint_no_sensor">Bu cihazda adım sensörü yok.</string>
+    <string name="steps_history">Geçmiş</string>
+    <string name="steps_months">Aylar</string>
+    <string name="steps_weeks">Haftalar</string>
+    <string name="steps_days">Günler</string>
+    <string name="steps_month_summary">%1$s · bu ay ≈%2$s adım</string>
+    <string name="steps_week_summary">%1$d. hafta · bu hafta %2$s adım</string>
+    <string name="steps_day_summary">%1$s — %2$s adım · %3$s kcal</string>
+    <string name="steps_week_label">H%1$d</string>
+    <string name="steps_notification_channel">Adım takibi</string>
+    <string name="steps_notification_title">kCal adımlarını sayıyor</string>
+    <string name="steps_notification_text">Bugün %1$s adım</string>
+    <string name="steps_notification_stop">Durdur</string>
+</resources>

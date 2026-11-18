@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">kCal</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_diet_plan">Diet Plan</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_settings">Settings</string>
+    <string name="exit_title">Leaving already?</string>
+    <string name="exit_body">Your progress today is saved. Are you sure you want to exit?</string>
+    <string name="exit_stay">Stay on track</string>
+    <string name="exit_leave">Exit app</string>
+    <string name="offline_title">No internet connection</string>
+    <string name="offline_body">Check your connection and try again to keep tracking your progress.</string>
+    <string name="offline_retry">Try again</string>
+    <string name="offline_continue">Continue offline</string>
+</resources>

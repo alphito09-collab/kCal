@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_diet_plan">خطة الغذاء</string>
+    <string name="nav_progress">التقدم</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="exit_title">هل ستغادر الآن؟</string>
+    <string name="exit_body">تم حفظ تقدمك اليوم. هل أنت متأكد أنك تريد الخروج؟</string>
+    <string name="exit_stay">واصل التقدم</string>
+    <string name="exit_leave">الخروج من التطبيق</string>
+    <string name="offline_title">لا يوجد اتصال بالإنترنت</string>
+    <string name="offline_body">تحقق من اتصالك وحاول مرة أخرى لمواصلة تتبع تقدمك.</string>
+    <string name="offline_retry">حاول مجددًا</string>
+    <string name="offline_continue">المتابعة دون اتصال</string>
+</resources>

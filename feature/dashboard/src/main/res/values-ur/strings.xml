@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">خوش آمدید، %1$s</string>
+    <string name="dash_subtitle">آج بھی اپنے ہدف پر قائم رہیں۔</string>
+    <string name="dash_daily_tracking">روزانہ کیلوری ٹریکنگ</string>
+    <string name="dash_kcal_today">آج کی کیلوری</string>
+    <string name="dash_of_target">%1$s کیلوری میں سے</string>
+    <string name="dash_steps">قدم</string>
+    <string name="dash_eating">کھانا</string>
+    <string name="dash_streak">مسلسل دن</string>
+    <string name="dash_kcal_value">%1$s کیلوری</string>
+    <string name="dash_streak_value">دن %1$d</string>
+    <string name="dash_todays_meal">آج کا کھانا</string>
+    <string name="dash_view_all">سب دیکھیں</string>
+    <string name="dash_up_next">%1$s · اگلا</string>
+    <string name="dash_all_done">آج کے سارے کھانے مکمل ہو گئے 🎉</string>
+    <string name="dash_all_done_sub">اپنے پلان پر قائم رہنے پر شاباش۔</string>
+    <string name="dash_water">پانی</string>
+    <string name="dash_weight">وزن چیک اِن</string>
+    <string name="dash_health">ہیلتھ لاگ</string>
+    <string name="dash_trial_title">kCal Premium بغیر اشتہارات کے آزمائیں</string>
+    <string name="dash_trial_body">تمام Premium فیچرز تک مکمل رسائی حاصل کریں اور بغیر اشتہارات کے kCal استعمال کریں۔</string>
+    <string name="dash_trial_1">Premium فیچرز تک مکمل رسائی</string>
+    <string name="dash_trial_2">ذاتی غذائی مشورے</string>
+    <string name="dash_trial_3">بہتر پیش رفت ٹریکنگ</string>
+    <string name="dash_trial_4">اشتہارات سے پاک تجربہ</string>
+    <string name="dash_get_premium">Premium حاصل کریں</string>
+    <string name="dash_maybe_later">شاید بعد میں</string>
+</resources>

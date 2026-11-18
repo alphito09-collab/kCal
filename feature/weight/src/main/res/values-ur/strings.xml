@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">وزن چیک اِن</string>
+    <string name="weight_this_week">اس ہفتے کا وزن</string>
+    <string name="weight_save">وزن محفوظ کریں</string>
+    <string name="weight_saved">محفوظ ہو گیا ✓</string>
+    <string name="weight_hint">اپنی پیش رفت درست رکھنے کے لیے ہفتے میں ایک بار وزن اپ ڈیٹ کریں۔</string>
+    <string name="weight_progress">وزن کی پیش رفت</string>
+    <string name="weight_current">موجودہ</string>
+    <string name="weight_previous">پچھلا</string>
+    <string name="weight_change">تبدیلی</string>
+    <string name="weight_history">وزن کی تاریخ</string>
+    <string name="weight_week">ہفتہ %1$d</string>
+    <string name="weight_week_current">ہفتہ %1$d (یہ ہفتہ)</string>
+    <string name="weight_empty">ابھی تک کوئی وزن درج نہیں۔</string>
+</resources>

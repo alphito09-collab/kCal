@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">Su tüketimi</string>
+    <string name="water_today">Bugünkü su</string>
+    <string name="water_glasses">%1$d / %2$d bardak</string>
+    <string name="water_ml">%1$s ml / %2$s ml</string>
+    <string name="water_add_title">Su ekle</string>
+    <string name="water_add">Ekle</string>
+    <string name="water_amount">+%1$d ml</string>
+    <string name="water_glass_hint">1 bardak ≈ 250 ml</string>
+    <string name="water_goal">Günlük su hedefi</string>
+    <string name="water_edit_goal">Hedefi düzenle</string>
+    <string name="water_save_goal">Kaydet</string>
+    <string name="water_goal_hint">ör. 2000</string>
+</resources>

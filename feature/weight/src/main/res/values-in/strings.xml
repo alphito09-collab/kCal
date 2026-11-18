@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">Cek berat badan</string>
+    <string name="weight_this_week">Berat minggu ini</string>
+    <string name="weight_save">Simpan berat</string>
+    <string name="weight_saved">Tersimpan ✓</string>
+    <string name="weight_hint">Perbarui beratmu seminggu sekali agar kemajuanmu akurat.</string>
+    <string name="weight_progress">Kemajuan berat</string>
+    <string name="weight_current">Saat ini</string>
+    <string name="weight_previous">Sebelumnya</string>
+    <string name="weight_change">Perubahan</string>
+    <string name="weight_history">Riwayat berat</string>
+    <string name="weight_week">Minggu %1$d</string>
+    <string name="weight_week_current">Minggu %1$d (minggu ini)</string>
+    <string name="weight_empty">Belum ada catatan berat.</string>
+</resources>

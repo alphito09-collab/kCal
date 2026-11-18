@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">Willkommen zurück, %1$s</string>
+    <string name="dash_subtitle">Bleib heute am Ball.</string>
+    <string name="dash_daily_tracking">Tägliche Kalorien</string>
+    <string name="dash_kcal_today">kcal heute</string>
+    <string name="dash_of_target">von %1$s kcal</string>
+    <string name="dash_steps">Schritte</string>
+    <string name="dash_eating">Essen</string>
+    <string name="dash_streak">Serie</string>
+    <string name="dash_kcal_value">%1$s kcal</string>
+    <string name="dash_streak_value">Tag %1$d</string>
+    <string name="dash_todays_meal">Heutige Mahlzeit</string>
+    <string name="dash_view_all">Alle anzeigen</string>
+    <string name="dash_up_next">%1$s · Als Nächstes</string>
+    <string name="dash_all_done">Alle Mahlzeiten für heute abgehakt 🎉</string>
+    <string name="dash_all_done_sub">Toll, dass du deinem Plan treu bleibst.</string>
+    <string name="dash_water">Wasser</string>
+    <string name="dash_weight">Gewichtskontrolle</string>
+    <string name="dash_health">Gesundheitsprotokoll</string>
+    <string name="dash_trial_title">kCal Premium werbefrei testen</string>
+    <string name="dash_trial_body">Erhalte vollen Zugriff auf alle Premium-Funktionen und nutze kCal ohne Werbung.</string>
+    <string name="dash_trial_1">Voller Zugriff auf Premium-Funktionen</string>
+    <string name="dash_trial_2">Persönliche Ernährungstipps</string>
+    <string name="dash_trial_3">Erweiterte Fortschrittsanalyse</string>
+    <string name="dash_trial_4">Werbefreie Nutzung</string>
+    <string name="dash_get_premium">Premium holen</string>
+    <string name="dash_maybe_later">Vielleicht später</string>
+</resources>

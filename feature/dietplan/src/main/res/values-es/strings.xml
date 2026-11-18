@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">Plan de dieta</string>
+    <string name="diet_this_week">Esta semana</string>
+    <string name="diet_target">%1$s · objetivo ~%2$s kcal</string>
+    <string name="diet_swap">Cambiar</string>
+    <string name="diet_empty">Estamos preparando tu plan para este día…</string>
+    <string name="checklist_title">Lista de comidas</string>
+    <string name="checklist_subtitle">Marca cada comida a medida que la comas hoy.</string>
+    <string name="swap_title">Cambiar ingrediente</string>
+    <string name="swap_subtitle">Elige un sustituto para tu %1$s.</string>
+    <string name="swap_currently">Actual</string>
+    <string name="swap_suggested">Sustitutos sugeridos</string>
+    <string name="swap_best_match">Mejor opción</string>
+    <string name="swap_confirm">Confirmar cambio</string>
+    <string name="swap_none">Ningún sustituto se ajusta a tus necesidades de salud y presupuesto.</string>
+</resources>

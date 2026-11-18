@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">قدم</string>
+    <string name="steps_today">آج کے قدم</string>
+    <string name="steps_kcal">/ %1$s کیلوری</string>
+    <string name="steps_goal">ہدف: %1$s قدم</string>
+    <string name="steps_start">شروع</string>
+    <string name="steps_stop">روکیں</string>
+    <string name="steps_hint_idle">اپنے قدم ٹریک کرنے کے لیے شروع دبائیں۔</string>
+    <string name="steps_hint_active">پس منظر میں ٹریکنگ جاری ہے۔ آپ ایپ بند کر سکتے ہیں۔</string>
+    <string name="steps_hint_denied">قدم گننے کے لیے جسمانی سرگرمی کی اجازت دیں۔</string>
+    <string name="steps_hint_no_sensor">اس ڈیوائس میں قدم گننے والا سینسر نہیں ہے۔</string>
+    <string name="steps_history">تاریخ</string>
+    <string name="steps_months">مہینے</string>
+    <string name="steps_weeks">ہفتے</string>
+    <string name="steps_days">دن</string>
+    <string name="steps_month_summary">%1$s · اس مہینے ≈%2$s قدم</string>
+    <string name="steps_week_summary">ہفتہ %1$d · اس ہفتے %2$s قدم</string>
+    <string name="steps_day_summary">%1$s — %2$s قدم · %3$s کیلوری</string>
+    <string name="steps_week_label">ہ%1$d</string>
+    <string name="steps_notification_channel">قدموں کی ٹریکنگ</string>
+    <string name="steps_notification_title">kCal آپ کے قدم گن رہا ہے</string>
+    <string name="steps_notification_text">آج %1$s قدم</string>
+    <string name="steps_notification_stop">روکیں</string>
+</resources>

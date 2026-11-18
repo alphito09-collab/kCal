@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">Kemajuan</string>
+    <string name="progress_weekly">Mingguan</string>
+    <string name="progress_monthly">Bulanan</string>
+    <string name="progress_weight_trend">Tren berat</string>
+    <string name="progress_week_label">M%1$d</string>
+    <string name="progress_week_title">Minggu %1$d · %2$s</string>
+    <string name="progress_burned">Kalori terbakar</string>
+    <string name="progress_intake">Kalori masuk</string>
+    <string name="progress_weight">Berat</string>
+    <string name="progress_key_metrics">Metrik utama</string>
+    <string name="progress_no_weight">Catat beratmu untuk melihat tren.</string>
+</resources>

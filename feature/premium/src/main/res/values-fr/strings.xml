@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">Fermer</string>
+    <string name="premium_unlock_title">Débloquez kCal Premium</string>
+    <string name="premium_intro_body">Une expérience nutritionnelle plus personnelle : plans sur mesure, analyses plus fines et contrôle total de vos objectifs.</string>
+    <string name="premium_b1">Plans repas illimités</string>
+    <string name="premium_b1_sub">Des plans personnalisés qui s\'adaptent chaque semaine</string>
+    <string name="premium_b2">Remplacements illimités</string>
+    <string name="premium_b2_sub">Remplacez n\'importe quel repas par un autre à votre goût</string>
+    <string name="premium_b3">Optimisation du budget plus intelligente</string>
+    <string name="premium_b3_sub">Des plans selon votre vrai budget courses</string>
+    <string name="premium_b4">Analyses avancées des progrès</string>
+    <string name="premium_b4_sub">Analyses détaillées des calories, du poids et de l\'activité</string>
+    <string name="premium_b5">Rappels intelligents</string>
+    <string name="premium_b5_sub">Des rappels doux pour rester sur la bonne voie</string>
+    <string name="premium_unlock">Débloquer Premium</string>
+    <string name="premium_terms">Conditions générales</string>
+    <string name="premium_privacy">Politique de confidentialité</string>
+    <string name="premium_title">Premium</string>
+    <string name="premium_plans_body">Des plans plus personnels, un suivi plus intelligent et plus de contrôle sur votre nutrition.</string>
+    <string name="premium_weekly">Hebdomadaire</string>
+    <string name="premium_monthly">Mensuel</string>
+    <string name="premium_best_value">Meilleure offre</string>
+    <string name="premium_weekly_name">Premium hebdo</string>
+    <string name="premium_monthly_name">Premium mensuel</string>
+    <string name="premium_weekly_price">299 PKR / semaine</string>
+    <string name="premium_monthly_price">899 PKR / mois</string>
+    <string name="premium_w1">Plans repas personnalisés illimités</string>
+    <string name="premium_w2">Remplacements illimités de repas et d\'ingrédients</string>
+    <string name="premium_w3">Optimisation avancée du budget</string>
+    <string name="premium_w4">Préférences alimentaires personnalisées</string>
+    <string name="premium_w5">Analyses avancées des calories et de l\'activité</string>
+    <string name="premium_w6">Rappels intelligents</string>
+    <string name="premium_w7">Rapports de progrès hebdomadaires</string>
+    <string name="premium_w8">Analyses avancées des progrès</string>
+    <string name="premium_m1">Tout le Premium hebdo</string>
+    <string name="premium_m2">Régénération illimitée du plan</string>
+    <string name="premium_m3">Analyses mensuelles des progrès</string>
+    <string name="premium_m4">Répartition avancée marche et calories</string>
+    <string name="premium_m5">Recommandations de repas plus personnelles</string>
+    <string name="premium_m6">Préférences alimentaires étendues</string>
+    <string name="premium_start_weekly">Commencer l\'hebdo</string>
+    <string name="premium_start_monthly">Commencer le mensuel</string>
+    <string name="premium_active">Actif ✓</string>
+    <string name="premium_cancel_note">Vous pouvez gérer ou résilier votre abonnement à tout moment.</string>
+</resources>

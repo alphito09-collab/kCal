@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">شرب الماء</string>
+    <string name="water_today">ماء اليوم</string>
+    <string name="water_glasses">%1$d / %2$d أكواب</string>
+    <string name="water_ml">%1$s مل / %2$s مل</string>
+    <string name="water_add_title">إضافة ماء</string>
+    <string name="water_add">إضافة</string>
+    <string name="water_amount">+%1$d مل</string>
+    <string name="water_glass_hint">كوب واحد ≈ 250 مل</string>
+    <string name="water_goal">هدف الماء اليومي</string>
+    <string name="water_edit_goal">تعديل الهدف</string>
+    <string name="water_save_goal">حفظ</string>
+    <string name="water_goal_hint">مثال: 2000</string>
+</resources>

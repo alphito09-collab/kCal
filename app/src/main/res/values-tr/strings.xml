@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Ana sayfa</string>
+    <string name="nav_diet_plan">Diyet planı</string>
+    <string name="nav_progress">İlerleme</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="exit_title">Şimdiden mi gidiyorsun?</string>
+    <string name="exit_body">Bugünkü ilerlemen kaydedildi. Çıkmak istediğine emin misin?</string>
+    <string name="exit_stay">Devam et</string>
+    <string name="exit_leave">Uygulamadan çık</string>
+    <string name="offline_title">İnternet bağlantısı yok</string>
+    <string name="offline_body">Bağlantını kontrol et ve ilerlemeni takip etmeye devam etmek için tekrar dene.</string>
+    <string name="offline_retry">Tekrar dene</string>
+    <string name="offline_continue">Çevrimdışı devam et</string>
+</resources>

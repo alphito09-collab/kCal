@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">Закрыть</string>
+    <string name="premium_unlock_title">Откройте kCal Premium</string>
+    <string name="premium_intro_body">Более персональное питание: индивидуальные планы, умные подсказки и полный контроль над целями.</string>
+    <string name="premium_b1">Безлимитные планы питания</string>
+    <string name="premium_b1_sub">Персональные планы, которые подстраиваются каждую неделю</string>
+    <string name="premium_b2">Безлимитные замены</string>
+    <string name="premium_b2_sub">Меняйте любое блюдо на то, что по вкусу</string>
+    <string name="premium_b3">Умная оптимизация бюджета</string>
+    <string name="premium_b3_sub">Планы под ваш реальный бюджет на продукты</string>
+    <string name="premium_b4">Расширенная аналитика прогресса</string>
+    <string name="premium_b4_sub">Подробная аналитика калорий, веса и активности</string>
+    <string name="premium_b5">Умные напоминания</string>
+    <string name="premium_b5_sub">Мягкие напоминания, чтобы не сбиваться</string>
+    <string name="premium_unlock">Открыть Premium</string>
+    <string name="premium_terms">Условия использования</string>
+    <string name="premium_privacy">Политика конфиденциальности</string>
+    <string name="premium_title">Premium</string>
+    <string name="premium_plans_body">Больше персональных планов, умный учёт и полный контроль над питанием.</string>
+    <string name="premium_weekly">Неделя</string>
+    <string name="premium_monthly">Месяц</string>
+    <string name="premium_best_value">Выгоднее всего</string>
+    <string name="premium_weekly_name">Premium на неделю</string>
+    <string name="premium_monthly_name">Premium на месяц</string>
+    <string name="premium_weekly_price">299 PKR / неделя</string>
+    <string name="premium_monthly_price">899 PKR / месяц</string>
+    <string name="premium_w1">Безлимитные персональные планы</string>
+    <string name="premium_w2">Безлимитные замены блюд и продуктов</string>
+    <string name="premium_w3">Продвинутая оптимизация бюджета</string>
+    <string name="premium_w4">Персональные предпочтения в еде</string>
+    <string name="premium_w5">Расширенная аналитика калорий и активности</string>
+    <string name="premium_w6">Умные напоминания</string>
+    <string name="premium_w7">Еженедельные отчёты</string>
+    <string name="premium_w8">Расширенная аналитика прогресса</string>
+    <string name="premium_m1">Всё из Premium на неделю</string>
+    <string name="premium_m2">Безлимитное обновление плана</string>
+    <string name="premium_m3">Ежемесячная аналитика</string>
+    <string name="premium_m4">Продвинутое распределение шагов и калорий</string>
+    <string name="premium_m5">Более персональные рекомендации блюд</string>
+    <string name="premium_m6">Расширенные предпочтения в еде</string>
+    <string name="premium_start_weekly">Начать недельный</string>
+    <string name="premium_start_monthly">Начать месячный</string>
+    <string name="premium_active">Активен ✓</string>
+    <string name="premium_cancel_note">Подпиской можно управлять или отменить её в любое время.</string>
+</resources>

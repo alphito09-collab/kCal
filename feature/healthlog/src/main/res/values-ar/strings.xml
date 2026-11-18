@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">السجل الصحي</string>
+    <string name="health_tab_diabetes">السكري</string>
+    <string name="health_tab_lactose">اللاكتوز</string>
+    <string name="health_tab_ibs">القولون العصبي</string>
+    <string name="health_sub_diabetes">تتبع سكر الدم للتحكم في السكري.</string>
+    <string name="health_sub_lactose">تتبع تناول الألبان والتفاعلات.</string>
+    <string name="health_sub_ibs">تتبع الأعراض اليومية للقولون العصبي.</string>
+    <string name="health_save_log">حفظ السجل</string>
+    <string name="health_saved">تم الحفظ ✓</string>
+    <string name="sugar_today">مستوى السكر اليوم</string>
+    <string name="sugar_save">حفظ القراءة</string>
+    <string name="sugar_hint">سجّل مستوى السكر مرة يوميًا لمتابعة صحتك.</string>
+    <string name="sugar_trend">اتجاه السكر (7 أيام)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d ملغ/دل — ضمن المعدل الطبيعي.</string>
+    <string name="sugar_summary_high">%1$s · %2$d ملغ/دل — أعلى من المعدل المعتاد.</string>
+    <string name="sugar_summary_low">%1$s · %2$d ملغ/دل — أقل من المعدل المعتاد.</string>
+    <string name="sugar_summary_none">%1$s · لم تُسجَّل قراءة.</string>
+    <string name="dairy_days_since">أيام منذ آخر تفاعل</string>
+    <string name="dairy_days">%1$d أيام</string>
+    <string name="dairy_question">هل تناولت ألبانًا اليوم؟</string>
+    <string name="dairy_any_reaction">هل حدث أي تفاعل؟</string>
+    <string name="dairy_history">سجل التفاعلات</string>
+    <string name="dairy_badge">ألبان</string>
+    <string name="dairy_badge_none">بدون ألبان</string>
+    <string name="dairy_no_reaction">لا يوجد تفاعل</string>
+    <string name="dairy_no_dairy">لم أتناول ألبانًا اليوم</string>
+    <string name="dairy_none_yet">لا توجد سجلات بعد.</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="reaction_bloating">انتفاخ</string>
+    <string name="reaction_gas">غازات</string>
+    <string name="reaction_diarrhea">إسهال</string>
+    <string name="reaction_nausea">غثيان</string>
+    <string name="ibs_today">أعراض اليوم</string>
+    <string name="ibs_severity">الشدة</string>
+    <string name="ibs_trend">شدة الأعراض (7 أيام)</string>
+    <string name="ibs_abdominal_pain">ألم البطن</string>
+    <string name="ibs_constipation">إمساك</string>
+    <string name="ibs_mild">خفيفة</string>
+    <string name="ibs_moderate">متوسطة</string>
+    <string name="ibs_severe">شديدة</string>
+    <string name="ibs_summary">%1$s · تم تسجيل %3$s (%2$s).</string>
+    <string name="ibs_summary_none">%1$s · لا توجد أعراض مسجلة.</string>
+</resources>

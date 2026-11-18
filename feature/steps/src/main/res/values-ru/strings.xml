@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Шаги</string>
+    <string name="steps_today">Шаги сегодня</string>
+    <string name="steps_kcal">/ %1$s ккал</string>
+    <string name="steps_goal">Цель: %1$s шагов</string>
+    <string name="steps_start">Старт</string>
+    <string name="steps_stop">Стоп</string>
+    <string name="steps_hint_idle">Нажмите «Старт», чтобы начать считать шаги.</string>
+    <string name="steps_hint_active">Подсчёт идёт в фоне. Можно выйти из приложения.</string>
+    <string name="steps_hint_denied">Разрешите доступ к физической активности, чтобы считать шаги.</string>
+    <string name="steps_hint_no_sensor">На устройстве нет датчика шагов.</string>
+    <string name="steps_history">История</string>
+    <string name="steps_months">Месяцы</string>
+    <string name="steps_weeks">Недели</string>
+    <string name="steps_days">Дни</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s шагов за месяц</string>
+    <string name="steps_week_summary">Неделя %1$d · %2$s шагов за неделю</string>
+    <string name="steps_day_summary">%1$s — %2$s шагов · %3$s ккал</string>
+    <string name="steps_week_label">Н%1$d</string>
+    <string name="steps_notification_channel">Подсчёт шагов</string>
+    <string name="steps_notification_title">kCal считает ваши шаги</string>
+    <string name="steps_notification_text">%1$s шагов сегодня</string>
+    <string name="steps_notification_stop">Стоп</string>
+</resources>

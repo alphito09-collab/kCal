@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">健康记录</string>
+    <string name="health_tab_diabetes">糖尿病</string>
+    <string name="health_tab_lactose">乳糖</string>
+    <string name="health_tab_ibs">肠易激</string>
+    <string name="health_sub_diabetes">记录血糖，管理糖尿病。</string>
+    <string name="health_sub_lactose">记录乳制品摄入与反应。</string>
+    <string name="health_sub_ibs">记录每日肠易激症状。</string>
+    <string name="health_save_log">保存记录</string>
+    <string name="health_saved">已保存 ✓</string>
+    <string name="sugar_today">今日血糖</string>
+    <string name="sugar_save">保存读数</string>
+    <string name="sugar_hint">每天记录一次血糖，关注健康。</string>
+    <string name="sugar_trend">血糖趋势（7 天）</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — 在正常范围内。</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — 高于常规范围。</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — 低于常规范围。</string>
+    <string name="sugar_summary_none">%1$s · 无读数。</string>
+    <string name="dairy_days_since">距上次反应天数</string>
+    <string name="dairy_days">%1$d 天</string>
+    <string name="dairy_question">今天吃过乳制品吗？</string>
+    <string name="dairy_any_reaction">有不适反应吗？</string>
+    <string name="dairy_history">反应记录</string>
+    <string name="dairy_badge">乳制品</string>
+    <string name="dairy_badge_none">无乳制品</string>
+    <string name="dairy_no_reaction">无反应</string>
+    <string name="dairy_no_dairy">今天未摄入乳制品</string>
+    <string name="dairy_none_yet">暂无记录。</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="reaction_bloating">腹胀</string>
+    <string name="reaction_gas">胀气</string>
+    <string name="reaction_diarrhea">腹泻</string>
+    <string name="reaction_nausea">恶心</string>
+    <string name="ibs_today">今日症状</string>
+    <string name="ibs_severity">严重程度</string>
+    <string name="ibs_trend">症状严重程度（7 天）</string>
+    <string name="ibs_abdominal_pain">腹痛</string>
+    <string name="ibs_constipation">便秘</string>
+    <string name="ibs_mild">轻度</string>
+    <string name="ibs_moderate">中度</string>
+    <string name="ibs_severe">重度</string>
+    <string name="ibs_summary">%1$s · 已记录%2$s%3$s。</string>
+    <string name="ibs_summary_none">%1$s · 未记录症状。</string>
+</resources>

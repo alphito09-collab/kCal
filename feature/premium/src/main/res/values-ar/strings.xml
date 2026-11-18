@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">إغلاق</string>
+    <string name="premium_unlock_title">افتح kCal Premium</string>
+    <string name="premium_intro_body">تجربة تغذية أكثر تخصيصًا: خطط مصممة لك ورؤى أذكى وتحكم كامل في أهدافك.</string>
+    <string name="premium_b1">خطط وجبات غير محدودة</string>
+    <string name="premium_b1_sub">خطط مخصصة تتكيف معك كل أسبوع</string>
+    <string name="premium_b2">تبديل مكونات غير محدود</string>
+    <string name="premium_b2_sub">بدّل أي وجبة بأخرى تناسب ذوقك</string>
+    <string name="premium_b3">تحسين أذكى للميزانية</string>
+    <string name="premium_b3_sub">خطط مبنية على ميزانية مشترياتك الفعلية</string>
+    <string name="premium_b4">رؤى متقدمة للتقدم</string>
+    <string name="premium_b4_sub">تحليلات أعمق للسعرات والوزن والنشاط</string>
+    <string name="premium_b5">تذكيرات ذكية</string>
+    <string name="premium_b5_sub">تنبيهات لطيفة تبقيك على المسار يوميًا</string>
+    <string name="premium_unlock">افتح Premium</string>
+    <string name="premium_terms">الشروط والأحكام</string>
+    <string name="premium_privacy">سياسة الخصوصية</string>
+    <string name="premium_title">بريميوم</string>
+    <string name="premium_plans_body">احصل على خطط أكثر تخصيصًا وتتبع أذكى وتحكم أكبر في رحلتك الغذائية.</string>
+    <string name="premium_weekly">أسبوعي</string>
+    <string name="premium_monthly">شهري</string>
+    <string name="premium_best_value">أفضل قيمة</string>
+    <string name="premium_weekly_name">بريميوم الأسبوعي</string>
+    <string name="premium_monthly_name">بريميوم الشهري</string>
+    <string name="premium_weekly_price">299 روبية / أسبوع</string>
+    <string name="premium_monthly_price">899 روبية / شهر</string>
+    <string name="premium_w1">خطط وجبات مخصصة غير محدودة</string>
+    <string name="premium_w2">تبديل وجبات ومكونات غير محدود</string>
+    <string name="premium_w3">تحسين متقدم للميزانية</string>
+    <string name="premium_w4">تفضيلات طعام مخصصة</string>
+    <string name="premium_w5">رؤى متقدمة للسعرات والنشاط</string>
+    <string name="premium_w6">تذكيرات ذكية</string>
+    <string name="premium_w7">تقارير التقدم الأسبوعية</string>
+    <string name="premium_w8">تحليلات متقدمة للتقدم</string>
+    <string name="premium_m1">كل ما في بريميوم الأسبوعي</string>
+    <string name="premium_m2">إعادة توليد خطة الغذاء بلا حدود</string>
+    <string name="premium_m3">تحليلات التقدم الشهرية</string>
+    <string name="premium_m4">توزيع متقدم للمشي والسعرات</string>
+    <string name="premium_m5">توصيات وجبات أكثر تخصيصًا</string>
+    <string name="premium_m6">تفضيلات طعام موسعة</string>
+    <string name="premium_start_weekly">ابدأ الأسبوعي</string>
+    <string name="premium_start_monthly">ابدأ الشهري</string>
+    <string name="premium_active">نشط ✓</string>
+    <string name="premium_cancel_note">يمكنك إدارة اشتراكك أو إلغاؤه في أي وقت.</string>
+</resources>

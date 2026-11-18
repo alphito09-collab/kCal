@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">Gewichtskontrolle</string>
+    <string name="weight_this_week">Gewicht dieser Woche</string>
+    <string name="weight_save">Gewicht speichern</string>
+    <string name="weight_saved">Gespeichert ✓</string>
+    <string name="weight_hint">Aktualisiere dein Gewicht einmal pro Woche, damit dein Fortschritt stimmt.</string>
+    <string name="weight_progress">Gewichtsverlauf</string>
+    <string name="weight_current">Aktuell</string>
+    <string name="weight_previous">Vorher</string>
+    <string name="weight_change">Änderung</string>
+    <string name="weight_history">Gewichtsverlauf</string>
+    <string name="weight_week">Woche %1$d</string>
+    <string name="weight_week_current">Woche %1$d (diese Woche)</string>
+    <string name="weight_empty">Noch keine Einträge.</string>
+</resources>

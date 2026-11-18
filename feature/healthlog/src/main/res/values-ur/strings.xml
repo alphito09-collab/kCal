@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">ہیلتھ لاگ</string>
+    <string name="health_tab_diabetes">ذیابیطس</string>
+    <string name="health_tab_lactose">لیکٹوز</string>
+    <string name="health_tab_ibs">آئی بی ایس</string>
+    <string name="health_sub_diabetes">ذیابیطس کے انتظام کے لیے بلڈ شوگر کی ٹریکنگ۔</string>
+    <string name="health_sub_lactose">ڈیری کی مقدار اور ردِعمل کی ٹریکنگ۔</string>
+    <string name="health_sub_ibs">آئی بی ایس کی روزانہ علامات کی ٹریکنگ۔</string>
+    <string name="health_save_log">لاگ محفوظ کریں</string>
+    <string name="health_saved">محفوظ ہو گیا ✓</string>
+    <string name="sugar_today">آج کا شوگر لیول</string>
+    <string name="sugar_save">ریڈنگ محفوظ کریں</string>
+    <string name="sugar_hint">اپنی صحت ٹریک کرنے کے لیے روزانہ ایک بار شوگر درج کریں۔</string>
+    <string name="sugar_trend">شوگر کا رجحان (7 دن)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — معمول کی حد میں۔</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — معمول سے زیادہ۔</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — معمول سے کم۔</string>
+    <string name="sugar_summary_none">%1$s · کوئی ریڈنگ درج نہیں۔</string>
+    <string name="dairy_days_since">آخری ردِعمل کے بعد سے دن</string>
+    <string name="dairy_days">%1$d دن</string>
+    <string name="dairy_question">کیا آج آپ نے ڈیری لی؟</string>
+    <string name="dairy_any_reaction">کوئی ردِعمل؟</string>
+    <string name="dairy_history">ردِعمل کی تاریخ</string>
+    <string name="dairy_badge">ڈیری</string>
+    <string name="dairy_badge_none">ڈیری نہیں</string>
+    <string name="dairy_no_reaction">کوئی ردِعمل نہیں</string>
+    <string name="dairy_no_dairy">آج کوئی ڈیری نہیں</string>
+    <string name="dairy_none_yet">ابھی تک کوئی لاگ نہیں۔</string>
+    <string name="yes">ہاں</string>
+    <string name="no">نہیں</string>
+    <string name="reaction_bloating">پیٹ پھولنا</string>
+    <string name="reaction_gas">گیس</string>
+    <string name="reaction_diarrhea">اسہال</string>
+    <string name="reaction_nausea">متلی</string>
+    <string name="ibs_today">آج کی علامات</string>
+    <string name="ibs_severity">شدت</string>
+    <string name="ibs_trend">علامات کی شدت (7 دن)</string>
+    <string name="ibs_abdominal_pain">پیٹ درد</string>
+    <string name="ibs_constipation">قبض</string>
+    <string name="ibs_mild">ہلکی</string>
+    <string name="ibs_moderate">درمیانی</string>
+    <string name="ibs_severe">شدید</string>
+    <string name="ibs_summary">%1$s · %2$s %3$s درج۔</string>
+    <string name="ibs_summary_none">%1$s · کوئی علامت درج نہیں۔</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Steps</string>
+    <string name="steps_today">Today\'s Steps</string>
+    <string name="steps_kcal">/ %1$s kcal</string>
+    <string name="steps_goal">Goal: %1$s steps</string>
+    <string name="steps_start">Start</string>
+    <string name="steps_stop">Stop</string>
+    <string name="steps_hint_idle">Tap Start to begin tracking your steps.</string>
+    <string name="steps_hint_active">Tracking in the background. You can leave the app.</string>
+    <string name="steps_hint_denied">Allow physical activity access to count your steps.</string>
+    <string name="steps_hint_no_sensor">This device has no step sensor.</string>
+    <string name="steps_history">History</string>
+    <string name="steps_months">Months</string>
+    <string name="steps_weeks">Weeks</string>
+    <string name="steps_days">Days</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s steps this month</string>
+    <string name="steps_week_summary">Week %1$d · %2$s steps this week</string>
+    <string name="steps_day_summary">%1$s — %2$s steps · %3$s kcal</string>
+    <string name="steps_week_label">Wk %1$d</string>
+    <string name="steps_notification_channel">Step tracking</string>
+    <string name="steps_notification_title">kCal is counting your steps</string>
+    <string name="steps_notification_text">%1$s steps today</string>
+    <string name="steps_notification_stop">Stop</string>
+</resources>

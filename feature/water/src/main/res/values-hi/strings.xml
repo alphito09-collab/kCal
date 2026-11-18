@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">पानी का सेवन</string>
+    <string name="water_today">आज का पानी</string>
+    <string name="water_glasses">%1$d / %2$d गिलास</string>
+    <string name="water_ml">%1$s मिली / %2$s मिली</string>
+    <string name="water_add_title">पानी जोड़ें</string>
+    <string name="water_add">जोड़ें</string>
+    <string name="water_amount">+%1$d मिली</string>
+    <string name="water_glass_hint">1 गिलास ≈ 250 मिली</string>
+    <string name="water_goal">दैनिक पानी लक्ष्य</string>
+    <string name="water_edit_goal">लक्ष्य बदलें</string>
+    <string name="water_save_goal">सहेजें</string>
+    <string name="water_goal_hint">जैसे 2000</string>
+</resources>

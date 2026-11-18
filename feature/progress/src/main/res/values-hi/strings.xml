@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">प्रगति</string>
+    <string name="progress_weekly">साप्ताहिक</string>
+    <string name="progress_monthly">मासिक</string>
+    <string name="progress_weight_trend">वज़न का रुझान</string>
+    <string name="progress_week_label">स%1$d</string>
+    <string name="progress_week_title">सप्ताह %1$d · %2$s</string>
+    <string name="progress_burned">जली कैलोरी</string>
+    <string name="progress_intake">ली गई कैलोरी</string>
+    <string name="progress_weight">वज़न</string>
+    <string name="progress_key_metrics">मुख्य प्रगति आँकड़े</string>
+    <string name="progress_no_weight">अपना रुझान देखने के लिए वज़न दर्ज करें।</string>
+</resources>

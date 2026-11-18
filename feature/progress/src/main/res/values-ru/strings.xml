@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">Прогресс</string>
+    <string name="progress_weekly">По неделям</string>
+    <string name="progress_monthly">По месяцам</string>
+    <string name="progress_weight_trend">Тренд веса</string>
+    <string name="progress_week_label">Н%1$d</string>
+    <string name="progress_week_title">Неделя %1$d · %2$s</string>
+    <string name="progress_burned">Сожжено калорий</string>
+    <string name="progress_intake">Потреблено калорий</string>
+    <string name="progress_weight">Вес</string>
+    <string name="progress_key_metrics">Ключевые показатели</string>
+    <string name="progress_no_weight">Внесите вес, чтобы увидеть тренд.</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="false" />
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application>
+        <!-- Step counting runs as a short, user-started health foreground service. -->
+        <service
+            android:name=".data.service.StepCounterService"
+            android:exported="false"
+            android:foregroundServiceType="health" />
+
+        <!-- Handles the "Stop" action from the ongoing notification. -->
+        <receiver
+            android:name=".data.service.StepTrackingReceiver"
+            android:exported="false" />
+    </application>
+</manifest>

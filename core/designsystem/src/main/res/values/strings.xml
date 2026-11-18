@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_meal_breakfast">Breakfast</string>
+    <string name="ds_meal_lunch">Lunch</string>
+    <string name="ds_meal_snack">Snack</string>
+    <string name="ds_meal_dinner">Dinner</string>
+    <string name="ds_back">Back</string>
+    <string name="ds_kcal">%1$s kcal</string>
+    <string name="ds_kcal_price">%1$s kcal  ·  PKR %2$s</string>
+    <!-- Units (localizable symbols) -->
+    <string name="ds_unit_kcal">kcal</string>
+    <string name="ds_unit_kcal_day">kcal/day</string>
+    <string name="ds_unit_kg">kg</string>
+    <string name="ds_unit_lb">lb</string>
+    <string name="ds_unit_cm">cm</string>
+    <string name="ds_unit_ft">ft</string>
+    <string name="ds_unit_in">in</string>
+    <string name="ds_unit_ml">ml</string>
+    <string name="ds_unit_mgdl">mg/dL</string>
+    <string name="ds_value_unit">%1$s %2$s</string>
+    <string name="ds_fraction">%1$d/%2$d</string>
+    <string name="ds_range">%1$s – %2$s</string>
+    <!-- Food catalogue -->
+    <string name="ds_food_anda_paratha">Anda paratha</string>
+    <string name="ds_food_anda_paratha_portion">Paratha 80g + Egg 50g</string>
+    <string name="ds_food_lassi">Lassi</string>
+    <string name="ds_food_lassi_portion">Yogurt drink 200ml</string>
+    <string name="ds_food_daal_chawal">Daal chawal</string>
+    <string name="ds_food_daal_chawal_portion">Rice 150g + Daal 120g</string>
+    <string name="ds_food_chickpea_curry_rice">Chickpea curry + rice</string>
+    <string name="ds_food_chickpea_curry_rice_portion">Chana 150g + Rice 120g</string>
+    <string name="ds_food_vegetable_pulao">Vegetable pulao</string>
+    <string name="ds_food_vegetable_pulao_portion">Pulao 250g</string>
+    <string name="ds_food_chicken_karahi_roti">Chicken karahi + roti</string>
+    <string name="ds_food_chicken_karahi_roti_portion">Karahi 180g + Roti 1 pc</string>
+    <string name="ds_food_mixed_veg_roti">Mixed veg + roti</string>
+    <string name="ds_food_mixed_veg_roti_portion">Mixed veg 180g + Roti 1 pc</string>
+    <string name="ds_food_grilled_chicken">Grilled chicken</string>
+    <string name="ds_food_grilled_chicken_portion">Chicken 150g</string>
+    <string name="ds_food_salad">Salad</string>
+    <string name="ds_food_salad_portion">Mixed veg 150g</string>
+    <string name="ds_food_roti">Roti</string>
+    <string name="ds_food_roti_portion">Roti 120g (2 pcs)</string>
+    <string name="ds_food_fruit_chaat">Fruit chaat</string>
+    <string name="ds_food_fruit_chaat_portion">Mixed fruit 200g</string>
+    <!-- Regions -->
+    <string name="ds_region_lahore">Pakistan — Lahore</string>
+    <string name="ds_region_karachi">Pakistan — Karachi</string>
+    <string name="ds_region_islamabad">Pakistan — Islamabad</string>
+    <string name="ds_region_rawalpindi">Pakistan — Rawalpindi</string>
+    <string name="ds_region_faisalabad">Pakistan — Faisalabad</string>
+    <string name="ds_region_peshawar">Pakistan — Peshawar</string>
+    <plurals name="ds_stars">
+        <item quantity="one">%1$d star</item>
+        <item quantity="other">%1$d stars</item>
+    </plurals>
+</resources>

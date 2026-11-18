@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">Kilo takibi</string>
+    <string name="weight_this_week">Bu haftaki kilo</string>
+    <string name="weight_save">Kiloyu kaydet</string>
+    <string name="weight_saved">Kaydedildi ✓</string>
+    <string name="weight_hint">İlerlemenin doğru kalması için kilonu haftada bir güncelle.</string>
+    <string name="weight_progress">Kilo ilerlemesi</string>
+    <string name="weight_current">Şu anki</string>
+    <string name="weight_previous">Önceki</string>
+    <string name="weight_change">Değişim</string>
+    <string name="weight_history">Kilo geçmişi</string>
+    <string name="weight_week">%1$d. hafta</string>
+    <string name="weight_week_current">%1$d. hafta (bu hafta)</string>
+    <string name="weight_empty">Henüz kayıt yok.</string>
+</resources>

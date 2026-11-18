@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Health Log</string>
+    <string name="health_tab_diabetes">Diabetes</string>
+    <string name="health_tab_lactose">Lactose</string>
+    <string name="health_tab_ibs">IBS</string>
+    <string name="health_sub_diabetes">Tracking blood sugar for diabetes management.</string>
+    <string name="health_sub_lactose">Tracking dairy intake and reactions.</string>
+    <string name="health_sub_ibs">Tracking daily symptoms for IBS.</string>
+    <string name="health_save_log">Save Log</string>
+    <string name="health_saved">Saved ✓</string>
+
+    <string name="sugar_today">Today\'s Sugar Level</string>
+    <string name="sugar_save">Save Reading</string>
+    <string name="sugar_hint">Log your sugar level once daily to track your health.</string>
+    <string name="sugar_trend">Sugar Trend (7 Days)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — within normal range.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — above the typical range.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — below the typical range.</string>
+    <string name="sugar_summary_none">%1$s · no reading logged.</string>
+
+    <string name="dairy_days_since">Days Since Last Reaction</string>
+    <string name="dairy_days">%1$d Days</string>
+    <string name="dairy_question">Did you have dairy today?</string>
+    <string name="dairy_any_reaction">Any reaction?</string>
+    <string name="dairy_history">Reaction History</string>
+    <string name="dairy_badge">Dairy</string>
+    <string name="dairy_badge_none">No Dairy</string>
+    <string name="dairy_no_reaction">No reaction</string>
+    <string name="dairy_no_dairy">No dairy today</string>
+    <string name="dairy_none_yet">No logs yet.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="reaction_bloating">Bloating</string>
+    <string name="reaction_gas">Gas</string>
+    <string name="reaction_diarrhea">Diarrhea</string>
+    <string name="reaction_nausea">Nausea</string>
+
+    <string name="ibs_today">Today\'s Symptoms</string>
+    <string name="ibs_severity">Severity</string>
+    <string name="ibs_trend">Symptom Severity (7 Days)</string>
+    <string name="ibs_abdominal_pain">Abdominal Pain</string>
+    <string name="ibs_constipation">Constipation</string>
+    <string name="ibs_mild">Mild</string>
+    <string name="ibs_moderate">Moderate</string>
+    <string name="ibs_severe">Severe</string>
+    <string name="ibs_summary">%1$s · %2$s %3$s logged.</string>
+    <string name="ibs_summary_none">%1$s · no symptoms logged.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Registro de saúde</string>
+    <string name="health_tab_diabetes">Diabetes</string>
+    <string name="health_tab_lactose">Lactose</string>
+    <string name="health_tab_ibs">SII</string>
+    <string name="health_sub_diabetes">Acompanhando a glicemia para controlar o diabetes.</string>
+    <string name="health_sub_lactose">Acompanhando laticínios e reações.</string>
+    <string name="health_sub_ibs">Acompanhando os sintomas diários da SII.</string>
+    <string name="health_save_log">Salvar registro</string>
+    <string name="health_saved">Salvo ✓</string>
+    <string name="sugar_today">Glicemia de hoje</string>
+    <string name="sugar_save">Salvar leitura</string>
+    <string name="sugar_hint">Registre sua glicemia uma vez por dia.</string>
+    <string name="sugar_trend">Tendência da glicemia (7 dias)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — dentro da faixa normal.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — acima da faixa habitual.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — abaixo da faixa habitual.</string>
+    <string name="sugar_summary_none">%1$s · nenhuma leitura registrada.</string>
+    <string name="dairy_days_since">Dias desde a última reação</string>
+    <string name="dairy_days">%1$d dias</string>
+    <string name="dairy_question">Você consumiu laticínios hoje?</string>
+    <string name="dairy_any_reaction">Alguma reação?</string>
+    <string name="dairy_history">Histórico de reações</string>
+    <string name="dairy_badge">Laticínio</string>
+    <string name="dairy_badge_none">Sem laticínio</string>
+    <string name="dairy_no_reaction">Sem reação</string>
+    <string name="dairy_no_dairy">Sem laticínios hoje</string>
+    <string name="dairy_none_yet">Nenhum registro ainda.</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="reaction_bloating">Inchaço</string>
+    <string name="reaction_gas">Gases</string>
+    <string name="reaction_diarrhea">Diarreia</string>
+    <string name="reaction_nausea">Náusea</string>
+    <string name="ibs_today">Sintomas de hoje</string>
+    <string name="ibs_severity">Intensidade</string>
+    <string name="ibs_trend">Intensidade dos sintomas (7 dias)</string>
+    <string name="ibs_abdominal_pain">Dor abdominal</string>
+    <string name="ibs_constipation">Prisão de ventre</string>
+    <string name="ibs_mild">Leve</string>
+    <string name="ibs_moderate">Moderada</string>
+    <string name="ibs_severe">Grave</string>
+    <string name="ibs_summary">%1$s · %3$s %2$s registrado.</string>
+    <string name="ibs_summary_none">%1$s · nenhum sintoma registrado.</string>
+</resources>

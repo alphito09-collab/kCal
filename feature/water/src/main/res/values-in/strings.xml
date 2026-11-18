@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">Asupan air</string>
+    <string name="water_today">Air hari ini</string>
+    <string name="water_glasses">%1$d / %2$d gelas</string>
+    <string name="water_ml">%1$s ml / %2$s ml</string>
+    <string name="water_add_title">Tambah air</string>
+    <string name="water_add">Tambah</string>
+    <string name="water_amount">+%1$d ml</string>
+    <string name="water_glass_hint">1 gelas ≈ 250 ml</string>
+    <string name="water_goal">Target air harian</string>
+    <string name="water_edit_goal">Ubah target</string>
+    <string name="water_save_goal">Simpan</string>
+    <string name="water_goal_hint">mis. 2000</string>
+</resources>

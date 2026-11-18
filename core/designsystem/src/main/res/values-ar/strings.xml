@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_meal_breakfast">الإفطار</string>
+    <string name="ds_meal_lunch">الغداء</string>
+    <string name="ds_meal_snack">وجبة خفيفة</string>
+    <string name="ds_meal_dinner">العشاء</string>
+    <string name="ds_back">رجوع</string>
+    <string name="ds_kcal">%1$s سعرة</string>
+    <string name="ds_kcal_price">%1$s سعرة  ·  %2$s روبية</string>
+    <string name="ds_unit_kcal">سعرة</string>
+    <string name="ds_unit_kcal_day">سعرة/يوم</string>
+    <string name="ds_unit_kg">كغ</string>
+    <string name="ds_unit_lb">رطل</string>
+    <string name="ds_unit_cm">سم</string>
+    <string name="ds_unit_ft">قدم</string>
+    <string name="ds_unit_in">بوصة</string>
+    <string name="ds_unit_ml">مل</string>
+    <string name="ds_unit_mgdl">ملغ/دل</string>
+    <string name="ds_value_unit">%1$s %2$s</string>
+    <string name="ds_fraction">%1$d/%2$d</string>
+    <string name="ds_range">%1$s – %2$s</string>
+    <string name="ds_food_anda_paratha">براتا بالبيض</string>
+    <string name="ds_food_anda_paratha_portion">براتا 80 غ + بيضة 50 غ</string>
+    <string name="ds_food_lassi">لاسي</string>
+    <string name="ds_food_lassi_portion">مشروب الزبادي 200 مل</string>
+    <string name="ds_food_daal_chawal">دال مع أرز</string>
+    <string name="ds_food_daal_chawal_portion">أرز 150 غ + دال 120 غ</string>
+    <string name="ds_food_chickpea_curry_rice">كاري الحمص مع أرز</string>
+    <string name="ds_food_chickpea_curry_rice_portion">حمص 150 غ + أرز 120 غ</string>
+    <string name="ds_food_vegetable_pulao">بلاو بالخضار</string>
+    <string name="ds_food_vegetable_pulao_portion">بلاو 250 غ</string>
+    <string name="ds_food_chicken_karahi_roti">دجاج كراهي مع روتي</string>
+    <string name="ds_food_chicken_karahi_roti_portion">كراهي 180 غ + روتي واحد</string>
+    <string name="ds_food_mixed_veg_roti">خضار مشكلة مع روتي</string>
+    <string name="ds_food_mixed_veg_roti_portion">خضار 180 غ + روتي واحد</string>
+    <string name="ds_food_grilled_chicken">دجاج مشوي</string>
+    <string name="ds_food_grilled_chicken_portion">دجاج 150 غ</string>
+    <string name="ds_food_salad">سلطة</string>
+    <string name="ds_food_salad_portion">خضار مشكلة 150 غ</string>
+    <string name="ds_food_roti">روتي</string>
+    <string name="ds_food_roti_portion">روتي 120 غ (قطعتان)</string>
+    <string name="ds_food_fruit_chaat">سلطة فواكه بالتوابل</string>
+    <string name="ds_food_fruit_chaat_portion">فواكه مشكلة 200 غ</string>
+    <string name="ds_region_lahore">باكستان — لاهور</string>
+    <string name="ds_region_karachi">باكستان — كراتشي</string>
+    <string name="ds_region_islamabad">باكستان — إسلام آباد</string>
+    <string name="ds_region_rawalpindi">باكستان — راولبندي</string>
+    <string name="ds_region_faisalabad">باكستان — فيصل آباد</string>
+    <string name="ds_region_peshawar">باكستان — بيشاور</string>
+    <plurals name="ds_stars"><item quantity="zero">%1$d نجوم</item><item quantity="one">نجمة واحدة</item><item quantity="two">نجمتان</item><item quantity="few">%1$d نجوم</item><item quantity="many">%1$d نجمة</item><item quantity="other">%1$d نجمة</item></plurals>
+</resources>

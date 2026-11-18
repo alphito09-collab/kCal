@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">Welcome Back, %1$s</string>
+    <string name="dash_subtitle">Let\'s stay on track today.</string>
+    <string name="dash_daily_tracking">Daily Calorie Tracking</string>
+    <string name="dash_kcal_today">kcal today</string>
+    <string name="dash_of_target">of %1$s kcal</string>
+    <string name="dash_steps">Steps</string>
+    <string name="dash_eating">Eating</string>
+    <string name="dash_streak">Streak</string>
+    <string name="dash_kcal_value">%1$s kcal</string>
+    <string name="dash_streak_value">Day %1$d</string>
+    <string name="dash_todays_meal">Today\'s Meal</string>
+    <string name="dash_view_all">View All</string>
+    <string name="dash_up_next">%1$s · Up Next</string>
+    <string name="dash_all_done">All meals checked off today 🎉</string>
+    <string name="dash_all_done_sub">Great job sticking to your plan.</string>
+    <string name="dash_water">Water</string>
+    <string name="dash_weight">Weight Check-in</string>
+    <string name="dash_health">Health Log</string>
+    <string name="dash_trial_title">Try kCal Premium Ads Free</string>
+    <string name="dash_trial_body">Get full access to all Premium features and enjoy kCal without ads.</string>
+    <string name="dash_trial_1">Full access to Premium features</string>
+    <string name="dash_trial_2">Personalized nutrition insights</string>
+    <string name="dash_trial_3">Advanced progress tracking</string>
+    <string name="dash_trial_4">Ad-free experience</string>
+    <string name="dash_get_premium">Get Premium</string>
+    <string name="dash_maybe_later">Maybe Later</string>
+</resources>

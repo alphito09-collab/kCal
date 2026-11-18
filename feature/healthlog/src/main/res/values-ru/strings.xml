@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Журнал здоровья</string>
+    <string name="health_tab_diabetes">Диабет</string>
+    <string name="health_tab_lactose">Лактоза</string>
+    <string name="health_tab_ibs">СРК</string>
+    <string name="health_sub_diabetes">Контроль сахара в крови при диабете.</string>
+    <string name="health_sub_lactose">Учёт молочных продуктов и реакций.</string>
+    <string name="health_sub_ibs">Ежедневные симптомы СРК.</string>
+    <string name="health_save_log">Сохранить</string>
+    <string name="health_saved">Сохранено ✓</string>
+    <string name="sugar_today">Сахар сегодня</string>
+    <string name="sugar_save">Сохранить замер</string>
+    <string name="sugar_hint">Вносите уровень сахара раз в день.</string>
+    <string name="sugar_trend">Тренд сахара (7 дней)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d мг/дл — в норме.</string>
+    <string name="sugar_summary_high">%1$s · %2$d мг/дл — выше нормы.</string>
+    <string name="sugar_summary_low">%1$s · %2$d мг/дл — ниже нормы.</string>
+    <string name="sugar_summary_none">%1$s · нет замера.</string>
+    <string name="dairy_days_since">Дней с последней реакции</string>
+    <string name="dairy_days">%1$d дн.</string>
+    <string name="dairy_question">Ели ли вы сегодня молочное?</string>
+    <string name="dairy_any_reaction">Была реакция?</string>
+    <string name="dairy_history">История реакций</string>
+    <string name="dairy_badge">Молочное</string>
+    <string name="dairy_badge_none">Без молочного</string>
+    <string name="dairy_no_reaction">Без реакции</string>
+    <string name="dairy_no_dairy">Сегодня без молочного</string>
+    <string name="dairy_none_yet">Пока нет записей.</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="reaction_bloating">Вздутие</string>
+    <string name="reaction_gas">Газы</string>
+    <string name="reaction_diarrhea">Диарея</string>
+    <string name="reaction_nausea">Тошнота</string>
+    <string name="ibs_today">Симптомы сегодня</string>
+    <string name="ibs_severity">Тяжесть</string>
+    <string name="ibs_trend">Тяжесть симптомов (7 дней)</string>
+    <string name="ibs_abdominal_pain">Боль в животе</string>
+    <string name="ibs_constipation">Запор</string>
+    <string name="ibs_mild">Слабая</string>
+    <string name="ibs_moderate">Средняя</string>
+    <string name="ibs_severe">Сильная</string>
+    <string name="ibs_summary">%1$s · отмечено: %3$s (%2$s).</string>
+    <string name="ibs_summary_none">%1$s · симптомов нет.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">Suivi du poids</string>
+    <string name="weight_this_week">Poids de la semaine</string>
+    <string name="weight_save">Enregistrer le poids</string>
+    <string name="weight_saved">Enregistré ✓</string>
+    <string name="weight_hint">Mettez à jour votre poids une fois par semaine pour un suivi précis.</string>
+    <string name="weight_progress">Évolution du poids</string>
+    <string name="weight_current">Actuel</string>
+    <string name="weight_previous">Précédent</string>
+    <string name="weight_change">Variation</string>
+    <string name="weight_history">Historique du poids</string>
+    <string name="weight_week">Semaine %1$d</string>
+    <string name="weight_week_current">Semaine %1$d (cette semaine)</string>
+    <string name="weight_empty">Aucune pesée pour l\'instant.</string>
+</resources>

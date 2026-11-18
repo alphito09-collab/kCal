@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_meal_breakfast">नाश्ता</string>
+    <string name="ds_meal_lunch">दोपहर का खाना</string>
+    <string name="ds_meal_snack">स्नैक</string>
+    <string name="ds_meal_dinner">रात का खाना</string>
+    <string name="ds_back">वापस</string>
+    <string name="ds_kcal">%1$s किलो कैलोरी</string>
+    <string name="ds_kcal_price">%1$s किलो कैलोरी  ·  PKR %2$s</string>
+    <string name="ds_unit_kcal">किलो कैलोरी</string>
+    <string name="ds_unit_kcal_day">किलो कैलोरी/दिन</string>
+    <string name="ds_unit_kg">किग्रा</string>
+    <string name="ds_unit_lb">पाउंड</string>
+    <string name="ds_unit_cm">सेमी</string>
+    <string name="ds_unit_ft">फ़ुट</string>
+    <string name="ds_unit_in">इंच</string>
+    <string name="ds_unit_ml">मिली</string>
+    <string name="ds_unit_mgdl">mg/dL</string>
+    <string name="ds_value_unit">%1$s %2$s</string>
+    <string name="ds_fraction">%1$d/%2$d</string>
+    <string name="ds_range">%1$s – %2$s</string>
+    <string name="ds_food_anda_paratha">अंडा पराठा</string>
+    <string name="ds_food_anda_paratha_portion">पराठा 80 ग्रा + अंडा 50 ग्रा</string>
+    <string name="ds_food_lassi">लस्सी</string>
+    <string name="ds_food_lassi_portion">दही पेय 200 मिली</string>
+    <string name="ds_food_daal_chawal">दाल चावल</string>
+    <string name="ds_food_daal_chawal_portion">चावल 150 ग्रा + दाल 120 ग्रा</string>
+    <string name="ds_food_chickpea_curry_rice">छोले चावल</string>
+    <string name="ds_food_chickpea_curry_rice_portion">छोले 150 ग्रा + चावल 120 ग्रा</string>
+    <string name="ds_food_vegetable_pulao">वेज पुलाव</string>
+    <string name="ds_food_vegetable_pulao_portion">पुलाव 250 ग्रा</string>
+    <string name="ds_food_chicken_karahi_roti">चिकन कड़ाही + रोटी</string>
+    <string name="ds_food_chicken_karahi_roti_portion">कड़ाही 180 ग्रा + 1 रोटी</string>
+    <string name="ds_food_mixed_veg_roti">मिक्स वेज + रोटी</string>
+    <string name="ds_food_mixed_veg_roti_portion">सब्ज़ी 180 ग्रा + 1 रोटी</string>
+    <string name="ds_food_grilled_chicken">ग्रिल्ड चिकन</string>
+    <string name="ds_food_grilled_chicken_portion">चिकन 150 ग्रा</string>
+    <string name="ds_food_salad">सलाद</string>
+    <string name="ds_food_salad_portion">मिक्स सब्ज़ी 150 ग्रा</string>
+    <string name="ds_food_roti">रोटी</string>
+    <string name="ds_food_roti_portion">रोटी 120 ग्रा (2 पीस)</string>
+    <string name="ds_food_fruit_chaat">फ्रूट चाट</string>
+    <string name="ds_food_fruit_chaat_portion">मिक्स फल 200 ग्रा</string>
+    <string name="ds_region_lahore">पाकिस्तान — लाहौर</string>
+    <string name="ds_region_karachi">पाकिस्तान — कराची</string>
+    <string name="ds_region_islamabad">पाकिस्तान — इस्लामाबाद</string>
+    <string name="ds_region_rawalpindi">पाकिस्तान — रावलपिंडी</string>
+    <string name="ds_region_faisalabad">पाकिस्तान — फ़ैसलाबाद</string>
+    <string name="ds_region_peshawar">पाकिस्तान — पेशावर</string>
+    <plurals name="ds_stars"><item quantity="one">%1$d स्टार</item><item quantity="other">%1$d स्टार</item></plurals>
+</resources>

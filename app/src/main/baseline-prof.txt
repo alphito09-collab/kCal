@@ -1,0 +1,12 @@
+# kCal baseline profile (human-readable format). Pre-compiles the cold-start path – Application,
+# DI graph, root composable, navigation, design system and the first screens – so they run AOT
+# instead of interpreted/JIT on first launch. Libraries (Compose, Nav3, Room, Koin) ship their own.
+# Regenerate precisely with a Macrobenchmark BaselineProfileRule when a device farm is available.
+HSPLcom/alphito/kcal/mealplanner/padometer/**->**(**)**
+Lcom/alphito/kcal/mealplanner/padometer/**;
+HSPLcom/alphito/kcal/core/**->**(**)**
+Lcom/alphito/kcal/core/**;
+HSPLcom/alphito/kcal/feature/onboarding/**->**(**)**
+Lcom/alphito/kcal/feature/onboarding/**;
+HSPLcom/alphito/kcal/feature/dashboard/**->**(**)**
+Lcom/alphito/kcal/feature/dashboard/**;

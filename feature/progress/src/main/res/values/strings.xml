@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">Progress</string>
+    <string name="progress_weekly">Weekly</string>
+    <string name="progress_monthly">Monthly</string>
+    <string name="progress_weight_trend">Weight Trend</string>
+    <string name="progress_week_label">Wk %1$d</string>
+    <string name="progress_week_title">Week %1$d · %2$s</string>
+    <string name="progress_burned">Calories Burned</string>
+    <string name="progress_intake">Calories Intake</string>
+    <string name="progress_weight">Weight</string>
+    <string name="progress_key_metrics">Key Progress Metrics</string>
+    <string name="progress_no_weight">Log your weight to see your trend.</string>
+</resources>

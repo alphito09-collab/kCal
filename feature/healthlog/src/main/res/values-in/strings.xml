@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Catatan kesehatan</string>
+    <string name="health_tab_diabetes">Diabetes</string>
+    <string name="health_tab_lactose">Laktosa</string>
+    <string name="health_tab_ibs">IBS</string>
+    <string name="health_sub_diabetes">Melacak gula darah untuk mengelola diabetes.</string>
+    <string name="health_sub_lactose">Melacak konsumsi susu dan reaksinya.</string>
+    <string name="health_sub_ibs">Melacak gejala harian IBS.</string>
+    <string name="health_save_log">Simpan catatan</string>
+    <string name="health_saved">Tersimpan ✓</string>
+    <string name="sugar_today">Kadar gula hari ini</string>
+    <string name="sugar_save">Simpan hasil</string>
+    <string name="sugar_hint">Catat kadar gulamu sekali sehari untuk memantau kesehatan.</string>
+    <string name="sugar_trend">Tren gula (7 hari)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — dalam batas normal.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — di atas batas normal.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — di bawah batas normal.</string>
+    <string name="sugar_summary_none">%1$s · belum ada hasil.</string>
+    <string name="dairy_days_since">Hari sejak reaksi terakhir</string>
+    <string name="dairy_days">%1$d hari</string>
+    <string name="dairy_question">Apakah kamu konsumsi susu hari ini?</string>
+    <string name="dairy_any_reaction">Ada reaksi?</string>
+    <string name="dairy_history">Riwayat reaksi</string>
+    <string name="dairy_badge">Susu</string>
+    <string name="dairy_badge_none">Tanpa susu</string>
+    <string name="dairy_no_reaction">Tidak ada reaksi</string>
+    <string name="dairy_no_dairy">Tidak konsumsi susu hari ini</string>
+    <string name="dairy_none_yet">Belum ada catatan.</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="reaction_bloating">Kembung</string>
+    <string name="reaction_gas">Gas</string>
+    <string name="reaction_diarrhea">Diare</string>
+    <string name="reaction_nausea">Mual</string>
+    <string name="ibs_today">Gejala hari ini</string>
+    <string name="ibs_severity">Tingkat keparahan</string>
+    <string name="ibs_trend">Keparahan gejala (7 hari)</string>
+    <string name="ibs_abdominal_pain">Nyeri perut</string>
+    <string name="ibs_constipation">Sembelit</string>
+    <string name="ibs_mild">Ringan</string>
+    <string name="ibs_moderate">Sedang</string>
+    <string name="ibs_severe">Berat</string>
+    <string name="ibs_summary">%1$s · %3$s %2$s tercatat.</string>
+    <string name="ibs_summary_none">%1$s · tidak ada gejala tercatat.</string>
+</resources>

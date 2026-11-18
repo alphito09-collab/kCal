@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">С возвращением, %1$s</string>
+    <string name="dash_subtitle">Давайте не сбиваться сегодня.</string>
+    <string name="dash_daily_tracking">Калории за день</string>
+    <string name="dash_kcal_today">ккал сегодня</string>
+    <string name="dash_of_target">из %1$s ккал</string>
+    <string name="dash_steps">Шаги</string>
+    <string name="dash_eating">Питание</string>
+    <string name="dash_streak">Серия</string>
+    <string name="dash_kcal_value">%1$s ккал</string>
+    <string name="dash_streak_value">День %1$d</string>
+    <string name="dash_todays_meal">Приём пищи сегодня</string>
+    <string name="dash_view_all">Все</string>
+    <string name="dash_up_next">%1$s · Далее</string>
+    <string name="dash_all_done">Все приёмы пищи на сегодня отмечены 🎉</string>
+    <string name="dash_all_done_sub">Отлично, вы придерживаетесь плана.</string>
+    <string name="dash_water">Вода</string>
+    <string name="dash_weight">Контроль веса</string>
+    <string name="dash_health">Журнал здоровья</string>
+    <string name="dash_trial_title">Попробуйте kCal Premium без рекламы</string>
+    <string name="dash_trial_body">Получите полный доступ ко всем функциям Premium и пользуйтесь kCal без рекламы.</string>
+    <string name="dash_trial_1">Полный доступ к функциям Premium</string>
+    <string name="dash_trial_2">Персональные советы по питанию</string>
+    <string name="dash_trial_3">Расширенное отслеживание прогресса</string>
+    <string name="dash_trial_4">Без рекламы</string>
+    <string name="dash_get_premium">Получить Premium</string>
+    <string name="dash_maybe_later">Может быть, позже</string>
+</resources>

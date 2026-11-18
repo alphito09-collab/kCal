@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">Bem-vinda de volta, %1$s</string>
+    <string name="dash_subtitle">Vamos manter o foco hoje.</string>
+    <string name="dash_daily_tracking">Acompanhamento diário de calorias</string>
+    <string name="dash_kcal_today">kcal hoje</string>
+    <string name="dash_of_target">de %1$s kcal</string>
+    <string name="dash_steps">Passos</string>
+    <string name="dash_eating">Alimentação</string>
+    <string name="dash_streak">Sequência</string>
+    <string name="dash_kcal_value">%1$s kcal</string>
+    <string name="dash_streak_value">Dia %1$d</string>
+    <string name="dash_todays_meal">Refeição de hoje</string>
+    <string name="dash_view_all">Ver tudo</string>
+    <string name="dash_up_next">%1$s · A seguir</string>
+    <string name="dash_all_done">Todas as refeições de hoje concluídas 🎉</string>
+    <string name="dash_all_done_sub">Ótimo trabalho seguindo seu plano.</string>
+    <string name="dash_water">Água</string>
+    <string name="dash_weight">Registro de peso</string>
+    <string name="dash_health">Registro de saúde</string>
+    <string name="dash_trial_title">Experimente o kCal Premium sem anúncios</string>
+    <string name="dash_trial_body">Tenha acesso total aos recursos Premium e aproveite o kCal sem anúncios.</string>
+    <string name="dash_trial_1">Acesso total aos recursos Premium</string>
+    <string name="dash_trial_2">Insights nutricionais personalizados</string>
+    <string name="dash_trial_3">Acompanhamento avançado do progresso</string>
+    <string name="dash_trial_4">Experiência sem anúncios</string>
+    <string name="dash_get_premium">Assinar Premium</string>
+    <string name="dash_maybe_later">Talvez depois</string>
+</resources>

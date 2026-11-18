@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Главная</string>
+    <string name="nav_diet_plan">План питания</string>
+    <string name="nav_progress">Прогресс</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="exit_title">Уже уходите?</string>
+    <string name="exit_body">Ваш прогресс за сегодня сохранён. Точно хотите выйти?</string>
+    <string name="exit_stay">Продолжить</string>
+    <string name="exit_leave">Выйти из приложения</string>
+    <string name="offline_title">Нет подключения к интернету</string>
+    <string name="offline_body">Проверьте подключение и повторите попытку, чтобы продолжить отслеживать прогресс.</string>
+    <string name="offline_retry">Повторить</string>
+    <string name="offline_continue">Продолжить офлайн</string>
+</resources>

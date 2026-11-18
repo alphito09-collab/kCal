@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Passos</string>
+    <string name="steps_today">Passos de hoje</string>
+    <string name="steps_kcal">/ %1$s kcal</string>
+    <string name="steps_goal">Meta: %1$s passos</string>
+    <string name="steps_start">Iniciar</string>
+    <string name="steps_stop">Parar</string>
+    <string name="steps_hint_idle">Toque em Iniciar para começar a contar seus passos.</string>
+    <string name="steps_hint_active">Contando em segundo plano. Você pode sair do app.</string>
+    <string name="steps_hint_denied">Permita o acesso à atividade física para contar seus passos.</string>
+    <string name="steps_hint_no_sensor">Este dispositivo não tem sensor de passos.</string>
+    <string name="steps_history">Histórico</string>
+    <string name="steps_months">Meses</string>
+    <string name="steps_weeks">Semanas</string>
+    <string name="steps_days">Dias</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s passos este mês</string>
+    <string name="steps_week_summary">Semana %1$d · %2$s passos nesta semana</string>
+    <string name="steps_day_summary">%1$s — %2$s passos · %3$s kcal</string>
+    <string name="steps_week_label">S%1$d</string>
+    <string name="steps_notification_channel">Contagem de passos</string>
+    <string name="steps_notification_title">O kCal está contando seus passos</string>
+    <string name="steps_notification_text">%1$s passos hoje</string>
+    <string name="steps_notification_stop">Parar</string>
+</resources>

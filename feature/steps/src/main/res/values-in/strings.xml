@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Langkah</string>
+    <string name="steps_today">Langkah hari ini</string>
+    <string name="steps_kcal">/ %1$s kkal</string>
+    <string name="steps_goal">Target: %1$s langkah</string>
+    <string name="steps_start">Mulai</string>
+    <string name="steps_stop">Berhenti</string>
+    <string name="steps_hint_idle">Ketuk Mulai untuk mulai menghitung langkahmu.</string>
+    <string name="steps_hint_active">Melacak di latar belakang. Kamu bisa keluar dari aplikasi.</string>
+    <string name="steps_hint_denied">Izinkan akses aktivitas fisik untuk menghitung langkahmu.</string>
+    <string name="steps_hint_no_sensor">Perangkat ini tidak punya sensor langkah.</string>
+    <string name="steps_history">Riwayat</string>
+    <string name="steps_months">Bulan</string>
+    <string name="steps_weeks">Minggu</string>
+    <string name="steps_days">Hari</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s langkah bulan ini</string>
+    <string name="steps_week_summary">Minggu %1$d · %2$s langkah minggu ini</string>
+    <string name="steps_day_summary">%1$s — %2$s langkah · %3$s kkal</string>
+    <string name="steps_week_label">M%1$d</string>
+    <string name="steps_notification_channel">Pelacakan langkah</string>
+    <string name="steps_notification_title">kCal sedang menghitung langkahmu</string>
+    <string name="steps_notification_text">%1$s langkah hari ini</string>
+    <string name="steps_notification_stop">Berhenti</string>
+</resources>

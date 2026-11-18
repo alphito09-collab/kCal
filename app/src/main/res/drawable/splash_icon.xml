@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ splash icon: 288dp canvas, logo kept inside the 192dp safe circle. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="432"
+    android:viewportHeight="432">
+    <group android:translateX="97" android:translateY="112">
+        <path
+            android:pathData="M47.6001 81.9905C47.6001 139.884 78.5401 167.759 119 167.759C159.46 167.759 190.4 139.884 190.4 81.9905"
+            android:strokeColor="#FF684A68"
+            android:strokeWidth="2.52"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M190.4 81.9905C190.4 92.6485 158.433 101.288 119 101.288C79.567 101.288 47.6001 92.6485 47.6001 81.9905C47.6001 71.3326 79.567 62.6926 119 62.6926C158.433 62.6926 190.4 71.3326 190.4 81.9905Z"
+            android:strokeColor="#FF684A68"
+            android:strokeWidth="2.52" />
+        <path
+            android:pathData="M119 81.9905C99.9599 60.5484 80.9199 39.1063 80.9199 13.3757C109.48 26.241 128.52 51.9715 119 81.9905Z"
+            android:fillColor="#FF684A68" />
+        <path
+            android:pathData="M119.745 81C134.025 55.2695 157.825 29.539 186.385 16.6737C162.585 46.6926 138.785 68.1348 119.745 81Z"
+            android:fillColor="#FFD9A6B3" />
+    </group>
+</vector>

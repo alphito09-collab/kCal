@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Journal santé</string>
+    <string name="health_tab_diabetes">Diabète</string>
+    <string name="health_tab_lactose">Lactose</string>
+    <string name="health_tab_ibs">SII</string>
+    <string name="health_sub_diabetes">Suivi de la glycémie pour gérer le diabète.</string>
+    <string name="health_sub_lactose">Suivi des produits laitiers et des réactions.</string>
+    <string name="health_sub_ibs">Suivi quotidien des symptômes du SII.</string>
+    <string name="health_save_log">Enregistrer</string>
+    <string name="health_saved">Enregistré ✓</string>
+    <string name="sugar_today">Glycémie du jour</string>
+    <string name="sugar_save">Enregistrer la mesure</string>
+    <string name="sugar_hint">Enregistrez votre glycémie une fois par jour.</string>
+    <string name="sugar_trend">Tendance glycémie (7 jours)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — dans la normale.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — au-dessus de la normale.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — en dessous de la normale.</string>
+    <string name="sugar_summary_none">%1$s · aucune mesure.</string>
+    <string name="dairy_days_since">Jours depuis la dernière réaction</string>
+    <string name="dairy_days">%1$d jours</string>
+    <string name="dairy_question">Avez-vous consommé des produits laitiers aujourd\'hui ?</string>
+    <string name="dairy_any_reaction">Une réaction ?</string>
+    <string name="dairy_history">Historique des réactions</string>
+    <string name="dairy_badge">Laitier</string>
+    <string name="dairy_badge_none">Sans laitier</string>
+    <string name="dairy_no_reaction">Aucune réaction</string>
+    <string name="dairy_no_dairy">Pas de laitier aujourd\'hui</string>
+    <string name="dairy_none_yet">Aucun enregistrement.</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="reaction_bloating">Ballonnements</string>
+    <string name="reaction_gas">Gaz</string>
+    <string name="reaction_diarrhea">Diarrhée</string>
+    <string name="reaction_nausea">Nausée</string>
+    <string name="ibs_today">Symptômes du jour</string>
+    <string name="ibs_severity">Intensité</string>
+    <string name="ibs_trend">Intensité des symptômes (7 jours)</string>
+    <string name="ibs_abdominal_pain">Douleur abdominale</string>
+    <string name="ibs_constipation">Constipation</string>
+    <string name="ibs_mild">Légère</string>
+    <string name="ibs_moderate">Modérée</string>
+    <string name="ibs_severe">Sévère</string>
+    <string name="ibs_summary">%1$s · %3$s %2$s enregistré.</string>
+    <string name="ibs_summary_none">%1$s · aucun symptôme enregistré.</string>
+</resources>

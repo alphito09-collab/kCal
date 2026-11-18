@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Sağlık günlüğü</string>
+    <string name="health_tab_diabetes">Diyabet</string>
+    <string name="health_tab_lactose">Laktoz</string>
+    <string name="health_tab_ibs">IBS</string>
+    <string name="health_sub_diabetes">Diyabet yönetimi için kan şekeri takibi.</string>
+    <string name="health_sub_lactose">Süt ürünleri ve tepkileri takibi.</string>
+    <string name="health_sub_ibs">Günlük IBS belirtileri takibi.</string>
+    <string name="health_save_log">Kaydı kaydet</string>
+    <string name="health_saved">Kaydedildi ✓</string>
+    <string name="sugar_today">Bugünkü şeker seviyesi</string>
+    <string name="sugar_save">Ölçümü kaydet</string>
+    <string name="sugar_hint">Sağlığını takip etmek için şekerini günde bir kez kaydet.</string>
+    <string name="sugar_trend">Şeker eğilimi (7 gün)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — normal aralıkta.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — normalin üzerinde.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — normalin altında.</string>
+    <string name="sugar_summary_none">%1$s · ölçüm yok.</string>
+    <string name="dairy_days_since">Son tepkiden beri geçen gün</string>
+    <string name="dairy_days">%1$d gün</string>
+    <string name="dairy_question">Bugün süt ürünü tükettin mi?</string>
+    <string name="dairy_any_reaction">Bir tepki oldu mu?</string>
+    <string name="dairy_history">Tepki geçmişi</string>
+    <string name="dairy_badge">Süt</string>
+    <string name="dairy_badge_none">Süt yok</string>
+    <string name="dairy_no_reaction">Tepki yok</string>
+    <string name="dairy_no_dairy">Bugün süt ürünü yok</string>
+    <string name="dairy_none_yet">Henüz kayıt yok.</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="reaction_bloating">Şişkinlik</string>
+    <string name="reaction_gas">Gaz</string>
+    <string name="reaction_diarrhea">İshal</string>
+    <string name="reaction_nausea">Bulantı</string>
+    <string name="ibs_today">Bugünkü belirtiler</string>
+    <string name="ibs_severity">Şiddet</string>
+    <string name="ibs_trend">Belirti şiddeti (7 gün)</string>
+    <string name="ibs_abdominal_pain">Karın ağrısı</string>
+    <string name="ibs_constipation">Kabızlık</string>
+    <string name="ibs_mild">Hafif</string>
+    <string name="ibs_moderate">Orta</string>
+    <string name="ibs_severe">Şiddetli</string>
+    <string name="ibs_summary">%1$s · %2$s %3$s kaydedildi.</string>
+    <string name="ibs_summary_none">%1$s · belirti kaydı yok.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">Kapat</string>
+    <string name="premium_unlock_title">kCal Premium\'un kilidini aç</string>
+    <string name="premium_intro_body">Daha kişisel bir beslenme deneyimi: sana özel planlar, daha akıllı içgörüler ve hedeflerin üzerinde tam kontrol.</string>
+    <string name="premium_b1">Sınırsız öğün planı</string>
+    <string name="premium_b1_sub">Her hafta sana uyum sağlayan kişisel planlar</string>
+    <string name="premium_b2">Sınırsız malzeme değişimi</string>
+    <string name="premium_b2_sub">Herhangi bir öğünü zevkine uygun olanla değiştir</string>
+    <string name="premium_b3">Daha akıllı bütçe optimizasyonu</string>
+    <string name="premium_b3_sub">Gerçek market bütçene göre planlar</string>
+    <string name="premium_b4">Gelişmiş ilerleme içgörüleri</string>
+    <string name="premium_b4_sub">Kalori, kilo ve aktivite için derin analiz</string>
+    <string name="premium_b5">Akıllı hatırlatıcılar</string>
+    <string name="premium_b5_sub">Seni her gün hedefte tutan nazik hatırlatmalar</string>
+    <string name="premium_unlock">Premium\'un kilidini aç</string>
+    <string name="premium_terms">Şartlar ve koşullar</string>
+    <string name="premium_privacy">Gizlilik politikası</string>
+    <string name="premium_title">Premium</string>
+    <string name="premium_plans_body">Daha kişisel planlar, daha akıllı takip ve beslenme yolculuğun üzerinde daha fazla kontrol.</string>
+    <string name="premium_weekly">Haftalık</string>
+    <string name="premium_monthly">Aylık</string>
+    <string name="premium_best_value">En avantajlı</string>
+    <string name="premium_weekly_name">Haftalık Premium</string>
+    <string name="premium_monthly_name">Aylık Premium</string>
+    <string name="premium_weekly_price">Haftalık 299 PKR</string>
+    <string name="premium_monthly_price">Aylık 899 PKR</string>
+    <string name="premium_w1">Sınırsız kişisel öğün planı</string>
+    <string name="premium_w2">Sınırsız öğün ve malzeme değişimi</string>
+    <string name="premium_w3">Gelişmiş bütçe optimizasyonu</string>
+    <string name="premium_w4">Kişisel yemek tercihleri</string>
+    <string name="premium_w5">Gelişmiş kalori ve aktivite içgörüleri</string>
+    <string name="premium_w6">Akıllı hatırlatıcılar</string>
+    <string name="premium_w7">Haftalık ilerleme raporları</string>
+    <string name="premium_w8">Gelişmiş ilerleme analizi</string>
+    <string name="premium_m1">Haftalık Premium\'daki her şey</string>
+    <string name="premium_m2">Sınırsız diyet planı yenileme</string>
+    <string name="premium_m3">Aylık ilerleme analizi</string>
+    <string name="premium_m4">Gelişmiş yürüyüş ve kalori dağılımı</string>
+    <string name="premium_m5">Daha kişisel öğün önerileri</string>
+    <string name="premium_m6">Genişletilmiş yemek tercihleri</string>
+    <string name="premium_start_weekly">Haftalığı başlat</string>
+    <string name="premium_start_monthly">Aylığı başlat</string>
+    <string name="premium_active">Aktif ✓</string>
+    <string name="premium_cancel_note">Aboneliğini istediğin zaman yönetebilir veya iptal edebilirsin.</string>
+</resources>

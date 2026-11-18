@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_meal_breakfast">ناشتہ</string>
+    <string name="ds_meal_lunch">دوپہر کا کھانا</string>
+    <string name="ds_meal_snack">اسنیک</string>
+    <string name="ds_meal_dinner">رات کا کھانا</string>
+    <string name="ds_back">واپس</string>
+    <string name="ds_kcal">%1$s کیلوری</string>
+    <string name="ds_kcal_price">%1$s کیلوری  ·  %2$s روپے</string>
+    <string name="ds_unit_kcal">کیلوری</string>
+    <string name="ds_unit_kcal_day">کیلوری/دن</string>
+    <string name="ds_unit_kg">کلو</string>
+    <string name="ds_unit_lb">پاؤنڈ</string>
+    <string name="ds_unit_cm">سم</string>
+    <string name="ds_unit_ft">فٹ</string>
+    <string name="ds_unit_in">انچ</string>
+    <string name="ds_unit_ml">ملی لیٹر</string>
+    <string name="ds_unit_mgdl">mg/dL</string>
+    <string name="ds_value_unit">%1$s %2$s</string>
+    <string name="ds_fraction">%1$d/%2$d</string>
+    <string name="ds_range">%1$s – %2$s</string>
+    <string name="ds_food_anda_paratha">انڈا پراٹھا</string>
+    <string name="ds_food_anda_paratha_portion">پراٹھا 80 گرام + انڈا 50 گرام</string>
+    <string name="ds_food_lassi">لسی</string>
+    <string name="ds_food_lassi_portion">دہی کا مشروب 200 ملی لیٹر</string>
+    <string name="ds_food_daal_chawal">دال چاول</string>
+    <string name="ds_food_daal_chawal_portion">چاول 150 گرام + دال 120 گرام</string>
+    <string name="ds_food_chickpea_curry_rice">چنے اور چاول</string>
+    <string name="ds_food_chickpea_curry_rice_portion">چنے 150 گرام + چاول 120 گرام</string>
+    <string name="ds_food_vegetable_pulao">سبزی پلاؤ</string>
+    <string name="ds_food_vegetable_pulao_portion">پلاؤ 250 گرام</string>
+    <string name="ds_food_chicken_karahi_roti">چکن کڑاہی + روٹی</string>
+    <string name="ds_food_chicken_karahi_roti_portion">کڑاہی 180 گرام + 1 روٹی</string>
+    <string name="ds_food_mixed_veg_roti">مکس سبزی + روٹی</string>
+    <string name="ds_food_mixed_veg_roti_portion">سبزی 180 گرام + 1 روٹی</string>
+    <string name="ds_food_grilled_chicken">گرلڈ چکن</string>
+    <string name="ds_food_grilled_chicken_portion">چکن 150 گرام</string>
+    <string name="ds_food_salad">سلاد</string>
+    <string name="ds_food_salad_portion">مکس سبزی 150 گرام</string>
+    <string name="ds_food_roti">روٹی</string>
+    <string name="ds_food_roti_portion">روٹی 120 گرام (2 عدد)</string>
+    <string name="ds_food_fruit_chaat">فروٹ چاٹ</string>
+    <string name="ds_food_fruit_chaat_portion">مکس فروٹ 200 گرام</string>
+    <string name="ds_region_lahore">پاکستان — لاہور</string>
+    <string name="ds_region_karachi">پاکستان — کراچی</string>
+    <string name="ds_region_islamabad">پاکستان — اسلام آباد</string>
+    <string name="ds_region_rawalpindi">پاکستان — راولپنڈی</string>
+    <string name="ds_region_faisalabad">پاکستان — فیصل آباد</string>
+    <string name="ds_region_peshawar">پاکستان — پشاور</string>
+    <plurals name="ds_stars"><item quantity="one">%1$d ستارہ</item><item quantity="other">%1$d ستارے</item></plurals>
+</resources>

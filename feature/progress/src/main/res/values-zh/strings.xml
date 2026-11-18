@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">进度</string>
+    <string name="progress_weekly">每周</string>
+    <string name="progress_monthly">每月</string>
+    <string name="progress_weight_trend">体重趋势</string>
+    <string name="progress_week_label">第%1$d周</string>
+    <string name="progress_week_title">第 %1$d 周 · %2$s</string>
+    <string name="progress_burned">消耗热量</string>
+    <string name="progress_intake">摄入热量</string>
+    <string name="progress_weight">体重</string>
+    <string name="progress_key_metrics">关键指标</string>
+    <string name="progress_no_weight">记录体重即可查看趋势。</string>
+</resources>

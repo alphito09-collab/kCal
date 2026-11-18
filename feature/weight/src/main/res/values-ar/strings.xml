@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">تسجيل الوزن</string>
+    <string name="weight_this_week">وزن هذا الأسبوع</string>
+    <string name="weight_save">حفظ الوزن</string>
+    <string name="weight_saved">تم الحفظ ✓</string>
+    <string name="weight_hint">حدّث وزنك مرة أسبوعيًا ليبقى تقدمك دقيقًا.</string>
+    <string name="weight_progress">تقدم الوزن</string>
+    <string name="weight_current">الحالي</string>
+    <string name="weight_previous">السابق</string>
+    <string name="weight_change">التغيّر</string>
+    <string name="weight_history">سجل الوزن</string>
+    <string name="weight_week">الأسبوع %1$d</string>
+    <string name="weight_week_current">الأسبوع %1$d (هذا الأسبوع)</string>
+    <string name="weight_empty">لا توجد قياسات بعد.</string>
+</resources>

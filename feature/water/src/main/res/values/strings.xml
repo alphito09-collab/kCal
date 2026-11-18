@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">Water Intake</string>
+    <string name="water_today">Today\'s Water Intake</string>
+    <string name="water_glasses">%1$d / %2$d glasses</string>
+    <string name="water_ml">%1$s ml / %2$s ml</string>
+    <string name="water_add_title">Add Water</string>
+    <string name="water_add">Add</string>
+    <string name="water_amount">+%1$d ml</string>
+    <string name="water_glass_hint">1 glass ≈ 250 ml</string>
+    <string name="water_goal">Daily Water Goal</string>
+    <string name="water_edit_goal">Edit Goal</string>
+    <string name="water_save_goal">Save</string>
+    <string name="water_goal_hint">e.g. 2000</string>
+</resources>

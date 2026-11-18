@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="water_title">Потребление воды</string>
+    <string name="water_today">Вода сегодня</string>
+    <string name="water_glasses">%1$d / %2$d стаканов</string>
+    <string name="water_ml">%1$s мл / %2$s мл</string>
+    <string name="water_add_title">Добавить воду</string>
+    <string name="water_add">Добавить</string>
+    <string name="water_amount">+%1$d мл</string>
+    <string name="water_glass_hint">1 стакан ≈ 250 мл</string>
+    <string name="water_goal">Дневная норма воды</string>
+    <string name="water_edit_goal">Изменить</string>
+    <string name="water_save_goal">Сохранить</string>
+    <string name="water_goal_hint">напр., 2000</string>
+</resources>

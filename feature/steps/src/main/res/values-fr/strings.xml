@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Pas</string>
+    <string name="steps_today">Pas du jour</string>
+    <string name="steps_kcal">/ %1$s kcal</string>
+    <string name="steps_goal">Objectif : %1$s pas</string>
+    <string name="steps_start">Démarrer</string>
+    <string name="steps_stop">Arrêter</string>
+    <string name="steps_hint_idle">Appuyez sur Démarrer pour compter vos pas.</string>
+    <string name="steps_hint_active">Suivi en arrière-plan. Vous pouvez quitter l\'app.</string>
+    <string name="steps_hint_denied">Autorisez l\'accès à l\'activité physique pour compter vos pas.</string>
+    <string name="steps_hint_no_sensor">Cet appareil n\'a pas de capteur de pas.</string>
+    <string name="steps_history">Historique</string>
+    <string name="steps_months">Mois</string>
+    <string name="steps_weeks">Semaines</string>
+    <string name="steps_days">Jours</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s pas ce mois-ci</string>
+    <string name="steps_week_summary">Semaine %1$d · %2$s pas cette semaine</string>
+    <string name="steps_day_summary">%1$s — %2$s pas · %3$s kcal</string>
+    <string name="steps_week_label">S%1$d</string>
+    <string name="steps_notification_channel">Suivi des pas</string>
+    <string name="steps_notification_title">kCal compte vos pas</string>
+    <string name="steps_notification_text">%1$s pas aujourd\'hui</string>
+    <string name="steps_notification_stop">Arrêter</string>
+</resources>

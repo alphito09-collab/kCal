@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_close">بند کریں</string>
+    <string name="premium_unlock_title">kCal Premium اَن لاک کریں</string>
+    <string name="premium_intro_body">زیادہ ذاتی غذائی تجربہ: آپ کے لیے بنے پلان، بہتر مشورے اور اپنے اہداف پر مکمل کنٹرول۔</string>
+    <string name="premium_b1">لامحدود کھانے کے پلان</string>
+    <string name="premium_b1_sub">ہر ہفتے آپ کے مطابق ڈھلنے والے پلان</string>
+    <string name="premium_b2">لامحدود اجزاء کی تبدیلی</string>
+    <string name="premium_b2_sub">کوئی بھی کھانا اپنی پسند سے بدلیں</string>
+    <string name="premium_b3">بہتر بجٹ آپٹیمائزیشن</string>
+    <string name="premium_b3_sub">آپ کے اصل راشن بجٹ پر بنے پلان</string>
+    <string name="premium_b4">بہتر پیش رفت کی معلومات</string>
+    <string name="premium_b4_sub">کیلوری، وزن اور سرگرمی کا گہرا تجزیہ</string>
+    <string name="premium_b5">سمارٹ یاد دہانیاں</string>
+    <string name="premium_b5_sub">روزانہ ہدف پر رکھنے والی ہلکی یاد دہانیاں</string>
+    <string name="premium_unlock">Premium اَن لاک کریں</string>
+    <string name="premium_terms">شرائط و ضوابط</string>
+    <string name="premium_privacy">رازداری کی پالیسی</string>
+    <string name="premium_title">پریمیم</string>
+    <string name="premium_plans_body">زیادہ ذاتی پلان، بہتر ٹریکنگ اور اپنے غذائی سفر پر زیادہ کنٹرول۔</string>
+    <string name="premium_weekly">ہفتہ وار</string>
+    <string name="premium_monthly">ماہانہ</string>
+    <string name="premium_best_value">بہترین قیمت</string>
+    <string name="premium_weekly_name">ہفتہ وار پریمیم</string>
+    <string name="premium_monthly_name">ماہانہ پریمیم</string>
+    <string name="premium_weekly_price">299 روپے / ہفتہ</string>
+    <string name="premium_monthly_price">899 روپے / مہینہ</string>
+    <string name="premium_w1">لامحدود ذاتی کھانے کے پلان</string>
+    <string name="premium_w2">لامحدود کھانے اور اجزاء کی تبدیلی</string>
+    <string name="premium_w3">بہتر بجٹ آپٹیمائزیشن</string>
+    <string name="premium_w4">ذاتی کھانے کی ترجیحات</string>
+    <string name="premium_w5">بہتر کیلوری اور سرگرمی کی معلومات</string>
+    <string name="premium_w6">سمارٹ یاد دہانیاں</string>
+    <string name="premium_w7">ہفتہ وار پیش رفت رپورٹس</string>
+    <string name="premium_w8">بہتر پیش رفت کا تجزیہ</string>
+    <string name="premium_m1">ہفتہ وار پریمیم کی تمام سہولتیں</string>
+    <string name="premium_m2">ڈائٹ پلان لامحدود دوبارہ بنائیں</string>
+    <string name="premium_m3">ماہانہ پیش رفت کا تجزیہ</string>
+    <string name="premium_m4">بہتر پیدل چلنے اور کیلوری کی تقسیم</string>
+    <string name="premium_m5">زیادہ ذاتی کھانے کی تجاویز</string>
+    <string name="premium_m6">وسیع کھانے کی ترجیحات</string>
+    <string name="premium_start_weekly">ہفتہ وار شروع کریں</string>
+    <string name="premium_start_monthly">ماہانہ شروع کریں</string>
+    <string name="premium_active">فعال ✓</string>
+    <string name="premium_cancel_note">آپ کسی بھی وقت سبسکرپشن منظم یا منسوخ کر سکتے ہیں۔</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">مرحبًا بعودتك، %1$s</string>
+    <string name="dash_subtitle">لنحافظ على خطتنا اليوم.</string>
+    <string name="dash_daily_tracking">تتبع السعرات اليومي</string>
+    <string name="dash_kcal_today">سعرة اليوم</string>
+    <string name="dash_of_target">من %1$s سعرة</string>
+    <string name="dash_steps">الخطوات</string>
+    <string name="dash_eating">الطعام</string>
+    <string name="dash_streak">سلسلة الأيام</string>
+    <string name="dash_kcal_value">%1$s سعرة</string>
+    <string name="dash_streak_value">اليوم %1$d</string>
+    <string name="dash_todays_meal">وجبة اليوم</string>
+    <string name="dash_view_all">عرض الكل</string>
+    <string name="dash_up_next">%1$s · التالية</string>
+    <string name="dash_all_done">تم تسجيل جميع وجبات اليوم 🎉</string>
+    <string name="dash_all_done_sub">عمل رائع في الالتزام بخطتك.</string>
+    <string name="dash_water">الماء</string>
+    <string name="dash_weight">تسجيل الوزن</string>
+    <string name="dash_health">السجل الصحي</string>
+    <string name="dash_trial_title">جرّب kCal Premium بدون إعلانات</string>
+    <string name="dash_trial_body">احصل على وصول كامل لجميع ميزات Premium واستمتع بـ kCal بدون إعلانات.</string>
+    <string name="dash_trial_1">وصول كامل لميزات Premium</string>
+    <string name="dash_trial_2">رؤى غذائية مخصصة</string>
+    <string name="dash_trial_3">تتبع متقدم للتقدم</string>
+    <string name="dash_trial_4">تجربة خالية من الإعلانات</string>
+    <string name="dash_get_premium">احصل على Premium</string>
+    <string name="dash_maybe_later">ربما لاحقًا</string>
+</resources>

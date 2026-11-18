@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_meal_breakfast">Petit-déjeuner</string>
+    <string name="ds_meal_lunch">Déjeuner</string>
+    <string name="ds_meal_snack">Collation</string>
+    <string name="ds_meal_dinner">Dîner</string>
+    <string name="ds_back">Retour</string>
+    <string name="ds_kcal">%1$s kcal</string>
+    <string name="ds_kcal_price">%1$s kcal  ·  %2$s PKR</string>
+    <string name="ds_unit_kcal">kcal</string>
+    <string name="ds_unit_kcal_day">kcal/jour</string>
+    <string name="ds_unit_kg">kg</string>
+    <string name="ds_unit_lb">lb</string>
+    <string name="ds_unit_cm">cm</string>
+    <string name="ds_unit_ft">pi</string>
+    <string name="ds_unit_in">po</string>
+    <string name="ds_unit_ml">ml</string>
+    <string name="ds_unit_mgdl">mg/dL</string>
+    <string name="ds_value_unit">%1$s %2$s</string>
+    <string name="ds_fraction">%1$d/%2$d</string>
+    <string name="ds_range">%1$s – %2$s</string>
+    <string name="ds_food_anda_paratha">Anda paratha (galette à l\'œuf)</string>
+    <string name="ds_food_anda_paratha_portion">Paratha 80 g + œuf 50 g</string>
+    <string name="ds_food_lassi">Lassi</string>
+    <string name="ds_food_lassi_portion">Boisson au yaourt 200 ml</string>
+    <string name="ds_food_daal_chawal">Daal chawal (lentilles et riz)</string>
+    <string name="ds_food_daal_chawal_portion">Riz 150 g + daal 120 g</string>
+    <string name="ds_food_chickpea_curry_rice">Curry de pois chiches et riz</string>
+    <string name="ds_food_chickpea_curry_rice_portion">Pois chiches 150 g + riz 120 g</string>
+    <string name="ds_food_vegetable_pulao">Pulao aux légumes</string>
+    <string name="ds_food_vegetable_pulao_portion">Pulao 250 g</string>
+    <string name="ds_food_chicken_karahi_roti">Poulet karahi et roti</string>
+    <string name="ds_food_chicken_karahi_roti_portion">Karahi 180 g + 1 roti</string>
+    <string name="ds_food_mixed_veg_roti">Légumes variés et roti</string>
+    <string name="ds_food_mixed_veg_roti_portion">Légumes 180 g + 1 roti</string>
+    <string name="ds_food_grilled_chicken">Poulet grillé</string>
+    <string name="ds_food_grilled_chicken_portion">Poulet 150 g</string>
+    <string name="ds_food_salad">Salade</string>
+    <string name="ds_food_salad_portion">Légumes variés 150 g</string>
+    <string name="ds_food_roti">Roti</string>
+    <string name="ds_food_roti_portion">Roti 120 g (2 pièces)</string>
+    <string name="ds_food_fruit_chaat">Chaat de fruits</string>
+    <string name="ds_food_fruit_chaat_portion">Fruits variés 200 g</string>
+    <string name="ds_region_lahore">Pakistan — Lahore</string>
+    <string name="ds_region_karachi">Pakistan — Karachi</string>
+    <string name="ds_region_islamabad">Pakistan — Islamabad</string>
+    <string name="ds_region_rawalpindi">Pakistan — Rawalpindi</string>
+    <string name="ds_region_faisalabad">Pakistan — Faisalabad</string>
+    <string name="ds_region_peshawar">Pakistan — Peshawar</string>
+    <plurals name="ds_stars"><item quantity="one">%1$d étoile</item><item quantity="other">%1$d étoiles</item></plurals>
+</resources>

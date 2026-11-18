@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">ڈائٹ پلان</string>
+    <string name="diet_this_week">اس ہفتے</string>
+    <string name="diet_target">%1$s · ہدف ~%2$s کیلوری</string>
+    <string name="diet_swap">تبدیل</string>
+    <string name="diet_empty">اس دن کا پلان تیار ہو رہا ہے…</string>
+    <string name="checklist_title">کھانوں کی چیک لسٹ</string>
+    <string name="checklist_subtitle">آج ہر کھانا کھاتے ہی اس پر نشان لگائیں۔</string>
+    <string name="swap_title">جزو تبدیل کریں</string>
+    <string name="swap_subtitle">اپنے %1$s کے لیے متبادل چنیں۔</string>
+    <string name="swap_currently">موجودہ</string>
+    <string name="swap_suggested">تجویز کردہ متبادل</string>
+    <string name="swap_best_match">بہترین انتخاب</string>
+    <string name="swap_confirm">تبدیلی کی تصدیق کریں</string>
+    <string name="swap_none">اس آئٹم کے لیے کوئی متبادل آپ کی صحت اور بجٹ کے مطابق نہیں۔</string>
+</resources>

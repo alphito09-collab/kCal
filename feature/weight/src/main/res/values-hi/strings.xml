@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">वज़न चेक-इन</string>
+    <string name="weight_this_week">इस सप्ताह का वज़न</string>
+    <string name="weight_save">वज़न सहेजें</string>
+    <string name="weight_saved">सहेजा गया ✓</string>
+    <string name="weight_hint">अपनी प्रगति सटीक रखने के लिए हफ़्ते में एक बार वज़न अपडेट करें।</string>
+    <string name="weight_progress">वज़न में प्रगति</string>
+    <string name="weight_current">वर्तमान</string>
+    <string name="weight_previous">पिछला</string>
+    <string name="weight_change">बदलाव</string>
+    <string name="weight_history">वज़न इतिहास</string>
+    <string name="weight_week">सप्ताह %1$d</string>
+    <string name="weight_week_current">सप्ताह %1$d (यह सप्ताह)</string>
+    <string name="weight_empty">अभी तक कोई वज़न दर्ज नहीं।</string>
+</resources>

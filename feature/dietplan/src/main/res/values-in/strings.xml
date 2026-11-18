@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">Rencana diet</string>
+    <string name="diet_this_week">Minggu ini</string>
+    <string name="diet_target">%1$s · target ~%2$s kkal</string>
+    <string name="diet_swap">Tukar</string>
+    <string name="diet_empty">Rencanamu untuk hari ini sedang disiapkan…</string>
+    <string name="checklist_title">Daftar makanan</string>
+    <string name="checklist_subtitle">Centang setiap makanan saat kamu memakannya hari ini.</string>
+    <string name="swap_title">Tukar bahan</string>
+    <string name="swap_subtitle">Pilih pengganti untuk menu %1$s kamu.</string>
+    <string name="swap_currently">Saat ini</string>
+    <string name="swap_suggested">Pengganti yang disarankan</string>
+    <string name="swap_best_match">Paling cocok</string>
+    <string name="swap_confirm">Konfirmasi tukar</string>
+    <string name="swap_none">Tidak ada pengganti yang sesuai dengan kebutuhan kesehatan dan anggaranmu.</string>
+</resources>

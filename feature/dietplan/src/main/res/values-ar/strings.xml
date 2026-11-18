@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">خطة الغذاء</string>
+    <string name="diet_this_week">هذا الأسبوع</string>
+    <string name="diet_target">%1$s · الهدف ~%2$s سعرة</string>
+    <string name="diet_swap">تبديل</string>
+    <string name="diet_empty">يتم تجهيز خطتك لهذا اليوم…</string>
+    <string name="checklist_title">قائمة الوجبات</string>
+    <string name="checklist_subtitle">ضع علامة على كل وجبة عند تناولها اليوم.</string>
+    <string name="swap_title">تبديل المكون</string>
+    <string name="swap_subtitle">اختر بديلًا لعنصر %1$s.</string>
+    <string name="swap_currently">حاليًا</string>
+    <string name="swap_suggested">بدائل مقترحة</string>
+    <string name="swap_best_match">الأنسب</string>
+    <string name="swap_confirm">تأكيد التبديل</string>
+    <string name="swap_none">لا توجد بدائل تناسب احتياجاتك الصحية وميزانيتك لهذا العنصر.</string>
+</resources>

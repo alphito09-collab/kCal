@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">कदम</string>
+    <string name="steps_today">आज के कदम</string>
+    <string name="steps_kcal">/ %1$s किलो कैलोरी</string>
+    <string name="steps_goal">लक्ष्य: %1$s कदम</string>
+    <string name="steps_start">शुरू करें</string>
+    <string name="steps_stop">रोकें</string>
+    <string name="steps_hint_idle">अपने कदम ट्रैक करने के लिए शुरू करें दबाएँ।</string>
+    <string name="steps_hint_active">बैकग्राउंड में ट्रैक हो रहा है। आप ऐप छोड़ सकते हैं।</string>
+    <string name="steps_hint_denied">कदम गिनने के लिए शारीरिक गतिविधि की अनुमति दें।</string>
+    <string name="steps_hint_no_sensor">इस डिवाइस में स्टेप सेंसर नहीं है।</string>
+    <string name="steps_history">इतिहास</string>
+    <string name="steps_months">महीने</string>
+    <string name="steps_weeks">सप्ताह</string>
+    <string name="steps_days">दिन</string>
+    <string name="steps_month_summary">%1$s · इस महीने ≈%2$s कदम</string>
+    <string name="steps_week_summary">सप्ताह %1$d · इस सप्ताह %2$s कदम</string>
+    <string name="steps_day_summary">%1$s — %2$s कदम · %3$s किलो कैलोरी</string>
+    <string name="steps_week_label">स%1$d</string>
+    <string name="steps_notification_channel">कदम ट्रैकिंग</string>
+    <string name="steps_notification_title">kCal आपके कदम गिन रहा है</string>
+    <string name="steps_notification_text">आज %1$s कदम</string>
+    <string name="steps_notification_stop">रोकें</string>
+</resources>

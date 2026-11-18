@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_diet_plan">Rencana diet</string>
+    <string name="nav_progress">Kemajuan</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="exit_title">Mau keluar sekarang?</string>
+    <string name="exit_body">Kemajuanmu hari ini sudah tersimpan. Yakin ingin keluar?</string>
+    <string name="exit_stay">Tetap di jalur</string>
+    <string name="exit_leave">Keluar aplikasi</string>
+    <string name="offline_title">Tidak ada koneksi internet</string>
+    <string name="offline_body">Periksa koneksimu dan coba lagi untuk terus melacak kemajuanmu.</string>
+    <string name="offline_retry">Coba lagi</string>
+    <string name="offline_continue">Lanjutkan offline</string>
+</resources>

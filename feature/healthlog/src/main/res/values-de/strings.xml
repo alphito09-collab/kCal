@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="health_title">Gesundheitsprotokoll</string>
+    <string name="health_tab_diabetes">Diabetes</string>
+    <string name="health_tab_lactose">Laktose</string>
+    <string name="health_tab_ibs">Reizdarm</string>
+    <string name="health_sub_diabetes">Blutzucker im Blick für dein Diabetes-Management.</string>
+    <string name="health_sub_lactose">Milchprodukte und Reaktionen erfassen.</string>
+    <string name="health_sub_ibs">Tägliche Reizdarm-Symptome erfassen.</string>
+    <string name="health_save_log">Eintrag speichern</string>
+    <string name="health_saved">Gespeichert ✓</string>
+    <string name="sugar_today">Heutiger Zuckerwert</string>
+    <string name="sugar_save">Wert speichern</string>
+    <string name="sugar_hint">Trage deinen Zuckerwert einmal täglich ein.</string>
+    <string name="sugar_trend">Zuckertrend (7 Tage)</string>
+    <string name="sugar_summary_normal">%1$s · %2$d mg/dL — im Normalbereich.</string>
+    <string name="sugar_summary_high">%1$s · %2$d mg/dL — über dem üblichen Bereich.</string>
+    <string name="sugar_summary_low">%1$s · %2$d mg/dL — unter dem üblichen Bereich.</string>
+    <string name="sugar_summary_none">%1$s · kein Wert eingetragen.</string>
+    <string name="dairy_days_since">Tage seit der letzten Reaktion</string>
+    <string name="dairy_days">%1$d Tage</string>
+    <string name="dairy_question">Hattest du heute Milchprodukte?</string>
+    <string name="dairy_any_reaction">Gab es eine Reaktion?</string>
+    <string name="dairy_history">Reaktionsverlauf</string>
+    <string name="dairy_badge">Milch</string>
+    <string name="dairy_badge_none">Ohne Milch</string>
+    <string name="dairy_no_reaction">Keine Reaktion</string>
+    <string name="dairy_no_dairy">Heute keine Milchprodukte</string>
+    <string name="dairy_none_yet">Noch keine Einträge.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="reaction_bloating">Blähbauch</string>
+    <string name="reaction_gas">Blähungen</string>
+    <string name="reaction_diarrhea">Durchfall</string>
+    <string name="reaction_nausea">Übelkeit</string>
+    <string name="ibs_today">Heutige Symptome</string>
+    <string name="ibs_severity">Schweregrad</string>
+    <string name="ibs_trend">Symptomstärke (7 Tage)</string>
+    <string name="ibs_abdominal_pain">Bauchschmerzen</string>
+    <string name="ibs_constipation">Verstopfung</string>
+    <string name="ibs_mild">Leicht</string>
+    <string name="ibs_moderate">Mittel</string>
+    <string name="ibs_severe">Stark</string>
+    <string name="ibs_summary">%1$s · %2$s %3$s erfasst.</string>
+    <string name="ibs_summary_none">%1$s · keine Symptome erfasst.</string>
+</resources>

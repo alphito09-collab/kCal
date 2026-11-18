@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_local_profile">Profile stored on this device</string>
+    <string name="settings_edit_profile">Edit Profile</string>
+    <string name="settings_health">Health Information</string>
+    <string name="settings_region">Region &amp; Budget</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_premium">kCal Premium</string>
+    <string name="settings_premium_active">%1$s Premium · Active</string>
+    <string name="settings_premium_free">Free plan · Upgrade anytime</string>
+    <string name="settings_weekly">Weekly</string>
+    <string name="settings_monthly">Monthly</string>
+    <string name="settings_payments">Payment History</string>
+    <string name="settings_rate">Rate Us</string>
+    <string name="settings_privacy">Privacy &amp; Security</string>
+    <string name="settings_help">Help &amp; Support</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="rate_title">Enjoying kCal?</string>
+    <string name="rate_body">Let us know how we\'re doing. Your rating helps other users find kCal.</string>
+    <string name="rate_thanks">Thanks for your feedback!</string>
+
+    <string name="help_title">Contact Support</string>
+    <string name="help_body">We usually reply within 24 hours.</string>
+    <string name="help_email_button">Email Support</string>
+    <string name="help_not_now">Not now</string>
+    <string name="help_email_subject">kCal support</string>
+    <string name="support_email" translatable="false">alphito09@gmail.com</string>
+
+    <string name="payments_title">Payment History</string>
+    <string name="payments_empty">No payments yet. Purchases made through Google Play will appear here.</string>
+    <string name="payments_active">%1$s Premium – active</string>
+
+    <string name="language_title">Language</string>
+    <string name="language_body">Choose the language you want to use in kCal.</string>
+    <string name="language_footer">Your selection is applied immediately across the app.</string>
+    <string name="language_save">Save language</string>
+
+    <string name="privacy_title">Privacy &amp; Security</string>
+    <string name="privacy_activity">Activity Tracking Permission</string>
+    <string name="privacy_change_password">Change Password</string>
+    <string name="privacy_download">Download My Data</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_terms">Terms &amp; Conditions</string>
+    <string name="privacy_delete">Delete Account</string>
+    <string name="privacy_footer">Your privacy matters. You\'re in control of your data.</string>
+    <string name="privacy_link_unavailable">This document will be available soon.</string>
+
+    <string name="password_title">Change Password</string>
+    <string name="password_body">Choose a new password for your account.</string>
+    <string name="password_new">New Password</string>
+    <string name="password_confirm">Confirm New Password</string>
+    <string name="password_rule">Use at least 8 characters, including a number.</string>
+    <string name="password_new_hint">At least 8 characters</string>
+    <string name="password_confirm_hint">Re-enter new password</string>
+    <string name="password_mismatch">Passwords don\'t match.</string>
+    <string name="password_save">Save Password</string>
+    <string name="password_unavailable">Online accounts aren\'t available yet – your data stays on this device.</string>
+
+    <string name="download_title">Download Your Data</string>
+    <string name="download_body">We\'ll prepare a copy of your profile, meal plans and progress history that you can save or share.</string>
+    <string name="download_button">Download Data</string>
+    <string name="download_share_title">Export kCal data</string>
+
+    <string name="delete_title">Delete your data?</string>
+    <string name="delete_body">This permanently removes your profile, meal plans and history from this device. This can\'t be undone.</string>
+    <string name="delete_confirm">Delete everything</string>
+</resources>

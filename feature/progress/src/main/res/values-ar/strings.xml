@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">التقدم</string>
+    <string name="progress_weekly">أسبوعي</string>
+    <string name="progress_monthly">شهري</string>
+    <string name="progress_weight_trend">اتجاه الوزن</string>
+    <string name="progress_week_label">أ%1$d</string>
+    <string name="progress_week_title">الأسبوع %1$d · %2$s</string>
+    <string name="progress_burned">السعرات المحروقة</string>
+    <string name="progress_intake">السعرات المتناولة</string>
+    <string name="progress_weight">الوزن</string>
+    <string name="progress_key_metrics">مؤشرات التقدم الرئيسية</string>
+    <string name="progress_no_weight">سجّل وزنك لترى الاتجاه.</string>
+</resources>

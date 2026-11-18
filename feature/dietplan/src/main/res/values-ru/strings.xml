@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">План питания</string>
+    <string name="diet_this_week">Эта неделя</string>
+    <string name="diet_target">%1$s · цель ~%2$s ккал</string>
+    <string name="diet_swap">Заменить</string>
+    <string name="diet_empty">План на этот день готовится…</string>
+    <string name="checklist_title">Список приёмов пищи</string>
+    <string name="checklist_subtitle">Отмечайте каждый приём пищи, когда поедите.</string>
+    <string name="swap_title">Замена блюда</string>
+    <string name="swap_subtitle">Выберите замену для блюда: %1$s.</string>
+    <string name="swap_currently">Сейчас</string>
+    <string name="swap_suggested">Рекомендуемые замены</string>
+    <string name="swap_best_match">Лучший вариант</string>
+    <string name="swap_confirm">Подтвердить замену</string>
+    <string name="swap_none">Нет замен, подходящих под ваше здоровье и бюджет.</string>
+</resources>

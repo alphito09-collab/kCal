@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_welcome">欢迎回来，%1$s</string>
+    <string name="dash_subtitle">今天也要坚持哦。</string>
+    <string name="dash_daily_tracking">每日热量追踪</string>
+    <string name="dash_kcal_today">今日千卡</string>
+    <string name="dash_of_target">共 %1$s 千卡</string>
+    <string name="dash_steps">步数</string>
+    <string name="dash_eating">饮食</string>
+    <string name="dash_streak">连续天数</string>
+    <string name="dash_kcal_value">%1$s 千卡</string>
+    <string name="dash_streak_value">第 %1$d 天</string>
+    <string name="dash_todays_meal">今日餐食</string>
+    <string name="dash_view_all">查看全部</string>
+    <string name="dash_up_next">%1$s · 下一餐</string>
+    <string name="dash_all_done">今天的餐食全部完成 🎉</string>
+    <string name="dash_all_done_sub">坚持计划，做得很棒！</string>
+    <string name="dash_water">饮水</string>
+    <string name="dash_weight">体重打卡</string>
+    <string name="dash_health">健康记录</string>
+    <string name="dash_trial_title">免费试用无广告的 kCal Premium</string>
+    <string name="dash_trial_body">解锁全部 Premium 功能，畅享无广告的 kCal。</string>
+    <string name="dash_trial_1">完整的 Premium 功能</string>
+    <string name="dash_trial_2">个性化营养洞察</string>
+    <string name="dash_trial_3">高级进度追踪</string>
+    <string name="dash_trial_4">无广告体验</string>
+    <string name="dash_get_premium">获取 Premium</string>
+    <string name="dash_maybe_later">以后再说</string>
+</resources>

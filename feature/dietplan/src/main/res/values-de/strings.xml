@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diet_overline">Ernährungsplan</string>
+    <string name="diet_this_week">Diese Woche</string>
+    <string name="diet_target">%1$s · Ziel ~%2$s kcal</string>
+    <string name="diet_swap">Tauschen</string>
+    <string name="diet_empty">Dein Plan für diesen Tag wird vorbereitet…</string>
+    <string name="checklist_title">Mahlzeiten-Checkliste</string>
+    <string name="checklist_subtitle">Hake jede Mahlzeit ab, sobald du sie gegessen hast.</string>
+    <string name="swap_title">Zutat tauschen</string>
+    <string name="swap_subtitle">Wähle einen Ersatz für dein %1$s.</string>
+    <string name="swap_currently">Aktuell</string>
+    <string name="swap_suggested">Vorgeschlagene Alternativen</string>
+    <string name="swap_best_match">Beste Wahl</string>
+    <string name="swap_confirm">Tausch bestätigen</string>
+    <string name="swap_none">Für dieses Gericht passt keine Alternative zu deinen Gesundheitsbedürfnissen und deinem Budget.</string>
+</resources>

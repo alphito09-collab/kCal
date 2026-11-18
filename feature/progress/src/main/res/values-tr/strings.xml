@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="progress_title">İlerleme</string>
+    <string name="progress_weekly">Haftalık</string>
+    <string name="progress_monthly">Aylık</string>
+    <string name="progress_weight_trend">Kilo eğilimi</string>
+    <string name="progress_week_label">H%1$d</string>
+    <string name="progress_week_title">%1$d. hafta · %2$s</string>
+    <string name="progress_burned">Yakılan kalori</string>
+    <string name="progress_intake">Alınan kalori</string>
+    <string name="progress_weight">Kilo</string>
+    <string name="progress_key_metrics">Temel göstergeler</string>
+    <string name="progress_no_weight">Eğilimini görmek için kilonu kaydet.</string>
+</resources>

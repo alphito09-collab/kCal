@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">Schritte</string>
+    <string name="steps_today">Heutige Schritte</string>
+    <string name="steps_kcal">/ %1$s kcal</string>
+    <string name="steps_goal">Ziel: %1$s Schritte</string>
+    <string name="steps_start">Start</string>
+    <string name="steps_stop">Stopp</string>
+    <string name="steps_hint_idle">Tippe auf Start, um deine Schritte zu zählen.</string>
+    <string name="steps_hint_active">Zählt im Hintergrund. Du kannst die App verlassen.</string>
+    <string name="steps_hint_denied">Erlaube den Zugriff auf körperliche Aktivität, um Schritte zu zählen.</string>
+    <string name="steps_hint_no_sensor">Dieses Gerät hat keinen Schrittsensor.</string>
+    <string name="steps_history">Verlauf</string>
+    <string name="steps_months">Monate</string>
+    <string name="steps_weeks">Wochen</string>
+    <string name="steps_days">Tage</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s Schritte in diesem Monat</string>
+    <string name="steps_week_summary">Woche %1$d · %2$s Schritte in dieser Woche</string>
+    <string name="steps_day_summary">%1$s — %2$s Schritte · %3$s kcal</string>
+    <string name="steps_week_label">W%1$d</string>
+    <string name="steps_notification_channel">Schrittzählung</string>
+    <string name="steps_notification_title">kCal zählt deine Schritte</string>
+    <string name="steps_notification_text">%1$s Schritte heute</string>
+    <string name="steps_notification_stop">Stopp</string>
+</resources>

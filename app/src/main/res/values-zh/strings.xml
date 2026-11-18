@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">首页</string>
+    <string name="nav_diet_plan">饮食计划</string>
+    <string name="nav_progress">进度</string>
+    <string name="nav_settings">设置</string>
+    <string name="exit_title">这就要走了？</string>
+    <string name="exit_body">今天的进度已保存。确定要退出吗？</string>
+    <string name="exit_stay">继续坚持</string>
+    <string name="exit_leave">退出应用</string>
+    <string name="offline_title">无网络连接</string>
+    <string name="offline_body">请检查网络连接后重试，以继续记录你的进度。</string>
+    <string name="offline_retry">重试</string>
+    <string name="offline_continue">离线继续</string>
+</resources>

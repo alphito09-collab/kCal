@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_title">الخطوات</string>
+    <string name="steps_today">خطوات اليوم</string>
+    <string name="steps_kcal">/ %1$s سعرة</string>
+    <string name="steps_goal">الهدف: %1$s خطوة</string>
+    <string name="steps_start">ابدأ</string>
+    <string name="steps_stop">إيقاف</string>
+    <string name="steps_hint_idle">اضغط ابدأ لبدء تتبع خطواتك.</string>
+    <string name="steps_hint_active">يتم التتبع في الخلفية. يمكنك مغادرة التطبيق.</string>
+    <string name="steps_hint_denied">اسمح بالوصول إلى النشاط البدني لعدّ خطواتك.</string>
+    <string name="steps_hint_no_sensor">هذا الجهاز لا يحتوي على مستشعر خطوات.</string>
+    <string name="steps_history">السجل</string>
+    <string name="steps_months">الأشهر</string>
+    <string name="steps_weeks">الأسابيع</string>
+    <string name="steps_days">الأيام</string>
+    <string name="steps_month_summary">%1$s · ≈%2$s خطوة هذا الشهر</string>
+    <string name="steps_week_summary">الأسبوع %1$d · %2$s خطوة هذا الأسبوع</string>
+    <string name="steps_day_summary">%1$s — %2$s خطوة · %3$s سعرة</string>
+    <string name="steps_week_label">أ%1$d</string>
+    <string name="steps_notification_channel">تتبع الخطوات</string>
+    <string name="steps_notification_title">kCal يعدّ خطواتك</string>
+    <string name="steps_notification_text">%1$s خطوة اليوم</string>
+    <string name="steps_notification_stop">إيقاف</string>
+</resources>
