@@ -65,15 +65,19 @@
 
     <string name="onb_region_title">Region &amp; budget</string>
     <string name="onb_region_subtitle">So your plan uses food that’s local and affordable</string>
-    <string name="onb_region_label">Region / Country</string>
+    <string name="onb_region_label">Country</string>
     <string name="onb_budget_label">Weekly food budget</string>
     <string name="onb_budget_low">Low</string>
     <string name="onb_budget_medium">Medium</string>
     <string name="onb_budget_high">High</string>
-    <string name="onb_budget_range">PKR %1$s – %2$s / week</string>
-    <string name="onb_budget_open">PKR %1$s+ / week</string>
     <string name="onb_see_plan">See my plan</string>
-    <string name="onb_choose_region">Choose your region</string>
+    <string name="onb_choose_region">Choose your country</string>
+    <string name="onb_region_hint">Your plan uses dishes and staples that are common and affordable there.</string>
+    <string name="onb_region_search">Search country</string>
+    <string name="onb_region_none">No country found</string>
+    <string name="onb_budget_low_desc">Affordable staples – lentils, eggs, rice and seasonal vegetables</string>
+    <string name="onb_budget_medium_desc">Staples plus some chicken, fish and dairy</string>
+    <string name="onb_budget_high_desc">The widest variety, including premium fish and meat</string>
 
     <string name="onb_energy_title">Your Daily Energy Needs</string>
     <string name="onb_energy_subtitle">Here\'s your estimated daily energy requirement.</string>

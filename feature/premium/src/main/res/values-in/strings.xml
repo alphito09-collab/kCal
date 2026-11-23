@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Mulai bulanan</string>
     <string name="premium_active">Aktif ✓</string>
     <string name="premium_cancel_note">Kamu bisa mengelola atau membatalkan langganan kapan saja.</string>
+    <string name="premium_price_per_week">%1$s / minggu</string>
+    <string name="premium_price_per_month">%1$s / bulan</string>
+    <string name="premium_pending">Pembelianmu tertunda. Premium aktif begitu Google Play mengonfirmasinya.</string>
+    <string name="premium_failed">Pembelian tidak dapat diselesaikan. Silakan coba lagi.</string>
 </resources>

@@ -57,4 +57,15 @@
     <string name="delete_title">¿Eliminar tus datos?</string>
     <string name="delete_body">Esto elimina de forma permanente tu perfil, planes y historial de este dispositivo. No se puede deshacer.</string>
     <string name="delete_confirm">Eliminar todo</string>
+    <string name="settings_reminders">Recordatorios</string>
+    <string name="reminders_title">Recordatorios</string>
+    <string name="reminders_body">Avisos suaves en el momento justo. Puedes desactivarlos cuando quieras.</string>
+    <string name="reminders_water">Beber agua</string>
+    <string name="reminders_water_sub">Cada 2 horas de 9:00 a 21:00</string>
+    <string name="reminders_meals">Horas de comida</string>
+    <string name="reminders_meals_sub">Desayuno, almuerzo, snack y cena</string>
+    <string name="reminders_weigh_in">Pesaje semanal</string>
+    <string name="reminders_weigh_in_sub">Todos los lunes a las 9:00</string>
+    <string name="reminders_permission_denied">Permite las notificaciones en los ajustes del sistema para recibir recordatorios.</string>
+    <string name="privacy_ad_choices">Opciones de privacidad de anuncios</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.alphito.kcal.feature.settings.presentation.mvi
 
 import androidx.lifecycle.viewModelScope
+import com.alphito.kcal.core.common.flags.FeatureFlags
 import com.alphito.kcal.core.common.mvi.MviViewModel
 import com.alphito.kcal.core.common.mvi.UiEffect
 import com.alphito.kcal.core.common.mvi.UiIntent
@@ -30,6 +31,7 @@ data class SettingsState(
     val plan: PremiumPlan? = null,
     val rating: Int = 0,
     val sheet: SettingsSheet = SettingsSheet.None,
+    val premiumEnabled: Boolean = false,
 ) : UiState
 
 sealed interface SettingsIntent : UiIntent {
@@ -49,12 +51,16 @@ sealed interface SettingsEffect : UiEffect {
 class SettingsViewModel(
     users: UserRepository,
     private val preferences: PreferencesRepository,
+    featureFlags: FeatureFlags,
 ) : MviViewModel<SettingsState, SettingsIntent, SettingsEffect>(SettingsState()) {
 
     init {
-        combine(users.profile, preferences.preferences) { profile, prefs ->
+        combine(users.profile, preferences.preferences, featureFlags.flags) { profile, prefs, flags ->
             reduce {
-                copy(name = profile?.name.orEmpty(), initials = profile?.initials.orEmpty(), plan = prefs.subscription.activePlan, rating = prefs.lastRating)
+                copy(
+                    name = profile?.name.orEmpty(), initials = profile?.initials.orEmpty(), plan = prefs.subscription.activePlan,
+                    rating = prefs.lastRating, premiumEnabled = flags.premiumEnabled,
+                )
             }
         }.catch { onError(it) }.launchIn(viewModelScope)
     }

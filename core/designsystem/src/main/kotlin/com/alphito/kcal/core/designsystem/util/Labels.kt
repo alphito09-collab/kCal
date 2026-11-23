@@ -13,6 +13,7 @@ import com.alphito.kcal.core.model.WeightUnits
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
+import kotlin.math.roundToInt
 
 /*
  * Every user-visible label is resolved from string resources here, against the *current*
@@ -65,10 +66,26 @@ fun valueWithUnit(value: String, unit: String): String = stringResource(R.string
 @ReadOnlyComposable
 fun kcalLabel(kcal: Int): String = stringResource(R.string.ds_kcal, KcalFormat.int(kcal, appLocale()))
 
+/** "250 kcal · Budget-friendly" – cost is a local-market tier (1–3), not a currency amount. */
 @Composable
 @ReadOnlyComposable
-fun kcalPriceLabel(kcal: Int, pricePkr: Int): String =
-    stringResource(R.string.ds_kcal_price, KcalFormat.int(kcal, appLocale()), KcalFormat.int(pricePkr, appLocale()))
+fun kcalCostLabel(kcal: Int, cost: Int): String =
+    stringResource(R.string.ds_kcal_cost, KcalFormat.int(kcal, appLocale()), costLabel(cost))
+
+@Composable
+@ReadOnlyComposable
+fun costLabel(cost: Int): String = stringResource(
+    when (cost) {
+        1 -> R.string.ds_cost_budget
+        2 -> R.string.ds_cost_moderate
+        else -> R.string.ds_cost_premium
+    },
+)
+
+/** "150 g" with locale digits. */
+@Composable
+@ReadOnlyComposable
+fun gramsText(grams: Int): String = valueWithUnit(KcalFormat.int(grams, appLocale()), stringResource(R.string.ds_unit_g))
 
 /** "68.4 kg" / "150.8 lb" from a stored kg value. */
 @Composable
@@ -90,47 +107,38 @@ fun fractionText(value: Int, total: Int): String = stringResource(R.string.ds_fr
 @ReadOnlyComposable
 fun rangeText(from: String, to: String): String = stringResource(R.string.ds_range, from, to)
 
-private val foodNames = mapOf(
-    "anda_paratha" to (R.string.ds_food_anda_paratha to R.string.ds_food_anda_paratha_portion),
-    "lassi" to (R.string.ds_food_lassi to R.string.ds_food_lassi_portion),
-    "daal_chawal" to (R.string.ds_food_daal_chawal to R.string.ds_food_daal_chawal_portion),
-    "chickpea_curry_rice" to (R.string.ds_food_chickpea_curry_rice to R.string.ds_food_chickpea_curry_rice_portion),
-    "vegetable_pulao" to (R.string.ds_food_vegetable_pulao to R.string.ds_food_vegetable_pulao_portion),
-    "chicken_karahi_roti" to (R.string.ds_food_chicken_karahi_roti to R.string.ds_food_chicken_karahi_roti_portion),
-    "mixed_veg_roti" to (R.string.ds_food_mixed_veg_roti to R.string.ds_food_mixed_veg_roti_portion),
-    "grilled_chicken" to (R.string.ds_food_grilled_chicken to R.string.ds_food_grilled_chicken_portion),
-    "salad" to (R.string.ds_food_salad to R.string.ds_food_salad_portion),
-    "roti" to (R.string.ds_food_roti to R.string.ds_food_roti_portion),
-    "fruit_chaat" to (R.string.ds_food_fruit_chaat to R.string.ds_food_fruit_chaat_portion),
-)
-
-/** Localized dish name (catalogue foods are resources; unknown/remote foods fall back to their own name). */
+/** Localized dish name from the catalogue (all 12 app languages; English as fallback). */
 @Composable
 @ReadOnlyComposable
-fun foodName(food: Food): String = foodNames[food.id]?.let { stringResource(it.first) } ?: food.name
+fun foodName(food: Food): String = food.localizedName(appLanguage())
 
+/** "Rice 190 g · Lentils 150 g · Tomato 40 g" – the three biggest ingredients, scaled to the portion. */
 @Composable
 @ReadOnlyComposable
-fun foodPortion(food: Food): String = foodNames[food.id]?.let { stringResource(it.second) } ?: food.portion
+fun portionText(food: Food, servings: Double = 1.0): String {
+    val language = appLanguage()
+    val unit = stringResource(R.string.ds_unit_g)
+    val locale = appLocale()
+    return food.ingredients.sortedByDescending { it.grams }.take(3).joinToString(" · ") {
+        it.localizedName(language) + " " + KcalFormat.int((it.grams * servings).roundToInt(), locale) + " " + unit
+    }
+}
+
+/** BCP-47 language of the UI ("id" for Indonesian even on JDKs that still report "in"). */
+@Composable
+@ReadOnlyComposable
+fun appLanguage(): String = appLocale().language.let { if (it == "in") "id" else it }
 
 /** "Daal chawal + Salad" in the current language. */
 @Composable
 @ReadOnlyComposable
 fun mealTitle(slot: MealSlot): String = slot.items.map { foodName(it.food) }.joinToString(" + ")
 
-private val regionNames = mapOf(
-    "Pakistan — Lahore" to R.string.ds_region_lahore,
-    "Pakistan — Karachi" to R.string.ds_region_karachi,
-    "Pakistan — Islamabad" to R.string.ds_region_islamabad,
-    "Pakistan — Rawalpindi" to R.string.ds_region_rawalpindi,
-    "Pakistan — Faisalabad" to R.string.ds_region_faisalabad,
-    "Pakistan — Peshawar" to R.string.ds_region_peshawar,
-)
-
-/** Regions are stored by a stable key (their English name) and displayed localized. */
+/** Country name in the UI language ("Pakistan", "باكستان", "巴基斯坦") from an ISO code. */
 @Composable
 @ReadOnlyComposable
-fun regionLabel(region: String): String = regionNames[region]?.let { stringResource(it) } ?: region
+fun regionLabel(countryCode: String): String =
+    Locale.Builder().setRegion(countryCode).build().getDisplayCountry(appLocale()).ifBlank { countryCode }
 
 /**
  * Locale-correct date from a CLDR skeleton ("EEEdMMM", "MMMd", "MMMMyyyy"): field order,

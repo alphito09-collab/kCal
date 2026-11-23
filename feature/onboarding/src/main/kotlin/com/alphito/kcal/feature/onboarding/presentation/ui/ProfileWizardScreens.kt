@@ -1,6 +1,8 @@
 package com.alphito.kcal.feature.onboarding.presentation.ui
 
 import com.alphito.kcal.core.designsystem.util.regionLabel
+import androidx.compose.runtime.remember
+import com.alphito.kcal.core.designsystem.util.appLocale
 import com.alphito.kcal.core.designsystem.util.KcalUnit
 import com.alphito.kcal.core.designsystem.util.unitLabel
 import com.alphito.kcal.core.designsystem.util.weightUnitLabel
@@ -327,7 +329,7 @@ internal fun RegionBudgetScreen(state: RegionBudgetState, onIntent: (RegionBudge
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(stringResource(R.string.onb_region_label), style = KcalTheme.typography.body, color = colors.textSecondary, modifier = Modifier.weight(1f))
-            Text(regionLabel(state.region), style = KcalTheme.typography.labelBold, color = colors.textPrimary)
+            Text(countryFlag(state.region) + "  " + regionLabel(state.region), style = KcalTheme.typography.labelBold, color = colors.textPrimary)
         }
         Spacer(Modifier.height(24.dp))
         Text(stringResource(R.string.onb_budget_label), style = KcalTheme.typography.body, color = colors.textSecondary)
@@ -341,26 +343,59 @@ internal fun RegionBudgetScreen(state: RegionBudgetState, onIntent: (RegionBudge
                         BudgetTier.High -> R.string.onb_budget_high
                     },
                 )
-                val range = tier.maxPkrPerWeek?.let {
-                    stringResource(R.string.onb_budget_range, KcalFormat.int(tier.minPkrPerWeek), KcalFormat.int(it))
-                } ?: stringResource(R.string.onb_budget_open, KcalFormat.int(tier.minPkrPerWeek))
+                val range = stringResource(
+                    when (tier) {
+                        BudgetTier.Low -> R.string.onb_budget_low_desc
+                        BudgetTier.Medium -> R.string.onb_budget_medium_desc
+                        BudgetTier.High -> R.string.onb_budget_high_desc
+                    },
+                )
                 SelectableOptionCard(title, range, state.budget == tier, { onIntent(RegionBudgetIntent.BudgetSelected(tier)) }, Modifier.staggerIn(4 + i))
             }
         }
     }
     if (state.showRegionPicker) {
+        val locale = appLocale()
+        // Names in the UI language, sorted with the locale's collation ("Österreich" next to "Oman"…).
+        val countries = remember(locale, state.regions) {
+            val collator = java.text.Collator.getInstance(locale)
+            state.regions.map { it to java.util.Locale.Builder().setRegion(it).build().getDisplayCountry(locale) }
+                .sortedWith { a, b -> collator.compare(a.second, b.second) }
+        }
+        val filtered = remember(countries, state.query) {
+            val q = state.query.trim()
+            if (q.isEmpty()) countries
+            else countries.filter { it.second.contains(q, ignoreCase = true) || it.first.equals(q, ignoreCase = true) }
+        }
         KcalBottomSheet(onDismiss = { onIntent(RegionBudgetIntent.DismissRegionPicker) }) { _ ->
             Text(stringResource(R.string.onb_choose_region), style = KcalTheme.typography.title, color = colors.textBrand)
+            Spacer(Modifier.height(4.dp))
+            Text(stringResource(R.string.onb_region_hint), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
             Spacer(Modifier.height(12.dp))
-            state.regions.forEach { region ->
-                KcalListRow(
-                    title = regionLabel(region),
-                    onClick = { onIntent(RegionBudgetIntent.RegionSelected(region)) },
-                    modifier = Modifier.fillMaxWidth(),
-                    titleColor = if (region == state.region) colors.textBrand else colors.textPrimary,
-                    trailing = { com.alphito.kcal.core.designsystem.component.RadioDot(region == state.region) },
-                )
+            KcalTextField(
+                state.query, { onIntent(RegionBudgetIntent.Search(it)) },
+                placeholder = stringResource(R.string.onb_region_search), imeDone = true,
+            )
+            Spacer(Modifier.height(8.dp))
+            androidx.compose.foundation.lazy.LazyColumn(Modifier.fillMaxWidth().height(420.dp)) {
+                items(filtered.size, key = { filtered[it].first }) { index ->
+                    val (code, name) = filtered[index]
+                    KcalListRow(
+                        title = countryFlag(code) + "  " + name,
+                        onClick = { onIntent(RegionBudgetIntent.RegionSelected(code)) },
+                        modifier = Modifier.fillMaxWidth(),
+                        titleColor = if (code == state.region) colors.textBrand else colors.textPrimary,
+                        trailing = { com.alphito.kcal.core.designsystem.component.RadioDot(code == state.region) },
+                    )
+                }
+                if (filtered.isEmpty()) item {
+                    Text(stringResource(R.string.onb_region_none), style = KcalTheme.typography.body, color = colors.textSecondary, modifier = Modifier.padding(16.dp))
+                }
             }
         }
     }
 }
+
+/** 🇵🇰 from "PK" – regional-indicator symbols, no images needed. */
+private fun countryFlag(code: String): String =
+    if (code.length != 2) "" else code.uppercase().map { Character.toChars(0x1F1E6 + (it - 'A')) }.joinToString("") { String(it) }

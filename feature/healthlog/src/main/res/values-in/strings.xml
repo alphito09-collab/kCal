@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">Melacak gejala harian IBS.</string>
     <string name="health_save_log">Simpan catatan</string>
     <string name="health_saved">Tersimpan ✓</string>
-    <string name="sugar_today">Kadar gula hari ini</string>
+    <string name="sugar_today">Hasil gula darah</string>
     <string name="sugar_save">Simpan hasil</string>
     <string name="sugar_hint">Catat kadar gulamu sekali sehari untuk memantau kesehatan.</string>
     <string name="sugar_trend">Tren gula (7 hari)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · belum ada hasil.</string>
     <string name="dairy_days_since">Hari sejak reaksi terakhir</string>
     <string name="dairy_days">%1$d hari</string>
-    <string name="dairy_question">Apakah kamu konsumsi susu hari ini?</string>
+    <string name="dairy_question">Apakah kamu makan produk susu hari itu?</string>
     <string name="dairy_any_reaction">Ada reaksi?</string>
     <string name="dairy_history">Riwayat reaksi</string>
     <string name="dairy_badge">Susu</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">Gas</string>
     <string name="reaction_diarrhea">Diare</string>
     <string name="reaction_nausea">Mual</string>
-    <string name="ibs_today">Gejala hari ini</string>
+    <string name="ibs_today">Gejala</string>
     <string name="ibs_severity">Tingkat keparahan</string>
     <string name="ibs_trend">Keparahan gejala (7 hari)</string>
     <string name="ibs_abdominal_pain">Nyeri perut</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">Berat</string>
     <string name="ibs_summary">%1$s · %3$s %2$s tercatat.</string>
     <string name="ibs_summary_none">%1$s · tidak ada gejala tercatat.</string>
+    <string name="health_log_for">Mencatat untuk %1$s</string>
+    <string name="health_today">Hari ini</string>
+    <string name="sugar_ctx_fasting">Puasa</string>
+    <string name="sugar_ctx_before">Sebelum makan</string>
+    <string name="sugar_ctx_after">Setelah makan</string>
+    <string name="sugar_ctx_bedtime">Sebelum tidur</string>
+    <string name="sugar_target">Target saat ini: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">Target 1–2 jam setelah makan: di bawah %1$s mg/dL</string>
+    <string name="sugar_invalid">Masukkan nilai antara 20 dan 600 mg/dL.</string>
+    <string name="sugar_stats">Dalam rentang: %1$s dari %2$s pengukuran · rata-rata %3$s mg/dL</string>
+    <string name="health_plan_title">Bagaimana rencanamu membantu</string>
+    <string name="health_plan_diabetes">Makananmu tanpa gula tambahan dan hidangan indeks glikemik tinggi, dengan karbohidrat sekitar 60 g per makan. Catat hasil cek secara rutin dan bagikan ke doktermu.</string>
+    <string name="health_plan_ibs">Makananmu rendah FODMAP: tanpa hidangan berat bawang, kacang-kacangan, atau pedas. Mencatat gejala membantumu menemukan pemicumu.</string>
+    <string name="health_plan_lactose">Makananmu menghindari hidangan tinggi susu. Yogurt dan keju keras dalam jumlah kecil biasanya aman – catatanmu menunjukkan apa yang cocok.</string>
+    <string name="ibs_free_days">Hari tanpa gejala minggu ini: %1$s dari %2$s tercatat</string>
+    <string name="ibs_suspects">Hanya dimakan pada hari bergejala: %1$s. Jika berulang, coba tukar di rencanamu.</string>
+    <string name="ibs_no_suspects">Centang makananmu di daftar – kami akan mencari pola antara makanan dan gejalamu.</string>
+    <string name="dairy_reactions_30">Reaksi dalam 30 hari terakhir: %1$s</string>
 </resources>

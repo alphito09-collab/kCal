@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">रिमाइंडर</string>
+    <string name="notif_channel_reminders_desc">पानी, भोजन और वज़न के रिमाइंडर जो आपने चालू किए हैं।</string>
+    <string name="notif_channel_updates">kCal से अपडेट</string>
+    <string name="notif_channel_updates_desc">kCal टीम द्वारा भेजे गए सुझाव और ख़बरें।</string>
+    <string name="notif_water_title">एक गिलास पानी का समय 💧</string>
+    <string name="notif_water_body">एक गिलास आपको आज के लक्ष्य की ओर बनाए रखता है।</string>
+    <string name="notif_breakfast_title">नाश्ते का समय</string>
+    <string name="notif_lunch_title">दोपहर के खाने का समय</string>
+    <string name="notif_snack_title">स्नैक का समय</string>
+    <string name="notif_dinner_title">रात के खाने का समय</string>
+    <string name="notif_meal_body">आपका तय भोजन टिक करने के लिए तैयार है।</string>
+    <string name="notif_weigh_in_title">साप्ताहिक वज़न</string>
+    <string name="notif_weigh_in_body">अपनी प्रगति सटीक रखने के लिए इस हफ़्ते का वज़न दर्ज करें।</string>
+</resources>

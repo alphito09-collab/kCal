@@ -2,7 +2,6 @@ package com.alphito.kcal.core.database.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Upsert
@@ -40,18 +39,47 @@ interface FoodDao {
     @Query("SELECT * FROM food")
     suspend fun all(): List<FoodEntity>
 
+    @Query("SELECT * FROM food WHERE active = 1")
+    suspend fun active(): List<FoodEntity>
+
+    /** Foods eaten (checked meals) on the given days – used by health-log insights. */
+    @Query(
+        """SELECT DISTINCT f.* FROM food f
+           INNER JOIN planned_item p ON p.foodId = f.id
+           INNER JOIN meal_check c ON c.epochDay = p.epochDay AND c.mealType = p.mealType AND c.checked = 1
+           WHERE p.epochDay IN (:days)""",
+    )
+    suspend fun eatenOn(days: List<Long>): List<FoodEntity>
+
+    @Query("UPDATE food SET active = 0 WHERE id NOT IN (:keepIds)")
+    suspend fun deactivateAllExcept(keepIds: List<String>)
+
+    @Transaction
+    suspend fun replaceCatalog(foods: List<FoodEntity>) {
+        insertAll(foods)
+        deactivateAllExcept(foods.map { it.id })
+    }
+
     @Query("SELECT * FROM food WHERE id = :id")
     suspend fun byId(id: String): FoodEntity?
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    /**
+     * Upsert, never REPLACE: SQLite's REPLACE deletes the old row first, which violates the
+     * planned_item → food foreign key as soon as a meal plan references the food.
+     */
+    @Upsert
     suspend fun insertAll(foods: List<FoodEntity>)
 }
 
 private const val ITEM_WITH_FOOD = """
-    SELECT p.id, p.epochDay, p.mealType, p.position,
+    SELECT p.id, p.epochDay, p.mealType, p.position, p.servings,
            f.id AS food_id, f.name AS food_name, f.portion AS food_portion, f.kcal AS food_kcal,
            f.pricePkr AS food_pricePkr, f.role AS food_role, f.mealTypes AS food_mealTypes,
-           f.imageKey AS food_imageKey, f.tags AS food_tags
+           f.imageKey AS food_imageKey, f.tags AS food_tags, f.names AS food_names,
+           f.portions AS food_portions, f.imageUrl AS food_imageUrl, f.regions AS food_regions,
+           f.active AS food_active, f.cost AS food_cost, f.emoji AS food_emoji, f.protein AS food_protein,
+           f.carbs AS food_carbs, f.fat AS food_fat, f.fiber AS food_fiber, f.gi AS food_gi,
+           f.ingredients AS food_ingredients
     FROM planned_item p INNER JOIN food f ON f.id = p.foodId
 """
 
@@ -75,8 +103,8 @@ interface MealPlanDao {
     @Upsert
     suspend fun upsertCheck(check: MealCheckEntity)
 
-    @Query("UPDATE planned_item SET foodId = :foodId WHERE id = :itemId")
-    suspend fun updateFood(itemId: Long, foodId: String)
+    @Query("UPDATE planned_item SET foodId = :foodId, servings = :servings WHERE id = :itemId")
+    suspend fun updateFood(itemId: Long, foodId: String, servings: Double)
 
     @Query("DELETE FROM planned_item WHERE epochDay >= :from")
     suspend fun deleteFrom(from: Long)
@@ -89,6 +117,9 @@ interface MealPlanDao {
         deleteFrom(from)
         insertItems(items)
     }
+
+    @Query("SELECT COUNT(*) FROM meal_check WHERE epochDay = :day AND checked = 1")
+    suspend fun checkedCount(day: Long): Int
 
     @Query("SELECT MAX(epochDay) FROM planned_item")
     suspend fun lastPlannedDay(): Long?

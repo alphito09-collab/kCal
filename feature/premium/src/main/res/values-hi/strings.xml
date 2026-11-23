@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">मासिक शुरू करें</string>
     <string name="premium_active">सक्रिय ✓</string>
     <string name="premium_cancel_note">आप कभी भी अपनी सदस्यता बदल या रद्द कर सकते हैं।</string>
+    <string name="premium_price_per_week">%1$s / सप्ताह</string>
+    <string name="premium_price_per_month">%1$s / महीना</string>
+    <string name="premium_pending">आपकी खरीदारी लंबित है। Google Play की पुष्टि होते ही Premium चालू हो जाएगा।</string>
+    <string name="premium_failed">खरीदारी पूरी नहीं हो सकी। कृपया फिर से कोशिश करें।</string>
 </resources>

@@ -57,4 +57,15 @@
     <string name="delete_title">अपना डेटा हटाएँ?</string>
     <string name="delete_body">यह आपकी प्रोफ़ाइल, भोजन प्लान और इतिहास को इस डिवाइस से हमेशा के लिए हटा देगा। इसे वापस नहीं किया जा सकता।</string>
     <string name="delete_confirm">सब कुछ हटाएँ</string>
+    <string name="settings_reminders">रिमाइंडर</string>
+    <string name="reminders_title">रिमाइंडर</string>
+    <string name="reminders_body">सही समय पर हल्के रिमाइंडर। आप इन्हें कभी भी बंद कर सकते हैं।</string>
+    <string name="reminders_water">पानी पिएं</string>
+    <string name="reminders_water_sub">सुबह 9 से रात 9 बजे तक हर 2 घंटे</string>
+    <string name="reminders_meals">भोजन का समय</string>
+    <string name="reminders_meals_sub">नाश्ता, दोपहर का खाना, स्नैक और रात का खाना</string>
+    <string name="reminders_weigh_in">साप्ताहिक वज़न</string>
+    <string name="reminders_weigh_in_sub">हर सोमवार सुबह 9 बजे</string>
+    <string name="reminders_permission_denied">रिमाइंडर पाने के लिए सिस्टम सेटिंग में सूचनाएँ चालू करें।</string>
+    <string name="privacy_ad_choices">विज्ञापन गोपनीयता विकल्प</string>
 </resources>

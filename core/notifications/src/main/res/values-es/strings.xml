@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Recordatorios</string>
+    <string name="notif_channel_reminders_desc">Recordatorios de agua, comidas y pesaje que activaste.</string>
+    <string name="notif_channel_updates">Novedades de kCal</string>
+    <string name="notif_channel_updates_desc">Consejos y novedades del equipo de kCal.</string>
+    <string name="notif_water_title">Hora de un vaso de agua 💧</string>
+    <string name="notif_water_body">Un vaso rápido te mantiene en camino hacia la meta de hoy.</string>
+    <string name="notif_breakfast_title">Hora del desayuno</string>
+    <string name="notif_lunch_title">Hora del almuerzo</string>
+    <string name="notif_snack_title">Hora del snack</string>
+    <string name="notif_dinner_title">Hora de la cena</string>
+    <string name="notif_meal_body">Tu comida planificada está lista para marcar.</string>
+    <string name="notif_weigh_in_title">Pesaje semanal</string>
+    <string name="notif_weigh_in_body">Registra tu peso de esta semana para mantener tu progreso exacto.</string>
+</resources>

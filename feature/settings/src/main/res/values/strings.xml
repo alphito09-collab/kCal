@@ -6,6 +6,17 @@
     <string name="settings_health">Health Information</string>
     <string name="settings_region">Region &amp; Budget</string>
     <string name="settings_language">Language</string>
+    <string name="settings_reminders">Reminders</string>
+    <string name="reminders_title">Reminders</string>
+    <string name="reminders_body">Gentle nudges at the right time. You can turn them off anytime.</string>
+    <string name="reminders_water">Drink water</string>
+    <string name="reminders_water_sub">Every 2 hours from 9 AM to 9 PM</string>
+    <string name="reminders_meals">Meal times</string>
+    <string name="reminders_meals_sub">Breakfast, lunch, snack and dinner</string>
+    <string name="reminders_weigh_in">Weekly weigh-in</string>
+    <string name="reminders_weigh_in_sub">Every Monday at 9 AM</string>
+    <string name="reminders_permission_denied">Allow notifications in system settings to get reminders.</string>
+    <string name="privacy_ad_choices">Ad privacy choices</string>
     <string name="settings_premium">kCal Premium</string>
     <string name="settings_premium_active">%1$s Premium · Active</string>
     <string name="settings_premium_free">Free plan · Upgrade anytime</string>

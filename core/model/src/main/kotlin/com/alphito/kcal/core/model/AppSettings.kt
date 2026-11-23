@@ -28,6 +28,8 @@ enum class AppLanguage(val tag: String, val nativeName: String, val englishName:
 
 enum class PremiumPlan { Weekly, Monthly }
 
+enum class ReminderType { Water, Meals, WeighIn }
+
 data class SubscriptionState(
     val activePlan: PremiumPlan? = null,
     val trialDaysLeft: Int? = null,
@@ -49,4 +51,5 @@ data class AppPreferences(
     val freeTrialPromptSeen: Boolean = false,
     val subscription: SubscriptionState = SubscriptionState(),
     val lastRating: Int = 0,
+    val reminders: Set<ReminderType> = emptySet(),
 )

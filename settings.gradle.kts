@@ -37,6 +37,10 @@ include(":core:navigation")
 include(":core:database")
 include(":core:datastore")
 include(":core:data")
+include(":core:firebase")
+include(":core:billing")
+include(":core:ads")
+include(":core:notifications")
 
 // Feature layer
 include(":feature:onboarding")

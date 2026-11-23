@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Commencer le mensuel</string>
     <string name="premium_active">Actif ✓</string>
     <string name="premium_cancel_note">Vous pouvez gérer ou résilier votre abonnement à tout moment.</string>
+    <string name="premium_price_per_week">%1$s / semaine</string>
+    <string name="premium_price_per_month">%1$s / mois</string>
+    <string name="premium_pending">Votre achat est en attente. Premium sera activé dès que Google Play l\'aura confirmé.</string>
+    <string name="premium_failed">L\'achat n\'a pas pu être finalisé. Veuillez réessayer.</string>
 </resources>

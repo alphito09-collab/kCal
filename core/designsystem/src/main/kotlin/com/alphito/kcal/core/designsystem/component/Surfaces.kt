@@ -21,6 +21,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
@@ -77,15 +79,48 @@ fun IconChip(
     }
 }
 
-/** Food thumbnail – bundled 192px WebP, cropped into a rounded square. */
+/**
+ * Food thumbnail: the bundled 192px WebP when the dish has one; otherwise its emoji on a soft
+ * tinted tile, with the backend photo (Coil, memory + disk cached) drawn on top once loaded – so a
+ * missing network or photo never shows an empty or wrong picture.
+ */
 @Composable
-fun FoodThumb(imageKey: String?, modifier: Modifier = Modifier, size: Dp = 42.dp, shape: Shape = KcalShapes.sm) {
-    Image(
-        painter = painterResource(FoodImages.resFor(imageKey)),
-        contentDescription = null,
-        contentScale = ContentScale.Crop,
-        modifier = modifier.size(size).clip(shape),
-    )
+fun FoodThumb(
+    imageKey: String?,
+    modifier: Modifier = Modifier,
+    imageUrl: String? = null,
+    emoji: String? = null,
+    size: Dp = 42.dp,
+    shape: Shape = KcalShapes.sm,
+) {
+    val bundled = FoodImages.bundled(imageKey)
+    if (bundled != null) {
+        Image(
+            painter = painterResource(bundled),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = modifier.size(size).clip(shape),
+        )
+        return
+    }
+    Box(
+        modifier.size(size).clip(shape).background(KcalTheme.colors.accentContainer),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(
+            emoji?.takeIf { it.isNotBlank() } ?: "🍽",
+            fontSize = (size.value * 0.5f).sp,
+            textAlign = TextAlign.Center,
+        )
+        if (!imageUrl.isNullOrBlank()) {
+            coil3.compose.AsyncImage(
+                model = imageUrl,
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.matchParentSize(),
+            )
+        }
+    }
 }
 
 /** Small rounded label ("BEST MATCH", "Dairy", "−0.6 kg"). */

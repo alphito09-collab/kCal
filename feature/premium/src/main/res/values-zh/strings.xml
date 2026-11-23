@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">开通月卡</string>
     <string name="premium_active">已开通 ✓</string>
     <string name="premium_cancel_note">你可以随时管理或取消订阅。</string>
+    <string name="premium_price_per_week">%1$s / 周</string>
+    <string name="premium_price_per_month">%1$s / 月</string>
+    <string name="premium_pending">你的购买正在处理中，Google Play 确认后即可解锁 Premium。</string>
+    <string name="premium_failed">无法完成购买，请重试。</string>
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">提醒</string>
+    <string name="notif_channel_reminders_desc">你开启的喝水、用餐和称重提醒。</string>
+    <string name="notif_channel_updates">kCal 动态</string>
+    <string name="notif_channel_updates_desc">kCal 团队发送的小贴士和新闻。</string>
+    <string name="notif_water_title">该喝杯水了 💧</string>
+    <string name="notif_water_body">一杯水，让你保持今天的目标进度。</string>
+    <string name="notif_breakfast_title">早餐时间</string>
+    <string name="notif_lunch_title">午餐时间</string>
+    <string name="notif_snack_title">加餐时间</string>
+    <string name="notif_dinner_title">晚餐时间</string>
+    <string name="notif_meal_body">你的计划餐食可以打勾啦。</string>
+    <string name="notif_weigh_in_title">每周称重</string>
+    <string name="notif_weigh_in_body">记录本周体重，让进度更准确。</string>
+</resources>

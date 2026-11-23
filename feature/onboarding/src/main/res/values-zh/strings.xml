@@ -60,15 +60,11 @@
     <string name="onb_target_weight">目标体重</string>
     <string name="onb_region_title">地区与预算</string>
     <string name="onb_region_subtitle">让你的计划采用本地实惠的食物</string>
-    <string name="onb_region_label">地区 / 国家</string>
     <string name="onb_budget_label">每周饮食预算</string>
     <string name="onb_budget_low">低</string>
     <string name="onb_budget_medium">中</string>
     <string name="onb_budget_high">高</string>
-    <string name="onb_budget_range">每周 %1$s – %2$s 卢比</string>
-    <string name="onb_budget_open">每周 %1$s+ 卢比</string>
     <string name="onb_see_plan">查看我的计划</string>
-    <string name="onb_choose_region">选择你的地区</string>
     <string name="onb_energy_title">你的每日能量需求</string>
     <string name="onb_energy_subtitle">这是你预估的每日能量需求。</string>
     <string name="onb_bmr">基础代谢</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ 每天 %1$s 步</string>
     <string name="onb_done">完成</string>
     <string name="onb_exact_hint">例如 300</string>
+    <string name="onb_region_label">国家/地区</string>
+    <string name="onb_choose_region">选择你的国家/地区</string>
+    <string name="onb_region_hint">你的计划会使用当地常见且实惠的菜肴和食材。</string>
+    <string name="onb_region_search">搜索国家/地区</string>
+    <string name="onb_region_none">未找到国家/地区</string>
+    <string name="onb_budget_low_desc">实惠的主食——扁豆、鸡蛋、米饭和时令蔬菜</string>
+    <string name="onb_budget_medium_desc">主食加上一些鸡肉、鱼和奶制品</string>
+    <string name="onb_budget_high_desc">种类最丰富，包括优质鱼肉</string>
 </resources>

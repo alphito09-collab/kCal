@@ -5,31 +5,166 @@
 //   ./gradlew :dietplan:stabilityDump
 
 @Composable
-internal fun com.alphito.kcal.feature.dietplan.presentation.components.MealSlotCard(slot: com.alphito.kcal.core.model.MealSlot, onSwap: kotlin.Function1<kotlin.Long, kotlin.Unit>, modifier: androidx.compose.ui.Modifier): kotlin.Unit
+private fun com.alphito.kcal.feature.dietplan.presentation.components.FoodHeader(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double, mealType: com.alphito.kcal.core.model.MealType): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - food: STABLE (stability configuration file type)
+    - servings: STABLE (primitive type)
+    - mealType: STABLE (stability configuration file type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.InfoButton(onClick: kotlin.Function0<kotlin.Unit>, modifier: androidx.compose.ui.Modifier): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - onClick: STABLE (function type)
+    - modifier: STABLE (marked @Stable or @Immutable)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.components.IngredientsSection(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - food: STABLE (stability configuration file type)
+    - servings: STABLE (primitive type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.MealInfoContent(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double, mealType: com.alphito.kcal.core.model.MealType, reasons: kotlinx.collections.immutable.ImmutableList<com.alphito.kcal.core.model.MealReason>, conditions: kotlinx.collections.immutable.ImmutableSet<com.alphito.kcal.core.model.HealthCondition>, primaryAction: kotlin.String, onPrimary: kotlin.Function0<kotlin.Unit>, onDismiss: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - food: STABLE (stability configuration file type)
+    - servings: STABLE (primitive type)
+    - mealType: STABLE (stability configuration file type)
+    - reasons: STABLE (known stable type)
+    - conditions: STABLE (known stable type)
+    - primaryAction: STABLE (String is immutable)
+    - onPrimary: STABLE (function type)
+    - onDismiss: STABLE (function type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.MealSlotCard(slot: com.alphito.kcal.core.model.MealSlot, onSwap: kotlin.Function1<kotlin.Long, kotlin.Unit>, onInfo: kotlin.Function1<kotlin.Long, kotlin.Unit>, modifier: androidx.compose.ui.Modifier): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - slot: STABLE (stability configuration file type)
     - onSwap: STABLE (function type)
+    - onInfo: STABLE (function type)
     - modifier: STABLE (marked @Stable or @Immutable)
 
 @Composable
-private fun com.alphito.kcal.feature.dietplan.presentation.components.PlannedItemRow(item: com.alphito.kcal.core.model.PlannedItem, onSwap: kotlin.Function1<kotlin.Long, kotlin.Unit>): kotlin.Unit
+private fun com.alphito.kcal.feature.dietplan.presentation.components.NutrientPill(name: kotlin.String, grams: kotlin.String): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - name: STABLE (String is immutable)
+    - grams: STABLE (String is immutable)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.components.NutritionRow(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double, showGlycemic: kotlin.Boolean): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - food: STABLE (stability configuration file type)
+    - servings: STABLE (primitive type)
+    - showGlycemic: STABLE (primitive type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.components.PlannedItemRow(item: com.alphito.kcal.core.model.PlannedItem, onSwap: kotlin.Function1<kotlin.Long, kotlin.Unit>, onInfo: kotlin.Function1<kotlin.Long, kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - item: STABLE (stability configuration file type)
     - onSwap: STABLE (function type)
+    - onInfo: STABLE (function type)
 
 @Composable
-internal fun com.alphito.kcal.feature.dietplan.presentation.components.SwapOptionCard(food: com.alphito.kcal.core.model.Food, bestMatch: kotlin.Boolean, selected: kotlin.Boolean, onClick: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+private fun com.alphito.kcal.feature.dietplan.presentation.components.ReasonRow(reason: com.alphito.kcal.core.model.MealReason): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - reason: STABLE (stability configuration file type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.components.SectionTitle(text: kotlin.Int): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - text: STABLE (primitive type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.SwapInfoContent(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double, mealType: com.alphito.kcal.core.model.MealType, reasons: kotlinx.collections.immutable.ImmutableList<com.alphito.kcal.core.model.SwapReason>, onChoose: kotlin.Function0<kotlin.Unit>, onDismiss: kotlin.Function0<kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - food: STABLE (stability configuration file type)
-    - bestMatch: STABLE (primitive type)
+    - servings: STABLE (primitive type)
+    - mealType: STABLE (stability configuration file type)
+    - reasons: STABLE (known stable type)
+    - onChoose: STABLE (function type)
+    - onDismiss: STABLE (function type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.SwapOptionCard(candidate: com.alphito.kcal.core.model.SwapCandidate, selected: kotlin.Boolean, onClick: kotlin.Function0<kotlin.Unit>, onInfo: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - candidate: STABLE (stability configuration file type)
     - selected: STABLE (primitive type)
     - onClick: STABLE (function type)
+    - onInfo: STABLE (function type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.SwapReasonChip(reason: com.alphito.kcal.core.model.SwapReason): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - reason: STABLE (stability configuration file type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.components.text(): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.components.text(): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.BasisChip(text: kotlin.String): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - text: STABLE (String is immutable)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.ChecklistProgress(day: com.alphito.kcal.core.model.DayPlan, streak: kotlin.Int): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - day: STABLE (stability configuration file type)
+    - streak: STABLE (primitive type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.ChecklistRow(slot: com.alphito.kcal.core.model.MealSlot, onIntent: kotlin.Function1<com.alphito.kcal.feature.dietplan.presentation.mvi.ChecklistIntent, kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - slot: STABLE (stability configuration file type)
+    - onIntent: STABLE (function type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.DaySummaryCard(day: com.alphito.kcal.core.model.DayPlan, basis: com.alphito.kcal.feature.dietplan.presentation.mvi.PlanBasis, onHowItWorks: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - day: STABLE (stability configuration file type)
+    - basis: STABLE (class with no mutable properties)
+    - onHowItWorks: STABLE (function type)
 
 @Composable
 internal fun com.alphito.kcal.feature.dietplan.presentation.ui.DietPlanRoute(): kotlin.Unit
@@ -46,18 +181,45 @@ internal fun com.alphito.kcal.feature.dietplan.presentation.ui.DietPlanScreen(st
     - onIntent: STABLE (function type)
 
 @Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.HowRow(icon: kotlin.Int, text: kotlin.String): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - icon: STABLE (primitive type)
+    - text: STABLE (String is immutable)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.HowYourPlanWorksSheet(basis: com.alphito.kcal.feature.dietplan.presentation.mvi.PlanBasis, targetKcal: kotlin.Int, onDismiss: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - basis: STABLE (class with no mutable properties)
+    - targetKcal: STABLE (primitive type)
+    - onDismiss: STABLE (function type)
+
+@Composable
 internal fun com.alphito.kcal.feature.dietplan.presentation.ui.MealChecklistRoute(): kotlin.Unit
   skippable: true
   restartable: true
   params:
 
 @Composable
-internal fun com.alphito.kcal.feature.dietplan.presentation.ui.MealChecklistScreen(state: com.alphito.kcal.feature.dietplan.presentation.mvi.ChecklistState, onIntent: kotlin.Function1<com.alphito.kcal.feature.dietplan.presentation.mvi.ChecklistIntent, kotlin.Unit>): kotlin.Unit
+internal fun com.alphito.kcal.feature.dietplan.presentation.ui.MealChecklistScreen(state: com.alphito.kcal.feature.dietplan.presentation.mvi.ChecklistState, celebrate: kotlin.Boolean, onIntent: kotlin.Function1<com.alphito.kcal.feature.dietplan.presentation.mvi.ChecklistIntent, kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - state: STABLE (marked @Stable or @Immutable)
+    - celebrate: STABLE (primitive type)
     - onIntent: STABLE (function type)
+
+@Composable
+internal fun com.alphito.kcal.feature.dietplan.presentation.ui.PlannedItemInfoSheet(itemId: kotlin.Long, onSwap: kotlin.Function0<kotlin.Unit>, onDismiss: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - itemId: STABLE (primitive type)
+    - onSwap: STABLE (function type)
+    - onDismiss: STABLE (function type)
 
 @Composable
 internal fun com.alphito.kcal.feature.dietplan.presentation.ui.SwapRoute(itemId: kotlin.Long): kotlin.Unit
@@ -73,4 +235,12 @@ internal fun com.alphito.kcal.feature.dietplan.presentation.ui.SwapScreen(state:
   params:
     - state: STABLE (marked @Stable or @Immutable)
     - onIntent: STABLE (function type)
+
+@Composable
+private fun com.alphito.kcal.feature.dietplan.presentation.ui.TipCard(date: java.time.LocalDate, basis: com.alphito.kcal.feature.dietplan.presentation.mvi.PlanBasis): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - date: STABLE (stability configuration file type)
+    - basis: STABLE (class with no mutable properties)
 

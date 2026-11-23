@@ -60,15 +60,11 @@
     <string name="onb_target_weight">Целевой вес</string>
     <string name="onb_region_title">Регион и бюджет</string>
     <string name="onb_region_subtitle">Чтобы в плане были местные и доступные продукты</string>
-    <string name="onb_region_label">Регион / Страна</string>
     <string name="onb_budget_label">Недельный бюджет на еду</string>
     <string name="onb_budget_low">Низкий</string>
     <string name="onb_budget_medium">Средний</string>
     <string name="onb_budget_high">Высокий</string>
-    <string name="onb_budget_range">%1$s – %2$s PKR / неделя</string>
-    <string name="onb_budget_open">%1$s+ PKR / неделя</string>
     <string name="onb_see_plan">Мой план</string>
-    <string name="onb_choose_region">Выберите регион</string>
     <string name="onb_energy_title">Ваша суточная потребность в энергии</string>
     <string name="onb_energy_subtitle">Вот ваша примерная суточная потребность в энергии.</string>
     <string name="onb_bmr">ОО</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ %1$s шагов в день</string>
     <string name="onb_done">Готово</string>
     <string name="onb_exact_hint">напр., 300</string>
+    <string name="onb_region_label">Страна</string>
+    <string name="onb_choose_region">Выберите страну</string>
+    <string name="onb_region_hint">План использует блюда и продукты, привычные и доступные в вашей стране.</string>
+    <string name="onb_region_search">Поиск страны</string>
+    <string name="onb_region_none">Страна не найдена</string>
+    <string name="onb_budget_low_desc">Доступные продукты – чечевица, яйца, рис и сезонные овощи</string>
+    <string name="onb_budget_medium_desc">Базовые продукты плюс немного курицы, рыбы и молочного</string>
+    <string name="onb_budget_high_desc">Максимальный выбор, включая премиальную рыбу и мясо</string>
 </resources>

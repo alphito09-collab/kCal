@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Напоминания</string>
+    <string name="notif_channel_reminders_desc">Включённые вами напоминания о воде, еде и взвешивании.</string>
+    <string name="notif_channel_updates">Новости kCal</string>
+    <string name="notif_channel_updates_desc">Советы и новости от команды kCal.</string>
+    <string name="notif_water_title">Время выпить стакан воды 💧</string>
+    <string name="notif_water_body">Один стакан — и вы на пути к сегодняшней цели.</string>
+    <string name="notif_breakfast_title">Время завтрака</string>
+    <string name="notif_lunch_title">Время обеда</string>
+    <string name="notif_snack_title">Время перекуса</string>
+    <string name="notif_dinner_title">Время ужина</string>
+    <string name="notif_meal_body">Запланированный приём пищи ждёт отметки.</string>
+    <string name="notif_weigh_in_title">Еженедельное взвешивание</string>
+    <string name="notif_weigh_in_body">Внесите вес за эту неделю, чтобы прогресс был точным.</string>
+</resources>

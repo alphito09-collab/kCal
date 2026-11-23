@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">Ежедневные симптомы СРК.</string>
     <string name="health_save_log">Сохранить</string>
     <string name="health_saved">Сохранено ✓</string>
-    <string name="sugar_today">Сахар сегодня</string>
+    <string name="sugar_today">Уровень сахара</string>
     <string name="sugar_save">Сохранить замер</string>
     <string name="sugar_hint">Вносите уровень сахара раз в день.</string>
     <string name="sugar_trend">Тренд сахара (7 дней)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · нет замера.</string>
     <string name="dairy_days_since">Дней с последней реакции</string>
     <string name="dairy_days">%1$d дн.</string>
-    <string name="dairy_question">Ели ли вы сегодня молочное?</string>
+    <string name="dairy_question">Ели ли вы молочное в этот день?</string>
     <string name="dairy_any_reaction">Была реакция?</string>
     <string name="dairy_history">История реакций</string>
     <string name="dairy_badge">Молочное</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">Газы</string>
     <string name="reaction_diarrhea">Диарея</string>
     <string name="reaction_nausea">Тошнота</string>
-    <string name="ibs_today">Симптомы сегодня</string>
+    <string name="ibs_today">Симптомы</string>
     <string name="ibs_severity">Тяжесть</string>
     <string name="ibs_trend">Тяжесть симптомов (7 дней)</string>
     <string name="ibs_abdominal_pain">Боль в животе</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">Сильная</string>
     <string name="ibs_summary">%1$s · отмечено: %3$s (%2$s).</string>
     <string name="ibs_summary_none">%1$s · симптомов нет.</string>
+    <string name="health_log_for">Запись за %1$s</string>
+    <string name="health_today">Сегодня</string>
+    <string name="sugar_ctx_fasting">Натощак</string>
+    <string name="sugar_ctx_before">Перед едой</string>
+    <string name="sugar_ctx_after">После еды</string>
+    <string name="sugar_ctx_bedtime">Перед сном</string>
+    <string name="sugar_target">Цель для этого времени: %1$s–%2$s мг/дл</string>
+    <string name="sugar_target_after">Цель через 1–2 часа после еды: ниже %1$s мг/дл</string>
+    <string name="sugar_invalid">Введите значение от 20 до 600 мг/дл.</string>
+    <string name="sugar_stats">В норме: %1$s из %2$s измерений · среднее %3$s мг/дл</string>
+    <string name="health_plan_title">Как помогает ваш план</string>
+    <string name="health_plan_diabetes">В ваших блюдах нет добавленного сахара и продуктов с высоким гликемическим индексом, углеводов около 60 г на приём пищи. Записывайте показатели и показывайте их врачу.</string>
+    <string name="health_plan_ibs">Ваши блюда с низким содержанием FODMAP: без лука, чеснока, бобовых в больших количествах и острого. Дневник симптомов поможет найти ваши триггеры.</string>
+    <string name="health_plan_lactose">В ваших блюдах нет продуктов с большим количеством молока. Йогурт и твёрдый сыр в небольших количествах обычно переносятся – дневник покажет, что подходит вам.</string>
+    <string name="ibs_free_days">Дней без симптомов на этой неделе: %1$s из %2$s записанных</string>
+    <string name="ibs_suspects">Ели только в дни с симптомами: %1$s. Если это повторяется, попробуйте заменить их в плане.</string>
+    <string name="ibs_no_suspects">Отмечайте приёмы пищи в списке – мы найдём связь между едой и симптомами.</string>
+    <string name="dairy_reactions_30">Реакций за последние 30 дней: %1$s</string>
 </resources>

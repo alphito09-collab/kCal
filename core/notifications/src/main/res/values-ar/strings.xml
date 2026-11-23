@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">التذكيرات</string>
+    <string name="notif_channel_reminders_desc">تذكيرات الماء والوجبات والوزن التي فعّلتها.</string>
+    <string name="notif_channel_updates">تحديثات من kCal</string>
+    <string name="notif_channel_updates_desc">نصائح وأخبار يرسلها فريق kCal.</string>
+    <string name="notif_water_title">حان وقت كوب ماء 💧</string>
+    <string name="notif_water_body">كوب سريع يبقيك على المسار لهدف اليوم.</string>
+    <string name="notif_breakfast_title">وقت الإفطار</string>
+    <string name="notif_lunch_title">وقت الغداء</string>
+    <string name="notif_snack_title">وقت الوجبة الخفيفة</string>
+    <string name="notif_dinner_title">وقت العشاء</string>
+    <string name="notif_meal_body">وجبتك المخططة جاهزة لتأشيرها.</string>
+    <string name="notif_weigh_in_title">الوزن الأسبوعي</string>
+    <string name="notif_weigh_in_body">سجّل وزن هذا الأسبوع لتبقى نتائجك دقيقة.</string>
+</resources>

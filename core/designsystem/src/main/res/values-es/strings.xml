@@ -6,7 +6,6 @@
     <string name="ds_meal_dinner">Cena</string>
     <string name="ds_back">Atrás</string>
     <string name="ds_kcal">%1$s kcal</string>
-    <string name="ds_kcal_price">%1$s kcal  ·  PKR %2$s</string>
     <string name="ds_unit_kcal">kcal</string>
     <string name="ds_unit_kcal_day">kcal/día</string>
     <string name="ds_unit_kg">kg</string>
@@ -19,33 +18,10 @@
     <string name="ds_value_unit">%1$s %2$s</string>
     <string name="ds_fraction">%1$d/%2$d</string>
     <string name="ds_range">%1$s – %2$s</string>
-    <string name="ds_food_anda_paratha">Anda paratha (pan con huevo)</string>
-    <string name="ds_food_anda_paratha_portion">Paratha 80 g + huevo 50 g</string>
-    <string name="ds_food_lassi">Lassi</string>
-    <string name="ds_food_lassi_portion">Bebida de yogur 200 ml</string>
-    <string name="ds_food_daal_chawal">Daal chawal (lentejas con arroz)</string>
-    <string name="ds_food_daal_chawal_portion">Arroz 150 g + daal 120 g</string>
-    <string name="ds_food_chickpea_curry_rice">Curry de garbanzos con arroz</string>
-    <string name="ds_food_chickpea_curry_rice_portion">Garbanzos 150 g + arroz 120 g</string>
-    <string name="ds_food_vegetable_pulao">Pulao de verduras</string>
-    <string name="ds_food_vegetable_pulao_portion">Pulao 250 g</string>
-    <string name="ds_food_chicken_karahi_roti">Pollo karahi con roti</string>
-    <string name="ds_food_chicken_karahi_roti_portion">Karahi 180 g + 1 roti</string>
-    <string name="ds_food_mixed_veg_roti">Verduras mixtas con roti</string>
-    <string name="ds_food_mixed_veg_roti_portion">Verduras 180 g + 1 roti</string>
-    <string name="ds_food_grilled_chicken">Pollo a la parrilla</string>
-    <string name="ds_food_grilled_chicken_portion">Pollo 150 g</string>
-    <string name="ds_food_salad">Ensalada</string>
-    <string name="ds_food_salad_portion">Verduras mixtas 150 g</string>
-    <string name="ds_food_roti">Roti</string>
-    <string name="ds_food_roti_portion">Roti 120 g (2 piezas)</string>
-    <string name="ds_food_fruit_chaat">Chaat de frutas</string>
-    <string name="ds_food_fruit_chaat_portion">Frutas mixtas 200 g</string>
-    <string name="ds_region_lahore">Pakistán — Lahore</string>
-    <string name="ds_region_karachi">Pakistán — Karachi</string>
-    <string name="ds_region_islamabad">Pakistán — Islamabad</string>
-    <string name="ds_region_rawalpindi">Pakistán — Rawalpindi</string>
-    <string name="ds_region_faisalabad">Pakistán — Faisalabad</string>
-    <string name="ds_region_peshawar">Pakistán — Peshawar</string>
     <plurals name="ds_stars"><item quantity="one">%1$d estrella</item><item quantity="other">%1$d estrellas</item></plurals>
+    <string name="ds_kcal_cost">%1$s kcal · %2$s</string>
+    <string name="ds_cost_budget">Económico</string>
+    <string name="ds_cost_moderate">Coste moderado</string>
+    <string name="ds_cost_premium">Premium</string>
+    <string name="ds_unit_g">g</string>
 </resources>

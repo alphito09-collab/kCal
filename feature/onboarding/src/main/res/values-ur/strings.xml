@@ -60,15 +60,11 @@
     <string name="onb_target_weight">ہدف وزن</string>
     <string name="onb_region_title">علاقہ اور بجٹ</string>
     <string name="onb_region_subtitle">تاکہ آپ کے پلان میں مقامی اور سستا کھانا ہو</string>
-    <string name="onb_region_label">علاقہ / ملک</string>
     <string name="onb_budget_label">ہفتہ وار کھانے کا بجٹ</string>
     <string name="onb_budget_low">کم</string>
     <string name="onb_budget_medium">درمیانہ</string>
     <string name="onb_budget_high">زیادہ</string>
-    <string name="onb_budget_range">%1$s – %2$s روپے / ہفتہ</string>
-    <string name="onb_budget_open">%1$s+ روپے / ہفتہ</string>
     <string name="onb_see_plan">میرا پلان دیکھیں</string>
-    <string name="onb_choose_region">اپنا علاقہ چنیں</string>
     <string name="onb_energy_title">آپ کی روزانہ توانائی کی ضرورت</string>
     <string name="onb_energy_subtitle">یہ ہے آپ کی اندازاً روزانہ توانائی کی ضرورت۔</string>
     <string name="onb_bmr">بی ایم آر</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ روزانہ %1$s قدم</string>
     <string name="onb_done">ہو گیا</string>
     <string name="onb_exact_hint">مثلاً 300</string>
+    <string name="onb_region_label">ملک</string>
+    <string name="onb_choose_region">اپنا ملک منتخب کریں</string>
+    <string name="onb_region_hint">آپ کا پلان وہاں کے عام اور سستے کھانے استعمال کرتا ہے۔</string>
+    <string name="onb_region_search">ملک تلاش کریں</string>
+    <string name="onb_region_none">کوئی ملک نہیں ملا</string>
+    <string name="onb_budget_low_desc">سستی بنیادی غذائیں – دال، انڈے، چاول اور موسمی سبزیاں</string>
+    <string name="onb_budget_medium_desc">بنیادی غذاؤں کے ساتھ کچھ چکن، مچھلی اور ڈیری</string>
+    <string name="onb_budget_high_desc">سب سے زیادہ ورائٹی، بشمول پریمیم مچھلی اور گوشت</string>
 </resources>

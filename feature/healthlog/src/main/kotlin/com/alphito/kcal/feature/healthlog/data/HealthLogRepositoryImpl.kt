@@ -10,6 +10,7 @@ import com.alphito.kcal.core.model.DairyReaction
 import com.alphito.kcal.core.model.IbsLog
 import com.alphito.kcal.core.model.IbsSymptom
 import com.alphito.kcal.core.model.Severity
+import com.alphito.kcal.core.model.SugarContext
 import com.alphito.kcal.core.model.SugarReading
 import com.alphito.kcal.feature.healthlog.domain.HealthLogRepository
 import kotlinx.collections.immutable.toImmutableSet
@@ -27,11 +28,18 @@ internal class HealthLogRepositoryImpl(
 
     override fun sugar(from: LocalDate, to: LocalDate): Flow<List<SugarReading>> =
         dao.observeSugar(from.toEpochDay(), to.toEpochDay())
-            .map { rows -> rows.map { SugarReading(LocalDate.ofEpochDay(it.epochDay), it.mgDl) } }
+            .map { rows ->
+                rows.map {
+                    SugarReading(
+                        LocalDate.ofEpochDay(it.epochDay), it.mgDl,
+                        SugarContext.entries.firstOrNull { c -> c.name == it.context } ?: SugarContext.Fasting,
+                    )
+                }
+            }
             .distinctUntilChanged().flowOn(dispatchers.io)
 
     override suspend fun saveSugar(reading: SugarReading) = withContext(dispatchers.io) {
-        dao.upsertSugar(SugarEntity(reading.date.toEpochDay(), reading.mgDl))
+        dao.upsertSugar(SugarEntity(reading.date.toEpochDay(), reading.mgDl, reading.context.name))
     }
 
     override fun dairy(limit: Int): Flow<List<DairyLog>> = dao.observeDairy(limit).map { rows ->

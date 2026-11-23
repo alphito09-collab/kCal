@@ -20,6 +20,9 @@ import com.alphito.kcal.core.designsystem.motion.KcalMotion
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.LocalActivity
+import com.alphito.kcal.core.ads.AdsManager
+import org.koin.compose.koinInject
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatDelegate
@@ -207,11 +210,16 @@ internal fun PrivacyRoute() {
             PrivacyEffect.Close -> navigator.back()
         }
     }
-    PrivacyScreen(state, viewModel::onIntent)
+    val ads: AdsManager = koinInject()
+    val activity = LocalActivity.current
+    PrivacyScreen(
+        state, viewModel::onIntent,
+        onAdChoices = if (ads.privacyOptionsRequired && activity != null) ({ ads.showPrivacyOptions(activity) }) else null,
+    )
 }
 
 @Composable
-internal fun PrivacyScreen(state: PrivacyState, onIntent: (PrivacyIntent) -> Unit) {
+internal fun PrivacyScreen(state: PrivacyState, onIntent: (PrivacyIntent) -> Unit, onAdChoices: (() -> Unit)? = null) {
     val colors = KcalTheme.colors
     KcalDetailScaffold(title = stringResource(R.string.privacy_title), onBack = { onIntent(PrivacyIntent.Back) }, centeredTitle = true) {
         val card = PaddingValues(0.dp)
@@ -233,6 +241,11 @@ internal fun PrivacyScreen(state: PrivacyState, onIntent: (PrivacyIntent) -> Uni
             CardListRow(stringResource(R.string.privacy_policy), { onIntent(PrivacyIntent.OpenLink(LegalLinks.PRIVACY_POLICY)) }, KcalIcons.PrivacyPolicy)
             KcalDivider(Modifier.padding(horizontal = 16.dp))
             CardListRow(stringResource(R.string.privacy_terms), { onIntent(PrivacyIntent.OpenLink(LegalLinks.TERMS)) }, KcalIcons.Terms)
+            // Required by Google's consent policy when the user is in a regulated region.
+            if (onAdChoices != null) {
+                KcalDivider(Modifier.padding(horizontal = 16.dp))
+                CardListRow(stringResource(R.string.privacy_ad_choices), onAdChoices, KcalIcons.Shield)
+            }
         }
         Spacer(Modifier.height(14.dp))
         KcalCard(Modifier.fillMaxWidth(), contentPadding = card, border = BorderStroke(1.5.dp, colors.track)) {

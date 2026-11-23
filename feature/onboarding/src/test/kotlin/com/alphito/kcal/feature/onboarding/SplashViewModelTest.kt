@@ -32,7 +32,7 @@ class SplashViewModelTest {
 
     @Test
     fun `each tagline is shown exactly once, then the last one stays`() = runTest(dispatcher) {
-        val vm = SplashViewModel(FakePreferences(), FakeUsers(), Random(7))
+        val vm = SplashViewModel(FakePreferences(), FakeUsers(), FakeFlags, Random(7))
         val seen = mutableListOf(vm.state.value.taglineIndex)
         repeat(5) {
             advanceTimeBy(SplashViewModel.TAGLINE_INTERVAL_MS)
@@ -47,7 +47,7 @@ class SplashViewModelTest {
 
     @Test
     fun `first session shows Get Started`() = runTest(dispatcher) {
-        val vm = SplashViewModel(FakePreferences(), FakeUsers(), Random(1))
+        val vm = SplashViewModel(FakePreferences(), FakeUsers(), FakeFlags, Random(1))
         advanceUntilIdle()
         assertEquals(LaunchMode.FirstLaunch, vm.state.value.mode)
         assertEquals(true, vm.state.value.showGetStarted)
@@ -55,9 +55,14 @@ class SplashViewModelTest {
 
     @Test
     fun `returning user gets the progress splash`() = runTest(dispatcher) {
-        val vm = SplashViewModel(FakePreferences(AppPreferences(introSeen = true)), FakeUsers(), Random(1))
+        val vm = SplashViewModel(FakePreferences(AppPreferences(introSeen = true)), FakeUsers(), FakeFlags, Random(1))
         runCurrent()
         assertEquals(LaunchMode.Returning, vm.state.value.mode)
+    }
+
+    private object FakeFlags : com.alphito.kcal.core.common.flags.FeatureFlags {
+        override val flags = kotlinx.coroutines.flow.MutableStateFlow(com.alphito.kcal.core.common.flags.AppFlags())
+        override suspend fun refresh() = Unit
     }
 
     private class FakeUsers(private val stored: UserProfile? = null) : UserRepository {
@@ -80,5 +85,6 @@ class SplashViewModelTest {
         override suspend fun markFreeTrialPromptSeen() = Unit
         override suspend fun setRating(stars: Int) = Unit
         override suspend fun setPlan(plan: PremiumPlan?) = Unit
+        override suspend fun setReminder(type: com.alphito.kcal.core.model.ReminderType, enabled: Boolean) = Unit
     }
 }

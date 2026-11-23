@@ -60,15 +60,11 @@
     <string name="onb_target_weight">Hedef kilo</string>
     <string name="onb_region_title">Bölge ve bütçe</string>
     <string name="onb_region_subtitle">Planın yerel ve uygun fiyatlı yiyecekler içersin diye</string>
-    <string name="onb_region_label">Bölge / Ülke</string>
     <string name="onb_budget_label">Haftalık yemek bütçesi</string>
     <string name="onb_budget_low">Düşük</string>
     <string name="onb_budget_medium">Orta</string>
     <string name="onb_budget_high">Yüksek</string>
-    <string name="onb_budget_range">Haftalık %1$s – %2$s PKR</string>
-    <string name="onb_budget_open">Haftalık %1$s+ PKR</string>
     <string name="onb_see_plan">Planımı gör</string>
-    <string name="onb_choose_region">Bölgeni seç</string>
     <string name="onb_energy_title">Günlük enerji ihtiyacın</string>
     <string name="onb_energy_subtitle">İşte tahmini günlük enerji ihtiyacın.</string>
     <string name="onb_bmr">BMH</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ günde %1$s adım</string>
     <string name="onb_done">Tamam</string>
     <string name="onb_exact_hint">ör. 300</string>
+    <string name="onb_region_label">Ülke</string>
+    <string name="onb_choose_region">Ülkeni seç</string>
+    <string name="onb_region_hint">Planın orada yaygın ve uygun fiyatlı yemekleri kullanır.</string>
+    <string name="onb_region_search">Ülke ara</string>
+    <string name="onb_region_none">Ülke bulunamadı</string>
+    <string name="onb_budget_low_desc">Uygun temel gıdalar – mercimek, yumurta, pirinç ve mevsim sebzeleri</string>
+    <string name="onb_budget_medium_desc">Temel gıdalara ek olarak biraz tavuk, balık ve süt ürünü</string>
+    <string name="onb_budget_high_desc">Premium balık ve et dahil en geniş çeşitlilik</string>
 </resources>
