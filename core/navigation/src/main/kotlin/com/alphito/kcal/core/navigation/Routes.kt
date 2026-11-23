@@ -45,6 +45,7 @@ sealed interface Route : NavKey {
     /** `onboarding = true` during the first session (Continue -> intro) instead of Settings. */
     @Serializable data class Language(val onboarding: Boolean = false) : Route
     @Serializable data object PrivacySecurity : Route
+    @Serializable data object Reminders : Route
     @Serializable data class PremiumIntro(val fromOnboarding: Boolean = false) : Route
     @Serializable data class Premium(val fromOnboarding: Boolean = false) : Route
 }

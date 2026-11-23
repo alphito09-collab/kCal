@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Aylığı başlat</string>
     <string name="premium_active">Aktif ✓</string>
     <string name="premium_cancel_note">Aboneliğini istediğin zaman yönetebilir veya iptal edebilirsin.</string>
+    <string name="premium_price_per_week">%1$s / hafta</string>
+    <string name="premium_price_per_month">%1$s / ay</string>
+    <string name="premium_pending">Satın alman beklemede. Google Play onayladığında Premium açılacak.</string>
+    <string name="premium_failed">Satın alma tamamlanamadı. Lütfen tekrar dene.</string>
 </resources>

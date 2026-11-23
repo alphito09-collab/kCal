@@ -10,6 +10,7 @@ object KcalIcons {
     @DrawableRes val ChevronRight = R.drawable.ic_chevron_right
     @DrawableRes val ViewAll = R.drawable.ic_view_all
     @DrawableRes val Check = R.drawable.ic_check
+    @DrawableRes val Info = R.drawable.ic_info
     @DrawableRes val CheckThin = R.drawable.ic_check_thin
     @DrawableRes val Steps = R.drawable.ic_steps
     @DrawableRes val Water = R.drawable.ic_water

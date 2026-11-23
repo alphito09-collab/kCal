@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Empezar mensual</string>
     <string name="premium_active">Activo ✓</string>
     <string name="premium_cancel_note">Puedes gestionar o cancelar tu suscripción cuando quieras.</string>
+    <string name="premium_price_per_week">%1$s / semana</string>
+    <string name="premium_price_per_month">%1$s / mes</string>
+    <string name="premium_pending">Tu compra está pendiente. Premium se activará en cuanto Google Play la confirme.</string>
+    <string name="premium_failed">No se pudo completar la compra. Inténtalo de nuevo.</string>
 </resources>

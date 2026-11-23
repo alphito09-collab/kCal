@@ -60,15 +60,11 @@
     <string name="onb_target_weight">Peso desejado</string>
     <string name="onb_region_title">Região e orçamento</string>
     <string name="onb_region_subtitle">Para que seu plano use alimentos locais e acessíveis</string>
-    <string name="onb_region_label">Região / País</string>
     <string name="onb_budget_label">Orçamento semanal de comida</string>
     <string name="onb_budget_low">Baixo</string>
     <string name="onb_budget_medium">Médio</string>
     <string name="onb_budget_high">Alto</string>
-    <string name="onb_budget_range">PKR %1$s – %2$s / semana</string>
-    <string name="onb_budget_open">PKR %1$s+ / semana</string>
     <string name="onb_see_plan">Ver meu plano</string>
-    <string name="onb_choose_region">Escolha sua região</string>
     <string name="onb_energy_title">Sua necessidade diária de energia</string>
     <string name="onb_energy_subtitle">Esta é sua necessidade diária estimada de energia.</string>
     <string name="onb_bmr">TMB</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ %1$s passos por dia</string>
     <string name="onb_done">Concluir</string>
     <string name="onb_exact_hint">ex.: 300</string>
+    <string name="onb_region_label">País</string>
+    <string name="onb_choose_region">Escolha seu país</string>
+    <string name="onb_region_hint">Seu plano usa pratos e alimentos básicos comuns e acessíveis lá.</string>
+    <string name="onb_region_search">Buscar país</string>
+    <string name="onb_region_none">Nenhum país encontrado</string>
+    <string name="onb_budget_low_desc">Básicos acessíveis – lentilha, ovos, arroz e legumes da estação</string>
+    <string name="onb_budget_medium_desc">Básicos mais um pouco de frango, peixe e laticínios</string>
+    <string name="onb_budget_high_desc">A maior variedade, incluindo peixes e carnes premium</string>
 </resources>

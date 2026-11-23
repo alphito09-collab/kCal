@@ -57,4 +57,15 @@
     <string name="delete_title">Hapus datamu?</string>
     <string name="delete_body">Ini akan menghapus profil, rencana makan, dan riwayatmu dari perangkat ini secara permanen. Tidak bisa dibatalkan.</string>
     <string name="delete_confirm">Hapus semua</string>
+    <string name="settings_reminders">Pengingat</string>
+    <string name="reminders_title">Pengingat</string>
+    <string name="reminders_body">Pengingat ringan di waktu yang tepat. Bisa dimatikan kapan saja.</string>
+    <string name="reminders_water">Minum air</string>
+    <string name="reminders_water_sub">Setiap 2 jam dari 09.00 sampai 21.00</string>
+    <string name="reminders_meals">Waktu makan</string>
+    <string name="reminders_meals_sub">Sarapan, makan siang, camilan, dan makan malam</string>
+    <string name="reminders_weigh_in">Timbang mingguan</string>
+    <string name="reminders_weigh_in_sub">Setiap Senin pukul 09.00</string>
+    <string name="reminders_permission_denied">Izinkan notifikasi di pengaturan sistem untuk menerima pengingat.</string>
+    <string name="privacy_ad_choices">Pilihan privasi iklan</string>
 </resources>

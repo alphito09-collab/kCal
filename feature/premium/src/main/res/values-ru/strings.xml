@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Начать месячный</string>
     <string name="premium_active">Активен ✓</string>
     <string name="premium_cancel_note">Подпиской можно управлять или отменить её в любое время.</string>
+    <string name="premium_price_per_week">%1$s / неделя</string>
+    <string name="premium_price_per_month">%1$s / месяц</string>
+    <string name="premium_pending">Покупка ожидает подтверждения. Premium откроется, как только Google Play её подтвердит.</string>
+    <string name="premium_failed">Не удалось завершить покупку. Попробуйте ещё раз.</string>
 </resources>

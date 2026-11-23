@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">ماہانہ شروع کریں</string>
     <string name="premium_active">فعال ✓</string>
     <string name="premium_cancel_note">آپ کسی بھی وقت سبسکرپشن منظم یا منسوخ کر سکتے ہیں۔</string>
+    <string name="premium_price_per_week">%1$s / ہفتہ</string>
+    <string name="premium_price_per_month">%1$s / مہینہ</string>
+    <string name="premium_pending">آپ کی خریداری زیر التوا ہے۔ Google Play کی تصدیق ہوتے ہی Premium کھل جائے گا۔</string>
+    <string name="premium_failed">خریداری مکمل نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔</string>
 </resources>

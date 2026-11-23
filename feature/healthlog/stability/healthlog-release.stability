@@ -35,6 +35,22 @@ private fun com.alphito.kcal.feature.healthlog.presentation.ui.IbsLogContent(sta
     - onIntent: STABLE (function type)
 
 @Composable
+private fun com.alphito.kcal.feature.healthlog.presentation.ui.LogDayPicker(state: com.alphito.kcal.feature.healthlog.presentation.mvi.HealthLogState, onIntent: kotlin.Function1<com.alphito.kcal.feature.healthlog.presentation.mvi.HealthLogIntent, kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - state: STABLE (marked @Stable or @Immutable)
+    - onIntent: STABLE (function type)
+
+@Composable
+private fun com.alphito.kcal.feature.healthlog.presentation.ui.PlanInsightCard(condition: com.alphito.kcal.core.model.HealthCondition, state: com.alphito.kcal.feature.healthlog.presentation.mvi.HealthLogState): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - condition: STABLE (stability configuration file type)
+    - state: STABLE (marked @Stable or @Immutable)
+
+@Composable
 private fun com.alphito.kcal.feature.healthlog.presentation.ui.SaveButton(text: kotlin.String, saved: kotlin.Boolean, onClick: kotlin.Function0<kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true

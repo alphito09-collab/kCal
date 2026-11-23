@@ -57,4 +57,15 @@
     <string name="delete_title">Удалить данные?</string>
     <string name="delete_body">Профиль, планы и история будут навсегда удалены с устройства. Это действие нельзя отменить.</string>
     <string name="delete_confirm">Удалить всё</string>
+    <string name="settings_reminders">Напоминания</string>
+    <string name="reminders_title">Напоминания</string>
+    <string name="reminders_body">Мягкие напоминания в нужное время. Их можно отключить в любой момент.</string>
+    <string name="reminders_water">Пить воду</string>
+    <string name="reminders_water_sub">Каждые 2 часа с 9:00 до 21:00</string>
+    <string name="reminders_meals">Время приёма пищи</string>
+    <string name="reminders_meals_sub">Завтрак, обед, перекус и ужин</string>
+    <string name="reminders_weigh_in">Еженедельное взвешивание</string>
+    <string name="reminders_weigh_in_sub">Каждый понедельник в 9:00</string>
+    <string name="reminders_permission_denied">Разрешите уведомления в настройках системы, чтобы получать напоминания.</string>
+    <string name="privacy_ad_choices">Настройки конфиденциальности рекламы</string>
 </resources>

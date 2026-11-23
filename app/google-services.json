@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711644962387",
+    "project_id": "kcal-bf1c2",
+    "storage_bucket": "kcal-bf1c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711644962387:android:e8615c568ae007f15170a6",
+        "android_client_info": {
+          "package_name": "com.alphito.kcal.mealplanner.padometer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXagT90XmOVwv7CAGvG0WWQ00_S-L5wQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

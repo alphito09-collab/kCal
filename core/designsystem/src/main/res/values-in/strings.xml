@@ -6,7 +6,6 @@
     <string name="ds_meal_dinner">Makan malam</string>
     <string name="ds_back">Kembali</string>
     <string name="ds_kcal">%1$s kkal</string>
-    <string name="ds_kcal_price">%1$s kkal  ·  PKR %2$s</string>
     <string name="ds_unit_kcal">kkal</string>
     <string name="ds_unit_kcal_day">kkal/hari</string>
     <string name="ds_unit_kg">kg</string>
@@ -19,33 +18,10 @@
     <string name="ds_value_unit">%1$s %2$s</string>
     <string name="ds_fraction">%1$d/%2$d</string>
     <string name="ds_range">%1$s – %2$s</string>
-    <string name="ds_food_anda_paratha">Anda paratha (roti telur)</string>
-    <string name="ds_food_anda_paratha_portion">Paratha 80 g + telur 50 g</string>
-    <string name="ds_food_lassi">Lassi</string>
-    <string name="ds_food_lassi_portion">Minuman yoghurt 200 ml</string>
-    <string name="ds_food_daal_chawal">Daal chawal (kacang lentil dan nasi)</string>
-    <string name="ds_food_daal_chawal_portion">Nasi 150 g + daal 120 g</string>
-    <string name="ds_food_chickpea_curry_rice">Kari buncis dan nasi</string>
-    <string name="ds_food_chickpea_curry_rice_portion">Buncis 150 g + nasi 120 g</string>
-    <string name="ds_food_vegetable_pulao">Pulao sayuran</string>
-    <string name="ds_food_vegetable_pulao_portion">Pulao 250 g</string>
-    <string name="ds_food_chicken_karahi_roti">Ayam karahi dan roti</string>
-    <string name="ds_food_chicken_karahi_roti_portion">Karahi 180 g + 1 roti</string>
-    <string name="ds_food_mixed_veg_roti">Sayur campur dan roti</string>
-    <string name="ds_food_mixed_veg_roti_portion">Sayur 180 g + 1 roti</string>
-    <string name="ds_food_grilled_chicken">Ayam panggang</string>
-    <string name="ds_food_grilled_chicken_portion">Ayam 150 g</string>
-    <string name="ds_food_salad">Salad</string>
-    <string name="ds_food_salad_portion">Sayur campur 150 g</string>
-    <string name="ds_food_roti">Roti</string>
-    <string name="ds_food_roti_portion">Roti 120 g (2 buah)</string>
-    <string name="ds_food_fruit_chaat">Rujak buah</string>
-    <string name="ds_food_fruit_chaat_portion">Buah campur 200 g</string>
-    <string name="ds_region_lahore">Pakistan — Lahore</string>
-    <string name="ds_region_karachi">Pakistan — Karachi</string>
-    <string name="ds_region_islamabad">Pakistan — Islamabad</string>
-    <string name="ds_region_rawalpindi">Pakistan — Rawalpindi</string>
-    <string name="ds_region_faisalabad">Pakistan — Faisalabad</string>
-    <string name="ds_region_peshawar">Pakistan — Peshawar</string>
     <plurals name="ds_stars"><item quantity="other">%1$d bintang</item></plurals>
+    <string name="ds_kcal_cost">%1$s kkal · %2$s</string>
+    <string name="ds_cost_budget">Hemat</string>
+    <string name="ds_cost_moderate">Biaya sedang</string>
+    <string name="ds_cost_premium">Premium</string>
+    <string name="ds_unit_g">g</string>
 </resources>

@@ -1,0 +1,124 @@
+# id|category|flags|kcal|protein|carbs|fat|fiber|gi|en|ar|de|es|fr|hi|id|pt|ru|tr|ur|zh
+# Per 100 g as eaten (grains/legumes cooked). flags: fodmap (high-FODMAP in large servings), fodmap2 (high even in small servings),
+# lactose (high-lactose dairy), gluten, sugar (added/concentrated sugar), spicy. gi: L/M/H for carb foods, - otherwise.
+# Values are approximations from USDA FoodData Central-style averages.
+rice_white|grain||130|2.7|28|0.3|0.4|H|White rice|أرز أبيض|Weißer Reis|Arroz blanco|Riz blanc|सफ़ेद चावल|Nasi putih|Arroz branco|Белый рис|Beyaz pirinç|سفید چاول|白米饭
+rice_brown|grain||123|2.7|26|1|1.6|M|Brown rice|أرز بني|Naturreis|Arroz integral|Riz complet|ब्राउन राइस|Nasi merah|Arroz integral|Бурый рис|Esmer pirinç|براؤن چاول|糙米饭
+basmati_rice|grain||121|3.5|25|0.4|0.4|M|Basmati rice|أرز بسمتي|Basmatireis|Arroz basmati|Riz basmati|बासमती चावल|Nasi basmati|Arroz basmati|Рис басмати|Basmati pirinci|باسمتی چاول|印度香米
+roti|grain|gluten,fodmap|297|11|56|4|9|M|Whole-wheat roti|خبز الروتي|Vollkorn-Roti|Roti integral|Roti complet|गेहूं की रोटी|Roti gandum|Roti integral|Цельнозерновая лепёшка роти|Tam buğday roti|گندم کی روٹی|全麦烤饼
+paratha|grain|gluten,fodmap|326|6.4|45|13|4|H|Paratha|براتا|Paratha|Paratha|Paratha|पराठा|Paratha|Paratha|Паратха|Paratha|پراٹھا|印度千层饼
+naan|grain|gluten,fodmap|290|9|50|5.5|2|H|Naan|خبز نان|Naan-Brot|Pan naan|Pain naan|नान|Roti naan|Pão naan|Лепёшка наан|Naan ekmeği|نان|馕
+bread_white|grain|gluten,fodmap|265|9|49|3.2|2.7|H|White bread|خبز أبيض|Weißbrot|Pan blanco|Pain blanc|सफ़ेद ब्रेड|Roti tawar|Pão branco|Белый хлеб|Beyaz ekmek|سفید ڈبل روٹی|白面包
+bread_wholegrain|grain|gluten,fodmap|247|13|41|3.4|7|M|Wholegrain bread|خبز الحبوب الكاملة|Vollkornbrot|Pan integral|Pain complet|मल्टीग्रेन ब्रेड|Roti gandum utuh|Pão integral|Цельнозерновой хлеб|Tam tahıllı ekmek|ہول گرین بریڈ|全麦面包
+pita|grain|gluten,fodmap|275|9|56|1.2|2.2|H|Pita bread|خبز عربي|Fladenbrot|Pan de pita|Pain pita|पीटा ब्रेड|Roti pita|Pão sírio|Лаваш пита|Pide ekmeği|پیٹا بریڈ|皮塔饼
+oats|grain||389|17|66|7|10.6|L|Oats|شوفان|Haferflocken|Avena|Flocons d'avoine|ओट्स|Oat|Aveia|Овсяные хлопья|Yulaf|جئی|燕麦
+pasta|grain|gluten,fodmap|158|5.8|31|0.9|1.8|M|Pasta|معكرونة|Nudeln|Pasta|Pâtes|पास्ता|Pasta|Macarrão|Макароны|Makarna|پاستا|意大利面
+noodles_wheat|grain|gluten,fodmap|138|4.5|25|2|1.2|M|Wheat noodles|نودلز القمح|Weizennudeln|Fideos de trigo|Nouilles de blé|गेहूं के नूडल्स|Mi gandum|Macarrão de trigo|Пшеничная лапша|Buğday eriştesi|گندم کے نوڈلز|面条
+rice_noodles|grain||109|0.9|25|0.2|1|M|Rice noodles|نودلز الأرز|Reisnudeln|Fideos de arroz|Nouilles de riz|चावल के नूडल्स|Bihun|Macarrão de arroz|Рисовая лапша|Pirinç eriştesi|چاول کے نوڈلز|米粉
+couscous|grain|gluten,fodmap|112|3.8|23|0.2|1.4|M|Couscous|كسكس|Couscous|Cuscús|Couscous|कूसकूस|Couscous|Cuscuz marroquino|Кускус|Kuskus|کُسکُس|古斯米
+bulgur|grain|gluten,fodmap|83|3.1|19|0.2|4.5|L|Bulgur wheat|برغل|Bulgur|Bulgur|Boulgour|दलिया (बुलगुर)|Bulgur|Trigo para quibe|Булгур|Bulgur|دلیہ (بلغور)|碾碎干小麦
+quinoa|grain||120|4.4|21|1.9|2.8|L|Quinoa|كينوا|Quinoa|Quinoa|Quinoa|क्विनोआ|Quinoa|Quinoa|Киноа|Kinoa|کینوا|藜麦
+corn_tortilla|grain||218|5.7|45|2.9|6.3|M|Corn tortilla|تورتيلا الذرة|Maistortilla|Tortilla de maíz|Tortilla de maïs|मक्के की टॉर्टिला|Tortila jagung|Tortilha de milho|Кукурузная тортилья|Mısır tortillası|مکئی کی ٹارٹیلا|玉米饼
+flour_tortilla|grain|gluten,fodmap|304|8|50|8|3.5|M|Wheat tortilla|تورتيلا القمح|Weizentortilla|Tortilla de harina|Tortilla de blé|गेहूं की टॉर्टिला|Tortila gandum|Tortilha de trigo|Пшеничная тортилья|Buğday tortillası|گندم کی ٹارٹیلا|小麦饼
+maize_porridge|grain||112|2.3|24|0.5|1.5|H|Maize porridge (ugali / pap)|عصيدة الذرة|Maisbrei|Masa de maíz cocida|Bouillie de maïs|मक्के का दलिया|Bubur jagung|Angu de milho|Кукурузная каша|Mısır lapası|مکئی کا دلیہ|玉米糊
+maize_dough|grain||160|3.5|33|1.5|3|M|Corn dough (arepa)|عجينة الذرة|Maisteig|Masa de maíz (arepa)|Pâte de maïs|मक्के का आटा|Adonan jagung|Massa de milho|Кукурузное тесто|Mısır hamuru|مکئی کا آٹا|玉米饼坯
+buckwheat|grain||92|3.4|20|0.6|2.7|L|Buckwheat|حنطة سوداء|Buchweizen|Trigo sarraceno|Sarrasin|कुट्टू|Soba|Trigo-sarraceno|Гречка|Karabuğday|کُوٹو|荞麦
+millet|grain||119|3.5|24|1|1.3|M|Millet|دخن|Hirse|Mijo|Millet|बाजरा|Jewawut|Painço|Пшено|Darı|باجرہ|小米
+injera|grain||133|4|28|0.8|3|M|Injera (teff flatbread)|إنجيرا|Injera (Teff-Fladenbrot)|Injera (pan de teff)|Injera (galette de teff)|इंजेरा|Injera|Injera|Инджера|İnjera|انجیرا|英吉拉饼
+semolina|grain|gluten|120|4|24|0.6|1|M|Semolina|سميد|Grieß|Sémola|Semoule|सूजी|Semolina|Semolina|Манка|İrmik|سوجی|粗粒小麦粉
+poha|grain||130|2.5|28|0.5|1|M|Flattened rice (poha)|أرز مفلطح|Reisflocken (Poha)|Arroz aplastado|Riz aplati|पोहा|Beras pipih|Arroz achatado|Рисовые хлопья (поха)|Yassı pirinç|پوہا|米片
+idli|grain||132|4.5|27|0.5|1.5|M|Idli (rice-lentil cake)|إدلي|Idli|Idli|Idli|इडली|Idli|Idli|Идли|İdli|اڈلی|印度米糕
+barley|grain|gluten,fodmap|123|2.3|28|0.4|3.8|L|Barley|شعير|Gerste|Cebada|Orge|जौ|Jelai|Cevada|Ячмень|Arpa|جَو|大麦
+potato|tuber||87|1.9|20|0.1|1.8|H|Potato|بطاطس|Kartoffel|Papa|Pomme de terre|आलू|Kentang|Batata|Картофель|Patates|آلو|土豆
+sweet_potato|tuber||86|1.6|20|0.1|3|M|Sweet potato|بطاطا حلوة|Süßkartoffel|Batata dulce|Patate douce|शकरकंद|Ubi jalar|Batata-doce|Батат|Tatlı patates|شکرقندی|红薯
+cassava|tuber||160|1.4|38|0.3|1.8|H|Cassava (fufu / tapioca)|كسافا|Maniok|Yuca|Manioc|कसावा|Singkong|Mandioca|Маниок|Manyok|کساوا|木薯
+plantain|tuber||116|0.8|31|0.2|2.3|M|Plantain|موز الطبخ|Kochbanane|Plátano macho|Banane plantain|कच्चा केला|Pisang tanduk|Banana-da-terra|Плантан|Pişirmelik muz|کچا کیلا|大蕉
+yam|tuber||116|1.5|27.5|0.1|3.9|M|Yam|يام|Yamswurzel|Ñame|Igname|रतालू|Ubi|Inhame|Ямс|Yam|رتالو|山药
+lentils|legume|fodmap|116|9|20|0.4|7.9|L|Lentils|عدس|Linsen|Lentejas|Lentilles|दाल|Lentil|Lentilha|Чечевица|Mercimek|دال|扁豆
+chickpeas|legume|fodmap|164|8.9|27|2.6|7.6|L|Chickpeas|حمص حب|Kichererbsen|Garbanzos|Pois chiches|छोले|Kacang arab|Grão-de-bico|Нут|Nohut|چنے|鹰嘴豆
+kidney_beans|legume|fodmap|127|8.7|23|0.5|6.4|L|Beans|فاصولياء|Bohnen|Frijoles|Haricots|राजमा|Kacang merah|Feijão|Фасоль|Fasulye|لوبیا|芸豆
+black_beans|legume|fodmap|132|8.9|24|0.5|8.7|L|Black beans|فاصولياء سوداء|Schwarze Bohnen|Frijoles negros|Haricots noirs|काली बीन्स|Kacang hitam|Feijão-preto|Чёрная фасоль|Siyah fasulye|کالی لوبیا|黑豆
+fava_beans|legume|fodmap|110|7.6|19.7|0.4|5.4|L|Fava beans|فول|Ackerbohnen|Habas|Fèves|बाकला|Kacang fava|Fava|Бобы|Bakla|باقلا|蚕豆
+mung_beans|legume|fodmap|105|7|19|0.4|7.6|L|Mung beans|ماش|Mungbohnen|Frijol mungo|Haricots mungo|मूंग|Kacang hijau|Feijão-mungo|Маш|Maş fasulyesi|مونگ|绿豆
+black_eyed_peas|legume|fodmap|116|7.7|21|0.5|6.5|L|Black-eyed peas|لوبيا عين سوداء|Augenbohnen|Frijol carita|Haricots à œil noir|लोबिया|Kacang tunggak|Feijão-fradinho|Коровий горох|Börülce|لوبیا (سفید)|眉豆
+hummus|legume|fodmap|166|7.9|14|9.6|6|L|Hummus|حمص بالطحينة|Hummus|Hummus|Houmous|हम्मस|Hummus|Homus|Хумус|Humus|حمص|鹰嘴豆泥
+tofu|plant_protein||76|8|1.9|4.8|0.3|-|Tofu|توفو|Tofu|Tofu|Tofu|टोफू|Tahu|Tofu|Тофу|Tofu|ٹوفو|豆腐
+tempeh|plant_protein||192|20|7.6|11|0|-|Tempeh|تمبيه|Tempeh|Tempeh|Tempeh|टेम्पे|Tempe|Tempeh|Темпе|Tempeh|ٹیمپے|天贝
+edamame|plant_protein||121|12|9|5|5|L|Edamame|إدامامي|Edamame|Edamame|Edamame|एडामामे|Edamame|Edamame|Эдамаме|Edamame|ایڈامامے|毛豆
+soy_milk|plant_protein||54|3.3|6|1.8|0.6|L|Soy milk|حليب الصويا|Sojamilch|Leche de soja|Lait de soja|सोया दूध|Susu kedelai|Leite de soja|Соевое молоко|Soya sütü|سویا دودھ|豆浆
+chicken_breast|meat||165|31|0|3.6|0|-|Chicken breast|صدر دجاج|Hähnchenbrust|Pechuga de pollo|Blanc de poulet|चिकन ब्रेस्ट|Dada ayam|Peito de frango|Куриная грудка|Tavuk göğsü|چکن بریسٹ|鸡胸肉
+chicken_thigh|meat||209|26|0|10.9|0|-|Chicken|دجاج|Hähnchen|Pollo|Poulet|चिकन|Ayam|Frango|Курица|Tavuk|مرغی|鸡肉
+beef_lean|meat||217|26|0|12|0|-|Lean beef|لحم بقري قليل الدهن|Mageres Rindfleisch|Carne de res magra|Bœuf maigre|लीन बीफ़|Daging sapi tanpa lemak|Carne bovina magra|Постная говядина|Yağsız dana eti|کم چکنائی والا گائے کا گوشت|瘦牛肉
+lamb|meat||258|25.6|0|16.5|0|-|Lamb / mutton|لحم ضأن|Lammfleisch|Cordero|Agneau|मटन|Daging kambing|Cordeiro|Баранина|Kuzu eti|بکرے کا گوشت|羊肉
+minced_beef|meat||250|26|0|15|0|-|Minced meat|لحم مفروم|Hackfleisch|Carne picada|Viande hachée|कीमा|Daging cincang|Carne moída|Фарш|Kıyma|قیمہ|肉末
+fish_white|fish||105|23|0|1|0|-|White fish|سمك أبيض|Weißfisch|Pescado blanco|Poisson blanc|सफ़ेद मछली|Ikan putih|Peixe branco|Белая рыба|Beyaz balık|سفید مچھلی|白鱼
+salmon|fish||206|22|0|12|0|-|Salmon|سلمون|Lachs|Salmón|Saumon|सैल्मन|Salmon|Salmão|Лосось|Somon|سالمن|三文鱼
+sardines|fish||208|25|0|11|0|-|Sardines|سردين|Sardinen|Sardinas|Sardines|सार्डिन|Sarden|Sardinha|Сардины|Sardalya|سارڈین|沙丁鱼
+tuna|fish||116|26|0|1|0|-|Tuna|تونة|Thunfisch|Atún|Thon|टूना|Tuna|Atum|Тунец|Ton balığı|ٹونا|金枪鱼
+shrimp|fish||99|24|0.2|0.3|0|-|Shrimp|روبيان|Garnelen|Camarones|Crevettes|झींगा|Udang|Camarão|Креветки|Karides|جھینگا|虾
+egg|egg||155|13|1.1|11|0|-|Egg|بيض|Ei|Huevo|Œuf|अंडा|Telur|Ovo|Яйцо|Yumurta|انڈا|鸡蛋
+paneer|dairy||296|21|3.6|22|0|-|Paneer|جبن البانير|Paneer|Paneer|Paneer|पनीर|Paneer|Paneer|Панир|Panir|پنیر|印度奶酪
+cottage_cheese|dairy||98|11|3.4|4.3|0|-|Cottage cheese|جبن قريش|Hüttenkäse|Requesón|Fromage blanc|कॉटेज चीज़|Keju cottage|Queijo cottage|Творог|Lor peyniri|کاٹیج چیز|白软干酪
+hard_cheese|dairy||402|25|1.3|33|0|-|Cheese|جبن|Käse|Queso|Fromage|चीज़|Keju|Queijo|Сыр|Peynir|پنیر (چیز)|奶酪
+feta|dairy||264|14|4|21|0|-|White cheese (feta)|جبنة بيضاء|Feta|Queso blanco|Feta|फ़ेटा चीज़|Keju feta|Queijo branco|Брынза|Beyaz peynir|سفید پنیر|菲达奶酪
+yogurt|dairy||61|3.5|4.7|3.3|0|L|Yogurt|زبادي|Joghurt|Yogur|Yaourt|दही|Yogurt|Iogurte|Йогурт|Yoğurt|دہی|酸奶
+greek_yogurt|dairy||97|9|3.6|5|0|L|Strained yogurt (labneh)|لبنة|Griechischer Joghurt|Yogur griego|Yaourt grec|गाढ़ा दही|Yogurt Yunani|Iogurte grego|Греческий йогурт|Süzme yoğurt|گاڑھا دہی|希腊酸奶
+milk|dairy|lactose,fodmap|61|3.2|4.8|3.3|0|L|Milk|حليب|Milch|Leche|Lait|दूध|Susu|Leite|Молоко|Süt|دودھ|牛奶
+kefir|dairy||41|3.3|4.5|1|0|L|Kefir / laban|لبن|Kefir|Kéfir|Kéfir|छाछ|Kefir|Kefir|Кефир|Kefir|لسّی (کیفیر)|开菲尔
+butter|fat||717|0.9|0.1|81|0|-|Butter|زبدة|Butter|Mantequilla|Beurre|मक्खन|Mentega|Manteiga|Сливочное масло|Tereyağı|مکھن|黄油
+ghee|fat||900|0|0|100|0|-|Ghee|سمن|Ghee|Ghee|Ghee|घी|Minyak samin|Ghee|Топлёное масло|Sade yağ|دیسی گھی|酥油
+olive_oil|fat||884|0|0|100|0|-|Olive oil|زيت زيتون|Olivenöl|Aceite de oliva|Huile d'olive|जैतून का तेल|Minyak zaitun|Azeite|Оливковое масло|Zeytinyağı|زیتون کا تیل|橄榄油
+vegetable_oil|fat||884|0|0|100|0|-|Cooking oil|زيت طبخ|Speiseöl|Aceite vegetal|Huile végétale|खाना पकाने का तेल|Minyak goreng|Óleo vegetal|Растительное масло|Sıvı yağ|کوکنگ آئل|食用油
+coconut_milk|fat||230|2.3|6|24|2.2|-|Coconut milk|حليب جوز الهند|Kokosmilch|Leche de coco|Lait de coco|नारियल का दूध|Santan|Leite de coco|Кокосовое молоко|Hindistan cevizi sütü|ناریل کا دودھ|椰奶
+olives|fat||115|0.8|6|11|3.2|-|Olives|زيتون|Oliven|Aceitunas|Olives|जैतून|Zaitun|Azeitonas|Оливки|Zeytin|زیتون|橄榄
+avocado|fruit|fodmap|160|2|8.5|14.7|6.7|L|Avocado|أفوكادو|Avocado|Aguacate|Avocat|एवोकाडो|Alpukat|Abacate|Авокадо|Avokado|ایواکاڈو|牛油果
+onion|vegetable|fodmap2|40|1.1|9.3|0.1|1.7|-|Onion|بصل|Zwiebel|Cebolla|Oignon|प्याज़|Bawang bombay|Cebola|Лук|Soğan|پیاز|洋葱
+garlic|vegetable|fodmap2|149|6.4|33|0.5|2.1|-|Garlic|ثوم|Knoblauch|Ajo|Ail|लहसुन|Bawang putih|Alho|Чеснок|Sarımsak|لہسن|大蒜
+tomato|vegetable||18|0.9|3.9|0.2|1.2|-|Tomato|طماطم|Tomate|Tomate|Tomate|टमाटर|Tomat|Tomate|Помидор|Domates|ٹماٹر|番茄
+tomato_sauce|vegetable||29|1.3|6|0.2|1.5|-|Tomato sauce|صلصة طماطم|Tomatensoße|Salsa de tomate|Sauce tomate|टमाटर सॉस|Saus tomat|Molho de tomate|Томатный соус|Domates sosu|ٹماٹر کی چٹنی|番茄酱汁
+cucumber|vegetable||15|0.7|3.6|0.1|0.5|-|Cucumber|خيار|Gurke|Pepino|Concombre|खीरा|Mentimun|Pepino|Огурец|Salatalık|کھیرا|黄瓜
+lettuce|vegetable||15|1.4|2.9|0.2|1.3|-|Lettuce|خس|Salat|Lechuga|Laitue|सलाद पत्ता|Selada|Alface|Салат-латук|Marul|سلاد پتہ|生菜
+spinach|vegetable||23|2.9|3.6|0.4|2.2|-|Spinach|سبانخ|Spinat|Espinaca|Épinards|पालक|Bayam|Espinafre|Шпинат|Ispanak|پالک|菠菜
+carrot|vegetable||41|0.9|9.6|0.2|2.8|-|Carrot|جزر|Karotte|Zanahoria|Carotte|गाजर|Wortel|Cenoura|Морковь|Havuç|گاجر|胡萝卜
+cabbage|vegetable|fodmap|25|1.3|5.8|0.1|2.5|-|Cabbage|ملفوف|Kohl|Repollo|Chou|पत्ता गोभी|Kubis|Repolho|Капуста|Lahana|بند گوبھی|卷心菜
+cauliflower|vegetable|fodmap|25|1.9|5|0.3|2|-|Cauliflower|قرنبيط|Blumenkohl|Coliflor|Chou-fleur|फूलगोभी|Kembang kol|Couve-flor|Цветная капуста|Karnabahar|پھول گوبھی|菜花
+broccoli|vegetable||34|2.8|6.6|0.4|2.6|-|Broccoli|بروكلي|Brokkoli|Brócoli|Brocoli|ब्रोकली|Brokoli|Brócolis|Брокколи|Brokoli|بروکلی|西兰花
+green_beans|vegetable||31|1.8|7|0.2|2.7|-|Green beans|فاصولياء خضراء|Grüne Bohnen|Judías verdes|Haricots verts|हरी बीन्स|Buncis|Vagem|Стручковая фасоль|Taze fasulye|سبز پھلیاں|四季豆
+peas|vegetable|fodmap|81|5.4|14.5|0.4|5.7|L|Green peas|بازلاء|Erbsen|Guisantes|Petits pois|मटर|Kacang polong|Ervilha|Зелёный горошек|Bezelye|مٹر|豌豆
+bell_pepper|vegetable||31|1|6|0.3|2.1|-|Bell pepper|فلفل حلو|Paprika|Pimiento|Poivron|शिमला मिर्च|Paprika|Pimentão|Сладкий перец|Dolmalık biber|شملہ مرچ|甜椒
+eggplant|vegetable||25|1|6|0.2|3|-|Eggplant|باذنجان|Aubergine|Berenjena|Aubergine|बैंगन|Terong|Berinjela|Баклажан|Patlıcan|بینگن|茄子
+zucchini|vegetable||17|1.2|3.1|0.3|1|-|Zucchini|كوسا|Zucchini|Calabacín|Courgette|तोरी|Zukini|Abobrinha|Кабачок|Kabak|توری|西葫芦
+okra|vegetable||33|1.9|7.5|0.2|3.2|-|Okra|بامية|Okra|Okra|Gombo|भिंडी|Okra|Quiabo|Бамия|Bamya|بھنڈی|秋葵
+mushroom|vegetable|fodmap|22|3.1|3.3|0.3|1|-|Mushrooms|فطر|Pilze|Champiñones|Champignons|मशरूम|Jamur|Cogumelos|Грибы|Mantar|مشروم|蘑菇
+pumpkin|vegetable||26|1|6.5|0.1|0.5|-|Pumpkin|يقطين|Kürbis|Calabaza|Potiron|कद्दू|Labu|Abóbora|Тыква|Balkabağı|کدو|南瓜
+mixed_veg|vegetable||65|3|13|0.3|4|-|Mixed vegetables|خضار مشكلة|Gemischtes Gemüse|Verduras mixtas|Légumes variés|मिक्स सब्ज़ी|Sayuran campur|Legumes variados|Овощная смесь|Karışık sebze|مکس سبزی|什锦蔬菜
+bean_sprouts|vegetable||30|3|6|0.2|1.8|-|Bean sprouts|براعم الفاصولياء|Sojasprossen|Brotes de soja|Pousses de soja|अंकुरित दाने|Tauge|Broto de feijão|Ростки фасоли|Fasulye filizi|انکرت|豆芽
+bok_choy|vegetable||13|1.5|2.2|0.2|1|-|Leafy greens (bok choy)|ملفوف صيني|Pak Choi|Bok choy|Pak-choï|पत्तेदार साग|Sawi|Acelga chinesa|Бок-чой|Çin lahanası|پتوں والا ساگ|青菜
+leafy_greens|vegetable||32|3|5.4|0.6|4|-|Leafy greens (kale / sukuma)|خضار ورقية|Grünkohl|Col rizada|Chou vert|साग|Sayuran hijau|Couve|Листовая зелень|Yeşil yapraklı sebze|ساگ|绿叶菜
+corn|vegetable||96|3.4|21|1.5|2.4|M|Sweet corn|ذرة|Mais|Maíz|Maïs|भुट्टा|Jagung|Milho|Кукуруза|Mısır|مکئی|玉米
+beetroot|vegetable|fodmap|43|1.6|10|0.2|2.8|-|Beetroot|شمندر|Rote Bete|Remolacha|Betterave|चुकंदर|Bit|Beterraba|Свёкла|Pancar|چقندر|甜菜根
+kimchi|vegetable|spicy|15|1.1|2.4|0.5|1.6|-|Kimchi|كيمتشي|Kimchi|Kimchi|Kimchi|किमची|Kimchi|Kimchi|Кимчи|Kimçi|کمچی|泡菜
+chili|condiment|spicy|40|2|9|0.4|1.5|-|Chili|فلفل حار|Chili|Chile|Piment|हरी मिर्च|Cabai|Pimenta|Острый перец|Acı biber|ہری مرچ|辣椒
+herbs|condiment||23|2|3.7|0.5|2.8|-|Fresh herbs|أعشاب طازجة|Frische Kräuter|Hierbas frescas|Herbes fraîches|हरी धनिया/पुदीना|Daun herba|Ervas frescas|Свежая зелень|Taze otlar|ہرا دھنیا/پودینہ|香草
+soy_sauce|condiment|gluten|53|8|5|0.6|0.8|-|Soy sauce|صلصة الصويا|Sojasoße|Salsa de soja|Sauce soja|सोया सॉस|Kecap|Molho de soja|Соевый соус|Soya sosu|سویا ساس|酱油
+lemon|fruit||29|1.1|9|0.3|2.8|-|Lemon|ليمون|Zitrone|Limón|Citron|नींबू|Lemon|Limão|Лимон|Limon|لیموں|柠檬
+banana|fruit||89|1.1|23|0.3|2.6|M|Banana|موز|Banane|Plátano|Banane|केला|Pisang|Banana|Банан|Muz|کیلا|香蕉
+apple|fruit|fodmap|52|0.3|14|0.2|2.4|L|Apple|تفاح|Apfel|Manzana|Pomme|सेब|Apel|Maçã|Яблоко|Elma|سیب|苹果
+orange|fruit||47|0.9|12|0.1|2.4|L|Orange|برتقال|Orange|Naranja|Orange|संतरा|Jeruk|Laranja|Апельсин|Portakal|مالٹا|橙子
+mango|fruit|fodmap|60|0.8|15|0.4|1.6|M|Mango|مانجو|Mango|Mango|Mangue|आम|Mangga|Manga|Манго|Mango|آم|芒果
+papaya|fruit||43|0.5|11|0.3|1.7|M|Papaya|بابايا|Papaya|Papaya|Papaye|पपीता|Pepaya|Mamão|Папайя|Papaya|پپیتا|木瓜
+guava|fruit||68|2.6|14|1|5.4|L|Guava|جوافة|Guave|Guayaba|Goyave|अमरूद|Jambu biji|Goiaba|Гуава|Guava|امرود|番石榴
+pineapple|fruit||50|0.5|13|0.1|1.4|M|Pineapple|أناناس|Ananas|Piña|Ananas|अनानास|Nanas|Abacaxi|Ананас|Ananas|انناس|菠萝
+berries|fruit||50|0.7|12|0.3|2.4|L|Berries|توت|Beeren|Frutos rojos|Baies|बेरीज़|Buah beri|Frutas vermelhas|Ягоды|Orman meyveleri|بیریز|浆果
+mixed_fruit|fruit||60|0.7|15|0.2|2|M|Seasonal fruit|فواكه موسمية|Saisonales Obst|Fruta de temporada|Fruits de saison|मौसमी फल|Buah musiman|Frutas da estação|Сезонные фрукты|Mevsim meyveleri|موسمی پھل|时令水果
+dates|fruit|sugar,fodmap|282|2.5|75|0.4|8|M|Dates|تمر|Datteln|Dátiles|Dattes|खजूर|Kurma|Tâmaras|Финики|Hurma|کھجور|椰枣
+almonds|nuts||579|21|22|50|12.5|L|Almonds|لوز|Mandeln|Almendras|Amandes|बादाम|Almond|Amêndoas|Миндаль|Badem|بادام|杏仁
+walnuts|nuts||654|15|14|65|6.7|L|Walnuts|جوز|Walnüsse|Nueces|Noix|अखरोट|Kenari|Nozes|Грецкие орехи|Ceviz|اخروٹ|核桃
+mixed_nuts|nuts||607|20|21|54|7|L|Mixed nuts|مكسرات مشكلة|Nussmischung|Frutos secos|Noix mélangées|मिक्स मेवे|Kacang campur|Mix de castanhas|Ореховая смесь|Karışık kuruyemiş|مکس میوہ جات|混合坚果
+peanuts|nuts||567|26|16|49|8.5|L|Peanuts|فول سوداني|Erdnüsse|Cacahuetes|Cacahuètes|मूंगफली|Kacang tanah|Amendoim|Арахис|Yer fıstığı|مونگ پھلی|花生
+peanut_butter|nuts||588|25|20|50|6|L|Peanut butter|زبدة الفول السوداني|Erdnussbutter|Mantequilla de cacahuete|Beurre de cacahuète|पीनट बटर|Selai kacang|Pasta de amendoim|Арахисовая паста|Fıstık ezmesi|پینٹ بٹر|花生酱
+tahini|nuts||595|17|21|54|9.3|L|Tahini|طحينة|Tahini|Tahini|Tahini|तिल का पेस्ट|Tahini|Tahine|Тахини|Tahin|تل کا پیسٹ|芝麻酱
+sugar|sweet|sugar|387|0|100|0|0|H|Sugar|سكر|Zucker|Azúcar|Sucre|चीनी|Gula|Açúcar|Сахар|Şeker|چینی|糖
+honey|sweet|sugar,fodmap|304|0.3|82|0|0.2|M|Honey|عسل|Honig|Miel|Miel|शहद|Madu|Mel|Мёд|Bal|شہد|蜂蜜
+tea|drink||1|0|0.3|0|0|-|Tea|شاي|Tee|Té|Thé|चाय|Teh|Chá|Чай|Çay|چائے|茶
+coffee|drink||2|0.3|0|0|0|-|Coffee|قهوة|Kaffee|Café|Café|कॉफ़ी|Kopi|Café|Кофе|Kahve|کافی|咖啡

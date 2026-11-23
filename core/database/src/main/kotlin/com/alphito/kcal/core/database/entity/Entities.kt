@@ -1,5 +1,6 @@
 package com.alphito.kcal.core.database.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
@@ -41,6 +42,23 @@ data class FoodEntity(
     val mealTypes: String,
     val imageKey: String,
     val tags: String,
+    /** JSON object {lang: name}. */
+    @ColumnInfo(defaultValue = "{}") val names: String = "{}",
+    @ColumnInfo(defaultValue = "{}") val portions: String = "{}",
+    val imageUrl: String? = null,
+    /** CSV of region keys; empty = everywhere. */
+    @ColumnInfo(defaultValue = "") val regions: String = "",
+    @ColumnInfo(defaultValue = "1") val active: Boolean = true,
+    // v3 – nutrition & explanation data derived from ingredients by the catalogue build.
+    @ColumnInfo(defaultValue = "2") val cost: Int = 2,
+    @ColumnInfo(defaultValue = "") val emoji: String = "",
+    @ColumnInfo(defaultValue = "0") val protein: Double = 0.0,
+    @ColumnInfo(defaultValue = "0") val carbs: Double = 0.0,
+    @ColumnInfo(defaultValue = "0") val fat: Double = 0.0,
+    @ColumnInfo(defaultValue = "0") val fiber: Double = 0.0,
+    @ColumnInfo(defaultValue = "Medium") val gi: String = "Medium",
+    /** JSON array [{id, grams, category, names{lang:name}}]. */
+    @ColumnInfo(defaultValue = "[]") val ingredients: String = "[]",
 )
 
 @Entity(
@@ -54,6 +72,8 @@ data class PlannedItemEntity(
     val mealType: String,
     val position: Int,
     val foodId: String,
+    /** Portion multiplier so the day lands on the calorie target. */
+    @ColumnInfo(defaultValue = "1.0") val servings: Double = 1.0,
 )
 
 @Entity(tableName = "meal_check", primaryKeys = ["epochDay", "mealType"])
@@ -78,7 +98,12 @@ data class WeightEntity(@PrimaryKey val epochDay: Long, val weightKg: Double)
 data class StepsEntity(@PrimaryKey val epochDay: Long, val steps: Int)
 
 @Entity(tableName = "sugar")
-data class SugarEntity(@PrimaryKey val epochDay: Long, val mgDl: Int)
+data class SugarEntity(
+    @PrimaryKey val epochDay: Long,
+    val mgDl: Int,
+    /** Fasting / BeforeMeal / AfterMeal / Bedtime – ranges differ by context. */
+    @ColumnInfo(defaultValue = "Fasting") val context: String = "Fasting",
+)
 
 @Entity(tableName = "dairy_log")
 data class DairyLogEntity(
@@ -101,6 +126,7 @@ data class PlannedItemWithFood(
     val epochDay: Long,
     val mealType: String,
     val position: Int,
+    val servings: Double,
     @androidx.room.Embedded(prefix = "food_") val food: FoodEntity,
 )
 

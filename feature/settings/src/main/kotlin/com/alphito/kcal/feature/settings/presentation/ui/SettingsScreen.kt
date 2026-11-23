@@ -27,7 +27,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.alphito.kcal.core.common.FeatureFlags
 import com.alphito.kcal.core.common.mvi.ObserveEffects
 import com.alphito.kcal.core.designsystem.component.DialogBody
 import com.alphito.kcal.core.designsystem.component.IconChip
@@ -102,14 +101,15 @@ internal fun SettingsScreen(state: SettingsState, onIntent: (SettingsIntent) -> 
             SettingsCardRow(stringResource(R.string.settings_health), { onIntent(SettingsIntent.Open(Route.HealthConditions(edit = true))) })
             SettingsCardRow(stringResource(R.string.settings_region), { onIntent(SettingsIntent.Open(Route.RegionBudget(edit = true))) })
             SettingsCardRow(stringResource(R.string.settings_language), { onIntent(SettingsIntent.Open(Route.Language())) })
-            if (FeatureFlags.PREMIUM_ENABLED) SettingsCardRow(
+            SettingsCardRow(stringResource(R.string.settings_reminders), { onIntent(SettingsIntent.Open(Route.Reminders)) })
+            if (state.premiumEnabled) SettingsCardRow(
                 title = stringResource(R.string.settings_premium),
                 subtitle = state.plan?.let { stringResource(R.string.settings_premium_active, stringResource(it.label())) }
                     ?: stringResource(R.string.settings_premium_free),
                 leadingIcon = KcalIcons.Crown,
                 onClick = { onIntent(SettingsIntent.Open(Route.Premium())) },
             )
-            if (FeatureFlags.PREMIUM_ENABLED) SettingsCardRow(stringResource(R.string.settings_payments), { onIntent(SettingsIntent.Show(SettingsSheet.Payments)) })
+            if (state.premiumEnabled) SettingsCardRow(stringResource(R.string.settings_payments), { onIntent(SettingsIntent.Show(SettingsSheet.Payments)) })
             SettingsCardRow(stringResource(R.string.settings_rate), { onIntent(SettingsIntent.Show(SettingsSheet.Rate)) })
             SettingsCardRow(stringResource(R.string.settings_privacy), { onIntent(SettingsIntent.Open(Route.PrivacySecurity)) })
             SettingsCardRow(stringResource(R.string.settings_help), { onIntent(SettingsIntent.Show(SettingsSheet.Help)) })

@@ -57,4 +57,15 @@
     <string name="delete_title">Verilerin silinsin mi?</string>
     <string name="delete_body">Bu işlem profilini, öğün planlarını ve geçmişini bu cihazdan kalıcı olarak siler. Geri alınamaz.</string>
     <string name="delete_confirm">Her şeyi sil</string>
+    <string name="settings_reminders">Hatırlatıcılar</string>
+    <string name="reminders_title">Hatırlatıcılar</string>
+    <string name="reminders_body">Doğru zamanda nazik hatırlatmalar. İstediğin zaman kapatabilirsin.</string>
+    <string name="reminders_water">Su iç</string>
+    <string name="reminders_water_sub">09.00–21.00 arası her 2 saatte</string>
+    <string name="reminders_meals">Öğün saatleri</string>
+    <string name="reminders_meals_sub">Kahvaltı, öğle yemeği, ara öğün ve akşam yemeği</string>
+    <string name="reminders_weigh_in">Haftalık tartılma</string>
+    <string name="reminders_weigh_in_sub">Her pazartesi 09.00\'da</string>
+    <string name="reminders_permission_denied">Hatırlatıcı almak için sistem ayarlarından bildirimlere izin ver.</string>
+    <string name="privacy_ad_choices">Reklam gizliliği tercihleri</string>
 </resources>

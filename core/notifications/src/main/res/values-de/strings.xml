@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Erinnerungen</string>
+    <string name="notif_channel_reminders_desc">Wasser-, Mahlzeiten- und Wiege-Erinnerungen, die du aktiviert hast.</string>
+    <string name="notif_channel_updates">Neuigkeiten von kCal</string>
+    <string name="notif_channel_updates_desc">Tipps und Neuigkeiten vom kCal-Team.</string>
+    <string name="notif_water_title">Zeit für ein Glas Wasser 💧</string>
+    <string name="notif_water_body">Ein schnelles Glas hält dich auf Kurs für dein heutiges Ziel.</string>
+    <string name="notif_breakfast_title">Zeit fürs Frühstück</string>
+    <string name="notif_lunch_title">Zeit fürs Mittagessen</string>
+    <string name="notif_snack_title">Zeit für einen Snack</string>
+    <string name="notif_dinner_title">Zeit fürs Abendessen</string>
+    <string name="notif_meal_body">Deine geplante Mahlzeit wartet aufs Abhaken.</string>
+    <string name="notif_weigh_in_title">Wöchentliches Wiegen</string>
+    <string name="notif_weigh_in_body">Trage dein Gewicht dieser Woche ein, damit dein Fortschritt stimmt.</string>
+</resources>

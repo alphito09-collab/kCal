@@ -20,8 +20,20 @@ data class StepsDay(val date: LocalDate, val steps: Int) {
     val kcal: Int get() = EnergyCalculator.stepsToKcal(steps)
 }
 
-data class SugarReading(val date: LocalDate, val mgDl: Int) {
-    val inNormalRange: Boolean get() = mgDl in 70..140
+/**
+ * When a glucose reading was taken – targets differ (ADA, non-pregnant adults):
+ * fasting / before a meal 80–130 mg/dL, 1–2 h after eating < 180, bedtime 90–150.
+ */
+enum class SugarContext(val range: IntRange) {
+    Fasting(80..130),
+    BeforeMeal(80..130),
+    AfterMeal(70..179),
+    Bedtime(90..150),
+}
+
+data class SugarReading(val date: LocalDate, val mgDl: Int, val context: SugarContext = SugarContext.Fasting) {
+    val inNormalRange: Boolean get() = mgDl in context.range
+    val isLow: Boolean get() = mgDl < context.range.first
 }
 
 enum class DairyReaction { Bloating, Gas, Diarrhea, Nausea }

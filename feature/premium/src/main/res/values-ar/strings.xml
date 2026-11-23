@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">ابدأ الشهري</string>
     <string name="premium_active">نشط ✓</string>
     <string name="premium_cancel_note">يمكنك إدارة اشتراكك أو إلغاؤه في أي وقت.</string>
+    <string name="premium_price_per_week">%1$s / أسبوع</string>
+    <string name="premium_price_per_month">%1$s / شهر</string>
+    <string name="premium_pending">عملية الشراء قيد الانتظار. سيتم تفعيل Premium فور تأكيد Google Play.</string>
+    <string name="premium_failed">تعذّر إتمام عملية الشراء. يُرجى المحاولة مرة أخرى.</string>
 </resources>

@@ -10,7 +10,7 @@
     <string name="health_save_log">Save Log</string>
     <string name="health_saved">Saved ✓</string>
 
-    <string name="sugar_today">Today\'s Sugar Level</string>
+    <string name="sugar_today">Blood sugar reading</string>
     <string name="sugar_save">Save Reading</string>
     <string name="sugar_hint">Log your sugar level once daily to track your health.</string>
     <string name="sugar_trend">Sugar Trend (7 Days)</string>
@@ -21,7 +21,7 @@
 
     <string name="dairy_days_since">Days Since Last Reaction</string>
     <string name="dairy_days">%1$d Days</string>
-    <string name="dairy_question">Did you have dairy today?</string>
+    <string name="dairy_question">Did you have dairy that day?</string>
     <string name="dairy_any_reaction">Any reaction?</string>
     <string name="dairy_history">Reaction History</string>
     <string name="dairy_badge">Dairy</string>
@@ -37,7 +37,7 @@
     <string name="reaction_diarrhea">Diarrhea</string>
     <string name="reaction_nausea">Nausea</string>
 
-    <string name="ibs_today">Today\'s Symptoms</string>
+    <string name="ibs_today">Symptoms</string>
     <string name="ibs_severity">Severity</string>
     <string name="ibs_trend">Symptom Severity (7 Days)</string>
     <string name="ibs_abdominal_pain">Abdominal Pain</string>
@@ -47,4 +47,22 @@
     <string name="ibs_severe">Severe</string>
     <string name="ibs_summary">%1$s · %2$s %3$s logged.</string>
     <string name="ibs_summary_none">%1$s · no symptoms logged.</string>
+    <string name="health_log_for">Logging for %1$s</string>
+    <string name="health_today">Today</string>
+    <string name="sugar_ctx_fasting">Fasting</string>
+    <string name="sugar_ctx_before">Before a meal</string>
+    <string name="sugar_ctx_after">After a meal</string>
+    <string name="sugar_ctx_bedtime">Bedtime</string>
+    <string name="sugar_target">Target for this time: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">Target 1–2 hours after eating: under %1$s mg/dL</string>
+    <string name="sugar_invalid">Enter a value between 20 and 600 mg/dL.</string>
+    <string name="sugar_stats">In range: %1$s of %2$s readings · average %3$s mg/dL</string>
+    <string name="health_plan_title">How your plan helps</string>
+    <string name="health_plan_diabetes">Your meals skip added sugar and high-glycemic dishes, and carbs stay around 60 g per meal. Log readings regularly and share them with your doctor.</string>
+    <string name="health_plan_ibs">Your meals follow low-FODMAP choices: no onion- or garlic-heavy, bean-heavy or spicy dishes. Logging symptoms helps you find your personal triggers.</string>
+    <string name="health_plan_lactose">Your meals avoid milk-heavy dishes. Yogurt and hard cheese in small amounts are usually fine – your log shows what works for you.</string>
+    <string name="ibs_free_days">Symptom-free days this week: %1$s of %2$s logged</string>
+    <string name="ibs_suspects">Eaten only on symptom days: %1$s. If this keeps happening, try swapping them in your plan.</string>
+    <string name="ibs_no_suspects">Tick your meals in the checklist – we\'ll look for patterns between what you ate and your symptoms.</string>
+    <string name="dairy_reactions_30">Reactions in the last 30 days: %1$s</string>
 </resources>

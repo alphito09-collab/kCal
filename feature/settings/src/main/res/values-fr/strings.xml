@@ -57,4 +57,15 @@
     <string name="delete_title">Supprimer vos données ?</string>
     <string name="delete_body">Votre profil, vos plans et votre historique seront définitivement supprimés de cet appareil. Action irréversible.</string>
     <string name="delete_confirm">Tout supprimer</string>
+    <string name="settings_reminders">Rappels</string>
+    <string name="reminders_title">Rappels</string>
+    <string name="reminders_body">De petits rappels au bon moment. Désactivables à tout moment.</string>
+    <string name="reminders_water">Boire de l\'eau</string>
+    <string name="reminders_water_sub">Toutes les 2 heures de 9 h à 21 h</string>
+    <string name="reminders_meals">Heures des repas</string>
+    <string name="reminders_meals_sub">Petit-déjeuner, déjeuner, collation et dîner</string>
+    <string name="reminders_weigh_in">Pesée hebdomadaire</string>
+    <string name="reminders_weigh_in_sub">Chaque lundi à 9 h</string>
+    <string name="reminders_permission_denied">Autorisez les notifications dans les réglages système pour recevoir des rappels.</string>
+    <string name="privacy_ad_choices">Choix de confidentialité des annonces</string>
 </resources>

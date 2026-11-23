@@ -60,15 +60,11 @@
     <string name="onb_target_weight">लक्ष्य वज़न</string>
     <string name="onb_region_title">क्षेत्र और बजट</string>
     <string name="onb_region_subtitle">ताकि आपके प्लान में स्थानीय और किफ़ायती खाना हो</string>
-    <string name="onb_region_label">क्षेत्र / देश</string>
     <string name="onb_budget_label">साप्ताहिक भोजन बजट</string>
     <string name="onb_budget_low">कम</string>
     <string name="onb_budget_medium">मध्यम</string>
     <string name="onb_budget_high">ज़्यादा</string>
-    <string name="onb_budget_range">PKR %1$s – %2$s / सप्ताह</string>
-    <string name="onb_budget_open">PKR %1$s+ / सप्ताह</string>
     <string name="onb_see_plan">मेरा प्लान देखें</string>
-    <string name="onb_choose_region">अपना क्षेत्र चुनें</string>
     <string name="onb_energy_title">आपकी दैनिक ऊर्जा ज़रूरत</string>
     <string name="onb_energy_subtitle">यह है आपकी अनुमानित दैनिक ऊर्जा ज़रूरत।</string>
     <string name="onb_bmr">BMR</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ रोज़ %1$s कदम</string>
     <string name="onb_done">हो गया</string>
     <string name="onb_exact_hint">जैसे 300</string>
+    <string name="onb_region_label">देश</string>
+    <string name="onb_choose_region">अपना देश चुनें</string>
+    <string name="onb_region_hint">आपकी योजना वहां आम और सस्ते व्यंजनों का उपयोग करती है।</string>
+    <string name="onb_region_search">देश खोजें</string>
+    <string name="onb_region_none">कोई देश नहीं मिला</string>
+    <string name="onb_budget_low_desc">सस्ते मूल खाद्य – दाल, अंडे, चावल और मौसमी सब्ज़ियाँ</string>
+    <string name="onb_budget_medium_desc">मूल खाद्य के साथ कुछ चिकन, मछली और डेयरी</string>
+    <string name="onb_budget_high_desc">सबसे ज़्यादा विविधता, प्रीमियम मछली और मांस सहित</string>
 </resources>

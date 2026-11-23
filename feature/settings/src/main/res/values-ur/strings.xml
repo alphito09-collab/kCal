@@ -57,4 +57,15 @@
     <string name="delete_title">اپنا ڈیٹا حذف کریں؟</string>
     <string name="delete_body">یہ آپ کی پروفائل، کھانے کے پلان اور تاریخ کو اس ڈیوائس سے مستقل طور پر حذف کر دے گا۔ اسے واپس نہیں کیا جا سکتا۔</string>
     <string name="delete_confirm">سب کچھ حذف کریں</string>
+    <string name="settings_reminders">یاد دہانیاں</string>
+    <string name="reminders_title">یاد دہانیاں</string>
+    <string name="reminders_body">صحیح وقت پر ہلکی یاد دہانیاں۔ آپ انہیں کبھی بھی بند کر سکتے ہیں۔</string>
+    <string name="reminders_water">پانی پئیں</string>
+    <string name="reminders_water_sub">صبح 9 سے رات 9 بجے تک ہر 2 گھنٹے</string>
+    <string name="reminders_meals">کھانے کے اوقات</string>
+    <string name="reminders_meals_sub">ناشتہ، دوپہر کا کھانا، اسنیک اور رات کا کھانا</string>
+    <string name="reminders_weigh_in">ہفتہ وار وزن</string>
+    <string name="reminders_weigh_in_sub">ہر پیر صبح 9 بجے</string>
+    <string name="reminders_permission_denied">یاد دہانیاں پانے کے لیے سسٹم سیٹنگز میں اطلاعات کی اجازت دیں۔</string>
+    <string name="privacy_ad_choices">اشتہار کی رازداری کے انتخاب</string>
 </resources>
