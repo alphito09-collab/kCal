@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="checklist_streak"><item quantity="zero">🔥 سلسلة %1$s يوم</item><item quantity="one">🔥 سلسلة يوم واحد</item><item quantity="two">🔥 سلسلة يومين</item><item quantity="few">🔥 سلسلة %1$s أيام</item><item quantity="many">🔥 سلسلة %1$s يومًا</item><item quantity="other">🔥 سلسلة %1$s يوم</item></plurals>
+</resources>

@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">做得好！还剩 %1$s 餐</string>
     <string name="checklist_msg_done">全部餐都完成啦——很棒的一天！</string>
     <string name="checklist_kcal">已摄入 %1$s / %2$s 千卡</string>
-    <string name="checklist_streak">🔥 连续 %1$s 天</string>
     <string name="checklist_celebrate">🎉 今天的计划完成了。坚持才是改变的关键！</string>
     <string name="checklist_hint">点击餐食查看配料；今天不合适也可以替换。</string>
     <string name="tip_general_1">先用蔬菜装满半个盘子——份量自然就控制住了。</string>

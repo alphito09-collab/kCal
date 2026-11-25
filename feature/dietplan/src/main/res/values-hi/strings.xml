@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">बहुत बढ़िया! बचे भोजन: %1$s</string>
     <string name="checklist_msg_done">सारे भोजन हो गए – शानदार दिन!</string>
     <string name="checklist_kcal">%2$s में से %1$s kcal खाया</string>
-    <string name="checklist_streak">🔥 %1$s दिन की लय</string>
     <string name="checklist_celebrate">🎉 आज की योजना पूरी! लगातार बने रहना ही नतीजे लाता है!</string>
     <string name="checklist_hint">भोजन पर टैप करके देखें इसमें क्या है, या आज पसंद न हो तो बदल दें।</string>
     <string name="tip_general_1">पहले आधी प्लेट सब्ज़ियों से भरें – इससे हिस्सा अपने आप सही रहता है।</string>

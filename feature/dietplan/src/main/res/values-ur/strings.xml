@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">بہت خوب! باقی کھانے: %1$s</string>
     <string name="checklist_msg_done">سارے کھانے ہو گئے – زبردست دن!</string>
     <string name="checklist_kcal">%2$s میں سے %1$s کیلوری کھائیں</string>
-    <string name="checklist_streak">🔥 %1$s دن کا سلسلہ</string>
     <string name="checklist_celebrate">🎉 آج کا پلان مکمل! مستقل مزاجی ہی نتائج لاتی ہے!</string>
     <string name="checklist_hint">کھانے پر ٹیپ کر کے دیکھیں اس میں کیا ہے، یا آج پسند نہ ہو تو بدل دیں۔</string>
     <string name="tip_general_1">پہلے آدھی پلیٹ سبزیوں سے بھریں – حصے خود بخود قابو میں رہتے ہیں۔</string>

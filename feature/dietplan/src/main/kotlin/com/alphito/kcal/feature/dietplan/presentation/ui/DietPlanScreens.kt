@@ -43,8 +43,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.alphito.kcal.core.common.mvi.ObserveEffects
@@ -414,7 +416,8 @@ private fun ChecklistProgress(day: DayPlan, streak: Int) {
                 stringResource(R.string.checklist_kcal, KcalFormat.int(day.eatenKcal, locale), KcalFormat.int(day.targetKcal, locale)),
                 style = KcalTheme.typography.bodySmall, color = colors.textSecondary,
             )
-            if (streak > 0) Text(stringResource(R.string.checklist_streak, KcalFormat.int(streak, locale)), style = KcalTheme.typography.bodySmall, color = colors.textBrand)
+            // Hidden at 0: a new user has nothing to celebrate yet.
+            if (streak > 0) Text(pluralStringResource(R.plurals.checklist_streak, streak, KcalFormat.int(streak, locale)), style = KcalTheme.typography.bodySmall, color = colors.textBrand)
         }
     }
 }
@@ -423,15 +426,25 @@ private fun ChecklistProgress(day: DayPlan, streak: Int) {
 private fun ChecklistRow(slot: MealSlot, onIntent: (ChecklistIntent) -> Unit) {
     val colors = KcalTheme.colors
     val lead = slot.items.first()
-    Row(Modifier.fillMaxWidth().padding(vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
         FoodThumb(
             slot.leadImageKey, imageUrl = slot.leadImageUrl, emoji = slot.leadEmoji, size = 46.dp, shape = CircleShape,
             modifier = Modifier.kcalSharedElement(SharedKeys.mealImage(lead.id)),
         )
-        Spacer(Modifier.width(12.dp))
-        Column(Modifier.weight(1f).kcalClickable(shape = KcalShapes.sm) { onIntent(ChecklistIntent.ShowInfo(lead.id)) }) {
+        Spacer(Modifier.width(4.dp))
+        // kcalClickable clips to its rounded shape: the inner padding keeps every glyph (incl. tall
+        // Urdu/Arabic/Hindi ones and large font scales) clear of the corners. Row/Spacer above shrink
+        // by the same amount so the text sits where it did.
+        Column(
+            Modifier.weight(1f)
+                .kcalClickable(shape = KcalShapes.sm) { onIntent(ChecklistIntent.ShowInfo(lead.id)) }
+                .padding(horizontal = 8.dp, vertical = 6.dp),
+        ) {
             Text(slot.mealType.label(), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
-            Text(mealTitle(slot), style = KcalTheme.typography.titleSmall, color = colors.textPrimary)
+            Text(
+                mealTitle(slot), style = KcalTheme.typography.titleSmall, color = colors.textPrimary,
+                maxLines = 2, overflow = TextOverflow.Ellipsis,
+            )
             Text(kcalLabel(slot.totalKcal), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
         }
         InfoButton({ onIntent(ChecklistIntent.ShowInfo(lead.id)) })

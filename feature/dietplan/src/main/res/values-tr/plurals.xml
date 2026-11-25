@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="checklist_streak"><item quantity="one">🔥 %1$s günlük seri</item><item quantity="other">🔥 %1$s günlük seri</item></plurals>
+</resources>

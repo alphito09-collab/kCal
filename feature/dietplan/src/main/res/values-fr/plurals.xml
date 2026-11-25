@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="checklist_streak"><item quantity="one">🔥 Série de %1$s jour</item><item quantity="many">🔥 Série de %1$s jours</item><item quantity="other">🔥 Série de %1$s jours</item></plurals>
+</resources>

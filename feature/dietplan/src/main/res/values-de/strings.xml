@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Gut gemacht! Verbleibende Mahlzeiten: %1$s</string>
     <string name="checklist_msg_done">Alle Mahlzeiten erledigt – toller Tag!</string>
     <string name="checklist_kcal">%1$s von %2$s kcal gegessen</string>
-    <string name="checklist_streak">🔥 %1$s Tage in Folge</string>
     <string name="checklist_celebrate">🎉 Du hast den heutigen Plan geschafft. Beständigkeit bringt die Ergebnisse!</string>
     <string name="checklist_hint">Tippe auf eine Mahlzeit, um die Zutaten zu sehen, oder tausche sie, wenn sie heute nicht passt.</string>
     <string name="tip_general_1">Fülle zuerst die Hälfte deines Tellers mit Gemüse – das hält die Portionen ganz natürlich im Rahmen.</string>
