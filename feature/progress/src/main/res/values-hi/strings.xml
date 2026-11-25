@@ -11,4 +11,6 @@
     <string name="progress_weight">वज़न</string>
     <string name="progress_key_metrics">मुख्य प्रगति आँकड़े</string>
     <string name="progress_no_weight">अपना रुझान देखने के लिए वज़न दर्ज करें।</string>
+    <string name="progress_earlier">पिछली अवधियाँ</string>
+    <string name="progress_later">अगली अवधियाँ</string>
 </resources>

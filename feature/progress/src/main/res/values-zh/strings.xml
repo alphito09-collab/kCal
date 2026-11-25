@@ -11,4 +11,6 @@
     <string name="progress_weight">体重</string>
     <string name="progress_key_metrics">关键指标</string>
     <string name="progress_no_weight">记录体重即可查看趋势。</string>
+    <string name="progress_earlier">更早的时段</string>
+    <string name="progress_later">更晚的时段</string>
 </resources>

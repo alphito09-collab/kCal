@@ -13,4 +13,8 @@
     <string name="weight_week">第 %1$d 周</string>
     <string name="weight_week_current">第 %1$d 周（本周）</string>
     <string name="weight_empty">暂无体重记录。</string>
+    <string name="weight_goal">目标：%1$s · 还差 %2$s</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="other">按计划进度约 %1$d 周</item></plurals>
+    <string name="weight_goal_reached">已达成目标：%1$s。你的计划现在会保持体重稳定。</string>
+    <string name="weight_goal_bmi_note">该目标超出健康 BMI 范围（18.5–25）。</string>
 </resources>

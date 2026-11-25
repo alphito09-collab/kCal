@@ -11,4 +11,6 @@
     <string name="progress_weight">Weight</string>
     <string name="progress_key_metrics">Key Progress Metrics</string>
     <string name="progress_no_weight">Log your weight to see your trend.</string>
+    <string name="progress_earlier">Earlier periods</string>
+    <string name="progress_later">Later periods</string>
 </resources>

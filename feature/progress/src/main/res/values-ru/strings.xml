@@ -11,4 +11,6 @@
     <string name="progress_weight">Вес</string>
     <string name="progress_key_metrics">Ключевые показатели</string>
     <string name="progress_no_weight">Внесите вес, чтобы увидеть тренд.</string>
+    <string name="progress_earlier">Предыдущие периоды</string>
+    <string name="progress_later">Следующие периоды</string>
 </resources>

@@ -9,7 +9,6 @@
     <string name="dash_eating">Essen</string>
     <string name="dash_streak">Serie</string>
     <string name="dash_kcal_value">%1$s kcal</string>
-    <string name="dash_streak_value">Tag %1$d</string>
     <string name="dash_todays_meal">Heutige Mahlzeit</string>
     <string name="dash_view_all">Alle anzeigen</string>
     <string name="dash_up_next">%1$s · Als Nächstes</string>

@@ -11,4 +11,6 @@
     <string name="progress_weight">وزن</string>
     <string name="progress_key_metrics">اہم پیش رفت</string>
     <string name="progress_no_weight">رجحان دیکھنے کے لیے اپنا وزن درج کریں۔</string>
+    <string name="progress_earlier">پچھلے ادوار</string>
+    <string name="progress_later">اگلے ادوار</string>
 </resources>

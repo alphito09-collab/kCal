@@ -11,4 +11,6 @@
     <string name="progress_weight">Kilo</string>
     <string name="progress_key_metrics">Temel göstergeler</string>
     <string name="progress_no_weight">Eğilimini görmek için kilonu kaydet.</string>
+    <string name="progress_earlier">Önceki dönemler</string>
+    <string name="progress_later">Sonraki dönemler</string>
 </resources>

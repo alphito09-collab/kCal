@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dash_streak_days"><item quantity="zero">%1$s يوم</item><item quantity="one">يوم واحد</item><item quantity="two">يومان</item><item quantity="few">%1$s أيام</item><item quantity="many">%1$s يومًا</item><item quantity="other">%1$s يوم</item></plurals>
+</resources>

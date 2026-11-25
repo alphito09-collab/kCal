@@ -9,7 +9,6 @@
     <string name="dash_eating">Питание</string>
     <string name="dash_streak">Серия</string>
     <string name="dash_kcal_value">%1$s ккал</string>
-    <string name="dash_streak_value">День %1$d</string>
     <string name="dash_todays_meal">Приём пищи сегодня</string>
     <string name="dash_view_all">Все</string>
     <string name="dash_up_next">%1$s · Далее</string>

@@ -9,7 +9,6 @@
     <string name="dash_eating">الطعام</string>
     <string name="dash_streak">سلسلة الأيام</string>
     <string name="dash_kcal_value">%1$s سعرة</string>
-    <string name="dash_streak_value">اليوم %1$d</string>
     <string name="dash_todays_meal">وجبة اليوم</string>
     <string name="dash_view_all">عرض الكل</string>
     <string name="dash_up_next">%1$s · التالية</string>

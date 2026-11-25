@@ -13,4 +13,8 @@
     <string name="weight_week">ہفتہ %1$d</string>
     <string name="weight_week_current">ہفتہ %1$d (یہ ہفتہ)</string>
     <string name="weight_empty">ابھی تک کوئی وزن درج نہیں۔</string>
+    <string name="weight_goal">ہدف: %1$s · %2$s باقی</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">آپ کے پلان کی رفتار سے ≈ %1$d ہفتہ</item><item quantity="other">آپ کے پلان کی رفتار سے ≈ %1$d ہفتے</item></plurals>
+    <string name="weight_goal_reached">ہدف حاصل: %1$s۔ اب آپ کا پلان وزن برقرار رکھے گا۔</string>
+    <string name="weight_goal_bmi_note">یہ ہدف صحت مند BMI حد (18.5–25) سے باہر ہے۔</string>
 </resources>

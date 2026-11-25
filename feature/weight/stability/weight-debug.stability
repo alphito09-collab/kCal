@@ -5,6 +5,14 @@
 //   ./gradlew :weight:stabilityDump
 
 @Composable
+private fun com.alphito.kcal.feature.weight.presentation.ui.GoalProgressSection(goal: com.alphito.kcal.core.model.GoalProgress, inLb: kotlin.Boolean): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - goal: STABLE (stability configuration file type)
+    - inLb: STABLE (primitive type)
+
+@Composable
 private fun com.alphito.kcal.feature.weight.presentation.ui.Metric(label: kotlin.String, value: kotlin.String, brand: kotlin.Boolean): kotlin.Unit
   skippable: true
   restartable: true

@@ -13,4 +13,8 @@
     <string name="weight_week">Semana %1$d</string>
     <string name="weight_week_current">Semana %1$d (esta semana)</string>
     <string name="weight_empty">Aún no hay registros.</string>
+    <string name="weight_goal">Meta: %1$s · faltan %2$s</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">≈ %1$d semana al ritmo de tu plan</item><item quantity="other">≈ %1$d semanas al ritmo de tu plan</item></plurals>
+    <string name="weight_goal_reached">Meta alcanzada: %1$s. Tu plan ahora mantiene tu peso.</string>
+    <string name="weight_goal_bmi_note">Esta meta está fuera del rango de IMC saludable (18,5–25).</string>
 </resources>

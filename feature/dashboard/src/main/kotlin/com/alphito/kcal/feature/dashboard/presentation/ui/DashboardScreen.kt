@@ -72,14 +72,17 @@ internal fun DashboardScreen(state: DashboardState, onIntent: (DashboardIntent) 
             .padding(horizontal = 20.dp),
     ) {
         Spacer(Modifier.height(24.dp))
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        // Logo lines up with the "Welcome Back" line (top-aligned), not centred between title and subtitle.
+        Row(verticalAlignment = Alignment.Top) {
             Column(Modifier.weight(1f)) {
                 Text(stringResource(R.string.dash_welcome, state.name), style = KcalTheme.typography.welcome, color = colors.textBrand)
                 Text(stringResource(R.string.dash_subtitle), style = KcalTheme.typography.body, color = colors.textSecondary)
             }
+            Spacer(Modifier.width(12.dp))
             Image(
                 painterResource(KcalIcons.LogoSmall), contentDescription = null,
-                modifier = Modifier.kcalSharedElement(SharedKeys.LOGO).size(width = 32.dp, height = 29.dp),
+                // 32:29 artwork scaled up, fixed so long names wrap instead of squeezing it.
+                modifier = Modifier.kcalSharedElement(SharedKeys.LOGO).size(width = 48.dp, height = 44.dp),
             )
         }
         Spacer(Modifier.height(24.dp))

@@ -13,4 +13,8 @@
     <string name="weight_week">Неделя %1$d</string>
     <string name="weight_week_current">Неделя %1$d (текущая)</string>
     <string name="weight_empty">Пока нет записей.</string>
+    <string name="weight_goal">Цель: %1$s · осталось %2$s</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">≈ %1$d неделя в темпе вашего плана</item><item quantity="few">≈ %1$d недели в темпе вашего плана</item><item quantity="many">≈ %1$d недель в темпе вашего плана</item><item quantity="other">≈ %1$d недели в темпе вашего плана</item></plurals>
+    <string name="weight_goal_reached">Цель достигнута: %1$s. Теперь план поддерживает ваш вес.</string>
+    <string name="weight_goal_bmi_note">Эта цель вне здорового диапазона ИМТ (18,5–25).</string>
 </resources>

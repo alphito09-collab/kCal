@@ -11,4 +11,6 @@
     <string name="progress_weight">Peso</string>
     <string name="progress_key_metrics">Métricas principais</string>
     <string name="progress_no_weight">Registre seu peso para ver sua tendência.</string>
+    <string name="progress_earlier">Períodos anteriores</string>
+    <string name="progress_later">Períodos seguintes</string>
 </resources>
