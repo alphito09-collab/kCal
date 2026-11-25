@@ -36,7 +36,7 @@ val onboardingModule = module {
     }
     factoryOf(::RegeneratePlanUseCase)
 
-    viewModel { SplashViewModel(get(), get()) }
+    viewModel { SplashViewModel(get(), get(), get()) }
     viewModel { (edit: Boolean) -> AboutYouViewModel(edit, get(), get()) }
     viewModel { (edit: Boolean) -> HealthConditionsViewModel(edit, get(), get()) }
     viewModelOf(::GoalViewModel)

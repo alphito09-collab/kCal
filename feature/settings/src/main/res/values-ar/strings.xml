@@ -57,4 +57,15 @@
     <string name="delete_title">حذف بياناتك؟</string>
     <string name="delete_body">سيؤدي هذا إلى حذف ملفك الشخصي وخطط الوجبات والسجل من هذا الجهاز نهائيًا. لا يمكن التراجع عن ذلك.</string>
     <string name="delete_confirm">حذف كل شيء</string>
+    <string name="settings_reminders">التذكيرات</string>
+    <string name="reminders_title">التذكيرات</string>
+    <string name="reminders_body">تنبيهات لطيفة في الوقت المناسب. يمكنك إيقافها متى شئت.</string>
+    <string name="reminders_water">شرب الماء</string>
+    <string name="reminders_water_sub">كل ساعتين من 9 صباحًا حتى 9 مساءً</string>
+    <string name="reminders_meals">أوقات الوجبات</string>
+    <string name="reminders_meals_sub">الإفطار والغداء والوجبة الخفيفة والعشاء</string>
+    <string name="reminders_weigh_in">الوزن الأسبوعي</string>
+    <string name="reminders_weigh_in_sub">كل يوم اثنين الساعة 9 صباحًا</string>
+    <string name="reminders_permission_denied">اسمح بالإشعارات من إعدادات النظام لتصلك التذكيرات.</string>
+    <string name="privacy_ad_choices">خيارات خصوصية الإعلانات</string>
 </resources>

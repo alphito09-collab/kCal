@@ -1,6 +1,9 @@
 package com.alphito.kcal.feature.onboarding.presentation.ui
 
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.LocalActivity
+import com.alphito.kcal.core.ads.AdsManager
+import org.koin.compose.koinInject
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -59,7 +62,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.alphito.kcal.core.common.FeatureFlags
 import com.alphito.kcal.core.common.mvi.ObserveEffects
 import com.alphito.kcal.core.designsystem.component.AmbientBackground
 import com.alphito.kcal.core.designsystem.component.KcalButton
@@ -96,14 +98,25 @@ private val Taglines = listOf(R.string.onb_tagline, R.string.onb_tagline_habits,
 internal fun SplashRoute() {
     val viewModel: SplashViewModel = koinViewModel()
     val navigator = LocalNavigator.current
+    val activity = LocalActivity.current
+    val ads: AdsManager = koinInject()
     val state by viewModel.state.collectAsStateWithLifecycle()
+    // Returning users: consent + preload while the 4 s progress runs ("This action may contain ads").
+    LaunchedEffect(state.mode, activity) {
+        if (state.mode == LaunchMode.Returning && activity != null) ads.prepareSplashAd(activity)
+    }
     ObserveEffects(viewModel.effects) { effect ->
         when (effect) {
-            SplashEffect.OpenHome -> navigator.resetTo(Route.Home)
-            SplashEffect.OpenAboutYou -> navigator.resetTo(Route.AboutYou())
-            SplashEffect.OpenPremiumIntro -> navigator.replace(
-                if (FeatureFlags.PREMIUM_ENABLED) Route.PremiumIntro(fromOnboarding = true) else Route.Language(onboarding = true),
-            )
+            SplashEffect.OpenHome -> {
+                activity?.let { ads.showSplashAd(it) } // suspends until dismissed; no-op when nothing loaded
+                navigator.resetTo(Route.Home)
+            }
+            SplashEffect.OpenAboutYou -> {
+                activity?.let { ads.showSplashAd(it) }
+                navigator.resetTo(Route.AboutYou())
+            }
+            SplashEffect.OpenPremiumIntro -> navigator.replace(Route.PremiumIntro(fromOnboarding = true))
+            SplashEffect.OpenLanguage -> navigator.replace(Route.Language(onboarding = true))
         }
     }
     BackHandler { /* first screen of the app – back is intentionally disabled */ }

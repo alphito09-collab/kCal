@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         )
         super.onCreate(savedInstanceState)
         // Let the ivory UI show through 3-button navigation instead of a white contrast scrim.
-        window.isNavigationBarContrastEnforced = false
+        // API 29+ only – calling it on Android 9 (minSdk 28) would crash at launch.
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) window.isNavigationBarContrastEnforced = false
         setContent { KcalApp(onExit = ::finish) }
     }
 }

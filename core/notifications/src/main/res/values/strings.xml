@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Reminders</string>
+    <string name="notif_channel_reminders_desc">Water, meal and weigh-in reminders you turned on.</string>
+    <string name="notif_channel_updates">Updates from kCal</string>
+    <string name="notif_channel_updates_desc">Tips and news sent by the kCal team.</string>
+    <string name="notif_water_title">Time for a glass of water 💧</string>
+    <string name="notif_water_body">A quick glass keeps you on track for today\'s goal.</string>
+    <string name="notif_breakfast_title">Breakfast time</string>
+    <string name="notif_lunch_title">Lunch time</string>
+    <string name="notif_snack_title">Snack time</string>
+    <string name="notif_dinner_title">Dinner time</string>
+    <string name="notif_meal_body">Your planned meal is ready to check off.</string>
+    <string name="notif_weigh_in_title">Weekly weigh-in</string>
+    <string name="notif_weigh_in_body">Log this week\'s weight to keep your progress accurate.</string>
+</resources>

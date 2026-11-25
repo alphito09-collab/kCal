@@ -22,7 +22,18 @@ class EnergyCalculatorTest {
 
     @Test fun `intake target never drops below the safe minimum`() {
         val aggressive = ayesha.copy(dailyDeficitKcal = 3_000, addStepsToDeficit = false)
-        assertEquals(EnergyCalculator.MIN_SAFE_INTAKE, EnergyCalculator.dailyIntakeTarget(aggressive))
+        assertEquals(1_200, EnergyCalculator.dailyIntakeTarget(aggressive))
+    }
+
+    @Test fun `men have a higher calorie floor`() {
+        val aggressive = ayesha.copy(gender = Gender.Male, dailyDeficitKcal = 3_000, addStepsToDeficit = false)
+        assertEquals(1_500, EnergyCalculator.dailyIntakeTarget(aggressive))
+    }
+
+    @Test fun `legacy city regions migrate to the default country`() {
+        assertEquals("PK", Regions.normalize("Pakistan — Lahore"))
+        assertEquals("DE", Regions.normalize("de"))
+        assertEquals(CuisineRegion.LatinAmerica, Regions.regionOf("BR"))
     }
 
     @Test fun `steps convert to kcal`() {

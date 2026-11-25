@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">یاد دہانیاں</string>
+    <string name="notif_channel_reminders_desc">پانی، کھانے اور وزن کی یاد دہانیاں جو آپ نے آن کی ہیں۔</string>
+    <string name="notif_channel_updates">kCal کی اپ ڈیٹس</string>
+    <string name="notif_channel_updates_desc">kCal ٹیم کی طرف سے مشورے اور خبریں۔</string>
+    <string name="notif_water_title">ایک گلاس پانی کا وقت 💧</string>
+    <string name="notif_water_body">ایک گلاس آپ کو آج کے ہدف پر قائم رکھتا ہے۔</string>
+    <string name="notif_breakfast_title">ناشتے کا وقت</string>
+    <string name="notif_lunch_title">دوپہر کے کھانے کا وقت</string>
+    <string name="notif_snack_title">اسنیک کا وقت</string>
+    <string name="notif_dinner_title">رات کے کھانے کا وقت</string>
+    <string name="notif_meal_body">آپ کا طے شدہ کھانا ٹک کرنے کے لیے تیار ہے۔</string>
+    <string name="notif_weigh_in_title">ہفتہ وار وزن</string>
+    <string name="notif_weigh_in_body">اپنی پیش رفت درست رکھنے کے لیے اس ہفتے کا وزن درج کریں۔</string>
+</resources>

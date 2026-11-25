@@ -60,15 +60,11 @@
     <string name="onb_target_weight">الوزن المستهدف</string>
     <string name="onb_region_title">المنطقة والميزانية</string>
     <string name="onb_region_subtitle">لتعتمد خطتك على أطعمة محلية وبأسعار معقولة</string>
-    <string name="onb_region_label">المنطقة / الدولة</string>
     <string name="onb_budget_label">ميزانية الطعام الأسبوعية</string>
     <string name="onb_budget_low">منخفضة</string>
     <string name="onb_budget_medium">متوسطة</string>
     <string name="onb_budget_high">مرتفعة</string>
-    <string name="onb_budget_range">%1$s – %2$s روبية / أسبوع</string>
-    <string name="onb_budget_open">%1$s+ روبية / أسبوع</string>
     <string name="onb_see_plan">اعرض خطتي</string>
-    <string name="onb_choose_region">اختر منطقتك</string>
     <string name="onb_energy_title">احتياجك اليومي من الطاقة</string>
     <string name="onb_energy_subtitle">إليك احتياجك اليومي التقديري من الطاقة.</string>
     <string name="onb_bmr">معدل الأيض الأساسي</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ %1$s خطوة يوميًا</string>
     <string name="onb_done">تم</string>
     <string name="onb_exact_hint">مثال: 300</string>
+    <string name="onb_region_label">البلد</string>
+    <string name="onb_choose_region">اختر بلدك</string>
+    <string name="onb_region_hint">تستخدم خطتك أطباقًا ومكونات شائعة وبأسعار مناسبة هناك.</string>
+    <string name="onb_region_search">ابحث عن بلد</string>
+    <string name="onb_region_none">لم يتم العثور على بلد</string>
+    <string name="onb_budget_low_desc">مكونات أساسية بأسعار مناسبة – عدس وبيض وأرز وخضار موسمية</string>
+    <string name="onb_budget_medium_desc">أساسيات مع بعض الدجاج والسمك ومنتجات الألبان</string>
+    <string name="onb_budget_high_desc">أكبر تنوع، بما في ذلك الأسماك واللحوم المميزة</string>
 </resources>

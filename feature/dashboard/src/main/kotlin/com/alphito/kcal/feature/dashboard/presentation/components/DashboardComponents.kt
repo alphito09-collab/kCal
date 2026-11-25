@@ -123,7 +123,7 @@ internal fun NextMealCard(slot: MealSlot?, onCheck: (MealSlot) -> Unit, onOpen: 
             } else {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     FoodThumb(
-                        meal.leadImageKey, size = 36.dp,
+                        meal.leadImageKey, imageUrl = meal.leadImageUrl, emoji = meal.leadEmoji, size = 36.dp,
                         modifier = Modifier.kcalSharedElement(SharedKeys.mealImage(meal.items.first().id)),
                     )
                     Spacer(Modifier.width(14.dp))

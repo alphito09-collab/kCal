@@ -60,15 +60,11 @@
     <string name="onb_target_weight">Peso objetivo</string>
     <string name="onb_region_title">Región y presupuesto</string>
     <string name="onb_region_subtitle">Para que tu plan use alimentos locales y asequibles</string>
-    <string name="onb_region_label">Región / País</string>
     <string name="onb_budget_label">Presupuesto semanal de comida</string>
     <string name="onb_budget_low">Bajo</string>
     <string name="onb_budget_medium">Medio</string>
     <string name="onb_budget_high">Alto</string>
-    <string name="onb_budget_range">PKR %1$s – %2$s / semana</string>
-    <string name="onb_budget_open">PKR %1$s+ / semana</string>
     <string name="onb_see_plan">Ver mi plan</string>
-    <string name="onb_choose_region">Elige tu región</string>
     <string name="onb_energy_title">Tu necesidad diaria de energía</string>
     <string name="onb_energy_subtitle">Esta es tu necesidad diaria estimada de energía.</string>
     <string name="onb_bmr">TMB</string>
@@ -95,4 +91,12 @@
     <string name="onb_steps_equivalent">≈ %1$s pasos al día</string>
     <string name="onb_done">Listo</string>
     <string name="onb_exact_hint">p. ej., 300</string>
+    <string name="onb_region_label">País</string>
+    <string name="onb_choose_region">Elige tu país</string>
+    <string name="onb_region_hint">Tu plan usa platos y alimentos básicos comunes y asequibles allí.</string>
+    <string name="onb_region_search">Buscar país</string>
+    <string name="onb_region_none">No se encontró ningún país</string>
+    <string name="onb_budget_low_desc">Básicos asequibles: lentejas, huevos, arroz y verduras de temporada</string>
+    <string name="onb_budget_medium_desc">Básicos más algo de pollo, pescado y lácteos</string>
+    <string name="onb_budget_high_desc">La mayor variedad, incluidos pescados y carnes premium</string>
 </resources>

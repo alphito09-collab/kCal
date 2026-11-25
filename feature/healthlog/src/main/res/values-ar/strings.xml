@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">تتبع الأعراض اليومية للقولون العصبي.</string>
     <string name="health_save_log">حفظ السجل</string>
     <string name="health_saved">تم الحفظ ✓</string>
-    <string name="sugar_today">مستوى السكر اليوم</string>
+    <string name="sugar_today">قراءة سكر الدم</string>
     <string name="sugar_save">حفظ القراءة</string>
     <string name="sugar_hint">سجّل مستوى السكر مرة يوميًا لمتابعة صحتك.</string>
     <string name="sugar_trend">اتجاه السكر (7 أيام)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · لم تُسجَّل قراءة.</string>
     <string name="dairy_days_since">أيام منذ آخر تفاعل</string>
     <string name="dairy_days">%1$d أيام</string>
-    <string name="dairy_question">هل تناولت ألبانًا اليوم؟</string>
+    <string name="dairy_question">هل تناولت منتجات الألبان في ذلك اليوم؟</string>
     <string name="dairy_any_reaction">هل حدث أي تفاعل؟</string>
     <string name="dairy_history">سجل التفاعلات</string>
     <string name="dairy_badge">ألبان</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">غازات</string>
     <string name="reaction_diarrhea">إسهال</string>
     <string name="reaction_nausea">غثيان</string>
-    <string name="ibs_today">أعراض اليوم</string>
+    <string name="ibs_today">الأعراض</string>
     <string name="ibs_severity">الشدة</string>
     <string name="ibs_trend">شدة الأعراض (7 أيام)</string>
     <string name="ibs_abdominal_pain">ألم البطن</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">شديدة</string>
     <string name="ibs_summary">%1$s · تم تسجيل %3$s (%2$s).</string>
     <string name="ibs_summary_none">%1$s · لا توجد أعراض مسجلة.</string>
+    <string name="health_log_for">التسجيل ليوم %1$s</string>
+    <string name="health_today">اليوم</string>
+    <string name="sugar_ctx_fasting">صائم</string>
+    <string name="sugar_ctx_before">قبل الوجبة</string>
+    <string name="sugar_ctx_after">بعد الوجبة</string>
+    <string name="sugar_ctx_bedtime">قبل النوم</string>
+    <string name="sugar_target">الهدف لهذا الوقت: %1$s–%2$s ملغ/دل</string>
+    <string name="sugar_target_after">الهدف بعد الأكل بساعة إلى ساعتين: أقل من %1$s ملغ/دل</string>
+    <string name="sugar_invalid">أدخل قيمة بين 20 و600 ملغ/دل.</string>
+    <string name="sugar_stats">ضمن النطاق: %1$s من %2$s قراءات · المتوسط %3$s ملغ/دل</string>
+    <string name="health_plan_title">كيف تساعدك خطتك</string>
+    <string name="health_plan_diabetes">وجباتك خالية من السكر المضاف والأطباق عالية المؤشر الجلايسيمي، وتبقى الكربوهيدرات حوالي 60 غ لكل وجبة. سجّل القراءات بانتظام وشاركها مع طبيبك.</string>
+    <string name="health_plan_ibs">وجباتك منخفضة الفودماب: بلا أطباق غنية بالبصل أو الثوم أو البقوليات أو التوابل الحارة. تسجيل الأعراض يساعدك على اكتشاف محفزاتك.</string>
+    <string name="health_plan_lactose">وجباتك تتجنب الأطباق الغنية بالحليب. الزبادي والجبن الصلب بكميات صغيرة عادة لا يسببان مشكلة – سجلك يوضح ما يناسبك.</string>
+    <string name="ibs_free_days">أيام بلا أعراض هذا الأسبوع: %1$s من %2$s مسجلة</string>
+    <string name="ibs_suspects">أطعمة تناولتها فقط في أيام الأعراض: %1$s. إذا تكرر ذلك، جرّب استبدالها في خطتك.</string>
+    <string name="ibs_no_suspects">علّم وجباتك في قائمة الوجبات – وسنبحث عن أنماط بين ما تأكله وأعراضك.</string>
+    <string name="dairy_reactions_30">ردود الفعل في آخر 30 يومًا: %1$s</string>
 </resources>

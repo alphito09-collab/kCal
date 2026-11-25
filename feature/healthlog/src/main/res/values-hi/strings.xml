@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">IBS के रोज़ाना लक्षण ट्रैक करें।</string>
     <string name="health_save_log">लॉग सहेजें</string>
     <string name="health_saved">सहेजा गया ✓</string>
-    <string name="sugar_today">आज का शुगर लेवल</string>
+    <string name="sugar_today">ब्लड शुगर रीडिंग</string>
     <string name="sugar_save">रीडिंग सहेजें</string>
     <string name="sugar_hint">अपनी सेहत ट्रैक करने के लिए रोज़ एक बार शुगर दर्ज करें।</string>
     <string name="sugar_trend">शुगर रुझान (7 दिन)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · कोई रीडिंग दर्ज नहीं।</string>
     <string name="dairy_days_since">पिछली प्रतिक्रिया के बाद से दिन</string>
     <string name="dairy_days">%1$d दिन</string>
-    <string name="dairy_question">क्या आज आपने डेयरी ली?</string>
+    <string name="dairy_question">क्या उस दिन आपने डेयरी ली?</string>
     <string name="dairy_any_reaction">कोई प्रतिक्रिया?</string>
     <string name="dairy_history">प्रतिक्रिया इतिहास</string>
     <string name="dairy_badge">डेयरी</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">गैस</string>
     <string name="reaction_diarrhea">दस्त</string>
     <string name="reaction_nausea">मतली</string>
-    <string name="ibs_today">आज के लक्षण</string>
+    <string name="ibs_today">लक्षण</string>
     <string name="ibs_severity">गंभीरता</string>
     <string name="ibs_trend">लक्षणों की गंभीरता (7 दिन)</string>
     <string name="ibs_abdominal_pain">पेट दर्द</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">गंभीर</string>
     <string name="ibs_summary">%1$s · %2$s %3$s दर्ज।</string>
     <string name="ibs_summary_none">%1$s · कोई लक्षण दर्ज नहीं।</string>
+    <string name="health_log_for">%1$s के लिए लॉग</string>
+    <string name="health_today">आज</string>
+    <string name="sugar_ctx_fasting">खाली पेट</string>
+    <string name="sugar_ctx_before">भोजन से पहले</string>
+    <string name="sugar_ctx_after">भोजन के बाद</string>
+    <string name="sugar_ctx_bedtime">सोने से पहले</string>
+    <string name="sugar_target">इस समय का लक्ष्य: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">खाने के 1–2 घंटे बाद लक्ष्य: %1$s mg/dL से कम</string>
+    <string name="sugar_invalid">20 से 600 mg/dL के बीच मान दर्ज करें।</string>
+    <string name="sugar_stats">सीमा में: %2$s में से %1$s रीडिंग · औसत %3$s mg/dL</string>
+    <string name="health_plan_title">आपकी योजना कैसे मदद करती है</string>
+    <string name="health_plan_diabetes">आपके भोजन में अतिरिक्त चीनी और उच्च ग्लाइसेमिक व्यंजन नहीं हैं, और हर भोजन में लगभग 60 ग्राम कार्ब्स रहते हैं। नियमित रूप से रीडिंग दर्ज करें और डॉक्टर को दिखाएं।</string>
+    <string name="health_plan_ibs">आपके भोजन लो-FODMAP हैं: प्याज़-लहसुन, दाल-बीन्स से भरे या तीखे व्यंजन नहीं। लक्षण दर्ज करने से अपने ट्रिगर पहचानने में मदद मिलती है।</string>
+    <string name="health_plan_lactose">आपके भोजन दूध वाले व्यंजनों से बचते हैं। थोड़ी मात्रा में दही और चीज़ आमतौर पर ठीक रहते हैं – आपका लॉग बताता है कि क्या सूट करता है।</string>
+    <string name="ibs_free_days">इस हफ़्ते बिना लक्षण वाले दिन: %2$s दर्ज में से %1$s</string>
+    <string name="ibs_suspects">सिर्फ़ लक्षण वाले दिनों में खाया: %1$s। अगर ऐसा दोहराए, तो योजना में इन्हें बदलकर देखें।</string>
+    <string name="ibs_no_suspects">चेकलिस्ट में अपने भोजन टिक करें – हम खाने और लक्षणों के बीच पैटर्न खोजेंगे।</string>
+    <string name="dairy_reactions_30">पिछले 30 दिनों में प्रतिक्रियाएँ: %1$s</string>
 </resources>

@@ -31,7 +31,7 @@ object EnergyCalculator {
     fun dailyIntakeTarget(profile: UserProfile): Int {
         val tdee = needs(profile).tdee
         return when (profile.goal) {
-            Goal.LoseWeight -> (tdee - profile.dietDeficitKcal).coerceAtLeast(MIN_SAFE_INTAKE)
+            Goal.LoseWeight -> (tdee - profile.dietDeficitKcal).coerceAtLeast(minSafeIntake(profile.gender))
             Goal.GainWeight -> tdee + UserProfile.DEFAULT_SURPLUS_KCAL
             Goal.MaintainWeight -> tdee
         }
@@ -42,6 +42,16 @@ object EnergyCalculator {
     fun kcalToSteps(kcal: Int): Int = (kcal / KCAL_PER_STEP).roundToInt()
 
     private fun roundTo10(value: Double): Int = (value / 10.0).roundToInt() * 10
+
+    /**
+     * Widely used calorie floors for unsupervised weight loss (women 1,200 · men 1,500 kcal/day);
+     * below them nutrient needs are hard to meet. "Other" uses the midpoint.
+     */
+    fun minSafeIntake(gender: Gender): Int = when (gender) {
+        Gender.Female -> 1_200
+        Gender.Male -> 1_500
+        Gender.Other -> 1_350
+    }
 
     const val MIN_SAFE_INTAKE = 1_200
 }

@@ -11,6 +11,7 @@ val databaseModule = module {
     single {
         Room.databaseBuilder(androidContext(), KcalDatabase::class.java, "kcal.db")
             .setJournalMode(androidx.room.RoomDatabase.JournalMode.WRITE_AHEAD_LOGGING)
+            .addMigrations(KcalDatabase.MIGRATION_1_2, KcalDatabase.MIGRATION_2_3)
             .fallbackToDestructiveMigrationOnDowngrade(dropAllTables = true)
             .build()
     }

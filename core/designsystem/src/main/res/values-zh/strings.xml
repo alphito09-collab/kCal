@@ -6,7 +6,6 @@
     <string name="ds_meal_dinner">晚餐</string>
     <string name="ds_back">返回</string>
     <string name="ds_kcal">%1$s 千卡</string>
-    <string name="ds_kcal_price">%1$s 千卡  ·  %2$s 卢比</string>
     <string name="ds_unit_kcal">千卡</string>
     <string name="ds_unit_kcal_day">千卡/天</string>
     <string name="ds_unit_kg">公斤</string>
@@ -19,33 +18,10 @@
     <string name="ds_value_unit">%1$s %2$s</string>
     <string name="ds_fraction">%1$d/%2$d</string>
     <string name="ds_range">%1$s – %2$s</string>
-    <string name="ds_food_anda_paratha">鸡蛋抛饼</string>
-    <string name="ds_food_anda_paratha_portion">抛饼 80 克 + 鸡蛋 50 克</string>
-    <string name="ds_food_lassi">拉西酸奶</string>
-    <string name="ds_food_lassi_portion">酸奶饮品 200 毫升</string>
-    <string name="ds_food_daal_chawal">扁豆饭</string>
-    <string name="ds_food_daal_chawal_portion">米饭 150 克 + 扁豆 120 克</string>
-    <string name="ds_food_chickpea_curry_rice">鹰嘴豆咖喱饭</string>
-    <string name="ds_food_chickpea_curry_rice_portion">鹰嘴豆 150 克 + 米饭 120 克</string>
-    <string name="ds_food_vegetable_pulao">蔬菜抓饭</string>
-    <string name="ds_food_vegetable_pulao_portion">抓饭 250 克</string>
-    <string name="ds_food_chicken_karahi_roti">卡拉希鸡配烤饼</string>
-    <string name="ds_food_chicken_karahi_roti_portion">卡拉希 180 克 + 烤饼 1 张</string>
-    <string name="ds_food_mixed_veg_roti">什锦蔬菜配烤饼</string>
-    <string name="ds_food_mixed_veg_roti_portion">蔬菜 180 克 + 烤饼 1 张</string>
-    <string name="ds_food_grilled_chicken">烤鸡</string>
-    <string name="ds_food_grilled_chicken_portion">鸡肉 150 克</string>
-    <string name="ds_food_salad">沙拉</string>
-    <string name="ds_food_salad_portion">什锦蔬菜 150 克</string>
-    <string name="ds_food_roti">烤饼</string>
-    <string name="ds_food_roti_portion">烤饼 120 克（2 张）</string>
-    <string name="ds_food_fruit_chaat">水果沙拉</string>
-    <string name="ds_food_fruit_chaat_portion">什锦水果 200 克</string>
-    <string name="ds_region_lahore">巴基斯坦 — 拉合尔</string>
-    <string name="ds_region_karachi">巴基斯坦 — 卡拉奇</string>
-    <string name="ds_region_islamabad">巴基斯坦 — 伊斯兰堡</string>
-    <string name="ds_region_rawalpindi">巴基斯坦 — 拉瓦尔品第</string>
-    <string name="ds_region_faisalabad">巴基斯坦 — 费萨拉巴德</string>
-    <string name="ds_region_peshawar">巴基斯坦 — 白沙瓦</string>
     <plurals name="ds_stars"><item quantity="other">%1$d 颗星</item></plurals>
+    <string name="ds_kcal_cost">%1$s 千卡 · %2$s</string>
+    <string name="ds_cost_budget">实惠</string>
+    <string name="ds_cost_moderate">价格适中</string>
+    <string name="ds_cost_premium">高端</string>
+    <string name="ds_unit_g">克</string>
 </resources>

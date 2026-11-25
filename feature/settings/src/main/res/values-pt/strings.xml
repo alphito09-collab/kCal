@@ -57,4 +57,15 @@
     <string name="delete_title">Excluir seus dados?</string>
     <string name="delete_body">Isso remove permanentemente seu perfil, planos e histórico deste dispositivo. Não é possível desfazer.</string>
     <string name="delete_confirm">Excluir tudo</string>
+    <string name="settings_reminders">Lembretes</string>
+    <string name="reminders_title">Lembretes</string>
+    <string name="reminders_body">Lembretes gentis na hora certa. Desative quando quiser.</string>
+    <string name="reminders_water">Beber água</string>
+    <string name="reminders_water_sub">A cada 2 horas, das 9h às 21h</string>
+    <string name="reminders_meals">Horários das refeições</string>
+    <string name="reminders_meals_sub">Café da manhã, almoço, lanche e jantar</string>
+    <string name="reminders_weigh_in">Pesagem semanal</string>
+    <string name="reminders_weigh_in_sub">Toda segunda-feira às 9h</string>
+    <string name="reminders_permission_denied">Permita notificações nas configurações do sistema para receber lembretes.</string>
+    <string name="privacy_ad_choices">Opções de privacidade de anúncios</string>
 </resources>

@@ -4,6 +4,7 @@ import com.alphito.kcal.core.datastore.PreferencesDataSource
 import com.alphito.kcal.core.model.AppLanguage
 import com.alphito.kcal.core.model.AppPreferences
 import com.alphito.kcal.core.model.PremiumPlan
+import com.alphito.kcal.core.model.ReminderType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 
@@ -19,6 +20,7 @@ interface PreferencesRepository {
     suspend fun setWaterGoal(ml: Int)
     suspend fun markFreeTrialPromptSeen()
     suspend fun setRating(stars: Int)
+    suspend fun setReminder(type: ReminderType, enabled: Boolean)
     /** Activates a plan locally. Real purchases must be confirmed by Play Billing first. */
     suspend fun setPlan(plan: PremiumPlan?)
 }
@@ -35,5 +37,6 @@ internal class PreferencesRepositoryImpl(private val source: PreferencesDataSour
     override suspend fun setWaterGoal(ml: Int) { source.setWaterGoal(ml) }
     override suspend fun markFreeTrialPromptSeen() { source.setFreeTrialPromptSeen() }
     override suspend fun setRating(stars: Int) { source.setRating(stars) }
+    override suspend fun setReminder(type: ReminderType, enabled: Boolean) { source.setReminder(type, enabled) }
     override suspend fun setPlan(plan: PremiumPlan?) { source.setPlan(plan) }
 }

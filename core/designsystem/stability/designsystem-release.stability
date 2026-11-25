@@ -117,12 +117,14 @@ public fun com.alphito.kcal.core.designsystem.component.DialogBody(title: kotlin
     - primaryLeadingIcon: STABLE (class with no mutable properties)
 
 @Composable
-public fun com.alphito.kcal.core.designsystem.component.FoodThumb(imageKey: kotlin.String?, modifier: androidx.compose.ui.Modifier, size: androidx.compose.ui.unit.Dp, shape: androidx.compose.ui.graphics.Shape): kotlin.Unit
+public fun com.alphito.kcal.core.designsystem.component.FoodThumb(imageKey: kotlin.String?, modifier: androidx.compose.ui.Modifier, imageUrl: kotlin.String?, emoji: kotlin.String?, size: androidx.compose.ui.unit.Dp, shape: androidx.compose.ui.graphics.Shape): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - imageKey: STABLE (class with no mutable properties)
     - modifier: STABLE (marked @Stable or @Immutable)
+    - imageUrl: STABLE (class with no mutable properties)
+    - emoji: STABLE (class with no mutable properties)
     - size: STABLE (marked @Stable or @Immutable)
     - shape: STABLE (marked @Stable or @Immutable)
 
@@ -501,20 +503,26 @@ public fun com.alphito.kcal.core.designsystem.theme.KcalTheme.typography(): com.
   params:
 
 @Composable
+public fun com.alphito.kcal.core.designsystem.util.appLanguage(): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+
+@Composable
 public fun com.alphito.kcal.core.designsystem.util.appLocale(): java.util.Locale
   skippable: false
   restartable: false
   params:
 
 @Composable
-public fun com.alphito.kcal.core.designsystem.util.foodName(food: com.alphito.kcal.core.model.Food): kotlin.String
+public fun com.alphito.kcal.core.designsystem.util.costLabel(cost: kotlin.Int): kotlin.String
   skippable: false
   restartable: false
   params:
-    - food: STABLE (stability configuration file type)
+    - cost: STABLE (primitive type)
 
 @Composable
-public fun com.alphito.kcal.core.designsystem.util.foodPortion(food: com.alphito.kcal.core.model.Food): kotlin.String
+public fun com.alphito.kcal.core.designsystem.util.foodName(food: com.alphito.kcal.core.model.Food): kotlin.String
   skippable: false
   restartable: false
   params:
@@ -529,6 +537,21 @@ public fun com.alphito.kcal.core.designsystem.util.fractionText(value: kotlin.In
     - total: STABLE (primitive type)
 
 @Composable
+public fun com.alphito.kcal.core.designsystem.util.gramsText(grams: kotlin.Int): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+    - grams: STABLE (primitive type)
+
+@Composable
+public fun com.alphito.kcal.core.designsystem.util.kcalCostLabel(kcal: kotlin.Int, cost: kotlin.Int): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+    - kcal: STABLE (primitive type)
+    - cost: STABLE (primitive type)
+
+@Composable
 public fun com.alphito.kcal.core.designsystem.util.kcalLabel(kcal: kotlin.Int): kotlin.String
   skippable: false
   restartable: false
@@ -540,14 +563,6 @@ public fun com.alphito.kcal.core.designsystem.util.kcalPerDayUnit(): kotlin.Stri
   skippable: false
   restartable: false
   params:
-
-@Composable
-public fun com.alphito.kcal.core.designsystem.util.kcalPriceLabel(kcal: kotlin.Int, pricePkr: kotlin.Int): kotlin.String
-  skippable: false
-  restartable: false
-  params:
-    - kcal: STABLE (primitive type)
-    - pricePkr: STABLE (primitive type)
 
 @Composable
 public fun com.alphito.kcal.core.designsystem.util.kcalUnit(): kotlin.String
@@ -584,6 +599,14 @@ public fun com.alphito.kcal.core.designsystem.util.mealTitle(slot: com.alphito.k
     - slot: STABLE (stability configuration file type)
 
 @Composable
+public fun com.alphito.kcal.core.designsystem.util.portionText(food: com.alphito.kcal.core.model.Food, servings: kotlin.Double): kotlin.String
+  skippable: false
+  restartable: false
+  params:
+    - food: STABLE (stability configuration file type)
+    - servings: STABLE (primitive type)
+
+@Composable
 public fun com.alphito.kcal.core.designsystem.util.rangeText(from: kotlin.String, to: kotlin.String): kotlin.String
   skippable: false
   restartable: false
@@ -592,11 +615,11 @@ public fun com.alphito.kcal.core.designsystem.util.rangeText(from: kotlin.String
     - to: STABLE (String is immutable)
 
 @Composable
-public fun com.alphito.kcal.core.designsystem.util.regionLabel(region: kotlin.String): kotlin.String
+public fun com.alphito.kcal.core.designsystem.util.regionLabel(countryCode: kotlin.String): kotlin.String
   skippable: false
   restartable: false
   params:
-    - region: STABLE (String is immutable)
+    - countryCode: STABLE (String is immutable)
 
 @Composable
 public fun com.alphito.kcal.core.designsystem.util.unitLabel(unit: com.alphito.kcal.core.designsystem.util.KcalUnit): kotlin.String

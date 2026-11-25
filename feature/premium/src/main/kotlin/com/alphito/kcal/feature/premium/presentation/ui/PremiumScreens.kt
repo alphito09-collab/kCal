@@ -40,6 +40,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
+import android.widget.Toast
+import androidx.activity.compose.LocalActivity
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -180,9 +183,14 @@ private fun LegalLink(text: String, onClick: () -> Unit) {
 internal fun PremiumRoute(fromOnboarding: Boolean) {
     val viewModel: PremiumViewModel = koinViewModel()
     val navigator = LocalNavigator.current
+    val activity = LocalActivity.current
+    val context = LocalContext.current
     val state by viewModel.state.collectAsStateWithLifecycle()
     ObserveEffects(viewModel.effects) {
         when (it) {
+            is PremiumEffect.StartPurchase -> activity?.let { a -> viewModel.launchPurchase(a, it.plan) }
+            PremiumEffect.Pending -> Toast.makeText(context, context.getString(R.string.premium_pending), Toast.LENGTH_LONG).show()
+            PremiumEffect.Failed -> Toast.makeText(context, context.getString(R.string.premium_failed), Toast.LENGTH_LONG).show()
             // In the first session continue the flow; otherwise the card flips to "Active ✓".
             PremiumEffect.Purchased -> if (fromOnboarding) navigator.navigate(Route.Language(onboarding = true))
             PremiumEffect.Close -> navigator.back()
@@ -219,7 +227,7 @@ internal fun PremiumScreen(state: PremiumState, onIntent: (PremiumIntent) -> Uni
                         fadeOut(KcalMotion.fadeTween()) using SizeTransform(clip = false) { _, _ -> KcalMotion.sizeSpring }
                 },
                 label = "plan-card",
-            ) { plan -> PlanCard(plan, active = state.active == plan, purchasing = state.purchasing) { onIntent(PremiumIntent.Purchase) } }
+            ) { plan -> PlanCard(plan, state.prices[plan], active = state.active == plan, purchasing = state.purchasing) { onIntent(PremiumIntent.Purchase) } }
             Spacer(Modifier.height(20.dp))
             Text(stringResource(R.string.premium_cancel_note), style = KcalTheme.typography.bodySmall, color = colors.textSecondary,
                 textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
@@ -230,7 +238,7 @@ internal fun PremiumScreen(state: PremiumState, onIntent: (PremiumIntent) -> Uni
 }
 
 @Composable
-private fun PlanCard(plan: PremiumPlan, active: Boolean, purchasing: Boolean, onStart: () -> Unit) {
+private fun PlanCard(plan: PremiumPlan, playPrice: String?, active: Boolean, purchasing: Boolean, onStart: () -> Unit) {
     val colors = KcalTheme.colors
     val monthly = plan == PremiumPlan.Monthly
     val container = if (monthly) colors.primary else colors.surface
@@ -252,7 +260,10 @@ private fun PlanCard(plan: PremiumPlan, active: Boolean, purchasing: Boolean, on
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(stringResource(if (monthly) R.string.premium_monthly_name else R.string.premium_weekly_name),
                     style = KcalTheme.typography.titleMedium.copy(fontSize = KcalTheme.typography.title.fontSize), color = content, modifier = Modifier.weight(1f))
-                Text(stringResource(if (monthly) R.string.premium_monthly_price else R.string.premium_weekly_price),
+                // Google Play's localized price when available, otherwise the bundled reference price.
+                Text(
+                    playPrice?.let { stringResource(if (monthly) R.string.premium_price_per_month else R.string.premium_price_per_week, it) }
+                        ?: stringResource(if (monthly) R.string.premium_monthly_price else R.string.premium_weekly_price),
                     style = KcalTheme.typography.titleSmall.copy(fontSize = KcalTheme.typography.titleMedium.fontSize), color = content)
             }
             Spacer(Modifier.height(12.dp))

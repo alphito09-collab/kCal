@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">Günlük IBS belirtileri takibi.</string>
     <string name="health_save_log">Kaydı kaydet</string>
     <string name="health_saved">Kaydedildi ✓</string>
-    <string name="sugar_today">Bugünkü şeker seviyesi</string>
+    <string name="sugar_today">Kan şekeri ölçümü</string>
     <string name="sugar_save">Ölçümü kaydet</string>
     <string name="sugar_hint">Sağlığını takip etmek için şekerini günde bir kez kaydet.</string>
     <string name="sugar_trend">Şeker eğilimi (7 gün)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · ölçüm yok.</string>
     <string name="dairy_days_since">Son tepkiden beri geçen gün</string>
     <string name="dairy_days">%1$d gün</string>
-    <string name="dairy_question">Bugün süt ürünü tükettin mi?</string>
+    <string name="dairy_question">O gün süt ürünü tükettin mi?</string>
     <string name="dairy_any_reaction">Bir tepki oldu mu?</string>
     <string name="dairy_history">Tepki geçmişi</string>
     <string name="dairy_badge">Süt</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">Gaz</string>
     <string name="reaction_diarrhea">İshal</string>
     <string name="reaction_nausea">Bulantı</string>
-    <string name="ibs_today">Bugünkü belirtiler</string>
+    <string name="ibs_today">Belirtiler</string>
     <string name="ibs_severity">Şiddet</string>
     <string name="ibs_trend">Belirti şiddeti (7 gün)</string>
     <string name="ibs_abdominal_pain">Karın ağrısı</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">Şiddetli</string>
     <string name="ibs_summary">%1$s · %2$s %3$s kaydedildi.</string>
     <string name="ibs_summary_none">%1$s · belirti kaydı yok.</string>
+    <string name="health_log_for">%1$s için kayıt</string>
+    <string name="health_today">Bugün</string>
+    <string name="sugar_ctx_fasting">Açken</string>
+    <string name="sugar_ctx_before">Yemekten önce</string>
+    <string name="sugar_ctx_after">Yemekten sonra</string>
+    <string name="sugar_ctx_bedtime">Yatmadan önce</string>
+    <string name="sugar_target">Bu zaman için hedef: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">Yemekten 1–2 saat sonra hedef: %1$s mg/dL altı</string>
+    <string name="sugar_invalid">20 ile 600 mg/dL arasında bir değer gir.</string>
+    <string name="sugar_stats">Hedefte: %2$s ölçümden %1$s · ortalama %3$s mg/dL</string>
+    <string name="health_plan_title">Planın nasıl yardımcı olur</string>
+    <string name="health_plan_diabetes">Öğünlerinde ilave şeker ve yüksek glisemik yemek yok, karbonhidrat öğün başına yaklaşık 60 g. Ölçümlerini düzenli kaydet ve doktorunla paylaş.</string>
+    <string name="health_plan_ibs">Öğünlerin düşük FODMAP\'li: soğan, sarımsak, baklagil ağırlıklı veya acı yemek yok. Belirtileri kaydetmek tetikleyicilerini bulmana yardımcı olur.</string>
+    <string name="health_plan_lactose">Öğünlerin sütü bol yemeklerden kaçınır. Az miktarda yoğurt ve sert peynir genelde sorun olmaz – kaydın sana neyin uyduğunu gösterir.</string>
+    <string name="ibs_free_days">Bu hafta belirtisiz günler: kaydedilen %2$s günün %1$s\'i</string>
+    <string name="ibs_suspects">Sadece belirtili günlerde yenen: %1$s. Tekrarlarsa planında değiştirmeyi dene.</string>
+    <string name="ibs_no_suspects">Öğünlerini listede işaretle – yediklerin ile belirtilerin arasındaki örüntüleri arayacağız.</string>
+    <string name="dairy_reactions_30">Son 30 gündeki tepkiler: %1$s</string>
 </resources>

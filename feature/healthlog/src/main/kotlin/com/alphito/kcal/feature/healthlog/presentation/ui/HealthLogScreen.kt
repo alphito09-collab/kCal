@@ -53,6 +53,9 @@ import com.alphito.kcal.core.model.DairyReaction
 import com.alphito.kcal.core.model.HealthCondition
 import com.alphito.kcal.core.model.IbsSymptom
 import com.alphito.kcal.core.model.Severity
+import com.alphito.kcal.core.model.SugarContext
+import com.alphito.kcal.core.designsystem.util.KcalFormat
+import com.alphito.kcal.core.designsystem.util.foodName
 import com.alphito.kcal.core.navigation.LocalNavigator
 import com.alphito.kcal.core.navigation.SharedKeys
 import com.alphito.kcal.feature.healthlog.R
@@ -87,6 +90,8 @@ internal fun HealthLogScreen(state: HealthLogState, onIntent: (HealthLogIntent) 
             SegmentedControl(labels, state.tabs.indexOf(state.active), { onIntent(HealthLogIntent.SelectTab(state.tabs[it])) })
             Spacer(Modifier.height(14.dp))
         }
+        LogDayPicker(state, onIntent)
+        Spacer(Modifier.height(14.dp))
         AnimatedContent(
             targetState = state.active,
             transitionSpec = { fadeIn(KcalMotion.fadeTween(KcalMotion.DurationMedium)) togetherWith fadeOut(KcalMotion.fadeTween()) },
@@ -100,6 +105,8 @@ internal fun HealthLogScreen(state: HealthLogState, onIntent: (HealthLogIntent) 
                     HealthCondition.LactoseIntolerant -> DairyLogContent(state, onIntent)
                     HealthCondition.Ibs -> IbsLogContent(state, onIntent)
                 }
+                Spacer(Modifier.height(14.dp))
+                PlanInsightCard(condition, state)
             }
         }
     }
@@ -132,8 +139,25 @@ private fun SugarLog(state: HealthLogState, onIntent: (HealthLogIntent) -> Unit)
     val locale = appLocale()
     KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(24.dp)) {
         Text(stringResource(R.string.sugar_today), style = KcalTheme.typography.titleMedium, color = colors.textBrand)
+        Spacer(Modifier.height(12.dp))
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            SugarContext.entries.forEach { c ->
+                KcalChip(stringResource(c.label()), state.sugar.context == c, { onIntent(HealthLogIntent.SugarContextSelected(c)) }, multiSelect = false)
+            }
+        }
         Spacer(Modifier.height(16.dp))
         BigNumberField(state.sugar.input, { onIntent(HealthLogIntent.SugarInput(it)) }, unit = unitLabel(KcalUnit.MgDl), keyboard = KcalKeyboard.Number, placeholder = "0")
+        Spacer(Modifier.height(8.dp))
+        val range = state.sugar.context.range
+        Text(
+            if (state.sugar.context == SugarContext.AfterMeal) stringResource(R.string.sugar_target_after, KcalFormat.int(range.last + 1, locale))
+            else stringResource(R.string.sugar_target, KcalFormat.int(range.first, locale), KcalFormat.int(range.last, locale)),
+            style = KcalTheme.typography.bodySmall, color = colors.textSecondary, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth(),
+        )
+        AnimatedVisibility(state.invalidInput) {
+            Text(stringResource(R.string.sugar_invalid), style = KcalTheme.typography.bodySmall, color = colors.accent,
+                textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth().padding(top = 6.dp))
+        }
         Spacer(Modifier.height(16.dp))
         SaveButton(stringResource(R.string.sugar_save), state.justSaved) { onIntent(HealthLogIntent.Save) }
         Spacer(Modifier.height(10.dp))
@@ -152,11 +176,18 @@ private fun SugarLog(state: HealthLogState, onIntent: (HealthLogIntent) -> Unit)
         val reading = state.sugar.week.getOrNull(state.sugar.selected)
         val summary = when {
             reading == null -> stringResource(R.string.sugar_summary_none, day)
-            reading.mgDl > 140 -> stringResource(R.string.sugar_summary_high, day, reading.mgDl)
-            reading.mgDl < 70 -> stringResource(R.string.sugar_summary_low, day, reading.mgDl)
+            reading.isLow -> stringResource(R.string.sugar_summary_low, day, reading.mgDl)
+            !reading.inNormalRange -> stringResource(R.string.sugar_summary_high, day, reading.mgDl)
             else -> stringResource(R.string.sugar_summary_normal, day, reading.mgDl)
         }
         Text(summary, style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
+        state.sugar.average?.let { avg ->
+            Spacer(Modifier.height(6.dp))
+            Text(
+                stringResource(R.string.sugar_stats, KcalFormat.int(state.sugar.inRangeCount, locale), KcalFormat.int(state.sugar.loggedCount, locale), KcalFormat.int(avg, locale)),
+                style = KcalTheme.typography.bodySmall, color = colors.textBrand,
+            )
+        }
     }
 }
 
@@ -289,6 +320,78 @@ private fun Severity.label() = when (this) {
     Severity.Mild -> R.string.ibs_mild
     Severity.Moderate -> R.string.ibs_moderate
     Severity.Severe -> R.string.ibs_severe
+}
+
+private fun SugarContext.label() = when (this) {
+    SugarContext.Fasting -> R.string.sugar_ctx_fasting
+    SugarContext.BeforeMeal -> R.string.sugar_ctx_before
+    SugarContext.AfterMeal -> R.string.sugar_ctx_after
+    SugarContext.Bedtime -> R.string.sugar_ctx_bedtime
+}
+
+/** Seven day chips: log or correct any of the last 7 days (today selected by default). */
+@Composable
+private fun LogDayPicker(state: HealthLogState, onIntent: (HealthLogIntent) -> Unit) {
+    val locale = appLocale()
+    Text(
+        stringResource(R.string.health_log_for, state.logDay?.let { localizedDate(it, "EEEEdMMM") }.orEmpty()),
+        style = KcalTheme.typography.bodySmall, color = KcalTheme.colors.textSecondary,
+    )
+    Spacer(Modifier.height(8.dp))
+    Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        state.days.forEachIndexed { i, d ->
+            KcalChip(
+                if (i == state.days.lastIndex) stringResource(R.string.health_today) else d.dayOfWeek.getDisplayName(TextStyle.NARROW, locale),
+                selected = i == state.logIndex, onClick = { onIntent(HealthLogIntent.SelectLogDay(i)) },
+                // Every chip needs a weight: an unweighted fill chip would take the whole row.
+                modifier = Modifier.weight(if (i == state.days.lastIndex) 1.9f else 1f),
+                style = ChipStyle.Solid, multiSelect = false, fill = true,
+            )
+        }
+    }
+}
+
+/** Connects the log to the meal plan: what the plan does for this condition + what the data shows. */
+@Composable
+private fun PlanInsightCard(condition: HealthCondition, state: HealthLogState) {
+    val colors = KcalTheme.colors
+    val locale = appLocale()
+    KcalCard(Modifier.fillMaxWidth(), color = colors.accentContainer, elevated = false, contentPadding = PaddingValues(20.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            IconChip(KcalIcons.Health, size = 32.dp, iconSize = 16.dp, container = colors.surface)
+            Spacer(Modifier.width(12.dp))
+            Text(stringResource(R.string.health_plan_title), style = KcalTheme.typography.titleSmall, color = colors.textBrand)
+        }
+        Spacer(Modifier.height(10.dp))
+        Text(
+            stringResource(
+                when (condition) {
+                    HealthCondition.Diabetes -> R.string.health_plan_diabetes
+                    HealthCondition.Ibs -> R.string.health_plan_ibs
+                    HealthCondition.LactoseIntolerant -> R.string.health_plan_lactose
+                },
+            ),
+            style = KcalTheme.typography.bodySmall, color = colors.textPrimary,
+        )
+        Spacer(Modifier.height(8.dp))
+        val insight = when (condition) {
+            HealthCondition.Diabetes -> null
+            HealthCondition.LactoseIntolerant -> stringResource(R.string.dairy_reactions_30, KcalFormat.int(state.dairy.reactionsLast30Days, locale))
+            HealthCondition.Ibs -> {
+                val ibs = state.ibs
+                val language = com.alphito.kcal.core.designsystem.util.appLanguage()
+                buildString {
+                    if (ibs.loggedDays > 0) append(stringResource(R.string.ibs_free_days, KcalFormat.int(ibs.symptomFreeDays, locale), KcalFormat.int(ibs.loggedDays, locale)))
+                    append(if (isEmpty()) "" else "\n")
+                    append(
+                        if (ibs.suspectFoods.isEmpty()) stringResource(R.string.ibs_no_suspects)
+                        else stringResource(R.string.ibs_suspects, ibs.suspectFoods.joinToString(", ") { it.localizedName(language) }),
+                    )
+                }
+            }
+        }
+        insight?.let { Text(it, style = KcalTheme.typography.bodySmall, color = colors.textSecondary) }
+    }
 }
 
 /** Missing days carry the previous value forward so the trend line stays continuous. */

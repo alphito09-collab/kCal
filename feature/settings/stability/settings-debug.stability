@@ -78,12 +78,13 @@ internal fun com.alphito.kcal.feature.settings.presentation.ui.PrivacyRoute(): k
   params:
 
 @Composable
-internal fun com.alphito.kcal.feature.settings.presentation.ui.PrivacyScreen(state: com.alphito.kcal.feature.settings.presentation.mvi.PrivacyState, onIntent: kotlin.Function1<com.alphito.kcal.feature.settings.presentation.mvi.PrivacyIntent, kotlin.Unit>): kotlin.Unit
+internal fun com.alphito.kcal.feature.settings.presentation.ui.PrivacyScreen(state: com.alphito.kcal.feature.settings.presentation.mvi.PrivacyState, onIntent: kotlin.Function1<com.alphito.kcal.feature.settings.presentation.mvi.PrivacyIntent, kotlin.Unit>, onAdChoices: kotlin.Function0<kotlin.Unit>?): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - state: STABLE (marked @Stable or @Immutable)
     - onIntent: STABLE (function type)
+    - onAdChoices: STABLE (function type)
 
 @Composable
 private fun com.alphito.kcal.feature.settings.presentation.ui.RateDialog(rating: kotlin.Int, onIntent: kotlin.Function1<com.alphito.kcal.feature.settings.presentation.mvi.SettingsIntent, kotlin.Unit>): kotlin.Unit
@@ -91,6 +92,20 @@ private fun com.alphito.kcal.feature.settings.presentation.ui.RateDialog(rating:
   restartable: true
   params:
     - rating: STABLE (primitive type)
+    - onIntent: STABLE (function type)
+
+@Composable
+internal fun com.alphito.kcal.feature.settings.presentation.ui.RemindersRoute(): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+
+@Composable
+internal fun com.alphito.kcal.feature.settings.presentation.ui.RemindersScreen(state: com.alphito.kcal.feature.settings.presentation.mvi.RemindersState, onIntent: kotlin.Function1<com.alphito.kcal.feature.settings.presentation.mvi.RemindersIntent, kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - state: STABLE (marked @Stable or @Immutable)
     - onIntent: STABLE (function type)
 
 @Composable

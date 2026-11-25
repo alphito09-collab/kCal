@@ -2,6 +2,15 @@ plugins {
     alias(libs.plugins.kcal.android.application)
 }
 
+// Firebase is optional at build time: drop app/google-services.json in to enable it
+// (see backend/firebase/README.md). Without it the app runs fully offline.
+if (file("google-services.json").exists()) {
+    apply(plugin = libs.plugins.google.services.get().pluginId)
+}
+
+/** Real AdMob IDs come from ~/.gradle/gradle.properties or CI; Google's test IDs otherwise. */
+fun adProperty(name: String, fallback: String) = (findProperty(name) as String?)?.takeIf { it.isNotBlank() } ?: fallback
+
 android {
     namespace = "com.alphito.kcal.mealplanner.padometer"
 
@@ -10,6 +19,14 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        val admobAppId = adProperty("kcal.admob.appId", "ca-app-pub-3940256099942544~3347511713")
+        buildConfigField("String", "ADMOB_APP_ID", "\"$admobAppId\"")
+        // UMP (consent) reads the app id from the manifest.
+        manifestPlaceholders["admobAppId"] = admobAppId
+        buildConfigField(
+            "String", "ADMOB_SPLASH_UNIT",
+            "\"${adProperty("kcal.admob.splashUnit", "ca-app-pub-3940256099942544/1033173712")}\"",
+        )
     }
 
     buildFeatures {
@@ -33,6 +50,12 @@ android {
     }
 }
 
+// GMA Next-Gen SDK must not be mixed with the legacy play-services-ads artifacts.
+configurations.configureEach {
+    exclude(group = "com.google.android.gms", module = "play-services-ads")
+    exclude(group = "com.google.android.gms", module = "play-services-ads-lite")
+}
+
 dependencies {
     // Core
     implementation(project(":core:common"))
@@ -40,6 +63,10 @@ dependencies {
     implementation(project(":core:designsystem"))
     implementation(project(":core:navigation"))
     implementation(project(":core:data"))
+    implementation(project(":core:firebase"))
+    implementation(project(":core:billing"))
+    implementation(project(":core:ads"))
+    implementation(project(":core:notifications"))
 
     // Features
     implementation(project(":feature:onboarding"))
@@ -69,6 +96,8 @@ dependencies {
     implementation(libs.koin.compose)
     implementation(libs.koin.compose.viewmodel)
     implementation(libs.koin.compose.navigation3)
+    implementation(libs.koin.androidx.workmanager)
+    implementation(libs.androidx.work.runtime.ktx)
 
     testImplementation(libs.junit)
     testImplementation(platform(libs.koin.bom))

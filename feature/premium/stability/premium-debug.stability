@@ -27,11 +27,12 @@ private fun com.alphito.kcal.feature.premium.presentation.ui.LegalLinksRow(): ko
   params:
 
 @Composable
-private fun com.alphito.kcal.feature.premium.presentation.ui.PlanCard(plan: com.alphito.kcal.core.model.PremiumPlan, active: kotlin.Boolean, purchasing: kotlin.Boolean, onStart: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+private fun com.alphito.kcal.feature.premium.presentation.ui.PlanCard(plan: com.alphito.kcal.core.model.PremiumPlan, playPrice: kotlin.String?, active: kotlin.Boolean, purchasing: kotlin.Boolean, onStart: kotlin.Function0<kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - plan: STABLE (stability configuration file type)
+    - playPrice: STABLE (class with no mutable properties)
     - active: STABLE (primitive type)
     - purchasing: STABLE (primitive type)
     - onStart: STABLE (function type)

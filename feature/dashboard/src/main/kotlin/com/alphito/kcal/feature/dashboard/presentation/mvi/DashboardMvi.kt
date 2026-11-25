@@ -1,7 +1,7 @@
 package com.alphito.kcal.feature.dashboard.presentation.mvi
 
 import androidx.lifecycle.viewModelScope
-import com.alphito.kcal.core.common.FeatureFlags
+import com.alphito.kcal.core.common.flags.FeatureFlags
 import com.alphito.kcal.core.common.mvi.MviViewModel
 import com.alphito.kcal.core.common.mvi.UiEffect
 import com.alphito.kcal.core.common.mvi.UiIntent
@@ -42,6 +42,7 @@ sealed interface DashboardEffect : UiEffect {
 class DashboardViewModel(
     private val observeDashboard: ObserveDashboardUseCase,
     private val preferences: PreferencesRepository,
+    private val featureFlags: FeatureFlags,
 ) : MviViewModel<DashboardState, DashboardIntent, DashboardEffect>(DashboardState()) {
 
     private var trialScheduled = false
@@ -56,7 +57,7 @@ class DashboardViewModel(
                         streakDays = s.streakDays, nextMeal = s.nextMeal, loaded = true,
                     )
                 }
-                if (FeatureFlags.PREMIUM_ENABLED && !s.isPremium && !s.trialPromptSeen && !trialScheduled) scheduleTrialPrompt()
+                if (featureFlags.flags.value.premiumEnabled && !s.isPremium && !s.trialPromptSeen && !trialScheduled) scheduleTrialPrompt()
             }
             .catch { onError(it) }
             .launchIn(viewModelScope)

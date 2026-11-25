@@ -6,7 +6,6 @@
     <string name="ds_meal_dinner">Ужин</string>
     <string name="ds_back">Назад</string>
     <string name="ds_kcal">%1$s ккал</string>
-    <string name="ds_kcal_price">%1$s ккал  ·  %2$s PKR</string>
     <string name="ds_unit_kcal">ккал</string>
     <string name="ds_unit_kcal_day">ккал/день</string>
     <string name="ds_unit_kg">кг</string>
@@ -19,33 +18,10 @@
     <string name="ds_value_unit">%1$s %2$s</string>
     <string name="ds_fraction">%1$d/%2$d</string>
     <string name="ds_range">%1$s – %2$s</string>
-    <string name="ds_food_anda_paratha">Анда паратха (лепёшка с яйцом)</string>
-    <string name="ds_food_anda_paratha_portion">Паратха 80 г + яйцо 50 г</string>
-    <string name="ds_food_lassi">Ласси</string>
-    <string name="ds_food_lassi_portion">Йогуртовый напиток 200 мл</string>
-    <string name="ds_food_daal_chawal">Дал чавал (чечевица с рисом)</string>
-    <string name="ds_food_daal_chawal_portion">Рис 150 г + дал 120 г</string>
-    <string name="ds_food_chickpea_curry_rice">Карри из нута с рисом</string>
-    <string name="ds_food_chickpea_curry_rice_portion">Нут 150 г + рис 120 г</string>
-    <string name="ds_food_vegetable_pulao">Овощной плов</string>
-    <string name="ds_food_vegetable_pulao_portion">Плов 250 г</string>
-    <string name="ds_food_chicken_karahi_roti">Курица карахи с роти</string>
-    <string name="ds_food_chicken_karahi_roti_portion">Карахи 180 г + 1 роти</string>
-    <string name="ds_food_mixed_veg_roti">Овощное ассорти с роти</string>
-    <string name="ds_food_mixed_veg_roti_portion">Овощи 180 г + 1 роти</string>
-    <string name="ds_food_grilled_chicken">Курица гриль</string>
-    <string name="ds_food_grilled_chicken_portion">Курица 150 г</string>
-    <string name="ds_food_salad">Салат</string>
-    <string name="ds_food_salad_portion">Овощное ассорти 150 г</string>
-    <string name="ds_food_roti">Роти</string>
-    <string name="ds_food_roti_portion">Роти 120 г (2 шт.)</string>
-    <string name="ds_food_fruit_chaat">Фруктовый чаат</string>
-    <string name="ds_food_fruit_chaat_portion">Фрукты 200 г</string>
-    <string name="ds_region_lahore">Пакистан — Лахор</string>
-    <string name="ds_region_karachi">Пакистан — Карачи</string>
-    <string name="ds_region_islamabad">Пакистан — Исламабад</string>
-    <string name="ds_region_rawalpindi">Пакистан — Равалпинди</string>
-    <string name="ds_region_faisalabad">Пакистан — Фейсалабад</string>
-    <string name="ds_region_peshawar">Пакистан — Пешавар</string>
     <plurals name="ds_stars"><item quantity="one">%1$d звезда</item><item quantity="few">%1$d звезды</item><item quantity="many">%1$d звёзд</item><item quantity="other">%1$d звезды</item></plurals>
+    <string name="ds_kcal_cost">%1$s ккал · %2$s</string>
+    <string name="ds_cost_budget">Бюджетно</string>
+    <string name="ds_cost_moderate">Средняя цена</string>
+    <string name="ds_cost_premium">Премиум</string>
+    <string name="ds_unit_g">г</string>
 </resources>

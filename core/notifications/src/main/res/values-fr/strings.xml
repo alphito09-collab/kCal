@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Rappels</string>
+    <string name="notif_channel_reminders_desc">Rappels d\'eau, de repas et de pesée que vous avez activés.</string>
+    <string name="notif_channel_updates">Actualités de kCal</string>
+    <string name="notif_channel_updates_desc">Conseils et nouvelles de l\'équipe kCal.</string>
+    <string name="notif_water_title">C\'est l\'heure d\'un verre d\'eau 💧</string>
+    <string name="notif_water_body">Un verre rapide vous garde sur la bonne voie pour l\'objectif du jour.</string>
+    <string name="notif_breakfast_title">C\'est l\'heure du petit-déjeuner</string>
+    <string name="notif_lunch_title">C\'est l\'heure du déjeuner</string>
+    <string name="notif_snack_title">C\'est l\'heure de la collation</string>
+    <string name="notif_dinner_title">C\'est l\'heure du dîner</string>
+    <string name="notif_meal_body">Votre repas prévu attend d\'être coché.</string>
+    <string name="notif_weigh_in_title">Pesée hebdomadaire</string>
+    <string name="notif_weigh_in_body">Notez votre poids de la semaine pour un suivi précis.</string>
+</resources>

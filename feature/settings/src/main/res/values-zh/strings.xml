@@ -57,4 +57,15 @@
     <string name="delete_title">删除你的数据？</string>
     <string name="delete_body">这会从此设备永久删除你的资料、饮食计划和记录，且无法撤销。</string>
     <string name="delete_confirm">全部删除</string>
+    <string name="settings_reminders">提醒</string>
+    <string name="reminders_title">提醒</string>
+    <string name="reminders_body">在合适的时间温柔提醒，随时可以关闭。</string>
+    <string name="reminders_water">喝水</string>
+    <string name="reminders_water_sub">上午 9 点至晚上 9 点，每 2 小时</string>
+    <string name="reminders_meals">用餐时间</string>
+    <string name="reminders_meals_sub">早餐、午餐、加餐和晚餐</string>
+    <string name="reminders_weigh_in">每周称重</string>
+    <string name="reminders_weigh_in_sub">每周一上午 9 点</string>
+    <string name="reminders_permission_denied">请在系统设置中允许通知以接收提醒。</string>
+    <string name="privacy_ad_choices">广告隐私选项</string>
 </resources>

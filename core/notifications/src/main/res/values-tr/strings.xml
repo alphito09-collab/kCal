@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Hatırlatıcılar</string>
+    <string name="notif_channel_reminders_desc">Açtığın su, öğün ve tartılma hatırlatıcıları.</string>
+    <string name="notif_channel_updates">kCal\'dan güncellemeler</string>
+    <string name="notif_channel_updates_desc">kCal ekibinden ipuçları ve haberler.</string>
+    <string name="notif_water_title">Bir bardak su zamanı 💧</string>
+    <string name="notif_water_body">Hızlı bir bardak bugünkü hedefinde kalmanı sağlar.</string>
+    <string name="notif_breakfast_title">Kahvaltı zamanı</string>
+    <string name="notif_lunch_title">Öğle yemeği zamanı</string>
+    <string name="notif_snack_title">Ara öğün zamanı</string>
+    <string name="notif_dinner_title">Akşam yemeği zamanı</string>
+    <string name="notif_meal_body">Planlanan öğünün işaretlenmeye hazır.</string>
+    <string name="notif_weigh_in_title">Haftalık tartılma</string>
+    <string name="notif_weigh_in_body">İlerlemen doğru kalsın diye bu haftaki kilonu kaydet.</string>
+</resources>

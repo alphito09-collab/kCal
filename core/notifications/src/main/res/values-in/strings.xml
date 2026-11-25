@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif_channel_reminders">Pengingat</string>
+    <string name="notif_channel_reminders_desc">Pengingat air, makan, dan timbang yang kamu aktifkan.</string>
+    <string name="notif_channel_updates">Kabar dari kCal</string>
+    <string name="notif_channel_updates_desc">Tips dan kabar dari tim kCal.</string>
+    <string name="notif_water_title">Waktunya segelas air 💧</string>
+    <string name="notif_water_body">Segelas cepat menjaga target hari ini tetap tercapai.</string>
+    <string name="notif_breakfast_title">Waktunya sarapan</string>
+    <string name="notif_lunch_title">Waktunya makan siang</string>
+    <string name="notif_snack_title">Waktunya camilan</string>
+    <string name="notif_dinner_title">Waktunya makan malam</string>
+    <string name="notif_meal_body">Makanan terencanamu siap dicentang.</string>
+    <string name="notif_weigh_in_title">Timbang mingguan</string>
+    <string name="notif_weigh_in_body">Catat berat minggu ini agar progresmu akurat.</string>
+</resources>

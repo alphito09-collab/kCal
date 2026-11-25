@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">Seguimiento diario de síntomas del SII.</string>
     <string name="health_save_log">Guardar registro</string>
     <string name="health_saved">Guardado ✓</string>
-    <string name="sugar_today">Glucosa de hoy</string>
+    <string name="sugar_today">Lectura de glucosa</string>
     <string name="sugar_save">Guardar lectura</string>
     <string name="sugar_hint">Registra tu glucosa una vez al día para seguir tu salud.</string>
     <string name="sugar_trend">Tendencia de glucosa (7 días)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · sin lectura registrada.</string>
     <string name="dairy_days_since">Días desde la última reacción</string>
     <string name="dairy_days">%1$d días</string>
-    <string name="dairy_question">¿Tomaste lácteos hoy?</string>
+    <string name="dairy_question">¿Tomaste lácteos ese día?</string>
     <string name="dairy_any_reaction">¿Alguna reacción?</string>
     <string name="dairy_history">Historial de reacciones</string>
     <string name="dairy_badge">Lácteos</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">Gases</string>
     <string name="reaction_diarrhea">Diarrea</string>
     <string name="reaction_nausea">Náuseas</string>
-    <string name="ibs_today">Síntomas de hoy</string>
+    <string name="ibs_today">Síntomas</string>
     <string name="ibs_severity">Intensidad</string>
     <string name="ibs_trend">Intensidad de síntomas (7 días)</string>
     <string name="ibs_abdominal_pain">Dolor abdominal</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">Grave</string>
     <string name="ibs_summary">%1$s · %3$s %2$s registrado.</string>
     <string name="ibs_summary_none">%1$s · sin síntomas registrados.</string>
+    <string name="health_log_for">Registro para %1$s</string>
+    <string name="health_today">Hoy</string>
+    <string name="sugar_ctx_fasting">En ayunas</string>
+    <string name="sugar_ctx_before">Antes de comer</string>
+    <string name="sugar_ctx_after">Después de comer</string>
+    <string name="sugar_ctx_bedtime">Antes de dormir</string>
+    <string name="sugar_target">Objetivo para este momento: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">Objetivo 1–2 horas después de comer: menos de %1$s mg/dL</string>
+    <string name="sugar_invalid">Introduce un valor entre 20 y 600 mg/dL.</string>
+    <string name="sugar_stats">En rango: %1$s de %2$s lecturas · promedio %3$s mg/dL</string>
+    <string name="health_plan_title">Cómo te ayuda tu plan</string>
+    <string name="health_plan_diabetes">Tus comidas evitan el azúcar añadido y los platos de alto índice glucémico, y los carbohidratos se mantienen en unos 60 g por comida. Registra tus lecturas y compártelas con tu médico.</string>
+    <string name="health_plan_ibs">Tus comidas son bajas en FODMAP: sin platos cargados de cebolla, ajo, legumbres o picante. Registrar síntomas te ayuda a encontrar tus desencadenantes.</string>
+    <string name="health_plan_lactose">Tus comidas evitan los platos con mucha leche. El yogur y el queso curado en pequeñas cantidades suelen tolerarse; tu registro muestra qué te sienta bien.</string>
+    <string name="ibs_free_days">Días sin síntomas esta semana: %1$s de %2$s registrados</string>
+    <string name="ibs_suspects">Comido solo en días con síntomas: %1$s. Si se repite, prueba a cambiarlos en tu plan.</string>
+    <string name="ibs_no_suspects">Marca tus comidas en la lista: buscaremos patrones entre lo que comes y tus síntomas.</string>
+    <string name="dairy_reactions_30">Reacciones en los últimos 30 días: %1$s</string>
 </resources>

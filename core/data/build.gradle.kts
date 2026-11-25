@@ -9,7 +9,10 @@ dependencies {
     api(project(":core:common"))
     implementation(project(":core:database"))
     implementation(project(":core:datastore"))
+    implementation(project(":core:firebase"))
+    implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.kotlinx.serialization.json)
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)
+    implementation(libs.koin.androidx.workmanager)
 }

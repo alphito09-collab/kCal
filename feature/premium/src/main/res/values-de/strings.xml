@@ -43,4 +43,8 @@
     <string name="premium_start_monthly">Monatlich starten</string>
     <string name="premium_active">Aktiv ✓</string>
     <string name="premium_cancel_note">Du kannst dein Abo jederzeit verwalten oder kündigen.</string>
+    <string name="premium_price_per_week">%1$s / Woche</string>
+    <string name="premium_price_per_month">%1$s / Monat</string>
+    <string name="premium_pending">Dein Kauf ist ausstehend. Premium wird freigeschaltet, sobald Google Play ihn bestätigt.</string>
+    <string name="premium_failed">Der Kauf konnte nicht abgeschlossen werden. Bitte versuche es erneut.</string>
 </resources>

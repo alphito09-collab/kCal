@@ -23,6 +23,10 @@ object FoodImages {
 
     @DrawableRes
     fun resFor(key: String?): Int = map[key] ?: R.drawable.food_daal_chawal
+
+    /** Bundled image for a key, or null when the food needs its remote photo. */
+    @DrawableRes
+    fun bundled(key: String?): Int? = map[key]
 }
 
 object OnboardingImages {

@@ -1,5 +1,6 @@
 package com.alphito.kcal.feature.onboarding.presentation.mvi
 
+import com.alphito.kcal.core.common.flags.FeatureFlags
 import com.alphito.kcal.core.common.mvi.MviViewModel
 import com.alphito.kcal.core.common.mvi.UiEffect
 import com.alphito.kcal.core.common.mvi.UiIntent
@@ -31,6 +32,7 @@ sealed interface SplashEffect : UiEffect {
     data object OpenHome : SplashEffect
     data object OpenAboutYou : SplashEffect
     data object OpenPremiumIntro : SplashEffect
+    data object OpenLanguage : SplashEffect
 }
 
 /**
@@ -42,6 +44,7 @@ sealed interface SplashEffect : UiEffect {
 class SplashViewModel(
     private val preferences: PreferencesRepository,
     private val users: UserRepository,
+    private val featureFlags: FeatureFlags,
     private val random: Random = Random.Default,
 ) : MviViewModel<SplashState, SplashIntent, SplashEffect>(SplashState()) {
 
@@ -77,7 +80,10 @@ class SplashViewModel(
 
     override fun onIntent(intent: SplashIntent) {
         when (intent) {
-            SplashIntent.GetStarted -> sendEffect(SplashEffect.OpenPremiumIntro)
+            // Premium is remotely switchable: skip straight to Language while it is disabled.
+            SplashIntent.GetStarted -> sendEffect(
+                if (featureFlags.flags.value.premiumEnabled) SplashEffect.OpenPremiumIntro else SplashEffect.OpenLanguage,
+            )
         }
     }
 

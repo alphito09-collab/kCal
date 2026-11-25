@@ -1,0 +1,8 @@
+{
+  "parameters": {
+    "premium_enabled": { "defaultValue": { "value": "false" }, "valueType": "BOOLEAN", "description": "Show premium screens, Settings rows and the trial dialog" },
+    "ads_enabled": { "defaultValue": { "value": "true" }, "valueType": "BOOLEAN", "description": "Splash interstitial for free users" },
+    "interstitial_interval_minutes": { "defaultValue": { "value": "10" }, "valueType": "NUMBER", "description": "Minimum minutes between two splash interstitials" },
+    "server_verification_enabled": { "defaultValue": { "value": "false" }, "valueType": "BOOLEAN", "description": "Verify Play purchases with the verifySubscription Cloud Function (needs Blaze + deployed functions)" }
+  }
+}

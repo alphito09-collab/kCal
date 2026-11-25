@@ -7,10 +7,14 @@ enum class Gender { Female, Male, Other }
 
 enum class Goal { LoseWeight, GainWeight, MaintainWeight }
 
-enum class BudgetTier(val minPkrPerWeek: Int, val maxPkrPerWeek: Int?) {
-    Low(2_000, 3_500),
-    Medium(3_500, 6_000),
-    High(6_000, null),
+/**
+ * Weekly food budget, relative to the user's local market (dishes carry a 1–3 cost tier):
+ * Low plans budget staples only, Medium adds moderate dishes, High allows everything.
+ */
+enum class BudgetTier(val maxDishCost: Int) {
+    Low(1),
+    Medium(2),
+    High(3),
 }
 
 enum class HealthCondition { Diabetes, Ibs, LactoseIntolerant }
@@ -24,7 +28,8 @@ data class UserProfile(
     val weightKg: Double,
     val goal: Goal = Goal.LoseWeight,
     val targetWeightKg: Double? = null,
-    val region: String = DEFAULT_REGION,
+    /** ISO 3166 country code – see [Regions]. */
+    val region: String = Regions.DEFAULT_COUNTRY,
     val budget: BudgetTier = BudgetTier.Medium,
     val conditions: ImmutableSet<HealthCondition> = persistentSetOf(),
     val addStepsToDeficit: Boolean = true,
@@ -39,7 +44,6 @@ data class UserProfile(
             .take(2).joinToString("") { it.first().uppercase() }.ifEmpty { "K" }
 
     companion object {
-        const val DEFAULT_REGION = "Pakistan — Lahore"
         const val DEFAULT_DEFICIT_KCAL = 1_000
         const val DEFAULT_STEPS_KCAL = 300
         const val DEFAULT_SURPLUS_KCAL = 400

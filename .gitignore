@@ -19,3 +19,9 @@ design/figma-cache/
 *.tok
 *.jks
 *.keystore
+
+# Firebase / backend
+app/google-services.json
+service-account*.json
+node_modules/
+backend/firebase/functions/lib/

@@ -6,7 +6,6 @@
     <string name="ds_meal_dinner">Akşam yemeği</string>
     <string name="ds_back">Geri</string>
     <string name="ds_kcal">%1$s kcal</string>
-    <string name="ds_kcal_price">%1$s kcal  ·  %2$s PKR</string>
     <string name="ds_unit_kcal">kcal</string>
     <string name="ds_unit_kcal_day">kcal/gün</string>
     <string name="ds_unit_kg">kg</string>
@@ -19,33 +18,10 @@
     <string name="ds_value_unit">%1$s %2$s</string>
     <string name="ds_fraction">%1$d/%2$d</string>
     <string name="ds_range">%1$s – %2$s</string>
-    <string name="ds_food_anda_paratha">Anda paratha (yumurtalı pide)</string>
-    <string name="ds_food_anda_paratha_portion">Paratha 80 g + yumurta 50 g</string>
-    <string name="ds_food_lassi">Lassi (ayran)</string>
-    <string name="ds_food_lassi_portion">Yoğurt içeceği 200 ml</string>
-    <string name="ds_food_daal_chawal">Daal chawal (mercimek ve pilav)</string>
-    <string name="ds_food_daal_chawal_portion">Pilav 150 g + daal 120 g</string>
-    <string name="ds_food_chickpea_curry_rice">Nohut köri ve pilav</string>
-    <string name="ds_food_chickpea_curry_rice_portion">Nohut 150 g + pilav 120 g</string>
-    <string name="ds_food_vegetable_pulao">Sebzeli pilav</string>
-    <string name="ds_food_vegetable_pulao_portion">Pilav 250 g</string>
-    <string name="ds_food_chicken_karahi_roti">Tavuk karahi ve roti</string>
-    <string name="ds_food_chicken_karahi_roti_portion">Karahi 180 g + 1 roti</string>
-    <string name="ds_food_mixed_veg_roti">Karışık sebze ve roti</string>
-    <string name="ds_food_mixed_veg_roti_portion">Sebze 180 g + 1 roti</string>
-    <string name="ds_food_grilled_chicken">Izgara tavuk</string>
-    <string name="ds_food_grilled_chicken_portion">Tavuk 150 g</string>
-    <string name="ds_food_salad">Salata</string>
-    <string name="ds_food_salad_portion">Karışık sebze 150 g</string>
-    <string name="ds_food_roti">Roti</string>
-    <string name="ds_food_roti_portion">Roti 120 g (2 adet)</string>
-    <string name="ds_food_fruit_chaat">Meyve chaat</string>
-    <string name="ds_food_fruit_chaat_portion">Karışık meyve 200 g</string>
-    <string name="ds_region_lahore">Pakistan — Lahor</string>
-    <string name="ds_region_karachi">Pakistan — Karaçi</string>
-    <string name="ds_region_islamabad">Pakistan — İslamabad</string>
-    <string name="ds_region_rawalpindi">Pakistan — Ravalpindi</string>
-    <string name="ds_region_faisalabad">Pakistan — Faysalabad</string>
-    <string name="ds_region_peshawar">Pakistan — Peşaver</string>
     <plurals name="ds_stars"><item quantity="one">%1$d yıldız</item><item quantity="other">%1$d yıldız</item></plurals>
+    <string name="ds_kcal_cost">%1$s kcal · %2$s</string>
+    <string name="ds_cost_budget">Uygun fiyatlı</string>
+    <string name="ds_cost_moderate">Orta maliyet</string>
+    <string name="ds_cost_premium">Premium</string>
+    <string name="ds_unit_g">g</string>
 </resources>

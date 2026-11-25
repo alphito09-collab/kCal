@@ -14,11 +14,13 @@ import androidx.datastore.preferences.preferencesDataStoreFile
 import com.alphito.kcal.core.model.AppLanguage
 import com.alphito.kcal.core.model.AppPreferences
 import com.alphito.kcal.core.model.PremiumPlan
+import com.alphito.kcal.core.model.ReminderType
 import com.alphito.kcal.core.model.SubscriptionState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import java.io.IOException
 
@@ -41,6 +43,11 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
         .distinctUntilChanged()
 
     suspend fun setOnboardingComplete(value: Boolean) = store.edit { it[ONBOARDED] = value }
+    suspend fun catalogVersion(): Long = store.data.map { it[CATALOG_VERSION] ?: 0L }.first()
+    suspend fun setCatalogVersion(value: Long) = store.edit { it[CATALOG_VERSION] = value }
+    /** Catalogue version the current plan was generated from. */
+    suspend fun planCatalogVersion(): Long = store.data.map { it[PLAN_CATALOG_VERSION] ?: 0L }.first()
+    suspend fun setPlanCatalogVersion(value: Long) = store.edit { it[PLAN_CATALOG_VERSION] = value }
     suspend fun setIntroSeen(value: Boolean) = store.edit { it[INTRO_SEEN] = value }
     suspend fun setHeightInFeet(value: Boolean) = store.edit { it[HEIGHT_FEET] = value }
     suspend fun setWeightInLb(value: Boolean) = store.edit { it[WEIGHT_LB] = value }
@@ -49,6 +56,10 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
     suspend fun setWaterGoal(ml: Int) = store.edit { it[WATER_GOAL] = ml }
     suspend fun setFreeTrialPromptSeen() = store.edit { it[TRIAL_SEEN] = true }
     suspend fun setRating(stars: Int) = store.edit { it[RATING] = stars }
+    suspend fun setReminder(type: ReminderType, enabled: Boolean) = store.edit {
+        val current = it[REMINDERS].orEmpty()
+        it[REMINDERS] = if (enabled) current + type.name else current - type.name
+    }
     suspend fun setPlan(plan: PremiumPlan?) = store.edit {
         if (plan == null) it.remove(PLAN) else it[PLAN] = plan.name
     }
@@ -70,10 +81,13 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
         freeTrialPromptSeen = this[TRIAL_SEEN] ?: false,
         subscription = SubscriptionState(activePlan = this[PLAN]?.let { runCatching { PremiumPlan.valueOf(it) }.getOrNull() }),
         lastRating = this[RATING] ?: 0,
+        reminders = this[REMINDERS].orEmpty().mapNotNull { n -> ReminderType.entries.firstOrNull { it.name == n } }.toSet(),
     )
 
     private companion object {
         val ONBOARDED = booleanPreferencesKey("onboarding_complete")
+        val CATALOG_VERSION = androidx.datastore.preferences.core.longPreferencesKey("catalog_version")
+        val PLAN_CATALOG_VERSION = androidx.datastore.preferences.core.longPreferencesKey("plan_catalog_version")
         val INTRO_SEEN = booleanPreferencesKey("intro_seen")
         val HEIGHT_FEET = booleanPreferencesKey("height_in_feet")
         val WEIGHT_LB = booleanPreferencesKey("weight_in_lb")
@@ -83,5 +97,6 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
         val TRIAL_SEEN = booleanPreferencesKey("free_trial_seen")
         val PLAN = stringPreferencesKey("premium_plan")
         val RATING = intPreferencesKey("rating")
+        val REMINDERS = androidx.datastore.preferences.core.stringSetPreferencesKey("reminders")
     }
 }

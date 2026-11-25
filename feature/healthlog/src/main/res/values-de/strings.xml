@@ -9,7 +9,7 @@
     <string name="health_sub_ibs">Tägliche Reizdarm-Symptome erfassen.</string>
     <string name="health_save_log">Eintrag speichern</string>
     <string name="health_saved">Gespeichert ✓</string>
-    <string name="sugar_today">Heutiger Zuckerwert</string>
+    <string name="sugar_today">Blutzuckerwert</string>
     <string name="sugar_save">Wert speichern</string>
     <string name="sugar_hint">Trage deinen Zuckerwert einmal täglich ein.</string>
     <string name="sugar_trend">Zuckertrend (7 Tage)</string>
@@ -19,7 +19,7 @@
     <string name="sugar_summary_none">%1$s · kein Wert eingetragen.</string>
     <string name="dairy_days_since">Tage seit der letzten Reaktion</string>
     <string name="dairy_days">%1$d Tage</string>
-    <string name="dairy_question">Hattest du heute Milchprodukte?</string>
+    <string name="dairy_question">Hattest du an dem Tag Milchprodukte?</string>
     <string name="dairy_any_reaction">Gab es eine Reaktion?</string>
     <string name="dairy_history">Reaktionsverlauf</string>
     <string name="dairy_badge">Milch</string>
@@ -33,7 +33,7 @@
     <string name="reaction_gas">Blähungen</string>
     <string name="reaction_diarrhea">Durchfall</string>
     <string name="reaction_nausea">Übelkeit</string>
-    <string name="ibs_today">Heutige Symptome</string>
+    <string name="ibs_today">Symptome</string>
     <string name="ibs_severity">Schweregrad</string>
     <string name="ibs_trend">Symptomstärke (7 Tage)</string>
     <string name="ibs_abdominal_pain">Bauchschmerzen</string>
@@ -43,4 +43,22 @@
     <string name="ibs_severe">Stark</string>
     <string name="ibs_summary">%1$s · %2$s %3$s erfasst.</string>
     <string name="ibs_summary_none">%1$s · keine Symptome erfasst.</string>
+    <string name="health_log_for">Eintrag für %1$s</string>
+    <string name="health_today">Heute</string>
+    <string name="sugar_ctx_fasting">Nüchtern</string>
+    <string name="sugar_ctx_before">Vor dem Essen</string>
+    <string name="sugar_ctx_after">Nach dem Essen</string>
+    <string name="sugar_ctx_bedtime">Vor dem Schlafen</string>
+    <string name="sugar_target">Zielbereich jetzt: %1$s–%2$s mg/dL</string>
+    <string name="sugar_target_after">Ziel 1–2 Stunden nach dem Essen: unter %1$s mg/dL</string>
+    <string name="sugar_invalid">Gib einen Wert zwischen 20 und 600 mg/dL ein.</string>
+    <string name="sugar_stats">Im Zielbereich: %1$s von %2$s Werten · Durchschnitt %3$s mg/dL</string>
+    <string name="health_plan_title">Wie dein Plan hilft</string>
+    <string name="health_plan_diabetes">Deine Mahlzeiten verzichten auf Zuckerzusatz und Gerichte mit hohem glykämischem Index; Kohlenhydrate bleiben bei etwa 60 g pro Mahlzeit. Trage regelmäßig Werte ein und teile sie mit deinem Arzt.</string>
+    <string name="health_plan_ibs">Deine Mahlzeiten sind FODMAP-arm: keine zwiebel-, knoblauch- oder hülsenfruchtlastigen und keine scharfen Gerichte. Das Symptomtagebuch hilft, deine Auslöser zu finden.</string>
+    <string name="health_plan_lactose">Deine Mahlzeiten meiden milchlastige Gerichte. Joghurt und Hartkäse in kleinen Mengen sind meist verträglich – dein Tagebuch zeigt, was für dich passt.</string>
+    <string name="ibs_free_days">Symptomfreie Tage diese Woche: %1$s von %2$s erfassten</string>
+    <string name="ibs_suspects">Nur an Symptomtagen gegessen: %1$s. Wenn sich das wiederholt, tausche sie in deinem Plan.</string>
+    <string name="ibs_no_suspects">Hake deine Mahlzeiten in der Checkliste ab – wir suchen nach Mustern zwischen Essen und Symptomen.</string>
+    <string name="dairy_reactions_30">Reaktionen in den letzten 30 Tagen: %1$s</string>
 </resources>

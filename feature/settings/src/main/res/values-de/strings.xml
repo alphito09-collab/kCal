@@ -57,4 +57,15 @@
     <string name="delete_title">Deine Daten löschen?</string>
     <string name="delete_body">Dein Profil, deine Pläne und dein Verlauf werden dauerhaft von diesem Gerät gelöscht. Das kann nicht rückgängig gemacht werden.</string>
     <string name="delete_confirm">Alles löschen</string>
+    <string name="settings_reminders">Erinnerungen</string>
+    <string name="reminders_title">Erinnerungen</string>
+    <string name="reminders_body">Sanfte Erinnerungen zur richtigen Zeit. Jederzeit abschaltbar.</string>
+    <string name="reminders_water">Wasser trinken</string>
+    <string name="reminders_water_sub">Alle 2 Stunden von 9 bis 21 Uhr</string>
+    <string name="reminders_meals">Essenszeiten</string>
+    <string name="reminders_meals_sub">Frühstück, Mittagessen, Snack und Abendessen</string>
+    <string name="reminders_weigh_in">Wöchentliches Wiegen</string>
+    <string name="reminders_weigh_in_sub">Jeden Montag um 9 Uhr</string>
+    <string name="reminders_permission_denied">Erlaube Benachrichtigungen in den Systemeinstellungen, um Erinnerungen zu erhalten.</string>
+    <string name="privacy_ad_choices">Datenschutzoptionen für Werbung</string>
 </resources>
