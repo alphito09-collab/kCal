@@ -4,6 +4,7 @@ import com.alphito.kcal.core.common.time.AppClock
 import com.alphito.kcal.core.data.repository.MealPlanRepository
 import com.alphito.kcal.core.data.repository.PreferencesRepository
 import com.alphito.kcal.core.data.repository.SampleDataSeeder
+import com.alphito.kcal.core.data.repository.TrackingStartRepository
 import com.alphito.kcal.core.data.repository.UserRepository
 import com.alphito.kcal.core.data.repository.WeightRepository
 
@@ -24,16 +25,20 @@ class CompleteOnboardingUseCase(
     private val mealPlans: MealPlanRepository,
     private val weights: WeightRepository,
     private val sampleData: SampleDataSeeder,
+    private val trackingStart: TrackingStartRepository,
     private val clock: AppClock,
     private val sampleDataEnabled: Boolean,
 ) {
     suspend operator fun invoke() {
         val profile = users.current() ?: return
         val today = clock.today()
-        if (sampleDataEnabled) sampleData.seed(today, profile.weightKg)
+        // Debug sample history starts the tracking period at its first fake day so Progress stays consistent.
+        val seededFrom = if (sampleDataEnabled) sampleData.seed(today, profile.weightKg) else null
         weights.log(today, profile.weightKg)
         mealPlans.regenerate(today)
         mealPlans.ensureWeekPlanned(today)
+        preferences.setOnboardingDay(today)
+        trackingStart.init(seededFrom ?: today) // no-op if already set: the start date never moves
         preferences.setOnboardingComplete(true)
     }
 }

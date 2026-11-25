@@ -10,17 +10,18 @@ import com.alphito.kcal.core.datastore.PreferencesDataSource
 import com.alphito.kcal.core.database.entity.MealCheckEntity
 import com.alphito.kcal.core.database.entity.PlannedItemEntity
 import com.alphito.kcal.core.model.DayPlan
-import com.alphito.kcal.core.model.EnergyCalculator
 import com.alphito.kcal.core.model.MealInsight
 import com.alphito.kcal.core.model.MealSlot
 import com.alphito.kcal.core.model.MealType
 import com.alphito.kcal.core.model.PlannedItem
+import com.alphito.kcal.core.model.Streak
 import com.alphito.kcal.core.model.SwapCandidate
 import com.alphito.kcal.core.model.UserProfile
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.sync.Mutex
@@ -29,6 +30,7 @@ import kotlinx.coroutines.withContext
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.temporal.TemporalAdjusters
+import kotlin.math.abs
 
 interface MealPlanRepository {
     fun observeDays(from: LocalDate, to: LocalDate): Flow<List<DayPlan>>
@@ -52,6 +54,7 @@ internal class MealPlanRepositoryImpl(
     private val catalogRepository: CatalogRepository,
     private val preferences: PreferencesDataSource,
     private val userRepository: UserRepository,
+    private val caloriePlans: CaloriePlanRepository,
     private val generator: MealPlanGenerator,
     private val dispatchers: DispatcherProvider,
 ) : MealPlanRepository {
@@ -61,9 +64,9 @@ internal class MealPlanRepositoryImpl(
     override fun observeDays(from: LocalDate, to: LocalDate): Flow<List<DayPlan>> = combine(
         mealPlanDao.observeRange(from.toEpochDay(), to.toEpochDay()),
         mealPlanDao.observeChecks(from.toEpochDay(), to.toEpochDay()),
-        userRepository.profile,
-    ) { items, checks, profile ->
-        val target = profile?.let(EnergyCalculator::dailyIntakeTarget) ?: 0
+        caloriePlans.plan,
+    ) { items, checks, plan ->
+        val target = plan?.intakeKcal ?: 0
         val checkedSet = checks.filter { it.checked }.map { it.epochDay to it.mealType }.toSet()
         val byDay = items.map { it.toModel() }.groupBy { it.date }
         generateSequence(from) { it.plusDays(1) }.takeWhile { !it.isAfter(to) }.map { date ->
@@ -86,17 +89,22 @@ internal class MealPlanRepositoryImpl(
     override fun observeItem(itemId: Long): Flow<PlannedItem?> =
         mealPlanDao.observeItem(itemId).map { it?.toModel() }.distinctUntilChanged().flowOn(dispatchers.io)
 
-    override fun observeStreak(today: LocalDate): Flow<Int> = mealPlanDao.observeCheckedDays().map { days ->
-        val set = days.toHashSet()
-        var cursor = if (today.toEpochDay() in set) today.toEpochDay() else today.toEpochDay() - 1
-        var streak = 0
-        while (cursor in set) { streak++; cursor-- }
-        streak
+    override fun observeStreak(today: LocalDate): Flow<Int> = combine(
+        preferences.onboardingDay,
+        mealPlanDao.observePlannedMeals(),
+        mealPlanDao.observeCheckedMeals(),
+    ) { onboardingDay, planned, checked ->
+        val completed = Streak.completedDays(planned.map { it.epochDay to it.mealType }, checked.map { it.epochDay to it.mealType })
+        // Installs from before the onboarding day was recorded start counting today (see ensureWeekPlanned).
+        Streak.count(completed, today.toEpochDay(), onboardingDay ?: today.toEpochDay())
     }.distinctUntilChanged().flowOn(dispatchers.default)
 
     override suspend fun ensureWeekPlanned(today: LocalDate) = withContext(dispatchers.io) {
         planMutex.withLock {
             seedCatalog()
+            // One-time for installs from before it was recorded: earlier days (incl. debug sample
+            // checks) never count toward the streak. Onboarding itself records the real day.
+            if (preferences.onboardingDay.first() == null) preferences.setOnboardingDay(today.toEpochDay())
             val weekEnd = today.with(TemporalAdjusters.nextOrSame(DayOfWeek.SUNDAY))
             // The catalogue (or its health rules) changed since this plan was made: re-plan from
             // today so no dish that is now unsafe or retired stays on the menu. History is kept.
@@ -105,6 +113,17 @@ internal class MealPlanRepositoryImpl(
                 writePlan(firstReplannableDay(today), weekEnd, replace = true)
                 preferences.setPlanCatalogVersion(catalogVersion)
                 return@withLock
+            }
+            // The target moved (weight logged, or a gain plan's step allowance changed): resize the rest of the week.
+            val sizedFor = preferences.planTargetKcal()
+            val target = caloriePlans.current()?.intakeKcal ?: 0
+            val plannedThrough = mealPlanDao.lastPlannedDay()
+            if (plannedThrough != null && plannedThrough >= today.toEpochDay() && target > 0) {
+                if (sizedFor == 0) preferences.setPlanTargetKcal(target) // plans made before this was recorded
+                else if (abs(target - sizedFor) >= REPLAN_THRESHOLD_KCAL) {
+                    writePlan(firstReplannableDay(today), weekEnd, replace = true)
+                    return@withLock
+                }
             }
             val last = mealPlanDao.lastPlannedDay()
             if (last == null || last < weekEnd.toEpochDay()) {
@@ -141,17 +160,18 @@ internal class MealPlanRepositoryImpl(
     }
 
     override fun observeInsight(itemId: Long): Flow<MealInsight?> =
-        combine(observeItem(itemId), userRepository.profile) { item, profile ->
+        combine(observeItem(itemId), userRepository.profile, caloriePlans.plan) { item, profile, plan ->
             if (item == null || profile == null) null
-            else MealInsight(item, MealInsights.reasons(item, profile).toImmutableList())
+            else MealInsight(item, MealInsights.reasons(item, profile, plan?.intakeKcal ?: 0).toImmutableList())
         }.distinctUntilChanged().flowOn(dispatchers.default)
 
     private suspend fun writePlan(start: LocalDate, end: LocalDate, replace: Boolean) {
         val profile: UserProfile = userRepository.current() ?: return
         val days = (end.toEpochDay() - start.toEpochDay() + 1).toInt().coerceAtLeast(0)
         if (days == 0) return
+        val target = caloriePlans.current()?.intakeKcal ?: 0
         val items = generator.generate(
-            profile, foodDao.active().map { it.toModel() }, start, days, EnergyCalculator.dailyIntakeTarget(profile),
+            profile, foodDao.active().map { it.toModel() }, start, days, target,
         ).map {
             PlannedItemEntity(
                 epochDay = it.date.toEpochDay(), mealType = it.mealType.name, position = it.position,
@@ -160,6 +180,7 @@ internal class MealPlanRepositoryImpl(
         }
         if (replace) mealPlanDao.replaceFrom(start.toEpochDay(), items) else mealPlanDao.insertItems(items)
         preferences.setPlanCatalogVersion(preferences.catalogVersion())
+        preferences.setPlanTargetKcal(target)
     }
 
     private suspend fun seedCatalog() = catalogRepository.ensureBundled()
@@ -172,4 +193,9 @@ internal class MealPlanRepositoryImpl(
         if (mealPlanDao.checkedCount(today.toEpochDay()) > 0) today.plusDays(1) else today
 
     private fun weekStart(date: LocalDate) = date.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
+
+    private companion object {
+        /** Smaller target changes keep the current portions (and any swaps the user made). */
+        const val REPLAN_THRESHOLD_KCAL = 100
+    }
 }

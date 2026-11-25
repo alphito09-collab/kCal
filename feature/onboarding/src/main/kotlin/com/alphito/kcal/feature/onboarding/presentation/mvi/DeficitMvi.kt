@@ -5,21 +5,32 @@ import com.alphito.kcal.core.common.mvi.UiEffect
 import com.alphito.kcal.core.common.mvi.UiIntent
 import com.alphito.kcal.core.common.mvi.UiState
 import com.alphito.kcal.core.data.repository.UserRepository
+import com.alphito.kcal.core.model.CaloriePlan
 import com.alphito.kcal.core.model.EnergyCalculator
+import com.alphito.kcal.core.model.Goal
 import com.alphito.kcal.core.model.UserProfile
 import com.alphito.kcal.feature.onboarding.domain.CompleteOnboardingUseCase
 
 data class DeficitState(
+    val profile: UserProfile? = null,
     val addSteps: Boolean = true,
     val totalDeficit: Int = UserProfile.DEFAULT_DEFICIT_KCAL,
     val stepsKcal: Int = UserProfile.DEFAULT_STEPS_KCAL,
     val editingExact: Boolean = false,
     val finishing: Boolean = false,
 ) : UiState {
-    val effectiveSteps: Int get() = if (addSteps) stepsKcal else 0
-    val dietKcal: Int get() = (totalDeficit - effectiveSteps).coerceAtLeast(0)
+    /** The split exactly as the calculator will apply it, so this preview matches every other screen. */
+    private val plan: CaloriePlan?
+        get() = profile?.let {
+            EnergyCalculator.plan(
+                it.copy(goal = Goal.LoseWeight, addStepsToDeficit = addSteps, dailyDeficitKcal = totalDeficit, stepsDeficitKcal = stepsKcal),
+            )
+        }
+    val effectiveSteps: Int get() = plan?.stepsDeficitKcal ?: 0
+    val dietKcal: Int get() = plan?.dietDeficitKcal ?: 0
     val stepsFraction: Float get() = if (totalDeficit == 0) 0f else effectiveSteps / totalDeficit.toFloat()
-    val stepsEquivalent: Int get() = EnergyCalculator.kcalToSteps(effectiveSteps)
+    /** Total daily steps: the baseline already in TDEE plus the extra steps that burn [effectiveSteps]. */
+    val stepsEquivalent: Int get() = EnergyCalculator.stepsForExtraKcal(effectiveSteps)
 }
 
 sealed interface DeficitIntent : UiIntent {
@@ -42,7 +53,9 @@ class DeficitViewModel(
     init {
         launchSafe {
             val p = users.current() ?: return@launchSafe
-            reduce { copy(addSteps = p.addStepsToDeficit, totalDeficit = p.dailyDeficitKcal, stepsKcal = p.stepsDeficitKcal) }
+            // The total is personalised from the profile; the user only chooses how much comes from steps.
+            val total = EnergyCalculator.recommendedDeficit(p)
+            reduce { copy(profile = p, addSteps = p.addStepsToDeficit, totalDeficit = total, stepsKcal = p.stepsDeficitKcal.coerceIn(0, total)) }
         }
     }
 
