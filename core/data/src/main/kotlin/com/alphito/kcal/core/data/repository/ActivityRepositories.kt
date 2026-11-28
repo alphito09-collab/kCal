@@ -5,6 +5,7 @@ import com.alphito.kcal.core.database.dao.StepsDao
 import com.alphito.kcal.core.database.dao.WeightDao
 import com.alphito.kcal.core.database.entity.StepsEntity
 import com.alphito.kcal.core.database.entity.WeightEntity
+import com.alphito.kcal.core.model.EnergyCalculator
 import com.alphito.kcal.core.model.StepsDay
 import com.alphito.kcal.core.model.WeightEntry
 import kotlinx.coroutines.flow.Flow
@@ -17,6 +18,8 @@ import java.time.LocalDate
 interface StepsRepository {
     fun observeDay(date: LocalDate): Flow<Int>
     fun observeRange(from: LocalDate, to: LocalDate): Flow<List<StepsDay>>
+    /** Average daily steps over the week before [today] – see [EnergyCalculator.averageSteps]. */
+    fun observeRecentAverage(today: LocalDate): Flow<Int>
     suspend fun addSteps(date: LocalDate, delta: Int)
     suspend fun setSteps(date: LocalDate, steps: Int)
 }
@@ -29,6 +32,11 @@ internal class StepsRepositoryImpl(private val dao: StepsDao, private val dispat
         dao.observeRange(from.toEpochDay(), to.toEpochDay())
             .map { rows -> rows.map { StepsDay(LocalDate.ofEpochDay(it.epochDay), it.steps) } }
             .distinctUntilChanged().flowOn(dispatchers.io)
+
+    override fun observeRecentAverage(today: LocalDate): Flow<Int> =
+        observeRange(today.minusDays(EnergyCalculator.RECENT_STEPS_DAYS.toLong()), today.minusDays(1))
+            .map { EnergyCalculator.averageSteps(it, today) }
+            .distinctUntilChanged()
 
     override suspend fun addSteps(date: LocalDate, delta: Int) = withContext(dispatchers.io) {
         if (delta > 0) dao.add(date.toEpochDay(), delta)

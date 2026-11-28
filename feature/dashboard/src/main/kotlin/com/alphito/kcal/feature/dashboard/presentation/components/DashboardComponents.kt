@@ -24,7 +24,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.alphito.kcal.core.designsystem.chart.ProgressRing
 import com.alphito.kcal.core.designsystem.component.AnimatedNumber
@@ -69,7 +71,7 @@ internal fun CalorieTrackingCard(
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                 StatRow(KcalIcons.Steps, stringResource(R.string.dash_steps), stringResource(R.string.dash_kcal_value, KcalFormat.int(stepsKcal)))
                 StatRow(KcalIcons.Utensils, stringResource(R.string.dash_eating), stringResource(R.string.dash_kcal_value, KcalFormat.int(eatenKcal)))
-                StatRow(KcalIcons.Flame, stringResource(R.string.dash_streak), "🔥 " + stringResource(R.string.dash_streak_value, streakDays))
+                StatRow(KcalIcons.Flame, stringResource(R.string.dash_streak), "🔥 " + pluralStringResource(R.plurals.dash_streak_days, streakDays, KcalFormat.int(streakDays)))
             }
         }
         if (targetKcal > 0) {
@@ -127,7 +129,10 @@ internal fun NextMealCard(slot: MealSlot?, onCheck: (MealSlot) -> Unit, onOpen: 
                     Spacer(Modifier.width(14.dp))
                     Column(Modifier.weight(1f)) {
                         Text(stringResource(R.string.dash_up_next, meal.mealType.label()), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
-                        Text(mealTitle(meal), style = KcalTheme.typography.titleSmall.copy(fontSize = KcalTheme.typography.titleMedium.fontSize), color = colors.textPrimary, maxLines = 1)
+                        Text(
+                            mealTitle(meal), style = KcalTheme.typography.titleSmall.copy(fontSize = KcalTheme.typography.titleMedium.fontSize),
+                            color = colors.textPrimary, maxLines = 2, overflow = TextOverflow.Ellipsis,
+                        )
                         Text(kcalLabel(meal.totalKcal), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
                     }
                     KcalCheckbox(checked = meal.checked, onCheckedChange = { onCheck(meal) })

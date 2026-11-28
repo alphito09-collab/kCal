@@ -1,6 +1,5 @@
 package com.alphito.kcal.core.data.domain
 
-import com.alphito.kcal.core.model.EnergyCalculator
 import com.alphito.kcal.core.model.Food
 import com.alphito.kcal.core.model.FoodRole
 import com.alphito.kcal.core.model.FoodTag
@@ -24,7 +23,8 @@ import kotlin.math.roundToInt
  */
 object MealInsights {
 
-    fun reasons(item: PlannedItem, profile: UserProfile, slotKcal: Int = item.kcal): List<MealReason> {
+    /** [targetKcal] is the daily target from [com.alphito.kcal.core.data.repository.CaloriePlanRepository]. */
+    fun reasons(item: PlannedItem, profile: UserProfile, targetKcal: Int, slotKcal: Int = item.kcal): List<MealReason> {
         val food = item.food
         val light = item.mealType == MealType.Snack || food.role == FoodRole.Drink || food.role == FoodRole.Side
         val protein = item.proteinG
@@ -40,9 +40,8 @@ object MealInsights {
             }
             if (HealthCondition.LactoseIntolerant in conditions && FoodTag.Dairy !in food.tags) add(MealReason.LactoseFriendly)
 
-            val target = EnergyCalculator.dailyIntakeTarget(profile)
-            if (target > 0 && food.role != FoodRole.Drink) {
-                add(MealReason.FitsTarget(slotKcal, target, item.mealType))
+            if (targetKcal > 0 && food.role != FoodRole.Drink) {
+                add(MealReason.FitsTarget(slotKcal, targetKcal, item.mealType))
             }
             if (protein >= if (light) 8 else 15) add(MealReason.HighProtein(protein.roundToInt()))
             if (fiber >= if (light) 3 else 6) add(MealReason.HighFiber(fiber.roundToInt()))

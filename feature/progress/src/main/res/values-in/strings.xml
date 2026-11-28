@@ -11,4 +11,6 @@
     <string name="progress_weight">Berat</string>
     <string name="progress_key_metrics">Metrik utama</string>
     <string name="progress_no_weight">Catat beratmu untuk melihat tren.</string>
+    <string name="progress_earlier">Periode sebelumnya</string>
+    <string name="progress_later">Periode berikutnya</string>
 </resources>

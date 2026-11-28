@@ -9,7 +9,6 @@
     <string name="dash_eating">饮食</string>
     <string name="dash_streak">连续天数</string>
     <string name="dash_kcal_value">%1$s 千卡</string>
-    <string name="dash_streak_value">第 %1$d 天</string>
     <string name="dash_todays_meal">今日餐食</string>
     <string name="dash_view_all">查看全部</string>
     <string name="dash_up_next">%1$s · 下一餐</string>

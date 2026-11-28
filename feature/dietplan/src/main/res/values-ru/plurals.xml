@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="checklist_streak"><item quantity="one">🔥 Серия: %1$s день</item><item quantity="few">🔥 Серия: %1$s дня</item><item quantity="many">🔥 Серия: %1$s дней</item><item quantity="other">🔥 Серия: %1$s дня</item></plurals>
+</resources>

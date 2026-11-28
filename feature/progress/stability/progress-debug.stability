@@ -15,12 +15,64 @@ internal fun com.alphito.kcal.feature.progress.presentation.components.MetricTil
     - value: STABLE (composable function type)
 
 @Composable
+private fun com.alphito.kcal.feature.progress.presentation.components.PageArrow(enabled: kotlin.Boolean, back: kotlin.Boolean, onClick: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - enabled: STABLE (primitive type)
+    - back: STABLE (primitive type)
+    - onClick: STABLE (function type)
+
+@Composable
+private fun com.alphito.kcal.feature.progress.presentation.components.SlotLabel(label: kotlin.String, selected: kotlin.Boolean, enabled: kotlin.Boolean, onClick: kotlin.Function0<kotlin.Unit>): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - label: STABLE (String is immutable)
+    - selected: STABLE (primitive type)
+    - enabled: STABLE (primitive type)
+    - onClick: STABLE (function type)
+
+@Composable
 internal fun com.alphito.kcal.feature.progress.presentation.components.StatLine(label: kotlin.String, value: @[Composable] androidx.compose.runtime.internal.ComposableFunction0<kotlin.Unit>): kotlin.Unit
   skippable: true
   restartable: true
   params:
     - label: STABLE (String is immutable)
     - value: STABLE (composable function type)
+
+@Composable
+private fun com.alphito.kcal.feature.progress.presentation.components.TrendChart(values: kotlinx.collections.immutable.ImmutableList<kotlin.Float?>, selectedSlot: kotlin.Int, onSelect: kotlin.Function1<kotlin.Int, kotlin.Unit>, onPageBack: kotlin.Function0<kotlin.Unit>, onPageForward: kotlin.Function0<kotlin.Unit>, canPageBack: kotlin.Boolean, canPageForward: kotlin.Boolean, description: kotlin.String): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - values: STABLE (known stable type)
+    - selectedSlot: STABLE (primitive type)
+    - onSelect: STABLE (function type)
+    - onPageBack: STABLE (function type)
+    - onPageForward: STABLE (function type)
+    - canPageBack: STABLE (primitive type)
+    - canPageForward: STABLE (primitive type)
+    - description: STABLE (String is immutable)
+
+@Composable
+internal fun com.alphito.kcal.feature.progress.presentation.components.WeightTrendCard(title: kotlin.String, values: kotlinx.collections.immutable.ImmutableList<kotlin.Float?>, labels: kotlinx.collections.immutable.ImmutableList<kotlin.String>, selectedSlot: kotlin.Int, hasData: kotlin.Boolean, emptyMessage: kotlin.String, onSelect: kotlin.Function1<kotlin.Int, kotlin.Unit>, canPageBack: kotlin.Boolean, canPageForward: kotlin.Boolean, onPageBack: kotlin.Function0<kotlin.Unit>, onPageForward: kotlin.Function0<kotlin.Unit>, description: kotlin.String, modifier: androidx.compose.ui.Modifier): kotlin.Unit
+  skippable: true
+  restartable: true
+  params:
+    - title: STABLE (String is immutable)
+    - values: STABLE (known stable type)
+    - labels: STABLE (known stable type)
+    - selectedSlot: STABLE (primitive type)
+    - hasData: STABLE (primitive type)
+    - emptyMessage: STABLE (String is immutable)
+    - onSelect: STABLE (function type)
+    - canPageBack: STABLE (primitive type)
+    - canPageForward: STABLE (primitive type)
+    - onPageBack: STABLE (function type)
+    - onPageForward: STABLE (function type)
+    - description: STABLE (String is immutable)
+    - modifier: STABLE (marked @Stable or @Immutable)
 
 @Composable
 private fun com.alphito.kcal.feature.progress.presentation.ui.AnimatedWeight(kg: kotlin.Double?, inLb: kotlin.Boolean, style: androidx.compose.ui.text.TextStyle): kotlin.Unit

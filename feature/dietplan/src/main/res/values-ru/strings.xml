@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Отлично! Осталось приёмов пищи: %1$s</string>
     <string name="checklist_msg_done">Все приёмы пищи выполнены – отличный день!</string>
     <string name="checklist_kcal">Съедено %1$s из %2$s ккал</string>
-    <string name="checklist_streak">🔥 Серия: %1$s дн.</string>
     <string name="checklist_celebrate">🎉 План на сегодня выполнен. Результат дают регулярность!</string>
     <string name="checklist_hint">Нажмите на блюдо, чтобы увидеть состав, или замените его, если сегодня не подходит.</string>
     <string name="tip_general_1">Сначала заполните половину тарелки овощами – порции сами станут разумнее.</string>

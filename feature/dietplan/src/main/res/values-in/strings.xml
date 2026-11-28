@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Bagus! Sisa makan: %1$s</string>
     <string name="checklist_msg_done">Semua makan selesai – hari yang hebat!</string>
     <string name="checklist_kcal">%1$s dari %2$s kkal dimakan</string>
-    <string name="checklist_streak">🔥 %1$s hari beruntun</string>
     <string name="checklist_celebrate">🎉 Rencana hari ini selesai. Konsistensi yang mengubah hasil!</string>
     <string name="checklist_hint">Ketuk makanan untuk melihat isinya, atau tukar jika hari ini tidak cocok.</string>
     <string name="tip_general_1">Isi setengah piring dengan sayur dulu – porsi jadi terkendali secara alami.</string>

@@ -9,12 +9,17 @@ import java.util.Locale
 
 enum class TrackingStatus { Idle, Tracking, NoSensor }
 
-/** Starts/stops the step foreground service and exposes whether it is running. */
+/**
+ * Starts/stops the step foreground service and exposes whether it is running. Also owns the
+ * "tracking on" preference, so every way of starting or stopping (screen, notification, boot) agrees.
+ */
 interface StepTrackingController {
     val status: StateFlow<TrackingStatus>
     val hasStepSensor: Boolean
     fun start()
     fun stop()
+    /** Restarts tracking the user left on (app launch, after a reboot) if it's still permitted. */
+    suspend fun resumeIfEnabled()
 }
 
 enum class HistoryRange { Months, Weeks, Days }

@@ -11,4 +11,6 @@
     <string name="progress_weight">Gewicht</string>
     <string name="progress_key_metrics">Wichtige Kennzahlen</string>
     <string name="progress_no_weight">Trage dein Gewicht ein, um deinen Trend zu sehen.</string>
+    <string name="progress_earlier">Frühere Zeiträume</string>
+    <string name="progress_later">Spätere Zeiträume</string>
 </resources>

@@ -9,7 +9,6 @@
     <string name="dash_eating">Makan</string>
     <string name="dash_streak">Beruntun</string>
     <string name="dash_kcal_value">%1$s kkal</string>
-    <string name="dash_streak_value">Hari ke-%1$d</string>
     <string name="dash_todays_meal">Menu hari ini</string>
     <string name="dash_view_all">Lihat semua</string>
     <string name="dash_up_next">%1$s · Berikutnya</string>

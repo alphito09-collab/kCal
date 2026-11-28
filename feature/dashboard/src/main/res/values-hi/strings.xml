@@ -9,7 +9,6 @@
     <string name="dash_eating">भोजन</string>
     <string name="dash_streak">लगातार दिन</string>
     <string name="dash_kcal_value">%1$s किलो कैलोरी</string>
-    <string name="dash_streak_value">दिन %1$d</string>
     <string name="dash_todays_meal">आज का भोजन</string>
     <string name="dash_view_all">सभी देखें</string>
     <string name="dash_up_next">%1$s · अगला</string>

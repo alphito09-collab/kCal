@@ -13,4 +13,8 @@
     <string name="weight_week">%1$d. hafta</string>
     <string name="weight_week_current">%1$d. hafta (bu hafta)</string>
     <string name="weight_empty">Henüz kayıt yok.</string>
+    <string name="weight_goal">Hedef: %1$s · %2$s kaldı</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">Planının hızıyla ≈ %1$d hafta</item><item quantity="other">Planının hızıyla ≈ %1$d hafta</item></plurals>
+    <string name="weight_goal_reached">Hedefe ulaşıldı: %1$s. Planın artık kilonu sabit tutuyor.</string>
+    <string name="weight_goal_bmi_note">Bu hedef sağlıklı VKİ aralığının (18,5–25) dışında.</string>
 </resources>

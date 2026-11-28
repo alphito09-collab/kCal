@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Bravo ! Repas restants : %1$s</string>
     <string name="checklist_msg_done">Tous les repas faits – belle journée !</string>
     <string name="checklist_kcal">%1$s sur %2$s kcal mangées</string>
-    <string name="checklist_streak">🔥 Série de %1$s jours</string>
     <string name="checklist_celebrate">🎉 Plan du jour terminé. C\'est la régularité qui change les résultats !</string>
     <string name="checklist_hint">Touchez un repas pour voir sa composition, ou remplacez-le s\'il ne vous convient pas aujourd\'hui.</string>
     <string name="tip_general_1">Remplissez d\'abord la moitié de l\'assiette de légumes – les portions restent naturellement raisonnables.</string>

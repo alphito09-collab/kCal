@@ -21,6 +21,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.alphito.kcal.core.designsystem.component.FoodThumb
 import com.alphito.kcal.core.designsystem.component.KcalBadge
@@ -57,16 +58,26 @@ internal fun MealSlotCard(slot: MealSlot, onSwap: (Long) -> Unit, onInfo: (Long)
 @Composable
 private fun PlannedItemRow(item: PlannedItem, onSwap: (Long) -> Unit, onInfo: (Long) -> Unit) {
     val colors = KcalTheme.colors
-    Row(Modifier.fillMaxWidth().padding(vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
         FoodThumb(item.food.imageKey, imageUrl = item.food.imageUrl, emoji = item.food.emoji, size = 36.dp, modifier = Modifier.kcalSharedElement(SharedKeys.mealImage(item.id)))
-        Spacer(Modifier.width(14.dp))
+        Spacer(Modifier.width(6.dp))
         // The whole text block opens the info sheet too – a bigger, friendlier target than the icon alone.
-        Column(Modifier.weight(1f).kcalClickable(shape = KcalShapes.sm) { onInfo(item.id) }) {
+        // kcalClickable clips to its rounded shape: the inner padding keeps glyphs (tall scripts, large
+        // font scales) clear of the corners. Row/Spacer above shrink by the same amount.
+        Column(
+            Modifier.weight(1f)
+                .kcalClickable(shape = KcalShapes.sm) { onInfo(item.id) }
+                .padding(horizontal = 8.dp, vertical = 6.dp),
+        ) {
             Text(
                 foodName(item.food), style = KcalTheme.typography.label, color = colors.textPrimary,
+                maxLines = 2, overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.kcalSharedElement(SharedKeys.mealTitle(item.id)),
             )
-            Text(portionText(item.food, item.servings), style = KcalTheme.typography.caption, color = colors.textSecondary, maxLines = 2)
+            Text(
+                portionText(item.food, item.servings), style = KcalTheme.typography.caption, color = colors.textSecondary,
+                maxLines = 2, overflow = TextOverflow.Ellipsis,
+            )
             Text(kcalCostLabel(item.kcal, item.food.cost), style = KcalTheme.typography.caption, color = colors.textSecondary)
         }
         InfoButton({ onInfo(item.id) })

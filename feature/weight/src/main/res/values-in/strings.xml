@@ -13,4 +13,8 @@
     <string name="weight_week">Minggu %1$d</string>
     <string name="weight_week_current">Minggu %1$d (minggu ini)</string>
     <string name="weight_empty">Belum ada catatan berat.</string>
+    <string name="weight_goal">Target: %1$s · %2$s lagi</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="other">≈ %1$d minggu dengan laju rencanamu</item></plurals>
+    <string name="weight_goal_reached">Target tercapai: %1$s. Rencanamu kini menjaga berat badanmu.</string>
+    <string name="weight_goal_bmi_note">Target ini di luar rentang BMI sehat (18,5–25).</string>
 </resources>

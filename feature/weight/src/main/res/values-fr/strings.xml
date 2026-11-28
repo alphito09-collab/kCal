@@ -13,4 +13,8 @@
     <string name="weight_week">Semaine %1$d</string>
     <string name="weight_week_current">Semaine %1$d (cette semaine)</string>
     <string name="weight_empty">Aucune pesée pour l\'instant.</string>
+    <string name="weight_goal">Objectif : %1$s · encore %2$s</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">≈ %1$d semaine au rythme de votre plan</item><item quantity="other">≈ %1$d semaines au rythme de votre plan</item></plurals>
+    <string name="weight_goal_reached">Objectif atteint : %1$s. Votre plan maintient désormais votre poids.</string>
+    <string name="weight_goal_bmi_note">Cet objectif est hors de la plage d\'IMC saine (18,5–25).</string>
 </resources>

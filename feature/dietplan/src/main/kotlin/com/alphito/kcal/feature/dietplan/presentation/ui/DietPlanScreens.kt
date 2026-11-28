@@ -43,8 +43,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.alphito.kcal.core.common.mvi.ObserveEffects
@@ -184,21 +186,24 @@ internal fun DietPlanScreen(state: DietPlanState, onIntent: (DietPlanIntent) -> 
     }
 }
 
-/** Planned kcal vs target, protein & fibre, and the "tuned for you" chips that open the explainer. */
+/**
+ * Actually eaten kcal (meals checked off as eaten) vs the day's calorie target, protein & fibre, and
+ * the "tuned for you" chips that open the explainer. Planned kcal are never counted as eaten.
+ */
 @Composable
 private fun DaySummaryCard(day: DayPlan, basis: PlanBasis, onHowItWorks: () -> Unit) {
     val colors = KcalTheme.colors
     val locale = appLocale()
     KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(horizontal = 18.dp, vertical = 16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            val progress = if (day.targetKcal > 0) (day.plannedKcal.toFloat() / day.targetKcal).coerceIn(0f, 1f) else 0f
+            val progress = if (day.targetKcal > 0) (day.eatenKcal.toFloat() / day.targetKcal).coerceIn(0f, 1f) else 0f
             ProgressRing(progress = progress, modifier = Modifier.size(58.dp), strokeWidth = 6.dp) {
                 Text(KcalFormat.int((progress * 100).toInt(), locale) + "%", style = KcalTheme.typography.labelSmall, color = colors.textBrand)
             }
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text(
-                    stringResource(R.string.diet_summary_planned, KcalFormat.int(day.plannedKcal, locale), KcalFormat.int(day.targetKcal, locale)),
+                    stringResource(R.string.checklist_kcal, KcalFormat.int(day.eatenKcal, locale), KcalFormat.int(day.targetKcal, locale)),
                     style = KcalTheme.typography.titleSmall, color = colors.textPrimary,
                 )
                 Spacer(Modifier.height(2.dp))
@@ -414,7 +419,8 @@ private fun ChecklistProgress(day: DayPlan, streak: Int) {
                 stringResource(R.string.checklist_kcal, KcalFormat.int(day.eatenKcal, locale), KcalFormat.int(day.targetKcal, locale)),
                 style = KcalTheme.typography.bodySmall, color = colors.textSecondary,
             )
-            if (streak > 0) Text(stringResource(R.string.checklist_streak, KcalFormat.int(streak, locale)), style = KcalTheme.typography.bodySmall, color = colors.textBrand)
+            // Hidden at 0: a new user has nothing to celebrate yet.
+            if (streak > 0) Text(pluralStringResource(R.plurals.checklist_streak, streak, KcalFormat.int(streak, locale)), style = KcalTheme.typography.bodySmall, color = colors.textBrand)
         }
     }
 }
@@ -423,15 +429,25 @@ private fun ChecklistProgress(day: DayPlan, streak: Int) {
 private fun ChecklistRow(slot: MealSlot, onIntent: (ChecklistIntent) -> Unit) {
     val colors = KcalTheme.colors
     val lead = slot.items.first()
-    Row(Modifier.fillMaxWidth().padding(vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
         FoodThumb(
             slot.leadImageKey, imageUrl = slot.leadImageUrl, emoji = slot.leadEmoji, size = 46.dp, shape = CircleShape,
             modifier = Modifier.kcalSharedElement(SharedKeys.mealImage(lead.id)),
         )
-        Spacer(Modifier.width(12.dp))
-        Column(Modifier.weight(1f).kcalClickable(shape = KcalShapes.sm) { onIntent(ChecklistIntent.ShowInfo(lead.id)) }) {
+        Spacer(Modifier.width(4.dp))
+        // kcalClickable clips to its rounded shape: the inner padding keeps every glyph (incl. tall
+        // Urdu/Arabic/Hindi ones and large font scales) clear of the corners. Row/Spacer above shrink
+        // by the same amount so the text sits where it did.
+        Column(
+            Modifier.weight(1f)
+                .kcalClickable(shape = KcalShapes.sm) { onIntent(ChecklistIntent.ShowInfo(lead.id)) }
+                .padding(horizontal = 8.dp, vertical = 6.dp),
+        ) {
             Text(slot.mealType.label(), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
-            Text(mealTitle(slot), style = KcalTheme.typography.titleSmall, color = colors.textPrimary)
+            Text(
+                mealTitle(slot), style = KcalTheme.typography.titleSmall, color = colors.textPrimary,
+                maxLines = 2, overflow = TextOverflow.Ellipsis,
+            )
             Text(kcalLabel(slot.totalKcal), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
         }
         InfoButton({ onIntent(ChecklistIntent.ShowInfo(lead.id)) })

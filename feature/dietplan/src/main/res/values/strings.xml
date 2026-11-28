@@ -97,7 +97,6 @@
     <string name="checklist_msg_progress">Nice work! Meals left: %1$s</string>
     <string name="checklist_msg_done">All meals done – great day!</string>
     <string name="checklist_kcal">%1$s of %2$s kcal eaten</string>
-    <string name="checklist_streak">🔥 %1$s-day streak</string>
     <string name="checklist_celebrate">🎉 You completed today\'s plan. Consistency is what changes results!</string>
     <string name="checklist_hint">Tap a meal to see what\'s in it, or swap it if it doesn\'t suit you today.</string>
     <!-- Tips -->

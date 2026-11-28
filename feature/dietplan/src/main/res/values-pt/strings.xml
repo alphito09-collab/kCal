@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Muito bem! Refeições restantes: %1$s</string>
     <string name="checklist_msg_done">Todas as refeições feitas – ótimo dia!</string>
     <string name="checklist_kcal">%1$s de %2$s kcal consumidas</string>
-    <string name="checklist_streak">🔥 Sequência de %1$s dias</string>
     <string name="checklist_celebrate">🎉 Você completou o plano de hoje. Constância é o que traz resultados!</string>
     <string name="checklist_hint">Toque numa refeição para ver o que tem, ou troque se hoje não combinar.</string>
     <string name="tip_general_1">Encha metade do prato com legumes primeiro – as porções ficam naturalmente sob controle.</string>

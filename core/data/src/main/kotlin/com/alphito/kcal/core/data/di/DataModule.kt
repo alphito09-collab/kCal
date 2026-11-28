@@ -2,6 +2,8 @@ package com.alphito.kcal.core.data.di
 
 import com.alphito.kcal.core.data.domain.MealPlanGenerator
 import com.alphito.kcal.core.data.repository.AccountRepository
+import com.alphito.kcal.core.data.repository.CaloriePlanRepository
+import com.alphito.kcal.core.data.repository.CaloriePlanRepositoryImpl
 import com.alphito.kcal.core.data.repository.CatalogRepository
 import com.alphito.kcal.core.data.repository.CatalogRepositoryImpl
 import com.alphito.kcal.core.data.sync.CatalogSyncWorker
@@ -14,6 +16,8 @@ import com.alphito.kcal.core.data.repository.PreferencesRepositoryImpl
 import com.alphito.kcal.core.data.repository.SampleDataSeeder
 import com.alphito.kcal.core.data.repository.StepsRepository
 import com.alphito.kcal.core.data.repository.StepsRepositoryImpl
+import com.alphito.kcal.core.data.repository.TrackingStartRepository
+import com.alphito.kcal.core.data.repository.TrackingStartRepositoryImpl
 import com.alphito.kcal.core.data.repository.UserRepository
 import com.alphito.kcal.core.data.repository.UserRepositoryImpl
 import com.alphito.kcal.core.data.repository.WeightRepository
@@ -32,6 +36,8 @@ val dataModule = module {
     singleOf(::PreferencesRepositoryImpl) { bind<PreferencesRepository>() }
     singleOf(::MealPlanRepositoryImpl) { bind<MealPlanRepository>() }
     singleOf(::StepsRepositoryImpl) { bind<StepsRepository>() }
+    singleOf(::CaloriePlanRepositoryImpl) { bind<CaloriePlanRepository>() }
+    singleOf(::TrackingStartRepositoryImpl) { bind<TrackingStartRepository>() }
     singleOf(::WeightRepositoryImpl) { bind<WeightRepository>() }
     singleOf(::AccountRepositoryImpl) { bind<AccountRepository>() }
     singleOf(::SampleDataSeeder)

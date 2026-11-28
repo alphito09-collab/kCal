@@ -37,7 +37,7 @@ class KcalApplication : Application() {
             androidContext(this@KcalApplication)
             properties(
                 mapOf(
-                    SAMPLE_DATA_PROPERTY to BuildConfig.DEBUG,
+                    SAMPLE_DATA_PROPERTY to (BuildConfig.DEBUG && BuildConfig.SEED_SAMPLE_DATA),
                     // Debug fetches Remote Config every minute so console changes show up quickly.
                     REMOTE_CONFIG_INTERVAL_PROPERTY to if (BuildConfig.DEBUG) 60L else 3600L,
                     ADMOB_APP_ID_PROPERTY to BuildConfig.ADMOB_APP_ID,

@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Resume step tracking after a reboot if the user left it on. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application>
         <!-- Step counting runs as a short, user-started health foreground service. -->
@@ -20,5 +22,15 @@
         <receiver
             android:name=".data.service.StepTrackingReceiver"
             android:exported="false" />
+
+        <!-- Restarts tracking after boot / app update when it was on (no-op otherwise). -->
+        <receiver
+            android:name=".data.service.StepTrackingBootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

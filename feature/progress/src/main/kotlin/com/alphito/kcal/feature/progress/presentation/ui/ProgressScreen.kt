@@ -42,7 +42,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.alphito.kcal.core.designsystem.chart.KcalLineChart
 import com.alphito.kcal.core.designsystem.component.KcalBadge
 import com.alphito.kcal.core.designsystem.component.KcalCard
 import com.alphito.kcal.core.designsystem.component.SegmentedControl
@@ -55,6 +54,8 @@ import com.alphito.kcal.feature.progress.R
 import com.alphito.kcal.feature.progress.domain.ProgressPeriod
 import com.alphito.kcal.feature.progress.presentation.components.MetricTile
 import com.alphito.kcal.feature.progress.presentation.components.StatLine
+import com.alphito.kcal.feature.progress.presentation.components.WeightTrendCard
+import com.alphito.kcal.feature.progress.domain.ProgressCalculator
 import com.alphito.kcal.feature.progress.presentation.mvi.ProgressIntent
 import com.alphito.kcal.feature.progress.presentation.mvi.ProgressState
 import com.alphito.kcal.feature.progress.presentation.mvi.ProgressViewModel
@@ -77,15 +78,16 @@ internal fun ProgressScreen(state: ProgressState, onIntent: (ProgressIntent) -> 
     val colors = KcalTheme.colors
     val locale = appLocale()
     val weekLabel = stringResource(R.string.progress_week_label)
-    val labels = remember(state.stats, state.period, locale) {
-        state.stats.mapIndexed { i, s ->
-            if (state.period == ProgressPeriod.Weekly) String.format(locale, weekLabel, i + 1)
-            else s.start.month.getDisplayName(DateTextStyle.SHORT, locale)
+    val slots = state.slots
+    // Upcoming periods keep their label (Wk 3 / Dec) but have no point.
+    val labels = remember(slots, state.period, state.startDate, locale) {
+        slots.map { index ->
+            if (state.period == ProgressPeriod.Weekly) String.format(locale, weekLabel, index + 1)
+            else ProgressCalculator.bounds(state.period, state.startDate, index).first.month.getDisplayName(DateTextStyle.SHORT, locale)
         }.toImmutableList()
     }
-    val values = remember(state.stats, state.weightInLb) {
-        var last = state.stats.firstOrNull { it.weightKg != null }?.weightKg ?: 0.0
-        state.stats.map { s -> WeightUnits.display(s.weightKg ?: last, state.weightInLb).also { last = s.weightKg ?: last }.toFloat() }.toImmutableList()
+    val values = remember(slots, state.stats, state.weightInLb) {
+        slots.map { index -> state.stats.getOrNull(index)?.weightKg?.let { WeightUnits.display(it, state.weightInLb).toFloat() } }.toImmutableList()
     }
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).statusBarsPadding().padding(horizontal = 20.dp),
@@ -98,14 +100,21 @@ internal fun ProgressScreen(state: ProgressState, onIntent: (ProgressIntent) -> 
             state.period.ordinal, { onIntent(ProgressIntent.SelectPeriod(ProgressPeriod.entries[it])) }, height = 52.dp,
         )
         Spacer(Modifier.height(14.dp))
-        KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(start = 24.dp, end = 20.dp, top = 22.dp, bottom = 20.dp)) {
-            Text(stringResource(R.string.progress_weight_trend), style = KcalTheme.typography.titleMedium, color = colors.textBrand)
-            Spacer(Modifier.height(16.dp))
-            if (state.hasWeight) {
-                KcalLineChart(values, labels, state.selected, { onIntent(ProgressIntent.SelectBucket(it)) }, chartHeight = 130.dp)
-            } else {
-                Text(stringResource(R.string.progress_no_weight), style = KcalTheme.typography.body, color = colors.textSecondary)
-            }
+        if (state.loaded) {
+            WeightTrendCard(
+                title = stringResource(R.string.progress_weight_trend),
+                values = values,
+                labels = labels,
+                selectedSlot = slots.indexOf(state.selected),
+                hasData = state.hasWeighIns,
+                emptyMessage = stringResource(R.string.progress_no_weight),
+                onSelect = { slot -> onIntent(ProgressIntent.SelectBucket(slots[slot])) },
+                canPageBack = state.canPageBack,
+                canPageForward = state.canPageForward,
+                onPageBack = { onIntent(ProgressIntent.PageBack) },
+                onPageForward = { onIntent(ProgressIntent.PageForward) },
+                description = stringResource(R.string.progress_weight_trend),
+            )
         }
         Spacer(Modifier.height(14.dp))
         val current = state.current
@@ -145,7 +154,9 @@ private fun PeriodSummaryCard(state: ProgressState) {
     val index = state.selected
     val period = state.period
     val title = if (period == ProgressPeriod.Weekly) {
-        stringResource(R.string.progress_week_title, index + 1, rangeText(localizedDate(s.start, "MMMd"), localizedDate(s.end, "MMMd")))
+        // A week that's only one day old shows that day, not "Nov 25 – Nov 25".
+        val dates = if (s.start == s.end) localizedDate(s.start, "MMMd") else rangeText(localizedDate(s.start, "MMMd"), localizedDate(s.end, "MMMd"))
+        stringResource(R.string.progress_week_title, index + 1, dates)
     } else localizedDate(s.start, "MMMMyyyy")
 
     KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(24.dp)) {

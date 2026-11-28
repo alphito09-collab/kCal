@@ -62,12 +62,15 @@ internal fun StepsRoute() {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val permissions = remember {
         buildList {
-            add(Manifest.permission.ACTIVITY_RECOGNITION)
+            // A runtime permission only from Android 10; on Android 9 step sensors need none.
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) add(Manifest.permission.ACTIVITY_RECOGNITION)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) add(Manifest.permission.POST_NOTIFICATIONS)
         }.toTypedArray()
     }
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
-        viewModel.onIntent(StepsIntent.PermissionsResult(result[Manifest.permission.ACTIVITY_RECOGNITION] == true))
+        viewModel.onIntent(
+            StepsIntent.PermissionsResult(Build.VERSION.SDK_INT < Build.VERSION_CODES.Q || result[Manifest.permission.ACTIVITY_RECOGNITION] == true),
+        )
     }
     ObserveEffects(viewModel.effects) {
         when (it) {

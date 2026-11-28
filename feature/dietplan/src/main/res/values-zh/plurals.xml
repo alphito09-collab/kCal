@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="checklist_streak"><item quantity="other">🔥 连续 %1$s 天</item></plurals>
+</resources>

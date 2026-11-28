@@ -32,7 +32,7 @@ const val SAMPLE_DATA_PROPERTY = "kcal.sampleData"
 @OptIn(KoinExperimentalAPI::class)
 val onboardingModule = module {
     factory {
-        CompleteOnboardingUseCase(get(), get(), get(), get(), get(), get(), getProperty(SAMPLE_DATA_PROPERTY, false))
+        CompleteOnboardingUseCase(get(), get(), get(), get(), get(), get(), get(), getProperty(SAMPLE_DATA_PROPERTY, false))
     }
     factoryOf(::RegeneratePlanUseCase)
 

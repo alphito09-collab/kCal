@@ -76,6 +76,9 @@ data class PlannedItemEntity(
     @ColumnInfo(defaultValue = "1.0") val servings: Double = 1.0,
 )
 
+/** Query result: one meal slot on one day (not a table). */
+data class DayMeal(val epochDay: Long, val mealType: String)
+
 @Entity(tableName = "meal_check", primaryKeys = ["epochDay", "mealType"])
 data class MealCheckEntity(
     val epochDay: Long,

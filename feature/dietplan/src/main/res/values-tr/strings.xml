@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">Harika! Kalan öğün: %1$s</string>
     <string name="checklist_msg_done">Tüm öğünler tamam – harika bir gün!</string>
     <string name="checklist_kcal">%2$s kcal\'nin %1$s\'i yendi</string>
-    <string name="checklist_streak">🔥 %1$s günlük seri</string>
     <string name="checklist_celebrate">🎉 Bugünkü planı tamamladın. Sonucu değiştiren tutarlılıktır!</string>
     <string name="checklist_hint">Bir öğüne dokunup içeriğini gör ya da bugün sana uymuyorsa değiştir.</string>
     <string name="tip_general_1">Önce tabağının yarısını sebzeyle doldur – porsiyonlar kendiliğinden dengelenir.</string>

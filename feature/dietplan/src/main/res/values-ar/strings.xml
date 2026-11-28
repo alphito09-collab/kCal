@@ -93,7 +93,6 @@
     <string name="checklist_msg_progress">أحسنت! الوجبات المتبقية: %1$s</string>
     <string name="checklist_msg_done">كل الوجبات مكتملة – يوم رائع!</string>
     <string name="checklist_kcal">تم تناول %1$s من %2$s سعرة</string>
-    <string name="checklist_streak">🔥 سلسلة %1$s أيام</string>
     <string name="checklist_celebrate">🎉 أكملت خطة اليوم. الاستمرارية هي ما يصنع النتائج!</string>
     <string name="checklist_hint">اضغط على وجبة لترى مكوناتها، أو استبدلها إن لم تناسبك اليوم.</string>
     <string name="tip_general_1">املأ نصف طبقك بالخضار أولًا – هذا يضبط الحصص تلقائيًا.</string>

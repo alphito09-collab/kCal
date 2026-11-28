@@ -23,12 +23,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.alphito.kcal.core.common.mvi.ObserveEffects
+import com.alphito.kcal.core.designsystem.chart.SplitBar
 import com.alphito.kcal.core.designsystem.component.BigNumberField
 import com.alphito.kcal.core.designsystem.component.KcalBadge
 import com.alphito.kcal.core.designsystem.component.KcalButton
@@ -39,6 +41,7 @@ import com.alphito.kcal.core.designsystem.component.UnitToggle
 import com.alphito.kcal.core.designsystem.motion.KcalMotion
 import com.alphito.kcal.core.designsystem.theme.KcalTheme
 import com.alphito.kcal.core.designsystem.util.KcalFormat
+import com.alphito.kcal.core.model.GoalProgress
 import com.alphito.kcal.core.navigation.LocalNavigator
 import com.alphito.kcal.core.navigation.SharedKeys
 import com.alphito.kcal.feature.weight.R
@@ -97,6 +100,7 @@ internal fun WeightScreen(state: WeightState, onIntent: (WeightIntent) -> Unit) 
                     KcalBadge(state.change?.let { weightChangeText(it, state.weightInLb) } ?: "–")
                 }
             }
+            state.goal?.let { GoalProgressSection(it, state.weightInLb) }
         }
         Spacer(Modifier.height(16.dp))
         KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(24.dp)) {
@@ -118,6 +122,30 @@ internal fun WeightScreen(state: WeightState, onIntent: (WeightIntent) -> Unit) 
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun GoalProgressSection(goal: GoalProgress, inLb: Boolean) {
+    val colors = KcalTheme.colors
+    Spacer(Modifier.height(16.dp))
+    KcalDivider()
+    Spacer(Modifier.height(14.dp))
+    val target = weightText(goal.targetWeightKg, inLb)
+    Text(
+        if (goal.reached) stringResource(R.string.weight_goal_reached, target)
+        else stringResource(R.string.weight_goal, target, weightText(goal.remainingKg, inLb)),
+        style = KcalTheme.typography.titleSmall, color = colors.textBrand,
+    )
+    Spacer(Modifier.height(10.dp))
+    SplitBar(goal.fraction, Modifier.fillMaxWidth().height(8.dp))
+    goal.weeksToGoal?.let { weeks ->
+        Spacer(Modifier.height(8.dp))
+        Text(pluralStringResource(R.plurals.weight_weeks_to_goal, weeks, weeks), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
+    }
+    if (goal.targetOutsideHealthyBmi) {
+        Spacer(Modifier.height(6.dp))
+        Text(stringResource(R.string.weight_goal_bmi_note), style = KcalTheme.typography.bodySmall, color = colors.textSecondary)
     }
 }
 

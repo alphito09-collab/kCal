@@ -13,4 +13,8 @@
     <string name="weight_week">الأسبوع %1$d</string>
     <string name="weight_week_current">الأسبوع %1$d (هذا الأسبوع)</string>
     <string name="weight_empty">لا توجد قياسات بعد.</string>
+    <string name="weight_goal">الهدف: %1$s · متبقٍ %2$s</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="zero">≈ %1$d أسبوع بوتيرة خطتك</item><item quantity="one">≈ أسبوع واحد بوتيرة خطتك</item><item quantity="two">≈ أسبوعان بوتيرة خطتك</item><item quantity="few">≈ %1$d أسابيع بوتيرة خطتك</item><item quantity="many">≈ %1$d أسبوعًا بوتيرة خطتك</item><item quantity="other">≈ %1$d أسبوع بوتيرة خطتك</item></plurals>
+    <string name="weight_goal_reached">تم بلوغ الهدف: %1$s. خطتك الآن تحافظ على وزنك ثابتًا.</string>
+    <string name="weight_goal_bmi_note">هذا الهدف خارج نطاق مؤشر كتلة الجسم الصحي (18.5–25).</string>
 </resources>

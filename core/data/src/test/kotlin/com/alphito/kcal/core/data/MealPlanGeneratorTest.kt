@@ -159,7 +159,7 @@ class MealPlanGeneratorTest {
     @Test fun `insights explain the meal for the user's condition and goal`() {
         val profile = ayesha.copy(conditions = persistentSetOf(HealthCondition.Diabetes))
         val item = PlannedItem(1, monday, MealType.Lunch, 0, byId.getValue("daal_chawal"))
-        val reasons = MealInsights.reasons(item, profile)
+        val reasons = MealInsights.reasons(item, profile, EnergyCalculator.dailyIntakeTarget(profile))
         assertTrue(MealReason.GentleOnBloodSugar in reasons)
         assertTrue(reasons.any { it is MealReason.FitsTarget })
         assertTrue(MealReason.LocalDish in reasons)

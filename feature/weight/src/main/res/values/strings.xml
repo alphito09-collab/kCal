@@ -13,4 +13,8 @@
     <string name="weight_week">Week %1$d</string>
     <string name="weight_week_current">Week %1$d (this week)</string>
     <string name="weight_empty">No weigh-ins yet.</string>
+    <string name="weight_goal">Goal: %1$s · %2$s to go</string>
+    <plurals name="weight_weeks_to_goal"><item quantity="one">≈ %1$d week at your plan\'s pace</item><item quantity="other">≈ %1$d weeks at your plan\'s pace</item></plurals>
+    <string name="weight_goal_reached">Goal reached: %1$s. Your plan now keeps your weight steady.</string>
+    <string name="weight_goal_bmi_note">This target is outside the healthy BMI range (18.5–25).</string>
 </resources>
