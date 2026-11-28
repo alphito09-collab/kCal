@@ -42,7 +42,8 @@ class ObserveDashboardUseCase(
             DashboardSnapshot(
                 firstName = profile?.name?.substringBefore(' ').orEmpty(),
                 eatenKcal = day?.eatenKcal ?: 0,
-                targetKcal = profile?.let(EnergyCalculator::dailyIntakeTarget) ?: 0,
+                // Same number the diet plan shows: the day carries the target from the calorie plan.
+                targetKcal = day?.targetKcal ?: 0,
                 stepsKcal = EnergyCalculator.stepsToKcal(todaySteps),
                 streakDays = streak,
                 nextMeal = day?.nextUnchecked,

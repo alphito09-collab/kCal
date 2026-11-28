@@ -23,6 +23,8 @@ android {
         buildConfigField("String", "ADMOB_APP_ID", "\"$admobAppId\"")
         // UMP (consent) reads the app id from the manifest.
         manifestPlaceholders["admobAppId"] = admobAppId
+        // Debug chart history is opt-in: `./gradlew installDebug -Pkcal.sampleData=true`.
+        buildConfigField("boolean", "SEED_SAMPLE_DATA", (findProperty("kcal.sampleData") == "true").toString())
         buildConfigField(
             "String", "ADMOB_SPLASH_UNIT",
             "\"${adProperty("kcal.admob.splashUnit", "ca-app-pub-3940256099942544/1033173712")}\"",

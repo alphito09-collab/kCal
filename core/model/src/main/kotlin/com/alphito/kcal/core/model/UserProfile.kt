@@ -32,20 +32,19 @@ data class UserProfile(
     val region: String = Regions.DEFAULT_COUNTRY,
     val budget: BudgetTier = BudgetTier.Medium,
     val conditions: ImmutableSet<HealthCondition> = persistentSetOf(),
+    /** Weight-loss split: the user covers [stepsDeficitKcal] of [dailyDeficitKcal] with extra steps. See [EnergyCalculator.plan]. */
     val addStepsToDeficit: Boolean = true,
     val dailyDeficitKcal: Int = DEFAULT_DEFICIT_KCAL,
     val stepsDeficitKcal: Int = DEFAULT_STEPS_KCAL,
 ) {
-    val dietDeficitKcal: Int
-        get() = if (addStepsToDeficit) (dailyDeficitKcal - stepsDeficitKcal).coerceAtLeast(0) else dailyDeficitKcal
-
     val initials: String
         get() = name.trim().split(Regex("\\s+")).filter { it.isNotEmpty() }
             .take(2).joinToString("") { it.first().uppercase() }.ifEmpty { "K" }
 
     companion object {
-        const val DEFAULT_DEFICIT_KCAL = 1_000
-        const val DEFAULT_STEPS_KCAL = 300
-        const val DEFAULT_SURPLUS_KCAL = 400
+        /** Fallback only. Onboarding stores [EnergyCalculator.recommendedDeficit] for the user. */
+        const val DEFAULT_DEFICIT_KCAL = 500
+        /** ≈ 3,000 steps above the everyday baseline. */
+        const val DEFAULT_STEPS_KCAL = 150
     }
 }

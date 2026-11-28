@@ -12,6 +12,8 @@ interface PreferencesRepository {
     val preferences: Flow<AppPreferences>
     suspend fun snapshot(): AppPreferences
     suspend fun setOnboardingComplete(value: Boolean)
+    /** Records the day onboarding finished; the meal streak only counts from then. */
+    suspend fun setOnboardingDay(date: java.time.LocalDate)
     suspend fun setIntroSeen(value: Boolean)
     suspend fun setHeightInFeet(value: Boolean)
     suspend fun setWeightInLb(value: Boolean)
@@ -29,6 +31,7 @@ internal class PreferencesRepositoryImpl(private val source: PreferencesDataSour
     override val preferences: Flow<AppPreferences> = source.preferences
     override suspend fun snapshot(): AppPreferences = source.preferences.first()
     override suspend fun setOnboardingComplete(value: Boolean) { source.setOnboardingComplete(value) }
+    override suspend fun setOnboardingDay(date: java.time.LocalDate) { source.setOnboardingDay(date.toEpochDay()) }
     override suspend fun setIntroSeen(value: Boolean) { source.setIntroSeen(value) }
     override suspend fun setHeightInFeet(value: Boolean) { source.setHeightInFeet(value) }
     override suspend fun setWeightInLb(value: Boolean) { source.setWeightInLb(value) }

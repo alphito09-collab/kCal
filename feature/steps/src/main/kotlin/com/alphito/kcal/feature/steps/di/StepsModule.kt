@@ -1,5 +1,6 @@
 package com.alphito.kcal.feature.steps.di
 
+import com.alphito.kcal.core.common.di.ApplicationScope
 import com.alphito.kcal.core.navigation.NavMotion
 import com.alphito.kcal.core.navigation.Route
 import com.alphito.kcal.feature.steps.data.service.StepTrackingControllerImpl
@@ -14,7 +15,7 @@ import org.koin.dsl.navigation3.navigation
 
 @OptIn(KoinExperimentalAPI::class)
 val stepsModule = module {
-    single<StepTrackingController> { StepTrackingControllerImpl(androidContext()) }
+    single<StepTrackingController> { StepTrackingControllerImpl(androidContext(), get(), get(ApplicationScope)) }
     viewModelOf(::StepsViewModel)
     navigation<Route.Steps>(metadata = NavMotion.Container) { StepsRoute() }
 }

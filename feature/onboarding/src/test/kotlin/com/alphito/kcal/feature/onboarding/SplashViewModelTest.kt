@@ -76,6 +76,7 @@ class SplashViewModelTest {
         override val preferences: Flow<AppPreferences> = flowOf(prefs)
         override suspend fun snapshot() = prefs
         override suspend fun setOnboardingComplete(value: Boolean) = Unit
+        override suspend fun setOnboardingDay(date: java.time.LocalDate) = Unit
         override suspend fun setIntroSeen(value: Boolean) = Unit
         override suspend fun setHeightInFeet(value: Boolean) = Unit
         override suspend fun setWeightInLb(value: Boolean) = Unit

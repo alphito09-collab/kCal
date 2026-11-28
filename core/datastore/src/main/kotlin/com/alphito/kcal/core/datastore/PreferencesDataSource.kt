@@ -43,11 +43,27 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
         .distinctUntilChanged()
 
     suspend fun setOnboardingComplete(value: Boolean) = store.edit { it[ONBOARDED] = value }
+    /** Epoch day onboarding finished: days before it never count toward the meal streak. */
+    val onboardingDay: Flow<Long?> = store.data
+        .catch { error -> if (error is IOException) emit(emptyPreferences()) else throw error }
+        .map { it[ONBOARDED_DAY] }
+        .distinctUntilChanged()
+    suspend fun setOnboardingDay(epochDay: Long) = store.edit { it[ONBOARDED_DAY] = epochDay }
+
+    /** Epoch day the user started tracking (Progress week 1 / first month). Written once, never moved. */
+    val trackingStartDay: Flow<Long?> = store.data
+        .catch { error -> if (error is IOException) emit(emptyPreferences()) else throw error }
+        .map { it[TRACKING_START_DAY] }
+        .distinctUntilChanged()
+    suspend fun initTrackingStartDay(epochDay: Long) = store.edit { if (it[TRACKING_START_DAY] == null) it[TRACKING_START_DAY] = epochDay }
     suspend fun catalogVersion(): Long = store.data.map { it[CATALOG_VERSION] ?: 0L }.first()
     suspend fun setCatalogVersion(value: Long) = store.edit { it[CATALOG_VERSION] = value }
     /** Catalogue version the current plan was generated from. */
     suspend fun planCatalogVersion(): Long = store.data.map { it[PLAN_CATALOG_VERSION] ?: 0L }.first()
     suspend fun setPlanCatalogVersion(value: Long) = store.edit { it[PLAN_CATALOG_VERSION] = value }
+    /** Daily calorie target the current plan's portions were sized for. 0 = not recorded yet. */
+    suspend fun planTargetKcal(): Int = store.data.map { it[PLAN_TARGET_KCAL] ?: 0 }.first()
+    suspend fun setPlanTargetKcal(value: Int) = store.edit { it[PLAN_TARGET_KCAL] = value }
     suspend fun setIntroSeen(value: Boolean) = store.edit { it[INTRO_SEEN] = value }
     suspend fun setHeightInFeet(value: Boolean) = store.edit { it[HEIGHT_FEET] = value }
     suspend fun setWeightInLb(value: Boolean) = store.edit { it[WEIGHT_LB] = value }
@@ -86,8 +102,11 @@ class PreferencesDataSource(context: Context, scope: CoroutineScope) {
 
     private companion object {
         val ONBOARDED = booleanPreferencesKey("onboarding_complete")
+        val ONBOARDED_DAY = androidx.datastore.preferences.core.longPreferencesKey("onboarding_day")
+        val TRACKING_START_DAY = androidx.datastore.preferences.core.longPreferencesKey("tracking_start_day")
         val CATALOG_VERSION = androidx.datastore.preferences.core.longPreferencesKey("catalog_version")
         val PLAN_CATALOG_VERSION = androidx.datastore.preferences.core.longPreferencesKey("plan_catalog_version")
+        val PLAN_TARGET_KCAL = androidx.datastore.preferences.core.intPreferencesKey("plan_target_kcal")
         val INTRO_SEEN = booleanPreferencesKey("intro_seen")
         val HEIGHT_FEET = booleanPreferencesKey("height_in_feet")
         val WEIGHT_LB = booleanPreferencesKey("weight_in_lb")

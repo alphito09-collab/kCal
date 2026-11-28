@@ -2,7 +2,8 @@ package com.alphito.kcal.feature.weight.domain
 
 import com.alphito.kcal.core.model.WeightEntry
 
-data class WeightSummary(val current: Double?, val previous: Double?, val recent: List<WeightEntry>) {
+/** [start] is the first weigh-in (logged at onboarding), the baseline for goal progress. */
+data class WeightSummary(val current: Double?, val previous: Double?, val recent: List<WeightEntry>, val start: Double? = null) {
     val change: Double? get() = if (current != null && previous != null) current - previous else null
 }
 
@@ -14,6 +15,7 @@ object SummarizeWeights {
             current = sorted.lastOrNull()?.weightKg,
             previous = sorted.getOrNull(sorted.lastIndex - 1)?.weightKg,
             recent = sorted.takeLast(4),
+            start = sorted.firstOrNull()?.weightKg,
         )
     }
 }

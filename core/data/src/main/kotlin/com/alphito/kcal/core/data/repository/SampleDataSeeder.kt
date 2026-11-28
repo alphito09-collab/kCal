@@ -2,40 +2,42 @@ package com.alphito.kcal.core.data.repository
 
 import com.alphito.kcal.core.common.dispatcher.DispatcherProvider
 import com.alphito.kcal.core.database.dao.HealthLogDao
-import com.alphito.kcal.core.database.dao.MealPlanDao
 import com.alphito.kcal.core.database.dao.StepsDao
 import com.alphito.kcal.core.database.dao.WeightDao
 import com.alphito.kcal.core.database.entity.DairyLogEntity
 import com.alphito.kcal.core.database.entity.IbsLogEntity
-import com.alphito.kcal.core.database.entity.MealCheckEntity
 import com.alphito.kcal.core.database.entity.StepsEntity
 import com.alphito.kcal.core.database.entity.SugarEntity
 import com.alphito.kcal.core.database.entity.WeightEntity
-import com.alphito.kcal.core.model.MealType
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import java.time.LocalDate
 import kotlin.math.sin
 
 /**
- * DEBUG BUILDS ONLY – fills history so charts look like the Figma screens during development.
- * Wired in the app module behind `BuildConfig.DEBUG`; release builds start with empty history.
+ * DEBUG BUILDS ONLY, opt-in – fills chart history (weights, steps, health logs) for development.
+ * Never writes meal checks: those drive the streak and calorie history, which must start empty.
+ * Enabled with `-Pkcal.sampleData=true` on a debug build (see app/build.gradle.kts).
  */
 class SampleDataSeeder internal constructor(
     private val weightDao: WeightDao,
     private val stepsDao: StepsDao,
     private val healthLogDao: HealthLogDao,
-    private val mealPlanDao: MealPlanDao,
     private val dispatchers: DispatcherProvider,
 ) {
-    suspend fun seed(today: LocalDate, currentWeightKg: Double) = withContext(dispatchers.io) {
-        if (weightDao.observeAll().first().isNotEmpty()) return@withContext
-        // Six weekly weigh-ins trending down to the current weight.
+    /**
+     * Seeds [HISTORY_DAYS] days ending yesterday and returns the first seeded day, which becomes the
+     * tracking start date (so Progress never shows fake data from before it). null if nothing was seeded.
+     */
+    suspend fun seed(today: LocalDate, currentWeightKg: Double): LocalDate? = withContext(dispatchers.io) {
+        if (weightDao.observeAll().first().isNotEmpty()) return@withContext null
+        val firstDay = today.minusDays(HISTORY_DAYS.toLong())
+        // Weekly weigh-ins from the first day, trending down to the current weight (logged today).
         listOf(1.8, 1.4, 1.0, 0.6, 0.3, 0.0).forEachIndexed { i, delta ->
-            weightDao.upsert(WeightEntity(today.minusWeeks((5 - i).toLong()).toEpochDay(), currentWeightKg + delta))
+            weightDao.upsert(WeightEntity(firstDay.plusWeeks(i.toLong()).toEpochDay(), currentWeightKg + delta))
         }
-        // ~6 months of daily steps with a gentle weekly rhythm.
-        for (d in 1..180) {
+        // Six weeks of daily steps with a gentle weekly rhythm.
+        for (d in 1..HISTORY_DAYS) {
             val day = today.minusDays(d.toLong())
             val steps = (6_800 + 1_900 * sin(d / 3.0) + (d % 7) * 160).toInt().coerceAtLeast(1_500)
             stepsDao.upsert(StepsEntity(day.toEpochDay(), steps))
@@ -53,9 +55,8 @@ class SampleDataSeeder internal constructor(
             DairyLogEntity(today.minusDays(10).toEpochDay(), true, "Gas,Bloating", "after ice cream"),
             DairyLogEntity(today.minusDays(14).toEpochDay(), false, "", ""),
         ).forEach { healthLogDao.upsertDairy(it) }
-        // A short streak so the dashboard shows "Day 3".
-        for (d in 1..2) MealType.entries.forEach {
-            mealPlanDao.upsertCheck(MealCheckEntity(today.minusDays(d.toLong()).toEpochDay(), it.name, true))
-        }
+        firstDay
     }
+
+    private companion object { const val HISTORY_DAYS = 41 }
 }

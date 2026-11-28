@@ -186,21 +186,24 @@ internal fun DietPlanScreen(state: DietPlanState, onIntent: (DietPlanIntent) -> 
     }
 }
 
-/** Planned kcal vs target, protein & fibre, and the "tuned for you" chips that open the explainer. */
+/**
+ * Actually eaten kcal (meals checked off as eaten) vs the day's calorie target, protein & fibre, and
+ * the "tuned for you" chips that open the explainer. Planned kcal are never counted as eaten.
+ */
 @Composable
 private fun DaySummaryCard(day: DayPlan, basis: PlanBasis, onHowItWorks: () -> Unit) {
     val colors = KcalTheme.colors
     val locale = appLocale()
     KcalCard(Modifier.fillMaxWidth(), contentPadding = PaddingValues(horizontal = 18.dp, vertical = 16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            val progress = if (day.targetKcal > 0) (day.plannedKcal.toFloat() / day.targetKcal).coerceIn(0f, 1f) else 0f
+            val progress = if (day.targetKcal > 0) (day.eatenKcal.toFloat() / day.targetKcal).coerceIn(0f, 1f) else 0f
             ProgressRing(progress = progress, modifier = Modifier.size(58.dp), strokeWidth = 6.dp) {
                 Text(KcalFormat.int((progress * 100).toInt(), locale) + "%", style = KcalTheme.typography.labelSmall, color = colors.textBrand)
             }
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text(
-                    stringResource(R.string.diet_summary_planned, KcalFormat.int(day.plannedKcal, locale), KcalFormat.int(day.targetKcal, locale)),
+                    stringResource(R.string.checklist_kcal, KcalFormat.int(day.eatenKcal, locale), KcalFormat.int(day.targetKcal, locale)),
                     style = KcalTheme.typography.titleSmall, color = colors.textPrimary,
                 )
                 Spacer(Modifier.height(2.dp))

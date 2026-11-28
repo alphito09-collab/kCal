@@ -9,6 +9,7 @@ import com.alphito.kcal.core.database.entity.DailyWater
 import com.alphito.kcal.core.database.entity.DairyLogEntity
 import com.alphito.kcal.core.database.entity.FoodEntity
 import com.alphito.kcal.core.database.entity.IbsLogEntity
+import com.alphito.kcal.core.database.entity.DayMeal
 import com.alphito.kcal.core.database.entity.MealCheckEntity
 import com.alphito.kcal.core.database.entity.PlannedItemEntity
 import com.alphito.kcal.core.database.entity.PlannedItemWithFood
@@ -97,8 +98,15 @@ interface MealPlanDao {
     @Query("SELECT * FROM meal_check WHERE epochDay BETWEEN :from AND :to")
     fun observeChecks(from: Long, to: Long): Flow<List<MealCheckEntity>>
 
-    @Query("SELECT DISTINCT epochDay FROM meal_check WHERE checked = 1 ORDER BY epochDay DESC")
-    fun observeCheckedDays(): Flow<List<Long>>
+    /** Every (day, meal) that has food planned – the denominator of a completed day. */
+    @Query("SELECT DISTINCT epochDay, mealType FROM planned_item")
+    fun observePlannedMeals(): Flow<List<DayMeal>>
+
+    @Query("SELECT epochDay, mealType FROM meal_check WHERE checked = 1")
+    fun observeCheckedMeals(): Flow<List<DayMeal>>
+
+    @Query("SELECT MIN(epochDay) FROM meal_check WHERE checked = 1")
+    suspend fun firstCheckedDay(): Long?
 
     @Upsert
     suspend fun upsertCheck(check: MealCheckEntity)
@@ -123,6 +131,10 @@ interface MealPlanDao {
 
     @Query("SELECT MAX(epochDay) FROM planned_item")
     suspend fun lastPlannedDay(): Long?
+
+    /** Days in [from, to] that already have a saved plan (never overwritten when filling gaps). */
+    @Query("SELECT DISTINCT epochDay FROM planned_item WHERE epochDay BETWEEN :from AND :to")
+    suspend fun plannedDays(from: Long, to: Long): List<Long>
 }
 
 @Dao
@@ -142,12 +154,18 @@ interface WeightDao {
     @Query("SELECT * FROM weight ORDER BY epochDay ASC")
     fun observeAll(): Flow<List<WeightEntity>>
 
+    @Query("SELECT MIN(epochDay) FROM weight")
+    suspend fun firstDay(): Long?
+
     @Upsert
     suspend fun upsert(entity: WeightEntity)
 }
 
 @Dao
 interface StepsDao {
+    @Query("SELECT MIN(epochDay) FROM steps WHERE steps > 0")
+    suspend fun firstDay(): Long?
+
     @Query("SELECT * FROM steps WHERE epochDay BETWEEN :from AND :to ORDER BY epochDay")
     fun observeRange(from: Long, to: Long): Flow<List<StepsEntity>>
 

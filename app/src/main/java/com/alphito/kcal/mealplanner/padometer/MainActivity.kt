@@ -6,7 +6,11 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.lifecycleScope
+import com.alphito.kcal.feature.steps.domain.StepTrackingController
 import com.alphito.kcal.mealplanner.padometer.ui.KcalApp
+import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
 
 /**
  * Single activity. AppCompat is used only for the per-app language back-port; the whole UI is
@@ -26,4 +30,13 @@ class MainActivity : AppCompatActivity() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) window.isNavigationBarContrastEnforced = false
         setContent { KcalApp(onExit = ::finish) }
     }
+
+    override fun onStart() {
+        super.onStart()
+        // Step tracking the user left on comes back with the app (the system may have stopped it).
+        // Foreground-service starts are allowed here because the activity is visible.
+        lifecycleScope.launch { stepTracking.resumeIfEnabled() }
+    }
+
+    private val stepTracking: StepTrackingController by inject()
 }

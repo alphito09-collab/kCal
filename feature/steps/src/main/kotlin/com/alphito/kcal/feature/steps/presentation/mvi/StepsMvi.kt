@@ -6,8 +6,8 @@ import com.alphito.kcal.core.common.mvi.UiEffect
 import com.alphito.kcal.core.common.mvi.UiIntent
 import com.alphito.kcal.core.common.mvi.UiState
 import com.alphito.kcal.core.common.time.AppClock
-import com.alphito.kcal.core.data.repository.PreferencesRepository
 import com.alphito.kcal.core.data.repository.StepsRepository
+import com.alphito.kcal.core.data.repository.UserRepository
 import com.alphito.kcal.core.model.EnergyCalculator
 import com.alphito.kcal.core.model.StepsDay
 import com.alphito.kcal.feature.steps.domain.HistoryRange
@@ -19,6 +19,7 @@ import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import java.time.LocalDate
 
@@ -52,13 +53,17 @@ sealed interface StepsEffect : UiEffect {
 class StepsViewModel(
     private val steps: StepsRepository,
     private val controller: StepTrackingController,
-    private val preferences: PreferencesRepository,
+    users: UserRepository,
     clock: AppClock,
 ) : MviViewModel<StepsState, StepsIntent, StepsEffect>(StepsState()) {
 
     init {
         val today = clock.today()
         reduce { copy(today = today) }
+        // A plan that covers part of the deficit with steps raises the goal to match it.
+        users.profile.map { p -> p?.let { EnergyCalculator.plan(it).stepGoal } ?: EnergyCalculator.DEFAULT_STEP_GOAL }
+            .onEach { reduce { copy(goal = it) } }
+            .catch { onError(it) }.launchIn(viewModelScope)
         combine(steps.observeDay(today), controller.status, steps.observeRange(today.minusMonths(6), today)) { count, status, history ->
             Triple(count, status, history)
         }.onEach { (count, status, history) ->
@@ -75,10 +80,7 @@ class StepsViewModel(
             }
             is StepsIntent.PermissionsResult -> {
                 reduce { copy(permissionDenied = !intent.activityGranted) }
-                if (intent.activityGranted) {
-                    controller.start()
-                    launchSafe { preferences.setActivityTracking(true) }
-                }
+                if (intent.activityGranted) controller.start() // also remembers "tracking on"
             }
             is StepsIntent.SelectRange -> reduce { copy(range = intent.range, selectedBar = -1) }
             is StepsIntent.SelectBar -> reduce { copy(selectedBar = intent.index) }
